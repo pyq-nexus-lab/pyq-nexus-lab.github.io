@@ -1,8 +1,8 @@
 {
-  "name": "som-pyq-lab",
-  "version": "1.0.0",
+  "name": "pyq-lab",
+  "version": "2.0.0",
   "private": true,
-  "description": "Strength of Materials PYQ practice workspace for GATE and ESE",
+  "description": "A unified multi-subject PYQ workspace for GATE and ESE",
   "scripts": {"start": "node server.cjs", "test": "node --test tests.cjs", "check": "node validate.cjs"},
   "engines": {"node": ">=18"}
 }

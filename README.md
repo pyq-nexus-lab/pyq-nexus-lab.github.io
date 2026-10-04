@@ -1,6 +1,6 @@
-# SOM Lab
+# PYQ Lab
 
-A personal Strength of Materials practice workspace for **GATE ME, GATE XE, ESE Prelims and ESE Mains**, with a separate CSE Mains supplement.
+A unified, extensible multi-subject practice workspace for **GATE ME, GATE XE, ESE Prelims and ESE Mains**, with a separate CSE Mains supplement.
 
 ## Open the lab
 
@@ -17,6 +17,14 @@ npm start
 ```
 
 Open **http://127.0.0.1:4173**. This server listens only on your computer. Changing between the file and local-server versions creates separate browser storage, so export a backup before switching.
+
+## One platform for every subject
+
+The subject hub contains 17 Mechanical Engineering and foundational subject spaces. Only Strength of Materials currently has imported questions; the other subjects explicitly await question banks. Search, subject workspaces, revision, progress, the study planner and mixed-subject test selection share one engine. The existing URL and SOM question identifiers are retained, so existing browser progress and old SOM backups remain compatible.
+
+Use the subject scope selector for the question library, revision and detailed performance. Home and the cross-subject performance summary always show the whole platform. Active tests keep their original question set when the subject scope changes.
+
+See `SUBJECT-INTEGRATION.md` to add the next bank.
 
 ## What is included
 
@@ -46,7 +54,7 @@ Progress, personal keys, notes and drawings remain in this browser's local stora
 
 ## Development
 
-This is a dependency-free static application. `index.html`, `styles.css`, `app.js` and `core.js` implement the workspace. `bank.js` holds question metadata. `assets-*.js` are lazy-loaded screenshot packs so the complete app also works from a downloaded folder. `server.cjs` is an optional local-only server.
+This is a dependency-free static application. `index.html`, `styles.css`, `platform.css`, `app.js`, `platform.js`, `catalog.js` and `core.js` implement the workspace. `bank.js` holds question metadata. `assets-*.js` are lazy-loaded screenshot packs so the complete app also works from a downloaded folder. `server.cjs` is an optional local-only server.
 
 ```sh
 npm test
