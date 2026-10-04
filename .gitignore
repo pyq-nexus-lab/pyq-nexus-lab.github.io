@@ -1,0 +1,6 @@
+node_modules/
+work/
+public/
+*.log
+.env*
+!example.env
