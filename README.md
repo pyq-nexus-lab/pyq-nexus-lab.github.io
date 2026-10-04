@@ -26,6 +26,16 @@ Use the subject scope selector for the question library, revision and detailed p
 
 See `SUBJECT-INTEGRATION.md` to add the next bank.
 
+## Preparation dashboard and advanced settings
+
+Home combines a sortable subject scorecard, exam and date filters, daily question/time target rings, answer breakdown, a practice trend, an eight-week activity map, chapter priorities, planner progress and recent submissions. Chart days open a submission drilldown. Download a CSV progress report for the selected scope.
+
+Net objective score includes negative marking and uses the assessed maximum; accuracy uses correct and incorrect answers only. Choose latest attempt per question (default) or every submitted attempt. Date filters affect scores; coverage remains all-time, counts answered question entries and does not claim complete syllabus coverage. Skips do not count as practised. Written self-scores remain separate. Empty subjects show unavailable results rather than invented zero scores.
+
+In **Customise / Data & settings**, set daily targets, a target date, default exam, question count, timer, keyed-only selection and adaptive/new/mistake/random selection. Adaptive practice prioritises latest mistakes, flagged questions and then unanswered questions, with random ordering among ties. Active sessions resume unchanged. Set compact density, larger text, reduced motion and a distraction-free practice layout; the Focus button restores navigation. Dashboard chart visibility and score defaults are saved too.
+
+Targets and charts use the local calendar date and the selected exam track. Recorded time comes from submitted question attempts, not idle time with Home open. Repeated questions count once per day; daily totals can count the same question on different days. The streak is bounded to the displayed eight-week window. Scores describe recorded practice, not a predicted examination rank or score. Preferences travel with progress backups; resetting preferences does not erase answers.
+
 ## What is included
 
 - Original cropped question screenshots, including diagrams, across all five supplied DOCX compilations: **797 question entries**.
@@ -54,14 +64,14 @@ Progress, personal keys, notes and drawings remain in this browser's local stora
 
 ## Development
 
-This is a dependency-free static application. `index.html`, `styles.css`, `platform.css`, `app.js`, `platform.js`, `catalog.js` and `core.js` implement the workspace. `bank.js` holds question metadata. `assets-*.js` are lazy-loaded screenshot packs so the complete app also works from a downloaded folder. `server.cjs` is an optional local-only server.
+This is a dependency-free static application. `index.html`, `styles.css`, `platform.css`, `dashboard.css`, `app.js`, `platform.js`, `dashboard.js`, `insights.js`, `catalog.js` and `core.js` implement the workspace. `bank.js` holds question metadata. `assets-*.js` are lazy-loaded screenshot packs so the complete app also works from a downloaded folder. `server.cjs` is an optional local-only server.
 
 ```sh
 npm test
 npm run check
 ```
 
-The tests exercise scoring edge cases, mixed-session totals and calculator safety. The data validator checks question identifiers, asset references, formats and key metadata. Browser checks cover answer selection, reload persistence, timer expiry and written practice.
+The tests exercise scoring edge cases, mixed-session totals, calculator safety, subject isolation, date windows, repeated attempts, analytics denominators, practice selection and preference validation. The data validator checks question identifiers, asset references, formats and key metadata. Browser checks cover answer selection, reload persistence, timer expiry and written practice.
 
 ## References and privacy
 

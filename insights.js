@@ -1,0 +1,32 @@
+(function(root){
+ 'use strict';
+ const defaults={dailyQuestions:20,dailyMinutes:60,targetAccuracy:80,targetDate:'',quickCount:10,examMinutes:30,defaultExam:'gate-me',selection:'adaptive',keyedOnly:true,scoreMode:'latest',density:'comfortable',textScale:100,reduceMotion:false,focusMode:false,showPlanned:true,showHeatmap:true,showTrend:true};
+ const exams=['gate-me','gate-xe','ese-prelims','ese-mains','cse-mains'];
+ function preferences(input){const x=input&&typeof input==='object'?input:{},p={...defaults};for(const [k,min,max] of [['dailyQuestions',1,200],['dailyMinutes',5,480],['targetAccuracy',1,100],['quickCount',1,100],['examMinutes',1,300]])if(Number.isFinite(x[k]))p[k]=Math.max(min,Math.min(max,Math.round(x[k])));for(const [k,values] of [['defaultExam',exams],['selection',['adaptive','new','mistakes','random']],['scoreMode',['latest','all']],['density',['comfortable','compact']],['textScale',[100,110,120]]])if(values.includes(x[k]))p[k]=x[k];for(const k of ['keyedOnly','reduceMotion','focusMode','showPlanned','showHeatmap','showTrend'])if(typeof x[k]==='boolean')p[k]=x[k];if(typeof x.targetDate==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(x.targetDate)&&Number.isFinite(new Date(x.targetDate+'T00:00:00').getTime()))p.targetDate=x.targetDate;return p}
+ const answered=a=>Array.isArray(a)?a.length>0:a!==null&&a!==undefined&&String(a).trim()!=='';
+ function dateKey(time){const d=new Date(time);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}
+ function dayStart(now){const d=new Date(now);d.setHours(0,0,0,0);return d.getTime()}
+ function daysBack(now,n){const d=new Date(dayStart(now));d.setDate(d.getDate()-n);return d.getTime()}
+ function latest(attempts){const map=new Map;for(const a of attempts){const old=map.get(a.id);if(!old||a.at>=old.at)map.set(a.id,a)}return map}
+ function measure(attempts){let correct=0,wrong=0,skipped=0,ungraded=0,manual=0,score=0,max=0,selfScore=0,selfMax=0,seconds=0;const unique=new Set;for(const a of attempts){if(answered(a.answer))unique.add(a.id);seconds+=Math.max(0,Number(a.seconds)||0);if(a.status==='correct')correct++;if(a.status==='wrong')wrong++;if(a.status==='skipped')skipped++;if(a.status==='ungraded')ungraded++;if(a.status==='manual'){manual++;if(Number.isFinite(a.selfScore)&&Number.isFinite(a.selfMax)&&a.selfMax>0){selfScore+=a.selfScore;selfMax+=a.selfMax}}if(['correct','wrong','skipped'].includes(a.status)&&Number.isFinite(a.score)&&Number.isFinite(a.marks)&&a.marks>0){score+=a.score;max+=a.marks}}return {correct,wrong,skipped,ungraded,manual,score,max,selfScore,selfMax,seconds,unique:unique.size,count:attempts.length,accuracy:correct+wrong?100*correct/(correct+wrong):null,percent:max?100*score/max:null}}
+ function build(bank,attempts,options={}){
+  const now=options.now??Date.now(),exam=options.exam||'all',period=String(options.period||'all'),mode=options.mode||'latest',cutoff=period==='7'?daysBack(now,6):period==='30'?daysBack(now,29):-Infinity;
+  const byId=new Map(bank.map(q=>[q.id,q])),valid=attempts.filter(a=>byId.has(a.id)&&Number.isFinite(a.at)&&a.at<=now);
+  const scopedBank=bank.filter(q=>exam==='all'||q.exam===exam),ids=new Set(scopedBank.map(q=>q.id));
+  const history=valid.filter(a=>ids.has(a.id)),periodAttempts=history.filter(a=>a.at>=cutoff),used=mode==='latest'?[...latest(periodAttempts).values()]:periodAttempts;
+  const coverage=new Set(history.filter(a=>answered(a.answer)).map(a=>a.id)),subjects=new Map,chapters=new Map,tracks=new Map;
+  for(const q of scopedBank){if(!subjects.has(q.subject))subjects.set(q.subject,{id:q.subject,questions:[],attempts:[],coverage:0});const row=subjects.get(q.subject);row.questions.push(q);if(coverage.has(q.id))row.coverage++}
+  for(const a of used){const q=byId.get(a.id);subjects.get(q.subject).attempts.push(a);const key=q.subject+'|'+q.chapter;if(!chapters.has(key))chapters.set(key,{subject:q.subject,chapter:q.chapter,attempts:[]});chapters.get(key).attempts.push(a)}
+  for(const row of subjects.values()){Object.assign(row,measure(row.attempts));row.total=row.questions.length;row.keyed=row.questions.filter(q=>q.type!=='WRITTEN'&&q.key&&Number.isFinite(q.marks)).length;row.coveragePct=row.total?100*row.coverage/row.total:0}
+  for(const row of chapters.values())Object.assign(row,measure(row.attempts));
+  for(const e of exams){const list=valid.filter(a=>byId.get(a.id).exam===e&&a.at>=cutoff);tracks.set(e,measure(mode==='latest'?[...latest(list).values()]:list))}
+  const dayBuckets=new Map;for(const a of history){const key=dateKey(a.at);if(!dayBuckets.has(key))dayBuckets.set(key,[]);dayBuckets.get(key).push(a)}
+  const days=[];for(let i=55;i>=0;i--){const time=daysBack(now,i),key=dateKey(time),a=dayBuckets.get(key)||[],m=measure(a);days.push({key,...m})}
+  let streak=0,at=days.length-1;if(!days[at].unique)at--;for(;at>=0&&days[at].unique;at--)streak++;
+  const recent=latest(history),mistakes=[...recent.values()].filter(a=>a.status==='wrong').map(a=>a.id),allStats=measure(used);
+  return {...allStats,subjects,chapters,tracks,days,streak,today:days.at(-1),used,periodAttempts,history,latest:recent,mistakes,coverage:coverage.size,total:scopedBank.length,keyed:scopedBank.filter(q=>q.type!=='WRITTEN'&&q.key&&Number.isFinite(q.marks)).length,unknown:scopedBank.filter(q=>q.type!=='WRITTEN'&&!q.key).length,written:scopedBank.filter(q=>q.type==='WRITTEN').length,cutoff};
+ }
+ function choose(bank,attempts,prefs,flags={},random=Math.random){const p=preferences(prefs),last=latest(attempts),pool=bank.filter(q=>q.exam===p.defaultExam&&q.type!=='UNCLASSIFIED'&&(!p.keyedOnly||q.type==='WRITTEN'||q.key));for(let i=pool.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]]}const weight=q=>{const a=last.get(q.id),fresh=!a||!answered(a.answer);if(p.selection==='new')return fresh?3:0;if(p.selection==='mistakes')return a?.status==='wrong'?3:0;if(p.selection==='adaptive')return (a?.status==='wrong'?6:0)+(flags[q.id]?4:0)+(fresh?2:0);return 0};pool.sort((a,b)=>weight(b)-weight(a));return pool.slice(0,p.quickCount).map(q=>q.id)}
+ function csv(rows){return rows.map(row=>row.map(v=>{let s=String(v??'');if(/^[=+\-@\t\r]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"'}).join(',')).join('\r\n')}
+ const api={defaults,preferences,dateKey,daysBack,latest,measure,build,choose,csv};root.PYQInsights=api;if(typeof module!=='undefined')module.exports=api;
+})(typeof globalThis!=='undefined'?globalThis:this);
