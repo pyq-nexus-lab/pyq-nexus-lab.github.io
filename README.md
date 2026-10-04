@@ -4,7 +4,7 @@ A unified, extensible multi-subject practice workspace for **GATE ME, GATE XE, E
 
 ## Open the lab
 
-**Live website: https://shobhit2507.github.io/som-pyq-lab/**
+**Live website: https://pyq-nexus-lab.github.io/**
 
 GitHub Pages hosts the public practice app. Progress stays in each browser; use Export backup and Restore backup when moving between devices.
 
@@ -20,7 +20,7 @@ Open **http://127.0.0.1:4173**. This server listens only on your computer. Chang
 
 ## One platform for every subject
 
-The subject hub contains 17 Mechanical Engineering and foundational subject spaces. Only Strength of Materials currently has imported questions; the other subjects explicitly await question banks. Search, subject workspaces, revision, progress, the study planner and mixed-subject test selection share one engine. The existing URL and SOM question identifiers are retained, so existing browser progress and old SOM backups remain compatible.
+The subject hub contains 17 Mechanical Engineering and foundational subject spaces. Only Strength of Materials currently has imported questions; the other subjects explicitly await question banks. Search, subject workspaces, revision, progress, the study planner and mixed-subject test selection share one engine. SOM question identifiers and backup formats are retained. When moving from the former address, export a backup there and restore it here: browser storage is separate for each address.
 
 Use the subject scope selector for the question library, revision and detailed performance. Home and the cross-subject performance summary always show the whole platform. Active tests keep their original question set when the subject scope changes.
 
