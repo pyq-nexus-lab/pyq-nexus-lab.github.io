@@ -1,6 +1,6 @@
 {
-  "name": "pyq-lab",
-  "version": "3.0.0",
+  "name": "pyq-nexus",
+  "version": "3.0.1",
   "private": true,
   "description": "A unified multi-subject PYQ workspace for GATE and ESE",
   "scripts": {"start": "node server.cjs", "test": "node --test tests.cjs insights.test.cjs", "check": "node validate.cjs"},

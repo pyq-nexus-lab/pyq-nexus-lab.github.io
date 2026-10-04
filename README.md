@@ -1,4 +1,4 @@
-# PYQ Lab
+# PYQ Nexus
 
 A unified, extensible multi-subject practice workspace for **GATE ME, GATE XE, ESE Prelims and ESE Mains**, with a separate CSE Mains supplement.
 

@@ -1,4 +1,4 @@
-# Add a subject to the shared PYQ Lab
+# Add a subject to the shared PYQ Nexus
 
 The existing GitHub Pages address remains the single platform URL. `catalog.js` defines the subject registry; `platform.js` provides shared subject workspaces, search, planner and progress. `app.js` owns the common question, exam and revision engine. Do not fork the app for a new subject.
 
