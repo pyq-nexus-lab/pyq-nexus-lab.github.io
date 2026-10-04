@@ -4,7 +4,11 @@ A personal Strength of Materials practice workspace for **GATE ME, GATE XE, ESE 
 
 ## Open the lab
 
-Download this private repository with **Code → Download ZIP**, extract it, and open **index.html**. Keep the `assets-*.js` files beside it. The interface and question screenshots work without a build step or account. Optional web fonts require an internet connection; system fonts work offline.
+**Live website: https://shobhit2507.github.io/som-pyq-lab/**
+
+GitHub Pages hosts the public practice app. Progress stays in each browser; use Export backup and Restore backup when moving between devices.
+
+Download this repository with **Code → Download ZIP**, extract it, and open **index.html**. Keep the `assets-*.js` files beside it. The interface and question screenshots work without a build step or account. Optional web fonts require an internet connection; system fonts work offline.
 
 For a consistent local URL, install Node.js 18 or later, open a terminal in this folder and run:
 
@@ -57,4 +61,4 @@ The tests exercise scoring edge cases, mixed-session totals and calculator safet
 - [Official GATE historical papers and keys](https://gate2026.iitg.ac.in/download.html)
 - [UPSC ESE examination scheme](https://upsc.gov.in/sites/default/files/Notif-ESEP-25-Engl-18092024.pdf)
 
-Keep this repository private. Question screenshots and publisher content retain their original rights; their inclusion here does not grant redistribution rights. No access credentials are included. Public hosting has not been configured.
+This repository and its GitHub Pages website are public at the owner's request. Question screenshots and publisher content retain their original rights; their inclusion here does not grant redistribution rights. No access credentials are included. GitHub Pages publishes the main branch.
