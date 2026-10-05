@@ -1,0 +1,86 @@
+{
+  "generatedOn": "2026-10-05",
+  "subject": "fluid-mechanics",
+  "entries": 1681,
+  "originalScreenshotEntries": 820,
+  "expandedLinkedQuestions": 4,
+  "supplementaryBookEntries": 857,
+  "countsByExam": {
+    "gate-me": 379,
+    "gate-xe": 460,
+    "ese-prelims": 763,
+    "ese-mains": 79
+  },
+  "countsByFormat": {
+    "MCQ": 1342,
+    "NAT": 242,
+    "MSQ": 15,
+    "WRITTEN": 82
+  },
+  "gradable": 900,
+  "officialKeys": 170,
+  "bookKeys": 730,
+  "writtenSelfAssessment": 82,
+  "pendingObjectiveKeys": 699,
+  "gateBook": {
+    "entries": 223,
+    "earliestYear": 1987,
+    "latestYear": 2020,
+    "pre2017Entries": 181
+  },
+  "sources": [
+    {
+      "file": "GATE_Fluid_Mechanics_PYQ_Screenshots_2007_2026.docx",
+      "exam": "gate-me",
+      "questions": 156,
+      "sha256": "c15bf6a9c6486ed48ce12db730cea299886cd2bc05387f4424c56f5a1383cce5",
+      "subject": "fluid-mechanics",
+      "note": "152 original screenshot entries, expanded to 156 separately answerable questions by splitting linked pairs."
+    },
+    {
+      "file": "GATE_XE_Fluid_Mechanics_PYQ_2007_2026_Chapterwise_Screenshots.docx",
+      "exam": "gate-xe",
+      "questions": 460,
+      "sha256": "d2f163e1101c40b739282ed312e947b7fe71c9781b448af2b2fb4dee5b691d4e",
+      "subject": "fluid-mechanics"
+    },
+    {
+      "file": "ESE_Fluid_Mechanics_PYQs_2017_2026_Chapterwise.docx",
+      "exam": "ese-prelims",
+      "questions": 129,
+      "sha256": "6a61dad08c1ff58def64a72b246981490bdc12a89b8103b204e0776e05ac77ba",
+      "subject": "fluid-mechanics"
+    },
+    {
+      "file": "ESE_Mains_Fluid_Mechanics_PYQ_2017_2026_Chapterwise.docx",
+      "exam": "ese-mains",
+      "questions": 79,
+      "sha256": "d2f337b40c4920ed0ff47fdc8cdc26eb49e6987b8f8561cb42fa6e9643d9a7b3",
+      "subject": "fluid-mechanics"
+    },
+    {
+      "file": "gate previous year solved papers (2).pdf",
+      "questions": 223,
+      "subject": "fluid-mechanics",
+      "sha256": "c5451f2d2b8a4242b4ffef510dcfe7e39c9e3c78f65b0c4ed5461b60675e3601",
+      "note": "Complete numbered Fluid Mechanics question sequence extracted; archive and original-paper entries are retained separately."
+    },
+    {
+      "file": "ESE-Prelims vol 1 (1).pdf",
+      "questions": 634,
+      "subject": "fluid-mechanics",
+      "sha256": "65e9fe3e016313f49db96dcda1703d08da7903434277d5f70e0f5d6e41ccbab1",
+      "note": "Complete numbered Fluid Mechanics question sequence extracted; archive and original-paper entries are retained separately."
+    },
+    {
+      "file": "ESE-Prelims vol 2.pdf",
+      "status": "Reviewed: Fluid Mechanics is in Volume 1; Volume 2 contributes to SOM."
+    }
+  ],
+  "notes": [
+    "Counts are question entries, not unique exam questions: book and original-paper versions can overlap.",
+    "Book numerical reference values are not converted into invented acceptance ranges.",
+    "A few unreadable year labels remain archive entries without a year; use their PDF page to audit.",
+    "Current lab grading rules apply to practice sets, including historical archives."
+  ]
+}

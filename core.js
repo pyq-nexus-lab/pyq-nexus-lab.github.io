@@ -7,7 +7,7 @@ function grade(q,a){
  if(!hasAnswer(a))return {status:'skipped',score:0};
  let correct=false;
  if(q.type==='NAT'){const n=typeof a==='string'&&/^[+-]?(?:\d+\.?\d*|\.\d+)$/.test(a.trim())?Number(a):NaN;correct=Number.isFinite(n)&&(q.key.ranges||[[q.key.min,q.key.max]]).some(([min,max])=>n>=min&&n<=max)}
- else{const actual=[...new Set(Array.isArray(a)?a:[a])].sort();correct=JSON.stringify(actual)===JSON.stringify([...q.key.options].sort())}
+ else{const actual=JSON.stringify([...new Set(Array.isArray(a)?a:[a])].sort());correct=(q.key.optionSets||[q.key.options]).some(options=>actual===JSON.stringify([...options].sort()))}
  return {status:correct?'correct':'wrong',score:correct?q.marks:q.type==='MCQ'?-q.marks/3:0};
 }
 function totals(qs,answers){const r={score:0,max:0,correct:0,wrong:0,skipped:0,ungraded:0,manual:0};for(const q of qs){const g=grade(q,answers[q.id]);r[g.status]++;if(g.score!==null){r.score+=g.score;r.max+=q.marks}}return r}
