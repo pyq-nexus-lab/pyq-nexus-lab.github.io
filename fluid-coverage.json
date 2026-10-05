@@ -1,28 +1,55 @@
 {
-  "generatedOn": "2026-10-05",
+  "generatedOn": "2026-10-06",
   "subject": "fluid-mechanics",
-  "entries": 1681,
+  "entries": 1538,
+  "uniqueQuestions": 1538,
+  "sourceEntries": 1681,
+  "duplicateCopiesMerged": 143,
   "originalScreenshotEntries": 820,
   "expandedLinkedQuestions": 4,
   "supplementaryBookEntries": 857,
   "countsByExam": {
-    "gate-me": 379,
+    "gate-me": 277,
     "gate-xe": 460,
-    "ese-prelims": 763,
+    "ese-prelims": 722,
     "ese-mains": 79
   },
   "countsByFormat": {
-    "MCQ": 1342,
-    "NAT": 242,
+    "MCQ": 1228,
+    "NAT": 203,
     "MSQ": 15,
-    "WRITTEN": 82
+    "WRITTEN": 79,
+    "TEXT": 13
   },
-  "gradable": 900,
-  "officialKeys": 170,
-  "bookKeys": 730,
-  "writtenSelfAssessment": 82,
-  "pendingObjectiveKeys": 699,
-  "gateBook": {
+  "gradable": 1455,
+  "officialKeys": 419,
+  "bookKeys": 766,
+  "independentlyDerivedKeys": 270,
+  "writtenSelfAssessment": 79,
+  "sourceIssues": [
+    {
+      "id": "fluid-mechanics:fm-ese-prelims-069",
+      "issue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
+      "referenceAnswer": "Ideal hydraulic efficiency ≈75.86%; useful bank-relative propulsion efficiency ≈60.0%"
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-prelims-096",
+      "issue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
+      "referenceAnswer": "Mean velocity ≈2.828 m/s; flow rate ≈0.1999 m³/s"
+    },
+    {
+      "id": "fluid-mechanics:fluid-ese-book-4-6",
+      "issue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
+      "referenceAnswer": "The anchoring force cannot be uniquely determined from the supplied data"
+    },
+    {
+      "id": "fluid-mechanics:fluid-ese-book-5-41",
+      "issue": "No correct option in the provided source; excluded from objective scores.",
+      "referenceAnswer": "All four equations"
+    }
+  ],
+  "pendingObjectiveKeys": [],
+  "gateBookSourceSequence": {
     "entries": 223,
     "earliestYear": 1987,
     "latestYear": 2020,
@@ -78,9 +105,10 @@
     }
   ],
   "notes": [
-    "Counts are question entries, not unique exam questions: book and original-paper versions can overlap.",
-    "Book numerical reference values are not converted into invented acceptance ranges.",
-    "A few unreadable year labels remain archive entries without a year; use their PDF page to audit.",
-    "Current lab grading rules apply to practice sets, including historical archives."
+    "Practice counts are unique canonical questions; all merged source appearances remain discoverable.",
+    "Independently derived keys and Mains model references are not official marking schemes.",
+    "Historical short answers use TEXT controls; current practice marking rules do not reconstruct every older exam scheme.",
+    "Explained inconsistent source questions are excluded from automatic scores.",
+    "OCR powers search; consult the original screenshot for the problem statement."
   ]
 }

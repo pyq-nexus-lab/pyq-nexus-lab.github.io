@@ -27,3 +27,9 @@ for(const chapter of audit.bookChapters){
  assert.deepEqual(questions.map(q=>Number(q.number.split('.')[1])).sort((a,b)=>a-b),Array.from({length:chapter.questions},(_,i)=>i+1),'Complete printed numbering: '+chapter.title);
 }
 console.log(`Validated ${bank.length} entries across two subjects, ${packs.size} image packs, every asset reference, 1,681 crop digests and all 857 numbered Fluid Mechanics archive entries.`);
+for(const file of ['answers-data.js','dedup-data.js','repair-assets.js'])vm.runInNewContext(fs.readFileSync(file,'utf8'),ctx);
+const A=require('./answers.js'),D=require('./dedup.js'),patched=A.apply(bank,ctx.window.PYQ_ANSWER_DATA),lib=D.build(patched,ctx.window.PYQ_DEDUP_DATA),coverage=A.coverage(lib.bank);
+assert.equal(patched.length,3031);assert.equal(lib.bank.length,2747);assert.equal(coverage.keyed,2541);assert.equal(coverage.written,197);assert.equal(coverage.issues,9);assert.equal(coverage.pending,0);
+for(const q of lib.bank)assert(q.marks>0,q.id+' canonical marks');
+let repaired=0;for(const q of patched){if(q.pack==='repair-assets.js'){repaired++;const image=ctx.window.SOM_IMAGES[q.assetId];assert(image?.startsWith('data:image/webp;base64,'),q.id);assert.equal(crypto.createHash('sha256').update(Buffer.from(image.split(',')[1],'base64')).digest('hex'),q.cropSha256,q.id+' repaired crop digest')}}assert.equal(repaired,19);
+console.log(`Validated ${lib.bank.length} unique questions, ${coverage.keyed} grading keys, ${coverage.written} Mains references, ${coverage.issues} explained errata and ${repaired} restored screenshots.`);
