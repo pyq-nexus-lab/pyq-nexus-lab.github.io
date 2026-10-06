@@ -1,11 +1,11 @@
 {
   "name": "pyq-nexus",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "private": true,
   "description": "A unified multi-subject PYQ workspace for GATE and ESE",
   "scripts": {
     "start": "node server.cjs",
-    "test": "node --test tests.cjs insights.test.cjs fluid.test.cjs learning.test.cjs answers.test.cjs recheck.test.cjs curriculum.test.cjs",
+    "test": "node --test tests.cjs insights.test.cjs fluid.test.cjs learning.test.cjs answers.test.cjs recheck.test.cjs curriculum.test.cjs crops.test.cjs",
     "check": "node validate.cjs"
   },
   "engines": {

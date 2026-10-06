@@ -51,6 +51,10 @@ Open http://127.0.0.1:4173. Each origin has separate browser storage; export a b
 
 The app is dependency-free static JavaScript. Raw `bank.js` and `fluid-bank.js` metadata is prepared by `catalog.js`, enriched by `answers-data.js` / `answers.js`, then consolidated by `dedup-data.js` / `dedup.js`. Screenshots load as needed. `repair-assets.js` supplies restored scans. The app, dashboard, learning and answer UI are shared across subjects. See `SUBJECT-INTEGRATION.md` to add a bank.
 
+Screenshot corrections in `crops-data.js` / `crops.js` apply after answer enrichment and before deduplication. They can only replace image fields and source-crop provenance; they cannot change answers or curriculum metadata. `crop-assets-*.js` bundles load only when a question or preview needs them. `crop-source-audit.json` records source panels and image digests. Book screenshots were reconstructed with complete statements, diagrams, choices and shared data; matching original GATE papers recover clipped document screenshots. Complete clean originals are retained when a book scan is distorted. Original scan quality remains a limitation, and this audit does not certify every unchanged screenshot as perfect.
+
+The question library offers **Preview**, **View at original size** and a source-appearance selector. Previewing does not start a practice session or change saved responses. `crops.test.cjs` checks metadata preservation, assets, provenance, linked context and grading. The original uploaded source documents remain unchanged.
+
 ```sh
 npm test
 npm run check

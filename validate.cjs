@@ -38,3 +38,9 @@ const U=require('./curriculum.js'),ordered=U.apply(lib.bank,ctx.window.PYQ_CURRI
 assert.equal(ordered.length,2747);assert.equal(outline.length,36);const topics=new Set(ordered.map(q=>q.topicId)).size;assert(topics>=150);
 assert(ordered.every(q=>q.chapterId&&q.topicId&&q.topic&&q.sourceChapters.length));for(let i=1;i<ordered.length;i++)assert(U.compare(ordered[i-1],ordered[i])<=0);
 console.log(`Validated complete curriculum coverage: ${ordered.length} questions in ${outline.length} ordered chapters and ${topics} populated topics.`);
+vm.runInNewContext(fs.readFileSync('crops-data.js','utf8'),ctx);
+const crops=require('./crops.js'),replacements=ctx.window.PYQ_CROP_DATA,restored=crops.apply(patched,replacements),restoredPacks=new Set(Object.values(replacements.patches).map(p=>p.pack));
+for(const file of restoredPacks)vm.runInNewContext(fs.readFileSync(file,'utf8'),ctx);
+for(const [id,p] of Object.entries(replacements.patches)){const uri=ctx.window.PYQ_IMAGES[p.assetId];assert(uri?.startsWith('data:image/webp;base64,'),id);assert.equal(crypto.createHash('sha256').update(Buffer.from(uri.split(',')[1],'base64')).digest('hex'),p.cropSha256,id)}
+const finalBank=U.apply(D.build(restored,ctx.window.PYQ_DEDUP_DATA).bank,ctx.window.PYQ_CURRICULUM_DATA);assert.deepEqual(finalBank.map(q=>q.id),ordered.map(q=>q.id));assert.deepEqual(A.coverage(finalBank),coverage);
+console.log(`Validated ${Object.keys(replacements.patches).length} rebuilt screenshots and ${restoredPacks.size} replacement packs; all answers, canonical IDs and learning order are preserved.`);
