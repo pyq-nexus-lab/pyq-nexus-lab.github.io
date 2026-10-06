@@ -33,3 +33,8 @@ assert.equal(patched.length,3031);assert.equal(lib.bank.length,2747);assert.equa
 for(const q of lib.bank)assert(q.marks>0,q.id+' canonical marks');
 let repaired=0;for(const q of patched){if(q.pack==='repair-assets.js'){repaired++;const image=ctx.window.SOM_IMAGES[q.assetId];assert(image?.startsWith('data:image/webp;base64,'),q.id);assert.equal(crypto.createHash('sha256').update(Buffer.from(image.split(',')[1],'base64')).digest('hex'),q.cropSha256,q.id+' repaired crop digest')}}assert.equal(repaired,19);
 console.log(`Validated ${lib.bank.length} unique questions, ${coverage.keyed} grading keys, ${coverage.written} Mains references, ${coverage.issues} explained errata and ${repaired} restored screenshots.`);
+vm.runInNewContext(fs.readFileSync('curriculum-data.js','utf8'),ctx);
+const U=require('./curriculum.js'),ordered=U.apply(lib.bank,ctx.window.PYQ_CURRICULUM_DATA),outline=U.outline(ordered);
+assert.equal(ordered.length,2747);assert.equal(outline.length,36);const topics=new Set(ordered.map(q=>q.topicId)).size;assert(topics>=150);
+assert(ordered.every(q=>q.chapterId&&q.topicId&&q.topic&&q.sourceChapters.length));for(let i=1;i<ordered.length;i++)assert(U.compare(ordered[i-1],ordered[i])<=0);
+console.log(`Validated complete curriculum coverage: ${ordered.length} questions in ${outline.length} ordered chapters and ${topics} populated topics.`);

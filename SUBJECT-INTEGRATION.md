@@ -34,3 +34,9 @@ Load additional banks before `answers-data.js` and `answers.js`, then `dedup-dat
 Use `keyStatus:official`, `book` or `solved` and specific `keySource` provenance. Written questions need `referenceAnswer`, `explanation` and checked marks. Historical short answers use `{acceptedText:["true"]}`; normalisation ignores case, whitespace and comma/semicolon/colon separators without claiming general symbolic equivalence.
 
 Inconsistent source questions use `answerIssue`, an explained `referenceAnswer` and `key:null`. They remain accessible outside automatic scores. Merge only matching subject, exam and type, preserving aliases and option translations. Material sign, value or linked-subquestion changes stay separate. `recheck.js` updates past grades after preview and confirmation; original grades stay in `gradingHistory`.
+
+## Curriculum integration
+
+Add every ready subject to `PYQ_CURRICULUM_DATA.subjects` with stable chapter/topic IDs and numeric teaching orders. Assign every canonical question ID to exactly one topic in `assignments`; classify after answer patching and duplicate consolidation. Unknown assignments, absent mappings and subject mismatches fail rather than silently hiding questions. Keep source chapters in raw metadata. `PYQCurriculum.apply` retains them as `sourceChapter`/`sourceChapters` and leaves occurrence references unchanged.
+
+Load `curriculum-data.js` and `curriculum.js` before Insights, and `curriculum-ui.js` before the app. New bank or dedup changes need matching curriculum assignments and a refreshed audit. Validate complete coverage, nested topic filtering and preserved answer/asset identity. New untimed practice uses curriculum ordering; do not reorder an already saved active session.

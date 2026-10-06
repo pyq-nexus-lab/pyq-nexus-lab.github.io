@@ -61,3 +61,13 @@ Tests cover scoring, NAT boundaries, short answers, errata, written self-assessm
 `coverage.json`, `fluid-coverage.json`, `platform-coverage.json`, `dedup-audit.json`, `answer-audit.json` and `integrity.json` document counts, source appearances, reference limitations, repaired crops and file hashes. Retain the original uploaded documents for reference.
 
 Official references: [GATE 2026 papers and keys](https://gate2026.iitg.ac.in/QPs-answer-keys.html) and [UPSC ESE scheme](https://upsc.gov.in/sites/default/files/Notif-ESEP-25-Engl-18092024.pdf).
+
+## Chapter and topic learning path (v4.1)
+
+All 2,747 canonical questions are organised into 36 chapters and 159 populated topics. SOM follows the detailed ESE volume 2 chapter order; Fluid Mechanics follows ESE volume 1. The GATE contents provide the crosswalk, with additional GATE/Mains applications appended after the core path. Topic categories progress from foundations to applications. These topic names are editorial, not claimed as official syllabus headings.
+
+The library is grouped and sorted by chapter and topic. Year remains a filter and source reference. Subject workspaces provide expandable chapter/topic maps with real practice counts. Topic filters stay within their chapter. New practice navigators use learning order; timed exam simulations keep their chosen test order. Chapter practice includes the entire chapter; broad library sets offer the next 200 unanswered questions.
+
+Quick practice now defaults to the earliest unanswered questions in teaching order. A one-time preference migration records the previous selection and preserves other settings. Existing sessions, question IDs, source appearances, screenshots, keys, saved answers, grades and notes retain their data. The user may still explicitly select adaptive or random practice in Settings.
+
+`curriculum-data.js` contains the registry and complete canonical-ID assignments; `curriculum.js` validates and applies them after answer patching and deduplication. `curriculum-audit.json` records contents-page evidence, counts and classification basis. `curriculum.test.cjs` checks full coverage, ordering, filters, intact answer/source data and progress preservation. All 54 tests pass.
