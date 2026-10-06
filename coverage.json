@@ -1,46 +1,46 @@
 {
   "generatedOn": "2026-10-06",
   "subject": "som",
-  "entries": 1209,
-  "uniqueQuestions": 1209,
-  "sourceEntries": 1350,
-  "duplicateCopiesMerged": 141,
+  "entries": 1231,
+  "uniqueQuestions": 1231,
+  "sourceEntries": 1379,
+  "duplicateCopiesMerged": 148,
   "originalScreenshotEntries": 797,
   "expandedLinkedQuestions": 0,
-  "supplementaryBookEntries": 553,
+  "supplementaryBookEntries": 582,
   "countsByExam": {
-    "gate-me": 323,
+    "gate-me": 326,
     "gate-xe": 300,
-    "ese-prelims": 468,
+    "ese-prelims": 487,
     "ese-mains": 69,
     "cse-mains": 49
   },
   "countsByFormat": {
-    "MCQ": 887,
-    "NAT": 191,
+    "MCQ": 909,
     "MSQ": 13,
+    "NAT": 191,
     "WRITTEN": 118
   },
-  "gradable": 1086,
+  "gradable": 1107,
   "officialKeys": 398,
-  "bookKeys": 473,
-  "independentlyDerivedKeys": 215,
+  "bookKeys": 493,
+  "independentlyDerivedKeys": 216,
   "writtenSelfAssessment": 118,
   "sourceIssues": [
     {
-      "id": "ese-prelims-049",
-      "issue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
-      "referenceAnswer": "Inside diameter ≈575.9 mm for 60 MN m; ≈57.6 mm if the intended moment was 60 kN m"
-    },
-    {
-      "id": "ese-prelims-064",
-      "issue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
-      "referenceAnswer": "Tip deflection ≈2108.8 μm using the stated payload and link mass"
+      "id": "gate-book-7-3",
+      "issue": "Inconsistent figure and duplicated options in the source; excluded from automatic objective marks.",
+      "referenceAnswer": "Intended worked-solution values: 9.243 MPa and 0.757 MPa"
     },
     {
       "id": "ese-book-5-27",
       "issue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
       "referenceAnswer": "D if the displayed moment segments are parabolic; B is possible if they are cubic"
+    },
+    {
+      "id": "ese-prelims-049",
+      "issue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
+      "referenceAnswer": "Inside diameter ≈575.9 mm for 60 MN m; ≈57.6 mm if the intended moment was 60 kN m"
     },
     {
       "id": "ese-book-10-2",
@@ -51,6 +51,11 @@
       "id": "ese-book-10-15",
       "issue": "No correct option in the provided source; excluded from objective scores.",
       "referenceAnswer": "W₁ = 5W/8; σ₁ = 5σ/4"
+    },
+    {
+      "id": "ese-prelims-064",
+      "issue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
+      "referenceAnswer": "Tip deflection ≈2108.8 μm using the stated payload and link mass"
     }
   ],
   "pendingObjectiveKeys": [],
@@ -87,11 +92,11 @@
     },
     {
       "file": "ESE-Prelims vol 2.pdf",
-      "questions": 377
+      "questions": 397
     },
     {
       "file": "gate previous year solved papers (2).pdf",
-      "questions": 175
+      "questions": 184
     },
     {
       "file": "ESE-Prelims vol 1 (1).pdf",
@@ -103,6 +108,7 @@
     "Independently derived keys and Mains model references are not official marking schemes.",
     "Historical short answers use TEXT controls; current practice marking rules do not reconstruct every older exam scheme.",
     "Explained inconsistent source questions are excluded from automatic scores.",
-    "OCR powers search; consult the original screenshot for the problem statement."
+    "OCR powers search; consult the original screenshot for the problem statement.",
+    "Numbered source reconciliation and the 26 unreadable compressible-flow statements are documented in source-completeness.json."
   ]
 }

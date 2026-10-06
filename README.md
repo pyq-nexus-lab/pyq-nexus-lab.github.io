@@ -6,14 +6,22 @@ A shared GATE ME, GATE XE and ESE practice website, with a separately labelled C
 
 ## Question and answer library
 
-- **2,747 unique questions:** 1,209 Strength of Materials and 1,538 Fluid Mechanics.
-- **3,031 source entries** preserved; **284 duplicate copies** consolidated in 274 groups. Each merged question retains its appearances, years, chapters and source references. Material changes in signs, values or linked subquestions stay separate.
-- **2,541 automatically gradable questions:** 817 official-key matches, 1,239 printed-book keys and 485 independently derived keys. Grades include MCQ penalties, exact MSQ sets, inclusive NAT ranges and historical short-answer controls.
+- **3,058 unique questions:** 1,231 Strength of Materials and 1,827 Fluid Mechanics.
+- **3,355 source entries** preserved; **297 duplicate copies** consolidated in 287 groups. Each merged question retains its appearances, years, chapters and source references. Material changes in signs, values or linked subquestions stay separate.
+- **2,850 automatically gradable questions:** 817 official-key matches, 1,544 printed-book keys and 489 independently derived keys. Grades include MCQ penalties, exact MSQ sets, inclusive NAT ranges and historical short-answer controls.
 - **197 written model references** for ESE Mains and the CSE supplement, with an explicitly self-assessed rubric for method, working, result and presentation.
-- **9 explained objective source inconsistencies**, available for study and excluded from automatic marks. No unexplained missing references remain in this release.
+- **11 explained objective source inconsistencies**, available for study and excluded from automatic marks. No unexplained missing references remain among imported questions in this release.
 - **19 restored or repaired screenshots**, including one previously omitted SOM archive entry. The original 37 screenshot packs stay intact.
 
 The raw Fluid Mechanics solved-book sequence includes 223 GATE entries from 1987–2020, with 181 entries before 2017, plus 634 ESE Prelims archive entries. These are source-sequence counts before duplicate consolidation. Imported compilations and supplied book chapters define this bank's scope; other subjects await source files.
+
+### Source recovery (v4.3)
+
+324 omitted source entries are now recovered in four additional screenshot packs: 216 hydraulics questions, 79 readable compressible-flow/jet questions and 29 SOM/Applied SOM entries. Thirteen newly confirmed repeat copies are consolidated, including preserved translations for reordered options. Source-specific searchable text and year metadata were corrected from the individual crop panels.
+
+The numbered sequences are complete for GATE solved-book SOM (184), ESE Volume 2 SOM/Engineering Mechanics (397), GATE solved-book FM (223), ESE Volume 1 core FM (634), and ESE Volume 1 hydraulics (216). All four supplied FM DOCX banks remain represented, including linked questions as separately answerable entries. These are source appearances before deduplication.
+
+**One source gap remains:** ESE Volume 1's Jet Propulsion and Compressible Flow chapter has 79 of 105 question statements available. The uploaded PDF page 554 is a clipped composite scan that omits Q7.16–7.41. Readable replacements of **printed pages 550–552** are required for these 26 statements. Answer-table letters alone cannot reconstruct the questions; they are excluded from uploaded-question totals. Data & settings displays this limitation with a section-by-section coverage table. Unrelated subjects in the full PDFs are outside this release.
 
 Every answer identifies its provenance. **Independently derived answers and Mains references are not official marking schemes.** Conditional references state missing information, approximations or inconsistent source data. Printed book question numbers are not official paper question numbers. OCR aids search; use the screenshot as the statement.
 
@@ -62,16 +70,16 @@ npm run check
 
 Tests cover scoring, NAT boundaries, short answers, errata, written self-assessment, grade rechecking, retained history, duplicate migration, option translation, subject isolation, analytics and spaced revision. Validation checks original assets, crop digests, archive numbering, repaired images, canonical marks and full reference coverage. Browser checks cover controls, references, written scoring, grade refresh, reload persistence and exam answer hiding.
 
-`coverage.json`, `fluid-coverage.json`, `platform-coverage.json`, `dedup-audit.json`, `answer-audit.json` and `integrity.json` document counts, source appearances, reference limitations, repaired crops and file hashes. Retain the original uploaded documents for reference.
+`coverage.json`, `fluid-coverage.json`, `platform-coverage.json`, `dedup-audit.json`, `answer-audit.json` and `integrity.json` document counts, source appearances, reference limitations, repaired crops and file hashes. `source-completeness.json` tracks numbered coverage and blocked statements; `source-gap-audit.json` records the 324 recovered entries with crop geometry, image digests, canonical IDs and key provenance. Retain the original uploaded documents for reference.
 
 Official references: [GATE 2026 papers and keys](https://gate2026.iitg.ac.in/QPs-answer-keys.html) and [UPSC ESE scheme](https://upsc.gov.in/sites/default/files/Notif-ESEP-25-Engl-18092024.pdf).
 
 ## Chapter and topic learning path (v4.1)
 
-All 2,747 canonical questions are organised into 36 chapters and 159 populated topics. SOM follows the detailed ESE volume 2 chapter order; Fluid Mechanics follows ESE volume 1. The GATE contents provide the crosswalk, with additional GATE/Mains applications appended after the core path. Topic categories progress from foundations to applications. These topic names are editorial, not claimed as official syllabus headings.
+All 3,058 canonical questions are organised into 38 chapters and 170 populated topics. SOM follows the detailed ESE volume 2 chapter order; Fluid Mechanics follows ESE volume 1. Applied Engineering Mechanics follows the core SOM path; Hydraulic Machines and Transmission follows pumps/turbines and precedes compressible flow. The GATE contents provide the crosswalk, with additional GATE/Mains applications appended after the core path. Topic categories progress from foundations to applications. These topic names are editorial, not claimed as official syllabus headings.
 
 The library is grouped and sorted by chapter and topic. Year remains a filter and source reference. Subject workspaces provide expandable chapter/topic maps with real practice counts. Topic filters stay within their chapter. New practice navigators use learning order; timed exam simulations keep their chosen test order. Chapter practice includes the entire chapter; broad library sets offer the next 200 unanswered questions.
 
 Quick practice now defaults to the earliest unanswered questions in teaching order. A one-time preference migration records the previous selection and preserves other settings. Existing sessions, question IDs, source appearances, screenshots, keys, saved answers, grades and notes retain their data. The user may still explicitly select adaptive or random practice in Settings.
 
-`curriculum-data.js` contains the registry and complete canonical-ID assignments; `curriculum.js` validates and applies them after answer patching and deduplication. `curriculum-audit.json` records contents-page evidence, counts and classification basis. `curriculum.test.cjs` checks full coverage, ordering, filters, intact answer/source data and progress preservation. All 54 tests pass.
+`curriculum-data.js` contains the registry and complete canonical-ID assignments; `curriculum.js` validates and applies them after answer patching and deduplication. `curriculum-audit.json` records contents-page evidence, counts and classification basis. `curriculum.test.cjs` checks full coverage, ordering, filters, intact answer/source data and progress preservation. `source-completeness.test.cjs` checks recovered numbering, shared response codes, answer provenance, conservative duplicate translations and transparent source gaps. All 65 tests pass.

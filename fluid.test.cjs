@@ -3,11 +3,11 @@ const P=require('./catalog.js'),C=require('./core.js'),ctx={window:{}};
 for(const file of ['bank.js','fluid-bank.js'])vm.runInNewContext(fs.readFileSync(file,'utf8'),ctx);
 const bank=JSON.parse(JSON.stringify(P.prepare([{subject:'som',questions:ctx.window.SOM_BANK},...ctx.window.PYQ_BANKS]))),fluid=P.inScope(bank,'fluid-mechanics');
 test('Fluid Mechanics includes complete older GATE archive and retains the SOM bank',()=>{
- assert.equal(P.inScope(bank,'som').length,1349);assert.equal(fluid.length,1681);
+ assert.equal(P.inScope(bank,'som').length,1378);assert.equal(fluid.length,1976);
  const archive=fluid.filter(q=>q.archive&&q.exam==='gate-me');assert.equal(archive.length,223);
  assert.equal(Math.min(...archive.filter(q=>q.year).map(q=>q.year)),1987);
  assert.equal(archive.filter(q=>q.year&&q.year<2017).length,181);
- for(const [exam,count]of Object.entries({'gate-me':379,'gate-xe':460,'ese-prelims':763,'ese-mains':79}))assert.equal(fluid.filter(q=>q.exam===exam).length,count);
+ for(const [exam,count]of Object.entries({'gate-me':379,'gate-xe':460,'ese-prelims':1058,'ese-mains':79}))assert.equal(fluid.filter(q=>q.exam===exam).length,count);
 });
 test('all separately answerable linked questions retain context and stable asset IDs',()=>{
  const linked=fluid.filter(q=>q.assetId.includes('-linked-'));assert.equal(linked.length,4);
@@ -15,8 +15,8 @@ test('all separately answerable linked questions retain context and stable asset
  for(const id of ['fm-gate-xe-319','fm-gate-xe-320']){const q=fluid.find(q=>q.assetId===id);assert(q.sourceRepair);assert(q.height>100);}
 });
 test('real Fluid keys grade MCQ/MSQ/NAT and separate written and pending answers',()=>{
- assert.equal(fluid.filter(q=>q.key).length,900);
- assert.equal(fluid.filter(q=>!q.key&&q.type!=='WRITTEN').length,699);
+ assert.equal(fluid.filter(q=>q.key).length,1194);
+ assert.equal(fluid.filter(q=>!q.key&&q.type!=='WRITTEN').length,700);
  for(const type of ['MCQ','MSQ','NAT']){
   const q=fluid.find(q=>q.type===type&&q.key&&q.key.kind!=='all');
   const answer=type==='NAT'?String(q.key.min):type==='MCQ'?q.key.options[0]:q.key.options;

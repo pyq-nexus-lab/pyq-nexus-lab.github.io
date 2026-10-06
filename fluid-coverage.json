@@ -1,32 +1,42 @@
 {
   "generatedOn": "2026-10-06",
   "subject": "fluid-mechanics",
-  "entries": 1538,
-  "uniqueQuestions": 1538,
-  "sourceEntries": 1681,
-  "duplicateCopiesMerged": 143,
+  "entries": 1827,
+  "uniqueQuestions": 1827,
+  "sourceEntries": 1976,
+  "duplicateCopiesMerged": 149,
   "originalScreenshotEntries": 820,
   "expandedLinkedQuestions": 4,
-  "supplementaryBookEntries": 857,
+  "supplementaryBookEntries": 1152,
   "countsByExam": {
     "gate-me": 277,
     "gate-xe": 460,
-    "ese-prelims": 722,
+    "ese-prelims": 1011,
     "ese-mains": 79
   },
   "countsByFormat": {
-    "MCQ": 1228,
-    "NAT": 203,
+    "MCQ": 1517,
     "MSQ": 15,
+    "NAT": 203,
     "WRITTEN": 79,
     "TEXT": 13
   },
-  "gradable": 1455,
+  "gradable": 1743,
   "officialKeys": 419,
-  "bookKeys": 766,
-  "independentlyDerivedKeys": 270,
+  "bookKeys": 1051,
+  "independentlyDerivedKeys": 273,
   "writtenSelfAssessment": 79,
   "sourceIssues": [
+    {
+      "id": "fluid-mechanics:fluid-ese-book-4-6",
+      "issue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
+      "referenceAnswer": "The anchoring force cannot be uniquely determined from the supplied data"
+    },
+    {
+      "id": "fluid-mechanics:fluid-ese-book-5-41",
+      "issue": "No correct option in the provided source; excluded from objective scores.",
+      "referenceAnswer": "All four equations"
+    },
     {
       "id": "fluid-mechanics:fm-ese-prelims-069",
       "issue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
@@ -38,14 +48,9 @@
       "referenceAnswer": "Mean velocity ≈2.828 m/s; flow rate ≈0.1999 m³/s"
     },
     {
-      "id": "fluid-mechanics:fluid-ese-book-4-6",
-      "issue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
-      "referenceAnswer": "The anchoring force cannot be uniquely determined from the supplied data"
-    },
-    {
-      "id": "fluid-mechanics:fluid-ese-book-5-41",
-      "issue": "No correct option in the provided source; excluded from objective scores.",
-      "referenceAnswer": "All four equations"
+      "id": "fluid-mechanics:fluid-ese-hydraulic-book-1-9",
+      "issue": "No correct printed option; excluded from automatic objective marks.",
+      "referenceAnswer": "2707.56 kW (using g=9.81 m/s²)"
     }
   ],
   "pendingObjectiveKeys": [],
@@ -94,10 +99,10 @@
     },
     {
       "file": "ESE-Prelims vol 1 (1).pdf",
-      "questions": 634,
+      "questions": 929,
       "subject": "fluid-mechanics",
       "sha256": "65e9fe3e016313f49db96dcda1703d08da7903434277d5f70e0f5d6e41ccbab1",
-      "note": "Complete numbered Fluid Mechanics question sequence extracted; archive and original-paper entries are retained separately."
+      "note": "634 core FM + 216 hydraulics + 79 readable compressible/jet source questions. Q7.16–7.41 need a complete scan; 26 omitted statements are explicitly tracked."
     },
     {
       "file": "ESE-Prelims vol 2.pdf",
@@ -109,6 +114,7 @@
     "Independently derived keys and Mains model references are not official marking schemes.",
     "Historical short answers use TEXT controls; current practice marking rules do not reconstruct every older exam scheme.",
     "Explained inconsistent source questions are excluded from automatic scores.",
-    "OCR powers search; consult the original screenshot for the problem statement."
+    "OCR powers search; consult the original screenshot for the problem statement.",
+    "Numbered source reconciliation and the 26 unreadable compressible-flow statements are documented in source-completeness.json."
   ]
 }

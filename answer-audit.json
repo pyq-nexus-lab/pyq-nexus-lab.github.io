@@ -1,22 +1,23 @@
 {
-  "version": 1,
+  "version": 2,
   "auditedOn": "2026-10-06",
   "coverage": {
-    "total": 2747,
+    "total": 3058,
     "official": 817,
-    "book": 1239,
-    "solved": 485,
+    "book": 1544,
+    "solved": 489,
     "written": 197,
-    "issues": 9,
+    "issues": 11,
     "pending": 0,
-    "keyed": 2541
+    "keyed": 2850
   },
   "method": "Official GATE key matching by year, session, section and question number; printed solved-book tables; independently derived references where no usable key exists. All references identify their provenance in the question UI.",
   "limits": [
     "Derived references are not official marking schemes.",
     "Mains scores require student or teacher assessment of the working; no automatic proof checking.",
     "Nine objective source inconsistencies have explained references and are excluded from automatic marks.",
-    "Conditional answers state missing data, sign conventions or approximations explicitly."
+    "Conditional answers state missing data, sign conventions or approximations explicitly.",
+    "26 source statements Q7.16–7.41 are missing from ESE Volume 1 PDF page 554. They are excluded from question and grading totals; source-completeness.json records the required replacement."
   ],
   "restoredScreenshots": [
     {
@@ -117,11 +118,39 @@
   ],
   "sourceIssues": [
     {
+      "id": "gate-book-7-3",
+      "title": "GATE ME 1993 | Book Q7.3",
+      "answerIssue": "Inconsistent figure and duplicated options in the source; excluded from automatic objective marks.",
+      "referenceAnswer": "Intended worked-solution values: 9.243 MPa and 0.757 MPa",
+      "explanation": "The supplied worked solution on PDF page 172 uses normal stress 2 MPa on the inclined plane and shear 3 MPa, giving σy=2 MPa and σ1,2=5±√18 MPa. In the printed question figure the 2 MPa and 3 MPa inclined labels are interchanged, and options B and C are identical. The intended solution cannot be applied unconditionally to that inconsistent figure. Consult the source clarification before grading."
+    },
+    {
+      "id": "ese-book-5-27",
+      "title": "ESE Prelims 2003 | Book Q5.27",
+      "answerIssue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
+      "referenceAnswer": "D if the displayed moment segments are parabolic; B is possible if they are cubic",
+      "explanation": "Using V=dM/dx and w=−d²M/dx², the negative overhang moment and upward jump in slope require an interior support and a right-end support. Constant-curvature segments correspond to the uniform loading in D; varying curvature corresponds to triangular loading in B. The unscaled sketch does not specify curvature precisely and the supplied answer table marks this item with an asterisk. It is retained as an ambiguous source item rather than forcing a grade."
+    },
+    {
       "id": "ese-prelims-049",
       "title": "49.  ESE Prelims 2019 | Mechanical Engineering – Paper II | Original Q78",
       "answerIssue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
       "referenceAnswer": "Inside diameter ≈575.9 mm for 60 MN m; ≈57.6 mm if the intended moment was 60 kN m",
       "explanation": "For D=3d, I=π[(3d)⁴−d⁴]/64=1.25πd⁴ and c=1.5d. From σ=Mc/I, d³=1.2M/(πσ). The printed M=60×10⁹ N mm gives d≈575.9 mm; none of the options matches. Option C requires a moment one thousand times smaller. The unit correction cannot be silently assumed."
+    },
+    {
+      "id": "ese-book-10-2",
+      "title": "ESE Prelims 1995 | Book Q10.2",
+      "answerIssue": "No correct option in the provided source; excluded from objective scores.",
+      "referenceAnswer": "8 : 5",
+      "explanation": "For the same total load W, point-load deflection is WL³/(48EI) and full-span UDL deflection is 5WL³/(384EI). Their ratio is 8/5. None of the printed options equals 8:5."
+    },
+    {
+      "id": "ese-book-10-15",
+      "title": "ESE Prelims 2015 | Book Q10.15",
+      "answerIssue": "No correct option in the provided source; excluded from objective scores.",
+      "referenceAnswer": "W₁ = 5W/8; σ₁ = 5σ/4",
+      "explanation": "Equate W₁L³/(48EI) to 5WL³/(384EI), giving W₁=5W/8. Point-load moment W₁L/4 divided by UDL moment WL/8 is 5/4. None of the printed pairs is correct."
     },
     {
       "id": "ese-prelims-064",
@@ -131,25 +160,18 @@
       "explanation": "For a cantilever, δ=PL³/(3EI)+wL⁴/(8EI). Use P=444.82×9.81 N, w=1200×9.81 N/m, L=1.524 m, E=206.85×10⁹ Pa and I=3×10⁻⁵ m⁴. This gives 2108.8 μm, outside every option. The printed steel density is also inconsistent. MADE EASY lists A after treating kg loads as force and using a different distributed-load expression; that calculation does not follow the stated SI data."
     },
     {
-      "id": "ese-book-5-27",
-      "title": "ESE 2003 | Book Q5.27",
+      "id": "fluid-mechanics:fluid-ese-book-4-6",
+      "title": "ESE Prelims 1998 | Book Q4.6",
       "answerIssue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
-      "referenceAnswer": "D if the displayed moment segments are parabolic; B is possible if they are cubic",
-      "explanation": "Using V=dM/dx and w=−d²M/dx², the negative overhang moment and upward jump in slope require an interior support and a right-end support. Constant-curvature segments correspond to the uniform loading in D; varying curvature corresponds to triangular loading in B. The unscaled sketch does not specify curvature precisely and the supplied answer table marks this item with an asterisk. It is retained as an ambiguous source item rather than forcing a grade."
+      "referenceAnswer": "The anchoring force cannot be uniquely determined from the supplied data",
+      "explanation": "A neutrally buoyant fully submerged body requires F=ρliquid gV−W=(ρliquid/ρcork−1)W. The liquid specific gravity alone does not specify cork density or displaced volume. If neutral stability rather than neutral buoyancy is intended, the cylindrical dimensions and immersion are also needed. The book table gives 3W, which is absent from the options and requires an unstated density ratio of four."
     },
     {
-      "id": "ese-book-10-2",
-      "title": "ESE 1995 | Book Q10.2",
+      "id": "fluid-mechanics:fluid-ese-book-5-41",
+      "title": "ESE Prelims 2009 | Book Q5.41",
       "answerIssue": "No correct option in the provided source; excluded from objective scores.",
-      "referenceAnswer": "8 : 5",
-      "explanation": "For the same total load W, point-load deflection is WL³/(48EI) and full-span UDL deflection is 5WL³/(384EI). Their ratio is 8/5. None of the printed options equals 8:5."
-    },
-    {
-      "id": "ese-book-10-15",
-      "title": "ESE 2015 | Book Q10.15",
-      "answerIssue": "No correct option in the provided source; excluded from objective scores.",
-      "referenceAnswer": "W₁ = 5W/8; σ₁ = 5σ/4",
-      "explanation": "Equate W₁L³/(48EI) to 5WL³/(384EI), giving W₁=5W/8. Point-load moment W₁L/4 divided by UDL moment WL/8 is 5/4. None of the printed pairs is correct."
+      "referenceAnswer": "All four equations",
+      "explanation": "The listed one-dimensional, two-dimensional incompressible, integral mass-balance and cylindrical-coordinate expressions are all continuity equations under their stated assumptions. The provided answer table marks this item with an asterisk; no listed option includes all four."
     },
     {
       "id": "fluid-mechanics:fm-ese-prelims-069",
@@ -166,27 +188,14 @@
       "explanation": "For the Darcy factor, τwall=fDρV²/8. Thus V=√[8×50/(0.05×1000)]=2.828 m/s. Multiplying by π(0.3)²/4 gives Q=0.1999 m³/s, which is absent from the options. The option near 2.8 represents speed, not volume flow."
     },
     {
-      "id": "fluid-mechanics:fluid-ese-book-4-6",
-      "title": "ESE 1998 | Book Q4.6",
-      "answerIssue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
-      "referenceAnswer": "The anchoring force cannot be uniquely determined from the supplied data",
-      "explanation": "A neutrally buoyant fully submerged body requires F=ρliquid gV−W=(ρliquid/ρcork−1)W. The liquid specific gravity alone does not specify cork density or displaced volume. If neutral stability rather than neutral buoyancy is intended, the cylindrical dimensions and immersion are also needed. The book table gives 3W, which is absent from the options and requires an unstated density ratio of four."
-    },
-    {
-      "id": "fluid-mechanics:fluid-ese-book-5-41",
-      "title": "ESE 2009 | Book Q5.41",
-      "answerIssue": "No correct option in the provided source; excluded from objective scores.",
-      "referenceAnswer": "All four equations",
-      "explanation": "The listed one-dimensional, two-dimensional incompressible, integral mass-balance and cylindrical-coordinate expressions are all continuity equations under their stated assumptions. The provided answer table marks this item with an asterisk; no listed option includes all four."
+      "id": "fluid-mechanics:fluid-ese-hydraulic-book-1-9",
+      "title": "ESE Prelims 1997 | Hydraulic Book Q1.9",
+      "answerIssue": "No correct printed option; excluded from automatic objective marks.",
+      "referenceAnswer": "2707.56 kW (using g=9.81 m/s²)",
+      "explanation": "P = ρgQHη = 1000 × 9.81 × 30 × 10 × 0.92 = 2,707,560 W. None of 295.2, 287.0, 279.0 or 265.2 kW matches. The supplied answer table marks this question with an asterisk. Changing the printed flow or head would change the problem, so it is retained with this explained source defect."
     }
   ],
   "writtenReferences": [
-    {
-      "id": "ese-mains-001",
-      "marks": 6,
-      "title": "1.1   |   2017   |   Paper II   |   Q1(b)(ii)   |   6 Marks   |   Source Page 2",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
     {
       "id": "ese-mains-002",
       "marks": 20,
@@ -200,52 +209,256 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
+      "id": "cse-mains-007",
+      "marks": 10,
+      "title": "2.4  |  2021  |  Mechanical Engineering Paper I  |  Q1(e)  |  Source PDF p.3",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
       "id": "ese-mains-004",
       "marks": 12,
       "title": "1.4   |   2025   |   Paper II   |   Q1(a)   |   12 Marks   |   Source Page 2",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-005",
-      "marks": 12,
-      "title": "2.1   |   2019   |   Paper II   |   Q1(b)   |   12 Marks   |   Source Page 2",
+      "id": "cse-mains-008",
+      "marks": 20,
+      "title": "2.5  |  2023  |  Mechanical Engineering Paper I  |  Q2(a)  |  Source PDF p.4",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-010",
+      "marks": 10,
+      "title": "2.7  |  2025  |  Mechanical Engineering Paper I  |  Q1(b)  |  Source PDF p.3",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-004",
+      "marks": 10,
+      "title": "2.1  |  2016  |  Mechanical Engineering Paper I  |  Q1(b)  |  Source PDF p.2",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-009",
+      "marks": 10,
+      "title": "2.6  |  2024  |  Mechanical Engineering Paper I  |  Q1(c)  |  Source PDF p.3",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-062",
+      "marks": 10,
+      "title": "12.1   |   2017   |   Paper II   |   Q7(a)(i)   |   10 Marks   |   Source Page 10",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-006",
-      "marks": 12,
-      "title": "2.2   |   2025   |   Paper II   |   Q1(c)   |   12 Marks   |   Source Page 2",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-007",
+      "id": "ese-mains-001",
       "marks": 6,
-      "title": "3.1   |   2017   |   Paper II   |   Q1(b)(i)   |   6 Marks   |   Source Page 2",
+      "title": "1.1   |   2017   |   Paper II   |   Q1(b)(ii)   |   6 Marks   |   Source Page 2",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-008",
+      "id": "cse-mains-005",
+      "marks": 10,
+      "title": "2.2  |  2017  |  Mechanical Engineering Paper I  |  Q4(b)  |  Source PDF p.6",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-006",
+      "marks": 10,
+      "title": "2.3  |  2019  |  Mechanical Engineering Paper I  |  Q1(d)  |  Source PDF p.4",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-064",
+      "marks": 8,
+      "title": "12.3   |   2023   |   Paper II   |   Q6(b)(ii)   |   8 Marks   |   Source Page 7",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-065",
       "marks": 12,
-      "title": "3.2   |   2020   |   Paper II   |   Q1(b)   |   12 Marks   |   Source Page 2",
+      "title": "12.4   |   2025   |   Paper II   |   Q5(b)   |   12 Marks   |   Source Page 7",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-009",
+      "id": "ese-mains-063",
       "marks": 20,
-      "title": "3.3   |   2023   |   Paper II   |   Q4(a)   |   20 Marks   |   Source Page 4",
+      "title": "12.2   |   2022   |   Paper II   |   Q6(b)(i)-(ii)   |   20 Marks   |   Source Page 10",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-010",
-      "marks": 20,
-      "title": "3.4   |   2025   |   Paper II   |   Q4(a)   |   20 Marks   |   Source Page 5",
+      "id": "ese-mains-066",
+      "marks": 10,
+      "title": "12.5   |   2026   |   Paper II   |   Q6(a)(ii)   |   10 Marks   |   Source Page 6",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-011",
+      "id": "cse-mains-011",
+      "marks": 10,
+      "title": "3.1  |  2016  |  Mechanical Engineering Paper I  |  Q3(a)  |  Source PDF p.4",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-021",
       "marks": 20,
-      "title": "3.5   |   2026   |   Paper II   |   Q2(a)   |   20 Marks   |   Source Page 3",
+      "title": "3.11  |  2023  |  Mechanical Engineering Paper I  |  Q3(b)  |  Source PDF p.6",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-012",
+      "marks": 10,
+      "title": "3.2  |  2017  |  Mechanical Engineering Paper I  |  Q1(b)  |  Source PDF p.2",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-013",
+      "marks": 15,
+      "title": "3.3  |  2017  |  Mechanical Engineering Paper I  |  Q2(a)  |  Source PDF p.4",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-015",
+      "marks": 10,
+      "title": "3.5  |  2018  |  Mechanical Engineering Paper I  |  Q1(b)  |  Source PDF p.4",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-016",
+      "marks": 10,
+      "title": "3.6  |  2019  |  Mechanical Engineering Paper I  |  Q1(b)  |  Source PDF p.3",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-017",
+      "marks": 5,
+      "title": "3.7  |  2020  |  Mechanical Engineering Paper I  |  Q2(a)  |  Source PDF p.5",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-020",
+      "marks": 15,
+      "title": "3.10  |  2022  |  Mechanical Engineering Paper I  |  Q2(a)  |  Source PDF p.4",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-040",
+      "marks": 20,
+      "title": "7.8   |   2026   |   Paper II   |   Q3(b)   |   20 Marks   |   Source Page 4",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-033",
+      "marks": 10,
+      "title": "7.1   |   2017   |   Paper II   |   Q3(a)(ii)   |   10 Marks   |   Source Page 4",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-051",
+      "marks": 20,
+      "title": "10.1   |   2018   |   Paper II   |   Q8(b)   |   20 Marks   |   Source Page 11",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-052",
+      "marks": 10,
+      "title": "10.2   |   2019   |   Paper II   |   Q6(c)(ii)   |   10 Marks   |   Source Page 7",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-053",
+      "marks": 20,
+      "title": "10.3   |   2025   |   Paper II   |   Q8(c)   |   20 Marks   |   Source Page 11",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-045",
+      "marks": 10,
+      "title": "7.6  |  2025  |  Mechanical Engineering Paper I  |  Q1(c)  |  Source PDF p.4",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-040",
+      "marks": 10,
+      "title": "7.1  |  2017  |  Mechanical Engineering Paper I  |  Q1(c)  |  Source PDF p.3",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-043",
+      "marks": 8,
+      "title": "7.4  |  2020  |  Mechanical Engineering Paper I  |  Q4(a)  |  Source PDF p.8",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-041",
+      "marks": 20,
+      "title": "7.2  |  2018  |  Mechanical Engineering Paper I  |  Q4(a)  |  Source PDF p.8",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-042",
+      "marks": 15,
+      "title": "7.3  |  2019  |  Mechanical Engineering Paper I  |  Q4(b)  |  Source PDF p.9",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-044",
+      "marks": 10,
+      "title": "7.5  |  2022  |  Mechanical Engineering Paper I  |  Q3(a)  |  Source PDF p.5",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-041",
+      "marks": 20,
+      "title": "8.1   |   2019   |   Paper II   |   Q2(c)   |   20 Marks   |   Source Page 4",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-042",
+      "marks": 20,
+      "title": "8.2   |   2024   |   Paper II   |   Q4(a)   |   20 Marks   |   Source Page 5",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-025",
+      "marks": 5,
+      "title": "4.1  |  2016  |  Mechanical Engineering Paper I  |  Q2(b)  |  Source PDF p.4",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-028",
+      "marks": 20,
+      "title": "4.4  |  2021  |  Mechanical Engineering Paper I  |  Q2(c)  |  Source PDF p.5",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-018",
+      "marks": 12,
+      "title": "4.7   |   2022   |   Paper II   |   Q1(b)   |   12 Marks   |   Source Page 2",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-026",
+      "marks": 20,
+      "title": "4.2  |  2019  |  Mechanical Engineering Paper I  |  Q2(a)  |  Source PDF p.5",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-027",
+      "marks": 20,
+      "title": "4.3  |  2020  |  Mechanical Engineering Paper I  |  Q3(a)  |  Source PDF p.7",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-030",
+      "marks": 20,
+      "title": "4.6  |  2024  |  Mechanical Engineering Paper I  |  Q3(a)  |  Source PDF p.5",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-031",
+      "marks": 20,
+      "title": "4.7  |  2025  |  Mechanical Engineering Paper I  |  Q3(b)  |  Source PDF p.9",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
       "id": "ese-mains-012",
@@ -254,39 +467,9 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-013",
-      "marks": 12,
-      "title": "4.2   |   2018   |   Paper II   |   Q1(b)   |   12 Marks   |   Source Page 2",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-014",
-      "marks": 15,
-      "title": "4.3   |   2018   |   Paper II   |   Q3(b)   |   15 Marks   |   Source Page 5",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
       "id": "ese-mains-015",
       "marks": 10,
       "title": "4.4   |   2019   |   Paper II   |   Q3(d)   |   10 Marks   |   Source Page 4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-016",
-      "marks": 20,
-      "title": "4.5   |   2020   |   Paper II   |   Q4(b)   |   20 Marks   |   Source Page 6",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-017",
-      "marks": 12,
-      "title": "4.6   |   2021   |   Paper II   |   Q1(a)   |   12 Marks   |   Source Page 2",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-018",
-      "marks": 12,
-      "title": "4.7   |   2022   |   Paper II   |   Q1(b)   |   12 Marks   |   Source Page 2",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
@@ -306,6 +489,174 @@
       "marks": 20,
       "title": "4.10   |   2025   |   Paper II   |   Q3(a)   |   20 Marks   |   Source Page 4",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-017",
+      "marks": 12,
+      "title": "4.6   |   2021   |   Paper II   |   Q1(a)   |   12 Marks   |   Source Page 2",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-029",
+      "marks": 20,
+      "title": "4.5  |  2022  |  Mechanical Engineering Paper I  |  Q3(b)  |  Source PDF p.6",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-013",
+      "marks": 12,
+      "title": "4.2   |   2018   |   Paper II   |   Q1(b)   |   12 Marks   |   Source Page 2",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-014",
+      "marks": 15,
+      "title": "4.3   |   2018   |   Paper II   |   Q3(b)   |   15 Marks   |   Source Page 5",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-016",
+      "marks": 20,
+      "title": "4.5   |   2020   |   Paper II   |   Q4(b)   |   20 Marks   |   Source Page 6",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-001",
+      "marks": 10,
+      "title": "1.1  |  2016  |  Mechanical Engineering Paper I  |  Q1(a)  |  Source PDF p.2",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-002",
+      "marks": 10,
+      "title": "1.2  |  2020  |  Mechanical Engineering Paper I  |  Q2(c)  |  Source PDF p.6",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-003",
+      "marks": 15,
+      "title": "1.3  |  2021  |  Mechanical Engineering Paper I  |  Q4(b)  |  Source PDF p.6",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-008",
+      "marks": 12,
+      "title": "3.2   |   2020   |   Paper II   |   Q1(b)   |   12 Marks   |   Source Page 2",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-010",
+      "marks": 20,
+      "title": "3.4   |   2025   |   Paper II   |   Q4(a)   |   20 Marks   |   Source Page 5",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-007",
+      "marks": 6,
+      "title": "3.1   |   2017   |   Paper II   |   Q1(b)(i)   |   6 Marks   |   Source Page 2",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-009",
+      "marks": 20,
+      "title": "3.3   |   2023   |   Paper II   |   Q4(a)   |   20 Marks   |   Source Page 4",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-011",
+      "marks": 20,
+      "title": "3.5   |   2026   |   Paper II   |   Q2(a)   |   20 Marks   |   Source Page 3",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-037",
+      "marks": 20,
+      "title": "6.2  |  2017  |  Mechanical Engineering Paper I  |  Q3(a)  |  Source PDF p.5",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-032",
+      "marks": 10,
+      "title": "6.5   |   2026   |   Paper II   |   Q6(b)(ii)   |   10 Marks   |   Source Page 7",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-031",
+      "marks": 12,
+      "title": "6.4   |   2023   |   Paper II   |   Q1(a)   |   12 Marks   |   Source Page 2",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-029",
+      "marks": 15,
+      "title": "6.2   |   2018   |   Paper II   |   Q3(d)   |   15 Marks   |   Source Page 6",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-036",
+      "marks": 10,
+      "title": "6.1  |  2016  |  Mechanical Engineering Paper I  |  Q4(a)  |  Source PDF p.5",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-038",
+      "marks": 10,
+      "title": "6.3  |  2018  |  Mechanical Engineering Paper I  |  Q1(c)  |  Source PDF p.4",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-039",
+      "marks": 20,
+      "title": "6.4  |  2025  |  Mechanical Engineering Paper I  |  Q4(b)  |  Source PDF p.10",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-028",
+      "marks": 20,
+      "title": "6.1   |   2017   |   Paper II   |   Q4(a)   |   20 Marks   |   Source Page 5",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-030",
+      "marks": 12,
+      "title": "6.3   |   2019   |   Paper II   |   Q1(e)   |   12 Marks   |   Source Page 3",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-006",
+      "marks": 12,
+      "title": "2.2   |   2025   |   Paper II   |   Q1(c)   |   12 Marks   |   Source Page 2",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-005",
+      "marks": 12,
+      "title": "2.1   |   2019   |   Paper II   |   Q1(b)   |   12 Marks   |   Source Page 2",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-032",
+      "marks": 20,
+      "title": "5.1  |  2016  |  Mechanical Engineering Paper I  |  Q3(b)  |  Source PDF p.5",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-026",
+      "marks": 20,
+      "title": "5.5   |   2022   |   Paper II   |   Q4(a)   |   20 Marks   |   Source Page 7",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-033",
+      "marks": 20,
+      "title": "5.2  |  2018  |  Mechanical Engineering Paper I  |  Q3(a)  |  Source PDF p.6",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-034",
+      "marks": 20,
+      "title": "5.3  |  2019  |  Mechanical Engineering Paper I  |  Q3(a)  |  Source PDF p.7",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
       "id": "ese-mains-022",
@@ -332,52 +683,82 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-026",
-      "marks": 20,
-      "title": "5.5   |   2022   |   Paper II   |   Q4(a)   |   20 Marks   |   Source Page 7",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
       "id": "ese-mains-027",
       "marks": 20,
       "title": "5.6   |   2023   |   Paper II   |   Q3(a)   |   20 Marks   |   Source Page 3",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-028",
+      "id": "cse-mains-035",
       "marks": 20,
-      "title": "6.1   |   2017   |   Paper II   |   Q4(a)   |   20 Marks   |   Source Page 5",
+      "title": "5.4  |  2024  |  Mechanical Engineering Paper I  |  Q4(b)  |  Source PDF p.7",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-037",
+      "marks": 12,
+      "title": "7.5   |   2023   |   Paper II   |   Q1(e)   |   12 Marks   |   Source Page 2",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-029",
+      "id": "cse-mains-018",
       "marks": 15,
-      "title": "6.2   |   2018   |   Paper II   |   Q3(d)   |   15 Marks   |   Source Page 6",
+      "title": "3.8  |  2021  |  Mechanical Engineering Paper I  |  Q3(b)  |  Source PDF p.5",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-055",
+      "marks": 20,
+      "title": "11.2   |   2020   |   Paper II   |   Q2(c)   |   20 Marks   |   Source Page 4",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-030",
+      "id": "ese-mains-057",
       "marks": 12,
-      "title": "6.3   |   2019   |   Paper II   |   Q1(e)   |   12 Marks   |   Source Page 3",
+      "title": "11.4   |   2021   |   Paper II   |   Q1(e)   |   12 Marks   |   Source Page 2",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-031",
+      "id": "ese-mains-060",
+      "marks": 20,
+      "title": "11.7   |   2026   |   Paper II   |   Q4(a)   |   20 Marks   |   Source Page 4",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-014",
+      "marks": 15,
+      "title": "3.4  |  2017  |  Mechanical Engineering Paper I  |  Q2(b)  |  Source PDF p.4",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-022",
+      "marks": 20,
+      "title": "3.12  |  2023  |  Mechanical Engineering Paper I  |  Q4(b)  |  Source PDF p.8",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-036",
       "marks": 12,
-      "title": "6.4   |   2023   |   Paper II   |   Q1(a)   |   12 Marks   |   Source Page 2",
+      "title": "7.4   |   2022   |   Paper II   |   Q1(e)   |   12 Marks   |   Source Page 3",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-032",
-      "marks": 10,
-      "title": "6.5   |   2026   |   Paper II   |   Q6(b)(ii)   |   10 Marks   |   Source Page 7",
+      "id": "ese-mains-039",
+      "marks": 12,
+      "title": "7.7   |   2025   |   Paper II   |   Q1(e)   |   12 Marks   |   Source Page 3",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-033",
+      "id": "cse-mains-019",
       "marks": 10,
-      "title": "7.1   |   2017   |   Paper II   |   Q3(a)(ii)   |   10 Marks   |   Source Page 4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+      "title": "3.9  |  2022  |  Mechanical Engineering Paper I  |  Q1(b)  |  Source PDF p.2",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "cse-mains-024",
+      "marks": 10,
+      "title": "3.14  |  2025  |  Mechanical Engineering Paper I  |  Q2(a)(ii)  |  Source PDF p.6",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
       "id": "ese-mains-034",
@@ -392,69 +773,27 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-036",
-      "marks": 12,
-      "title": "7.4   |   2022   |   Paper II   |   Q1(e)   |   12 Marks   |   Source Page 3",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-037",
-      "marks": 12,
-      "title": "7.5   |   2023   |   Paper II   |   Q1(e)   |   12 Marks   |   Source Page 2",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
       "id": "ese-mains-038",
       "marks": 12,
       "title": "7.6   |   2024   |   Paper II   |   Q1(e)   |   12 Marks   |   Source Page 3",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-039",
+      "id": "ese-mains-069",
+      "marks": 20,
+      "title": "13.3   |   2026   |   Paper II   |   Q2(b)   |   20 Marks   |   Source Page 3",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-068",
       "marks": 12,
-      "title": "7.7   |   2025   |   Paper II   |   Q1(e)   |   12 Marks   |   Source Page 3",
+      "title": "13.2   |   2026   |   Paper II   |   Q1(b)   |   12 Marks   |   Source Page 2",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-040",
+      "id": "ese-mains-067",
       "marks": 20,
-      "title": "7.8   |   2026   |   Paper II   |   Q3(b)   |   20 Marks   |   Source Page 4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-041",
-      "marks": 20,
-      "title": "8.1   |   2019   |   Paper II   |   Q2(c)   |   20 Marks   |   Source Page 4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-042",
-      "marks": 20,
-      "title": "8.2   |   2024   |   Paper II   |   Q4(a)   |   20 Marks   |   Source Page 5",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-043",
-      "marks": 20,
-      "title": "9.1   |   2018   |   Paper II   |   Q4(c)   |   20 Marks   |   Source Page 6",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-044",
-      "marks": 20,
-      "title": "9.2   |   2019   |   Paper II   |   Q4(b)   |   20 Marks   |   Source Page 5",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-045",
-      "marks": 20,
-      "title": "9.3   |   2020   |   Paper II   |   Q4(a)   |   20 Marks   |   Source Page 6",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-046",
-      "marks": 20,
-      "title": "9.4   |   2021   |   Paper II   |   Q4(c)   |   20 Marks   |   Source Page 6",
+      "title": "13.1   |   2025   |   Paper II   |   Q2(a)   |   20 Marks   |   Source Page 3",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
@@ -464,15 +803,27 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
+      "id": "ese-mains-043",
+      "marks": 20,
+      "title": "9.1   |   2018   |   Paper II   |   Q4(c)   |   20 Marks   |   Source Page 6",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
       "id": "ese-mains-048",
       "marks": 10,
       "title": "9.6   |   2024   |   Paper II   |   Q3(c)(i)   |   10 Marks   |   Source Page 4",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-049",
+      "id": "ese-mains-044",
       "marks": 20,
-      "title": "9.7   |   2025   |   Paper II   |   Q3(c)   |   20 Marks   |   Source Page 5",
+      "title": "9.2   |   2019   |   Paper II   |   Q4(b)   |   20 Marks   |   Source Page 5",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+    },
+    {
+      "id": "ese-mains-046",
+      "marks": 20,
+      "title": "9.4   |   2021   |   Paper II   |   Q4(c)   |   20 Marks   |   Source Page 6",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
@@ -482,34 +833,22 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-051",
+      "id": "ese-mains-045",
       "marks": 20,
-      "title": "10.1   |   2018   |   Paper II   |   Q8(b)   |   20 Marks   |   Source Page 11",
+      "title": "9.3   |   2020   |   Paper II   |   Q4(a)   |   20 Marks   |   Source Page 6",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-052",
-      "marks": 10,
-      "title": "10.2   |   2019   |   Paper II   |   Q6(c)(ii)   |   10 Marks   |   Source Page 7",
+      "id": "ese-mains-049",
+      "marks": 20,
+      "title": "9.7   |   2025   |   Paper II   |   Q3(c)   |   20 Marks   |   Source Page 5",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-053",
+      "id": "cse-mains-023",
       "marks": 20,
-      "title": "10.3   |   2025   |   Paper II   |   Q8(c)   |   20 Marks   |   Source Page 11",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-054",
-      "marks": 20,
-      "title": "11.1   |   2017   |   Paper II   |   Q2(c)   |   20 Marks   |   Source Page 3",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-055",
-      "marks": 20,
-      "title": "11.2   |   2020   |   Paper II   |   Q2(c)   |   20 Marks   |   Source Page 4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
+      "title": "3.13  |  2024  |  Mechanical Engineering Paper I  |  Q3(b)  |  Source PDF p.6",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
       "id": "ese-mains-056",
@@ -518,9 +857,9 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-057",
-      "marks": 12,
-      "title": "11.4   |   2021   |   Paper II   |   Q1(e)   |   12 Marks   |   Source Page 2",
+      "id": "ese-mains-054",
+      "marks": 20,
+      "title": "11.1   |   2017   |   Paper II   |   Q2(c)   |   20 Marks   |   Source Page 3",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
@@ -536,333 +875,15 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-060",
-      "marks": 20,
-      "title": "11.7   |   2026   |   Paper II   |   Q4(a)   |   20 Marks   |   Source Page 4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
       "id": "ese-mains-061",
       "marks": 20,
       "title": "11.8   |   2026   |   Paper II   |   Q4(c)   |   20 Marks   |   Source Page 5",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
     },
     {
-      "id": "ese-mains-062",
+      "id": "cse-mains-050",
       "marks": 10,
-      "title": "12.1   |   2017   |   Paper II   |   Q7(a)(i)   |   10 Marks   |   Source Page 10",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-063",
-      "marks": 20,
-      "title": "12.2   |   2022   |   Paper II   |   Q6(b)(i)-(ii)   |   20 Marks   |   Source Page 10",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-064",
-      "marks": 8,
-      "title": "12.3   |   2023   |   Paper II   |   Q6(b)(ii)   |   8 Marks   |   Source Page 7",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-065",
-      "marks": 12,
-      "title": "12.4   |   2025   |   Paper II   |   Q5(b)   |   12 Marks   |   Source Page 7",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-066",
-      "marks": 10,
-      "title": "12.5   |   2026   |   Paper II   |   Q6(a)(ii)   |   10 Marks   |   Source Page 6",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-067",
-      "marks": 20,
-      "title": "13.1   |   2025   |   Paper II   |   Q2(a)   |   20 Marks   |   Source Page 3",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-068",
-      "marks": 12,
-      "title": "13.2   |   2026   |   Paper II   |   Q1(b)   |   12 Marks   |   Source Page 2",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "ese-mains-069",
-      "marks": 20,
-      "title": "13.3   |   2026   |   Paper II   |   Q2(b)   |   20 Marks   |   Source Page 3",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; this is not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-001",
-      "marks": 10,
-      "title": "1.1  |  2016  |  Mechanical Engineering Paper I  |  Q1(a)  |  Source PDF p.2",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-002",
-      "marks": 10,
-      "title": "1.2  |  2020  |  Mechanical Engineering Paper I  |  Q2(c)  |  Source PDF p.6",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-003",
-      "marks": 15,
-      "title": "1.3  |  2021  |  Mechanical Engineering Paper I  |  Q4(b)  |  Source PDF p.6",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-004",
-      "marks": 10,
-      "title": "2.1  |  2016  |  Mechanical Engineering Paper I  |  Q1(b)  |  Source PDF p.2",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-005",
-      "marks": 10,
-      "title": "2.2  |  2017  |  Mechanical Engineering Paper I  |  Q4(b)  |  Source PDF p.6",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-006",
-      "marks": 10,
-      "title": "2.3  |  2019  |  Mechanical Engineering Paper I  |  Q1(d)  |  Source PDF p.4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-007",
-      "marks": 10,
-      "title": "2.4  |  2021  |  Mechanical Engineering Paper I  |  Q1(e)  |  Source PDF p.3",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-008",
-      "marks": 20,
-      "title": "2.5  |  2023  |  Mechanical Engineering Paper I  |  Q2(a)  |  Source PDF p.4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-009",
-      "marks": 10,
-      "title": "2.6  |  2024  |  Mechanical Engineering Paper I  |  Q1(c)  |  Source PDF p.3",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-010",
-      "marks": 10,
-      "title": "2.7  |  2025  |  Mechanical Engineering Paper I  |  Q1(b)  |  Source PDF p.3",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-011",
-      "marks": 10,
-      "title": "3.1  |  2016  |  Mechanical Engineering Paper I  |  Q3(a)  |  Source PDF p.4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-012",
-      "marks": 10,
-      "title": "3.2  |  2017  |  Mechanical Engineering Paper I  |  Q1(b)  |  Source PDF p.2",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-013",
-      "marks": 15,
-      "title": "3.3  |  2017  |  Mechanical Engineering Paper I  |  Q2(a)  |  Source PDF p.4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-014",
-      "marks": 15,
-      "title": "3.4  |  2017  |  Mechanical Engineering Paper I  |  Q2(b)  |  Source PDF p.4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-015",
-      "marks": 10,
-      "title": "3.5  |  2018  |  Mechanical Engineering Paper I  |  Q1(b)  |  Source PDF p.4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-016",
-      "marks": 10,
-      "title": "3.6  |  2019  |  Mechanical Engineering Paper I  |  Q1(b)  |  Source PDF p.3",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-017",
-      "marks": 5,
-      "title": "3.7  |  2020  |  Mechanical Engineering Paper I  |  Q2(a)  |  Source PDF p.5",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-018",
-      "marks": 15,
-      "title": "3.8  |  2021  |  Mechanical Engineering Paper I  |  Q3(b)  |  Source PDF p.5",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-019",
-      "marks": 10,
-      "title": "3.9  |  2022  |  Mechanical Engineering Paper I  |  Q1(b)  |  Source PDF p.2",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-020",
-      "marks": 15,
-      "title": "3.10  |  2022  |  Mechanical Engineering Paper I  |  Q2(a)  |  Source PDF p.4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-021",
-      "marks": 20,
-      "title": "3.11  |  2023  |  Mechanical Engineering Paper I  |  Q3(b)  |  Source PDF p.6",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-022",
-      "marks": 20,
-      "title": "3.12  |  2023  |  Mechanical Engineering Paper I  |  Q4(b)  |  Source PDF p.8",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-023",
-      "marks": 20,
-      "title": "3.13  |  2024  |  Mechanical Engineering Paper I  |  Q3(b)  |  Source PDF p.6",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-024",
-      "marks": 10,
-      "title": "3.14  |  2025  |  Mechanical Engineering Paper I  |  Q2(a)(ii)  |  Source PDF p.6",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-025",
-      "marks": 5,
-      "title": "4.1  |  2016  |  Mechanical Engineering Paper I  |  Q2(b)  |  Source PDF p.4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-026",
-      "marks": 20,
-      "title": "4.2  |  2019  |  Mechanical Engineering Paper I  |  Q2(a)  |  Source PDF p.5",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-027",
-      "marks": 20,
-      "title": "4.3  |  2020  |  Mechanical Engineering Paper I  |  Q3(a)  |  Source PDF p.7",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-028",
-      "marks": 20,
-      "title": "4.4  |  2021  |  Mechanical Engineering Paper I  |  Q2(c)  |  Source PDF p.5",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-029",
-      "marks": 20,
-      "title": "4.5  |  2022  |  Mechanical Engineering Paper I  |  Q3(b)  |  Source PDF p.6",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-030",
-      "marks": 20,
-      "title": "4.6  |  2024  |  Mechanical Engineering Paper I  |  Q3(a)  |  Source PDF p.5",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-031",
-      "marks": 20,
-      "title": "4.7  |  2025  |  Mechanical Engineering Paper I  |  Q3(b)  |  Source PDF p.9",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-032",
-      "marks": 20,
-      "title": "5.1  |  2016  |  Mechanical Engineering Paper I  |  Q3(b)  |  Source PDF p.5",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-033",
-      "marks": 20,
-      "title": "5.2  |  2018  |  Mechanical Engineering Paper I  |  Q3(a)  |  Source PDF p.6",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-034",
-      "marks": 20,
-      "title": "5.3  |  2019  |  Mechanical Engineering Paper I  |  Q3(a)  |  Source PDF p.7",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-035",
-      "marks": 20,
-      "title": "5.4  |  2024  |  Mechanical Engineering Paper I  |  Q4(b)  |  Source PDF p.7",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-036",
-      "marks": 10,
-      "title": "6.1  |  2016  |  Mechanical Engineering Paper I  |  Q4(a)  |  Source PDF p.5",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-037",
-      "marks": 20,
-      "title": "6.2  |  2017  |  Mechanical Engineering Paper I  |  Q3(a)  |  Source PDF p.5",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-038",
-      "marks": 10,
-      "title": "6.3  |  2018  |  Mechanical Engineering Paper I  |  Q1(c)  |  Source PDF p.4",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-039",
-      "marks": 20,
-      "title": "6.4  |  2025  |  Mechanical Engineering Paper I  |  Q4(b)  |  Source PDF p.10",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-040",
-      "marks": 10,
-      "title": "7.1  |  2017  |  Mechanical Engineering Paper I  |  Q1(c)  |  Source PDF p.3",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-041",
-      "marks": 20,
-      "title": "7.2  |  2018  |  Mechanical Engineering Paper I  |  Q4(a)  |  Source PDF p.8",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-042",
-      "marks": 15,
-      "title": "7.3  |  2019  |  Mechanical Engineering Paper I  |  Q4(b)  |  Source PDF p.9",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-043",
-      "marks": 8,
-      "title": "7.4  |  2020  |  Mechanical Engineering Paper I  |  Q4(a)  |  Source PDF p.8",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-044",
-      "marks": 10,
-      "title": "7.5  |  2022  |  Mechanical Engineering Paper I  |  Q3(a)  |  Source PDF p.5",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-045",
-      "marks": 10,
-      "title": "7.6  |  2025  |  Mechanical Engineering Paper I  |  Q1(c)  |  Source PDF p.4",
+      "title": "8.5  |  2024  |  Mechanical Engineering Paper I  |  Q1(b)  |  Source PDF p.2",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -881,12 +902,6 @@
       "id": "cse-mains-049",
       "marks": 10,
       "title": "8.4  |  2023  |  Mechanical Engineering Paper I  |  Q1(e)  |  Source PDF p.3",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "cse-mains-050",
-      "marks": 10,
-      "title": "8.5  |  2024  |  Mechanical Engineering Paper I  |  Q1(b)  |  Source PDF p.2",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -914,15 +929,9 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-005",
-      "marks": 12,
-      "title": "2.3  |  2022 ESE Mains — Mechanical Engineering Paper-I — Q1(a)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-006",
-      "marks": 12,
-      "title": "2.4  |  2025 ESE Mains — Mechanical Engineering Paper-I — Q1(a)",
+      "id": "fluid-mechanics:fm-ese-mains-008",
+      "marks": 10,
+      "title": "2.6  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q4(b)(i)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -932,15 +941,15 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-008",
-      "marks": 10,
-      "title": "2.6  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q4(b)(i)",
+      "id": "fluid-mechanics:fm-ese-mains-005",
+      "marks": 12,
+      "title": "2.3  |  2022 ESE Mains — Mechanical Engineering Paper-I — Q1(a)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-009",
-      "marks": 12,
-      "title": "3.1  |  2020 ESE Mains — Mechanical Engineering Paper-I — Q1(a)",
+      "id": "fluid-mechanics:fm-ese-mains-013",
+      "marks": 10,
+      "title": "3.5  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q4(b)(ii)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -962,9 +971,9 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-013",
-      "marks": 10,
-      "title": "3.5  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q4(b)(ii)",
+      "id": "fluid-mechanics:fm-ese-mains-009",
+      "marks": 12,
+      "title": "3.1  |  2020 ESE Mains — Mechanical Engineering Paper-I — Q1(a)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -974,21 +983,15 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-015",
-      "marks": 20,
-      "title": "5.1  |  2019 ESE Mains — Mechanical Engineering Paper-I — Q2(a)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
       "id": "fluid-mechanics:fm-ese-mains-016",
       "marks": 12,
       "title": "5.2  |  2025 ESE Mains — Mechanical Engineering Paper-I — Q1(b)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-017",
-      "marks": 10,
-      "title": "5.3  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q2(a)(i)",
+      "id": "fluid-mechanics:fm-ese-mains-015",
+      "marks": 20,
+      "title": "5.1  |  2019 ESE Mains — Mechanical Engineering Paper-I — Q2(a)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -998,93 +1001,9 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-019",
+      "id": "fluid-mechanics:fm-ese-mains-017",
       "marks": 10,
-      "title": "6.2  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q2(a)(ii)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-020",
-      "marks": 20,
-      "title": "7.1  |  2017 ESE Mains — Mechanical Engineering Paper-I — Q3(b)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-021",
-      "marks": 20,
-      "title": "7.2  |  2018 ESE Mains — Mechanical Engineering Paper-I — Q2(a)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-022",
-      "marks": 20,
-      "title": "7.3  |  2024 ESE Mains — Mechanical Engineering Paper-I — Q3(a)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-023",
-      "marks": 20,
-      "title": "8.1  |  2023 ESE Mains — Mechanical Engineering Paper-I — Q2(a)(i)-(ii)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-024",
-      "marks": 12,
-      "title": "8.2  |  2024 ESE Mains — Mechanical Engineering Paper-I — Q1(b)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-025",
-      "marks": 12,
-      "title": "8.3  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q1(a)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-026",
-      "marks": 12,
-      "title": "9.1  |  2017 ESE Mains — Mechanical Engineering Paper-I — Q1(c)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-027",
-      "marks": 20,
-      "title": "9.2  |  2019 ESE Mains — Mechanical Engineering Paper-I — Q2(c)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-028",
-      "marks": 12,
-      "title": "9.3  |  2021 ESE Mains — Mechanical Engineering Paper-I — Q1(a)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-029",
-      "marks": 20,
-      "title": "9.4  |  2023 ESE Mains — Mechanical Engineering Paper-I — Q3(b)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-030",
-      "marks": 14,
-      "title": "9.5  |  2024 ESE Mains — Mechanical Engineering Paper-I — Q2(a)(i)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-031",
-      "marks": 6,
-      "title": "9.6  |  2024 ESE Mains — Mechanical Engineering Paper-I — Q2(a)(ii)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-032",
-      "marks": 20,
-      "title": "9.7  |  2025 ESE Mains — Mechanical Engineering Paper-I — Q4(b)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-033",
-      "marks": 12,
-      "title": "10.1  |  2018 ESE Mains — Mechanical Engineering Paper-I — Q1(a)",
+      "title": "5.3  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q2(a)(i)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -1094,9 +1013,9 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-035",
+      "id": "fluid-mechanics:fm-ese-mains-033",
       "marks": 12,
-      "title": "10.3  |  2019 ESE Mains — Mechanical Engineering Paper-I — Q1(a)",
+      "title": "10.1  |  2018 ESE Mains — Mechanical Engineering Paper-I — Q1(a)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -1112,15 +1031,99 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-038",
-      "marks": 6,
-      "title": "11.1  |  2020 ESE Mains — Mechanical Engineering Paper-I — Q3(a)(i)",
+      "id": "fluid-mechanics:fm-ese-mains-035",
+      "marks": 12,
+      "title": "10.3  |  2019 ESE Mains — Mechanical Engineering Paper-I — Q1(a)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-039",
+      "id": "fluid-mechanics:fm-ese-mains-006",
       "marks": 12,
-      "title": "12.1  |  2019 ESE Mains — Mechanical Engineering Paper-I — Q5(a)",
+      "title": "2.4  |  2025 ESE Mains — Mechanical Engineering Paper-I — Q1(a)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-022",
+      "marks": 20,
+      "title": "7.3  |  2024 ESE Mains — Mechanical Engineering Paper-I — Q3(a)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-020",
+      "marks": 20,
+      "title": "7.1  |  2017 ESE Mains — Mechanical Engineering Paper-I — Q3(b)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-021",
+      "marks": 20,
+      "title": "7.2  |  2018 ESE Mains — Mechanical Engineering Paper-I — Q2(a)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-025",
+      "marks": 12,
+      "title": "8.3  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q1(a)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-024",
+      "marks": 12,
+      "title": "8.2  |  2024 ESE Mains — Mechanical Engineering Paper-I — Q1(b)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-023",
+      "marks": 20,
+      "title": "8.1  |  2023 ESE Mains — Mechanical Engineering Paper-I — Q2(a)(i)-(ii)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-026",
+      "marks": 12,
+      "title": "9.1  |  2017 ESE Mains — Mechanical Engineering Paper-I — Q1(c)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-030",
+      "marks": 14,
+      "title": "9.5  |  2024 ESE Mains — Mechanical Engineering Paper-I — Q2(a)(i)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-027",
+      "marks": 20,
+      "title": "9.2  |  2019 ESE Mains — Mechanical Engineering Paper-I — Q2(c)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-029",
+      "marks": 20,
+      "title": "9.4  |  2023 ESE Mains — Mechanical Engineering Paper-I — Q3(b)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-031",
+      "marks": 6,
+      "title": "9.6  |  2024 ESE Mains — Mechanical Engineering Paper-I — Q2(a)(ii)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-032",
+      "marks": 20,
+      "title": "9.7  |  2025 ESE Mains — Mechanical Engineering Paper-I — Q4(b)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-028",
+      "marks": 12,
+      "title": "9.3  |  2021 ESE Mains — Mechanical Engineering Paper-I — Q1(a)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-019",
+      "marks": 10,
+      "title": "6.2  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q2(a)(ii)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -1130,15 +1133,21 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-041",
-      "marks": 12,
-      "title": "12.3  |  2021 ESE Mains — Mechanical Engineering Paper-I — Q1(d)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
       "id": "fluid-mechanics:fm-ese-mains-042",
       "marks": 12,
       "title": "12.4  |  2025 ESE Mains — Mechanical Engineering Paper-I — Q5(b)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-039",
+      "marks": 12,
+      "title": "12.1  |  2019 ESE Mains — Mechanical Engineering Paper-I — Q5(a)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-041",
+      "marks": 12,
+      "title": "12.3  |  2021 ESE Mains — Mechanical Engineering Paper-I — Q1(d)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -1151,12 +1160,6 @@
       "id": "fluid-mechanics:fm-ese-mains-044",
       "marks": 20,
       "title": "13.1  |  2017 ESE Mains — Mechanical Engineering Paper-I — Q7(b)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-045",
-      "marks": 20,
-      "title": "13.2  |  2018 ESE Mains — Mechanical Engineering Paper-I — Q8(a)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -1184,15 +1187,21 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-050",
-      "marks": 12,
-      "title": "13.7  |  2024 ESE Mains — Mechanical Engineering Paper-I — Q5(a)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
       "id": "fluid-mechanics:fm-ese-mains-051",
       "marks": 20,
       "title": "13.8  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q7(a)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-045",
+      "marks": 20,
+      "title": "13.2  |  2018 ESE Mains — Mechanical Engineering Paper-I — Q8(a)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-050",
+      "marks": 12,
+      "title": "13.7  |  2024 ESE Mains — Mechanical Engineering Paper-I — Q5(a)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -1208,9 +1217,9 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-054",
+      "id": "fluid-mechanics:fm-ese-mains-060",
       "marks": 20,
-      "title": "14.3  |  2021 ESE Mains — Mechanical Engineering Paper-I — Q6(a)",
+      "title": "17.1  |  2017 ESE Mains — Mechanical Engineering Paper-I — Q3(c)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -1232,6 +1241,12 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
+      "id": "fluid-mechanics:fm-ese-mains-062",
+      "marks": 12,
+      "title": "17.3  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q5(d)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
       "id": "fluid-mechanics:fm-ese-mains-058",
       "marks": 20,
       "title": "16.1  |  2020 ESE Mains — Mechanical Engineering Paper-I — Q7(b)",
@@ -1244,9 +1259,9 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-060",
+      "id": "fluid-mechanics:fm-ese-mains-054",
       "marks": 20,
-      "title": "17.1  |  2017 ESE Mains — Mechanical Engineering Paper-I — Q3(c)",
+      "title": "14.3  |  2021 ESE Mains — Mechanical Engineering Paper-I — Q6(a)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -1256,21 +1271,15 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-062",
-      "marks": 12,
-      "title": "17.3  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q5(d)",
+      "id": "fluid-mechanics:fm-ese-mains-038",
+      "marks": 6,
+      "title": "11.1  |  2020 ESE Mains — Mechanical Engineering Paper-I — Q3(a)(i)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
       "id": "fluid-mechanics:fm-ese-mains-063",
       "marks": 12,
       "title": "18.1  |  2017 ESE Mains — Mechanical Engineering Paper-I — Q5(b)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
-      "id": "fluid-mechanics:fm-ese-mains-064",
-      "marks": 12,
-      "title": "18.2  |  2018 ESE Mains — Mechanical Engineering Paper-I — Q5(e)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -1286,12 +1295,6 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-067",
-      "marks": 20,
-      "title": "18.5  |  2021 ESE Mains — Mechanical Engineering Paper-I — Q7(c)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
       "id": "fluid-mechanics:fm-ese-mains-068",
       "marks": 10,
       "title": "18.6  |  2022 ESE Mains — Mechanical Engineering Paper-I — Q6(c)(i)",
@@ -1304,15 +1307,27 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-070",
-      "marks": 12,
-      "title": "18.8  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q5(c)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
       "id": "fluid-mechanics:fm-ese-mains-071",
       "marks": 12,
       "title": "18.9  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q5(e)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-064",
+      "marks": 12,
+      "title": "18.2  |  2018 ESE Mains — Mechanical Engineering Paper-I — Q5(e)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-067",
+      "marks": 20,
+      "title": "18.5  |  2021 ESE Mains — Mechanical Engineering Paper-I — Q7(c)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-070",
+      "marks": 12,
+      "title": "18.8  |  2026 ESE Mains — Mechanical Engineering Paper-I — Q5(c)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
@@ -1346,12 +1361,6 @@
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     },
     {
-      "id": "fluid-mechanics:fm-ese-mains-077",
-      "marks": 20,
-      "title": "A1.3  |  2021 ESE Mains — Mechanical Engineering Paper-I — Q3(a)",
-      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
-    },
-    {
       "id": "fluid-mechanics:fm-ese-mains-078",
       "marks": 12,
       "title": "A1.4  |  2023 ESE Mains — Mechanical Engineering Paper-I — Q1(c)",
@@ -1361,6 +1370,12 @@
       "id": "fluid-mechanics:fm-ese-mains-079",
       "marks": 20,
       "title": "A1.5  |  2025 ESE Mains — Mechanical Engineering Paper-I — Q2(b)",
+      "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-mains-077",
+      "marks": 20,
+      "title": "A1.3  |  2021 ESE Mains — Mechanical Engineering Paper-I — Q3(a)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     }
   ]

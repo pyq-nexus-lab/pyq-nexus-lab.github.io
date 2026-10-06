@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-06",
+  "scope": "SOM, Fluid Mechanics, hydraulics and related Applied SOM",
+  "addedSourceEntries": 324,
+  "sections": [
+    {
+      "name": "GATE solved-book SOM",
+      "expected": 184,
+      "represented": 184,
+      "status": "Complete",
+      "pages": "129–192"
+    },
+    {
+      "name": "ESE Volume 2 SOM and Engineering Mechanics",
+      "expected": 397,
+      "represented": 397,
+      "status": "Complete",
+      "pages": "6–116"
+    },
+    {
+      "name": "GATE solved-book Fluid Mechanics",
+      "expected": 223,
+      "represented": 223,
+      "status": "Complete",
+      "pages": "308–389"
+    },
+    {
+      "name": "ESE Volume 1 core Fluid Mechanics",
+      "expected": 634,
+      "represented": 634,
+      "status": "Complete",
+      "pages": "6–148"
+    },
+    {
+      "name": "ESE Volume 1 hydraulics",
+      "expected": 216,
+      "represented": 216,
+      "status": "Complete",
+      "pages": "445–486"
+    },
+    {
+      "name": "ESE Volume 1 compressible flow and jet applications",
+      "expected": 105,
+      "represented": 79,
+      "status": "Source scan incomplete",
+      "pages": "552–561"
+    }
+  ],
+  "blocked": [
+    {
+      "source": "ESE-Prelims vol 1 (1).pdf",
+      "chapter": "Jet Propulsion and Compressible Flow",
+      "numbers": [
+        "7.16",
+        "7.17",
+        "7.18",
+        "7.19",
+        "7.20",
+        "7.21",
+        "7.22",
+        "7.23",
+        "7.24",
+        "7.25",
+        "7.26",
+        "7.27",
+        "7.28",
+        "7.29",
+        "7.30",
+        "7.31",
+        "7.32",
+        "7.33",
+        "7.34",
+        "7.35",
+        "7.36",
+        "7.37",
+        "7.38",
+        "7.39",
+        "7.40",
+        "7.41"
+      ],
+      "pdfPage": 554,
+      "printedPages": "550–552",
+      "reason": "The uploaded PDF has a composite, clipped image on PDF page 554. It omits full statements for Q7.16–7.41. A readable replacement of printed pages 550–552 is needed; answer-table letters alone cannot reconstruct questions."
+    }
+  ],
+  "notes": [
+    "Source numbering is reconciled before deduplication. Repeated appearances are preserved; practice uses unique questions.",
+    "All four FM DOCX banks remain fully represented (824 separately answerable entries).",
+    "Other subjects in the complete PDFs are outside this release scope."
+  ]
+}

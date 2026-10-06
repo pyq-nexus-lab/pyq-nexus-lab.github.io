@@ -2,13 +2,13 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 const ctx={window:{}};for(const f of ['bank.js','fluid-bank.js','answers-data.js','dedup-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
 const raw=Catalog.prepare([{subject:'som',questions:ctx.window.SOM_BANK},...ctx.window.PYQ_BANKS]),lib=D.build(A.apply(raw,ctx.window.PYQ_ANSWER_DATA),ctx.window.PYQ_DEDUP_DATA),data=ctx.window.PYQ_CURRICULUM_DATA,bank=U.apply(lib.bank,data),by=new Map(bank.map(q=>[q.id,q]));
 test('every unique question is mapped to one subject, chapter and topic without losing sources, assets or answers',()=>{
- assert.equal(bank.length,2747);assert.equal(Object.keys(data.assignments).length,2747);assert.equal(new Set(bank.map(q=>q.id)).size,2747);
+ assert.equal(bank.length,3058);assert.equal(Object.keys(data.assignments).length,3058);assert.equal(new Set(bank.map(q=>q.id)).size,3058);
  for(const original of lib.bank){const q=by.get(original.id);assert(q.chapterId&&q.topicId&&q.topic&&q.curriculumVersion===1);for(const k of ['id','assetId','pack','key','marks','occurrences','aliases','answerIssue','explanation','referenceAnswer'])assert.deepEqual(q[k],original[k]);assert.equal(q.sourceChapter,original.chapter);assert.deepEqual(q.sourceChapters,original.chapters)}
- assert.deepEqual(A.coverage(bank),A.coverage(lib.bank));assert.equal(bank.filter(q=>q.subject==='som').length,1209);assert.equal(bank.filter(q=>q.subject==='fluid-mechanics').length,1538);
+ assert.deepEqual(A.coverage(bank),A.coverage(lib.bank));assert.equal(bank.filter(q=>q.subject==='som').length,1231);assert.equal(bank.filter(q=>q.subject==='fluid-mechanics').length,1827);
 });
 test('chapter and topic orders follow the books rather than alphabetical chapter names',()=>{
  const som=U.outline(bank.filter(q=>q.subject==='som')),fm=U.outline(bank.filter(q=>q.subject==='fluid-mechanics'));
- assert.equal(som.length,16);assert.equal(fm.length,20);assert.equal(som[0].name,'Stress, Strain and Axial Deformation');assert.equal(som[10].name,'Combined Stresses and Failure Theories');assert.equal(fm[0].name,'Fluid Properties');assert.equal(fm[14].name,'Flow over Notches and Weirs');assert.equal(fm[19].name,'Flow in Heat-Transfer Applications');
+ assert.equal(som.length,17);assert.equal(fm.length,21);assert.equal(som[0].name,'Stress, Strain and Axial Deformation');assert.equal(som[10].name,'Combined Stresses and Failure Theories');assert.equal(fm[0].name,'Fluid Properties');assert.equal(fm[14].name,'Flow over Notches and Weirs');assert.equal(fm[20].name,'Flow in Heat-Transfer Applications');
  for(const chapters of [som,fm]){assert(chapters.every((ch,i)=>ch.order===i+1));for(const ch of chapters){assert(ch.topics.every((t,i)=>i===0||t.order>ch.topics[i-1].order));assert.equal(ch.topics.flatMap(t=>t.questions).length,ch.questions.length)}}
 });
 test('ordering depends on chapter and topic before exercise form and never uses year',()=>{

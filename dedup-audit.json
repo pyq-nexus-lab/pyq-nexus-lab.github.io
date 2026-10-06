@@ -1,42 +1,47 @@
 {
-  "version": 1,
+  "version": 2,
   "stats": {
-    "rawEntries": 3031,
-    "uniqueQuestions": 2747,
-    "copiesConsolidated": 284,
-    "groups": 274,
+    "rawEntries": 3355,
+    "uniqueQuestions": 3058,
+    "copiesConsolidated": 297,
+    "groups": 287,
     "bySubject": {
       "fluid-mechanics": {
-        "rawEntries": 1681,
-        "uniqueQuestions": 1538,
-        "copiesConsolidated": 143
+        "rawEntries": 1976,
+        "uniqueQuestions": 1827,
+        "copiesConsolidated": 149
       },
       "som": {
-        "rawEntries": 1350,
-        "uniqueQuestions": 1209,
-        "copiesConsolidated": 141
+        "rawEntries": 1379,
+        "uniqueQuestions": 1231,
+        "copiesConsolidated": 148
       }
     },
     "byExam": {
       "cse-mains": {
         "rawEntries": 50,
-        "uniqueQuestions": 49
+        "uniqueQuestions": 49,
+        "copiesConsolidated": 1
       },
       "ese-mains": {
         "rawEntries": 148,
-        "uniqueQuestions": 148
+        "uniqueQuestions": 148,
+        "copiesConsolidated": 0
       },
       "ese-prelims": {
-        "rawEntries": 1270,
-        "uniqueQuestions": 1190
+        "rawEntries": 1585,
+        "uniqueQuestions": 1498,
+        "copiesConsolidated": 87
       },
       "gate-me": {
-        "rawEntries": 803,
-        "uniqueQuestions": 600
+        "rawEntries": 812,
+        "uniqueQuestions": 603,
+        "copiesConsolidated": 209
       },
       "gate-xe": {
         "rawEntries": 760,
-        "uniqueQuestions": 760
+        "uniqueQuestions": 760,
+        "copiesConsolidated": 0
       }
     }
   },
@@ -2024,6 +2029,113 @@
         "fluid-mechanics:fluid-ese-book-5-38",
         "fluid-mechanics:fluid-ese-book-5-65"
       ]
+    },
+    {
+      "id": "ese-prelims-061",
+      "ids": [
+        "ese-prelims-061",
+        "ese-book-6-44"
+      ]
+    },
+    {
+      "id": "gate-me-012",
+      "ids": [
+        "gate-me-012",
+        "gate-book-2-9"
+      ]
+    },
+    {
+      "id": "gate-me-011",
+      "ids": [
+        "gate-me-011",
+        "gate-book-2-10"
+      ]
+    },
+    {
+      "id": "gate-me-140",
+      "ids": [
+        "gate-me-140",
+        "gate-book-5-14"
+      ]
+    },
+    {
+      "id": "gate-me-109",
+      "ids": [
+        "gate-me-109",
+        "gate-book-6-12"
+      ]
+    },
+    {
+      "id": "gate-me-108",
+      "ids": [
+        "gate-me-108",
+        "gate-book-6-13"
+      ]
+    },
+    {
+      "id": "gate-me-198",
+      "ids": [
+        "gate-me-198",
+        "gate-book-9-10"
+      ]
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-prelims-061",
+      "ids": [
+        "fluid-mechanics:fm-ese-prelims-061",
+        "fluid-mechanics:fluid-ese-hydraulic-book-1-99"
+      ]
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-prelims-062",
+      "ids": [
+        "fluid-mechanics:fm-ese-prelims-062",
+        "fluid-mechanics:fluid-ese-hydraulic-book-1-104"
+      ]
+    },
+    {
+      "id": "fluid-mechanics:fm-ese-prelims-064",
+      "ids": [
+        "fluid-mechanics:fm-ese-prelims-064",
+        "fluid-mechanics:fluid-ese-compressible-book-7-105"
+      ]
+    },
+    {
+      "id": "fluid-mechanics:fluid-ese-hydraulic-book-1-51",
+      "ids": [
+        "fluid-mechanics:fluid-ese-hydraulic-book-1-51",
+        "fluid-mechanics:fluid-ese-hydraulic-book-1-83"
+      ],
+      "optionMaps": {
+        "fluid-mechanics:fluid-ese-hydraulic-book-1-83": {
+          "A": "B",
+          "B": "D",
+          "C": "A",
+          "D": "C"
+        }
+      }
+    },
+    {
+      "id": "fluid-mechanics:fluid-ese-hydraulic-book-1-82",
+      "ids": [
+        "fluid-mechanics:fluid-ese-hydraulic-book-1-82",
+        "fluid-mechanics:fluid-ese-hydraulic-book-3-29"
+      ],
+      "optionMaps": {
+        "fluid-mechanics:fluid-ese-hydraulic-book-3-29": {
+          "A": "A",
+          "B": "C",
+          "C": "B",
+          "D": "D"
+        }
+      }
+    },
+    {
+      "id": "fluid-mechanics:fluid-ese-compressible-book-7-42",
+      "ids": [
+        "fluid-mechanics:fluid-ese-compressible-book-7-42",
+        "fluid-mechanics:fluid-ese-compressible-book-7-81"
+      ]
     }
   ],
   "acceptedPairs": [
@@ -2032,7 +2144,7 @@
       "b": "gate-book-1-18",
       "similarity": 0.9965,
       "stem": 0.9924,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
@@ -2048,8 +2160,8 @@
     {
       "a": "gate-me-006",
       "b": "gate-book-2-5",
-      "similarity": 1.0,
-      "stem": 1.0,
+      "similarity": 1,
+      "stem": 1,
       "options": null,
       "method": "identical normalized content",
       "accepted": true
@@ -2057,8 +2169,8 @@
     {
       "a": "gate-me-008",
       "b": "gate-book-2-7",
-      "similarity": 1.0,
-      "stem": 1.0,
+      "similarity": 1,
+      "stem": 1,
       "options": null,
       "method": "identical normalized content",
       "accepted": true
@@ -2066,17 +2178,17 @@
     {
       "a": "gate-me-137",
       "b": "gate-book-5-10",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
     {
       "a": "gate-me-031",
       "b": "gate-book-1-19",
-      "similarity": 1.0,
-      "stem": 1.0,
+      "similarity": 1,
+      "stem": 1,
       "options": null,
       "method": "identical normalized content",
       "accepted": true
@@ -2104,7 +2216,7 @@
       "b": "gate-book-7-17",
       "similarity": 0.9841,
       "stem": 0.9827,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
@@ -2120,8 +2232,8 @@
     {
       "a": "gate-me-049",
       "b": "gate-book-7-26",
-      "similarity": 1.0,
-      "stem": 1.0,
+      "similarity": 1,
+      "stem": 1,
       "options": null,
       "method": "identical normalized content",
       "accepted": true
@@ -2131,24 +2243,24 @@
       "b": "gate-book-7-13",
       "similarity": 0.9919,
       "stem": 0.9906,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
     {
       "a": "gate-me-111",
       "b": "gate-book-7-20",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
     {
       "a": "gate-me-115",
       "b": "gate-book-6-18",
-      "similarity": 1.0,
-      "stem": 1.0,
+      "similarity": 1,
+      "stem": 1,
       "options": null,
       "method": "identical normalized content",
       "accepted": true
@@ -2165,17 +2277,17 @@
     {
       "a": "gate-me-121",
       "b": "gate-book-11-5",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
     {
       "a": "gate-me-123",
       "b": "gate-book-11-7",
-      "similarity": 1.0,
-      "stem": 1.0,
+      "similarity": 1,
+      "stem": 1,
       "options": null,
       "method": "identical normalized content",
       "accepted": true
@@ -2183,8 +2295,8 @@
     {
       "a": "gate-me-146",
       "b": "gate-book-5-19",
-      "similarity": 1.0,
-      "stem": 1.0,
+      "similarity": 1,
+      "stem": 1,
       "options": null,
       "method": "identical normalized content",
       "accepted": true
@@ -2192,8 +2304,8 @@
     {
       "a": "gate-me-148",
       "b": "gate-book-5-21",
-      "similarity": 1.0,
-      "stem": 1.0,
+      "similarity": 1,
+      "stem": 1,
       "options": null,
       "method": "identical normalized content",
       "accepted": true
@@ -2201,9 +2313,9 @@
     {
       "a": "gate-me-161",
       "b": "gate-book-4-16",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
@@ -2212,25 +2324,25 @@
       "b": "gate-book-1-15",
       "similarity": 0.9704,
       "stem": 0.9686,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
     {
       "a": "gate-me-178",
       "b": "gate-book-10-5",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
     {
       "a": "gate-me-179",
       "b": "gate-book-10-6",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
@@ -2246,8 +2358,8 @@
     {
       "a": "gate-me-184",
       "b": "gate-book-10-11",
-      "similarity": 1.0,
-      "stem": 1.0,
+      "similarity": 1,
+      "stem": 1,
       "options": null,
       "method": "identical normalized content",
       "accepted": true
@@ -2257,33 +2369,33 @@
       "b": "gate-book-9-4",
       "similarity": 0.993,
       "stem": 0.992,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
     {
       "a": "gate-me-193",
       "b": "gate-book-9-5",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
     {
       "a": "gate-me-194",
       "b": "gate-book-9-6",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
     {
       "a": "gate-me-195",
       "b": "gate-book-9-7",
-      "similarity": 1.0,
-      "stem": 1.0,
+      "similarity": 1,
+      "stem": 1,
       "options": null,
       "method": "identical normalized content",
       "accepted": true
@@ -2292,7 +2404,7 @@
       "a": "fluid-mechanics:fm-gate-me-002",
       "b": "fluid-mechanics:fluid-gate-book-2-15",
       "similarity": 0.9821,
-      "stem": 1.0,
+      "stem": 1,
       "options": 0.9737,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
@@ -2300,18 +2412,18 @@
     {
       "a": "fluid-mechanics:fm-gate-me-007",
       "b": "fluid-mechanics:fluid-gate-book-2-18",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
     {
       "a": "fluid-mechanics:fm-gate-me-009",
       "b": "fluid-mechanics:fluid-gate-book-2-22",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
@@ -2320,25 +2432,25 @@
       "b": "fluid-mechanics:fluid-gate-book-1-9",
       "similarity": 0.9969,
       "stem": 0.996,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
     {
       "a": "fluid-mechanics:fm-gate-me-029",
       "b": "fluid-mechanics:fluid-gate-book-3-26",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
     {
       "a": "fluid-mechanics:fm-gate-me-031",
       "b": "fluid-mechanics:fluid-gate-book-3-28",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
@@ -2347,7 +2459,7 @@
       "b": "fluid-mechanics:fluid-gate-book-5-32",
       "similarity": 0.9915,
       "stem": 0.9905,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
@@ -2356,7 +2468,7 @@
       "b": "fluid-mechanics:fm-gate-me-004",
       "similarity": 0.9958,
       "stem": 0.9954,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
@@ -2365,7 +2477,7 @@
       "b": "fluid-mechanics:fm-gate-me-005",
       "similarity": 0.9958,
       "stem": 0.9954,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
@@ -2374,16 +2486,16 @@
       "b": "fluid-mechanics:fluid-gate-book-2-17",
       "similarity": 0.985,
       "stem": 0.9836,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
     {
       "a": "fluid-mechanics:fm-gate-me-004",
       "b": "fluid-mechanics:fm-gate-me-005",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
@@ -2392,7 +2504,7 @@
       "b": "fluid-mechanics:fluid-gate-book-2-17",
       "similarity": 0.9893,
       "stem": 0.9883,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
@@ -2401,7 +2513,7 @@
       "b": "fluid-mechanics:fluid-gate-book-2-17",
       "similarity": 0.9893,
       "stem": 0.9883,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
@@ -2419,7 +2531,7 @@
       "b": "fluid-mechanics:fluid-gate-book-3-24",
       "similarity": 0.9789,
       "stem": 0.9778,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
@@ -2428,7 +2540,7 @@
       "b": "fluid-mechanics:fluid-gate-book-3-30",
       "similarity": 0.9932,
       "stem": 0.9919,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
@@ -2446,7 +2558,7 @@
       "b": "fluid-mechanics:fluid-gate-book-3-35",
       "similarity": 0.989,
       "stem": 0.9841,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
@@ -2473,7 +2585,7 @@
       "b": "fluid-mechanics:fluid-gate-book-4-15",
       "similarity": 0.9958,
       "stem": 0.9956,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
@@ -2482,34 +2594,34 @@
       "b": "fluid-mechanics:fluid-gate-book-4-17",
       "similarity": 0.9983,
       "stem": 0.9982,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
     {
       "a": "fluid-mechanics:fm-gate-me-060",
       "b": "fluid-mechanics:fm-gate-me-061",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
     {
       "a": "fluid-mechanics:fm-gate-me-060",
       "b": "fluid-mechanics:fm-gate-me-062",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
     {
       "a": "fluid-mechanics:fm-gate-me-060",
       "b": "fluid-mechanics:fm-gate-me-063",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
@@ -2518,25 +2630,25 @@
       "b": "fluid-mechanics:fluid-gate-book-4-18",
       "similarity": 0.9984,
       "stem": 0.9984,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
     {
       "a": "fluid-mechanics:fm-gate-me-061",
       "b": "fluid-mechanics:fm-gate-me-062",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
     {
       "a": "fluid-mechanics:fm-gate-me-061",
       "b": "fluid-mechanics:fm-gate-me-063",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
@@ -2545,16 +2657,16 @@
       "b": "fluid-mechanics:fluid-gate-book-4-18",
       "similarity": 0.9984,
       "stem": 0.9984,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
     {
       "a": "fluid-mechanics:fm-gate-me-062",
       "b": "fluid-mechanics:fm-gate-me-063",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
@@ -2563,7 +2675,7 @@
       "b": "fluid-mechanics:fluid-gate-book-4-18",
       "similarity": 0.9984,
       "stem": 0.9984,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
@@ -2572,16 +2684,16 @@
       "b": "fluid-mechanics:fluid-gate-book-4-18",
       "similarity": 0.9984,
       "stem": 0.9984,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
     {
       "a": "fluid-mechanics:fm-gate-me-066",
       "b": "fluid-mechanics:fm-gate-me-127",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
@@ -2590,7 +2702,7 @@
       "b": "fluid-mechanics:fluid-gate-book-4-24",
       "similarity": 0.9785,
       "stem": 0.977,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
@@ -2599,7 +2711,7 @@
       "b": "fluid-mechanics:fluid-gate-book-4-26",
       "similarity": 0.9868,
       "stem": 0.9859,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
@@ -2626,15 +2738,15 @@
       "b": "fluid-mechanics:fluid-gate-book-5-33",
       "similarity": 0.9833,
       "stem": 0.9823,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
     {
       "a": "fluid-mechanics:fm-gate-me-098",
       "b": "fluid-mechanics:fluid-gate-book-5-38",
-      "similarity": 1.0,
-      "stem": 1.0,
+      "similarity": 1,
+      "stem": 1,
       "options": null,
       "method": "identical normalized content",
       "accepted": true
@@ -2642,8 +2754,8 @@
     {
       "a": "fluid-mechanics:fm-gate-me-099",
       "b": "fluid-mechanics:fluid-gate-book-5-39",
-      "similarity": 1.0,
-      "stem": 1.0,
+      "similarity": 1,
+      "stem": 1,
       "options": null,
       "method": "identical normalized content",
       "accepted": true
@@ -2689,24 +2801,24 @@
       "b": "fluid-mechanics:fluid-gate-book-5-24",
       "similarity": 0.9955,
       "stem": 0.9951,
-      "options": 1.0,
+      "options": 1,
       "method": "matching year, numeric values, answer-option order and high text agreement",
       "accepted": true
     },
     {
       "a": "fluid-mechanics:fm-gate-me-122",
       "b": "fluid-mechanics:fluid-gate-book-5-36",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
     {
       "a": "fluid-mechanics:fm-gate-me-123",
       "b": "fluid-mechanics:fluid-gate-book-5-41",
-      "similarity": 1.0,
-      "stem": 1.0,
+      "similarity": 1,
+      "stem": 1,
       "options": null,
       "method": "identical normalized content",
       "accepted": true
@@ -2723,9 +2835,9 @@
     {
       "a": "fluid-mechanics:fm-gate-me-138",
       "b": "fluid-mechanics:fluid-gate-book-5-25",
-      "similarity": 1.0,
-      "stem": 1.0,
-      "options": 1.0,
+      "similarity": 1,
+      "stem": 1,
+      "options": 1,
       "method": "identical normalized content",
       "accepted": true
     },
@@ -2741,203 +2853,203 @@
     {
       "a": "gate-me-001",
       "b": "gate-book-1-12",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 0
     },
     {
       "a": "gate-me-067",
       "b": "gate-book-8-5",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 1
     },
     {
       "a": "gate-me-114",
       "b": "gate-book-6-17",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 2
     },
     {
       "a": "gate-me-132",
       "b": "gate-book-3-12",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 3
     },
     {
       "a": "ese-prelims-001",
       "b": "ese-book-2-26",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 4
     },
     {
       "a": "ese-prelims-030",
       "b": "ese-book-2-28",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 5
     },
     {
       "a": "ese-prelims-047",
       "b": "ese-book-6-40",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 6
     },
     {
       "a": "ese-prelims-110",
       "b": "ese-book-7-31",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 7
     },
     {
       "a": "ese-prelims-111",
       "b": "ese-book-7-32",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 8
     },
     {
       "a": "ese-prelims-026",
       "b": "ese-book-3-49",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 9
     },
     {
       "a": "ese-prelims-066",
       "b": "ese-book-7-33",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 10
     },
     {
       "a": "ese-prelims-077",
       "b": "ese-book-4-39",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 11
     },
     {
       "a": "ese-prelims-036",
       "b": "ese-book-5-48",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 12
     },
     {
       "a": "ese-prelims-068",
       "b": "ese-book-1-31",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 13
     },
     {
       "a": "ese-prelims-069",
       "b": "ese-book-7-35",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 14
     },
     {
       "a": "ese-prelims-005",
       "b": "ese-book-2-32",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 15
     },
     {
       "a": "ese-prelims-006",
       "b": "ese-book-2-30",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 16
     },
     {
       "a": "ese-prelims-007",
       "b": "ese-book-1-33",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 17
     },
     {
       "a": "fluid-mechanics:fm-ese-prelims-053",
       "b": "fluid-mechanics:fluid-ese-book-6-53",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 18
     },
     {
       "a": "fluid-mechanics:fm-ese-prelims-055",
       "b": "fluid-mechanics:fluid-ese-book-6-55",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 19
     },
     {
       "a": "fluid-mechanics:fm-ese-prelims-078",
       "b": "fluid-mechanics:fluid-ese-book-9-30",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 20
     },
     {
       "a": "fluid-mechanics:fm-ese-prelims-103",
       "b": "fluid-mechanics:fluid-ese-book-9-33",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 21
     },
     {
       "a": "fluid-mechanics:fm-ese-prelims-056",
       "b": "fluid-mechanics:fluid-ese-book-6-56",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 22
     },
     {
       "a": "fluid-mechanics:fm-ese-prelims-035",
       "b": "fluid-mechanics:fluid-ese-book-4-65",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 23
     },
     {
       "a": "fluid-mechanics:fm-ese-prelims-083",
       "b": "fluid-mechanics:fluid-ese-book-7-60",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 24
     },
     {
       "a": "fluid-mechanics:fm-ese-prelims-084",
       "b": "fluid-mechanics:fluid-ese-book-7-61",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 25
     },
     {
       "a": "fluid-mechanics:fm-ese-prelims-047",
       "b": "fluid-mechanics:fluid-ese-book-5-79",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 26
     },
     {
       "a": "fluid-mechanics:fm-ese-prelims-086",
       "b": "fluid-mechanics:fluid-ese-book-7-62",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 27
     },
     {
       "a": "fluid-mechanics:fm-ese-prelims-106",
       "b": "fluid-mechanics:fluid-ese-book-9-39",
-      "similarity": 1.0,
+      "similarity": 1,
       "method": "Reviewed matching stem, source year and options; OCR/layout differences checked",
       "reviewIndex": 28
     },
@@ -4260,6 +4372,96 @@
       "a": "gate-me-200",
       "b": "gate-book-9-12",
       "method": "Complete original statement checked against partial book crop; crop restored and format corrected before consolidation."
+    },
+    {
+      "a": "ese-prelims-061",
+      "b": "ese-book-6-44",
+      "method": "Reviewed matching statement, numerical values, diagrams, options and answer provenance; option permutation retained when necessary",
+      "accepted": true
+    },
+    {
+      "a": "gate-me-012",
+      "b": "gate-book-2-9",
+      "method": "Reviewed matching statement, numerical values, diagrams, options and answer provenance; option permutation retained when necessary",
+      "accepted": true
+    },
+    {
+      "a": "gate-me-011",
+      "b": "gate-book-2-10",
+      "method": "Reviewed matching statement, numerical values, diagrams, options and answer provenance; option permutation retained when necessary",
+      "accepted": true
+    },
+    {
+      "a": "gate-me-140",
+      "b": "gate-book-5-14",
+      "method": "Reviewed matching statement, numerical values, diagrams, options and answer provenance; option permutation retained when necessary",
+      "accepted": true
+    },
+    {
+      "a": "gate-me-109",
+      "b": "gate-book-6-12",
+      "method": "Reviewed matching statement, numerical values, diagrams, options and answer provenance; option permutation retained when necessary",
+      "accepted": true
+    },
+    {
+      "a": "gate-me-108",
+      "b": "gate-book-6-13",
+      "method": "Reviewed matching statement, numerical values, diagrams, options and answer provenance; option permutation retained when necessary",
+      "accepted": true
+    },
+    {
+      "a": "gate-me-198",
+      "b": "gate-book-9-10",
+      "method": "Reviewed matching statement, numerical values, diagrams, options and answer provenance; option permutation retained when necessary",
+      "accepted": true
+    },
+    {
+      "a": "fluid-mechanics:fm-ese-prelims-061",
+      "b": "fluid-mechanics:fluid-ese-hydraulic-book-1-99",
+      "method": "Reviewed matching statement, numerical values, diagrams, options and answer provenance; option permutation retained when necessary",
+      "accepted": true
+    },
+    {
+      "a": "fluid-mechanics:fm-ese-prelims-062",
+      "b": "fluid-mechanics:fluid-ese-hydraulic-book-1-104",
+      "method": "Reviewed matching statement, numerical values, diagrams, options and answer provenance; option permutation retained when necessary",
+      "accepted": true
+    },
+    {
+      "a": "fluid-mechanics:fm-ese-prelims-064",
+      "b": "fluid-mechanics:fluid-ese-compressible-book-7-105",
+      "method": "Reviewed matching statement, numerical values, diagrams, options and answer provenance; option permutation retained when necessary",
+      "accepted": true
+    },
+    {
+      "a": "fluid-mechanics:fluid-ese-hydraulic-book-1-51",
+      "b": "fluid-mechanics:fluid-ese-hydraulic-book-1-83",
+      "method": "Reviewed matching statement, numerical values, diagrams, options and answer provenance; option permutation retained when necessary",
+      "accepted": true,
+      "optionMap": {
+        "A": "B",
+        "B": "D",
+        "C": "A",
+        "D": "C"
+      }
+    },
+    {
+      "a": "fluid-mechanics:fluid-ese-hydraulic-book-1-82",
+      "b": "fluid-mechanics:fluid-ese-hydraulic-book-3-29",
+      "method": "Reviewed matching statement, numerical values, diagrams, options and answer provenance; option permutation retained when necessary",
+      "accepted": true,
+      "optionMap": {
+        "A": "A",
+        "B": "C",
+        "C": "B",
+        "D": "D"
+      }
+    },
+    {
+      "a": "fluid-mechanics:fluid-ese-compressible-book-7-42",
+      "b": "fluid-mechanics:fluid-ese-compressible-book-7-81",
+      "method": "Reviewed matching statement, numerical values, diagrams, options and answer provenance; option permutation retained when necessary",
+      "accepted": true
     }
   ],
   "unmergedCandidates": [
