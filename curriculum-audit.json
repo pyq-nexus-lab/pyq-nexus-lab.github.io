@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "generatedOn": "2026-10-06",
-  "questions": 3058,
-  "chapters": 38,
-  "populatedTopics": 170,
+  "generatedOn": "2026-10-07",
+  "questions": 3638,
+  "chapters": 47,
+  "populatedTopics": 206,
   "sources": [
     {
       "file": "ESE-Prelims vol 2.pdf",
@@ -22925,5 +22925,10 @@
       "sourceChapter": "Internal/External Flow Used in Heat-Transfer Problems",
       "basis": "external|flat plate|cross.flow|sphere|cylinder|bus|roof"
     }
-  ]
+  ],
+  "heatTransfer": {
+    "questions": 580,
+    "chapters": 9,
+    "ordering": "Fundamentals → steady conduction → fins → transient → convection → radiation → heat exchangers → boiling/condensation → combined applications"
+  }
 }

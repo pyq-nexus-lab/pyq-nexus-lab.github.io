@@ -26,7 +26,7 @@
       return bank.questions.map(q=>{
         const id=bank.subject==='som'?q.id:`${bank.subject}:${q.id}`;
         if(typeof q.id!=='string'||!q.id||ids.has(id))throw Error('Duplicate or missing question ID');
-        if(!q.title||!q.chapter||!q.source||!['gate-me','gate-xe','ese-prelims','ese-mains','cse-mains'].includes(q.exam)||!['MCQ','MSQ','NAT','WRITTEN','UNCLASSIFIED'].includes(q.type))throw Error('Incomplete question metadata');
+        if(!q.title||!q.chapter||!q.source||!['gate-me','gate-xe','ese-prelims','ese-mains','cse-mains'].includes(q.exam)||!['MCQ','MSQ','NAT','TEXT','WRITTEN','UNCLASSIFIED'].includes(q.type))throw Error('Incomplete question metadata');
         if(q.key&&(!Number.isFinite(q.marks)||q.marks<=0))throw Error('Grading keys need positive marks');
         ids.add(id);return {...q,id,assetId:q.id,subject:bank.subject};
       });

@@ -1,10 +1,10 @@
 {
   "version": 2,
   "stats": {
-    "rawEntries": 3355,
-    "uniqueQuestions": 3058,
-    "copiesConsolidated": 297,
-    "groups": 287,
+    "rawEntries": 4045,
+    "uniqueQuestions": 3638,
+    "copiesConsolidated": 407,
+    "groups": 397,
     "bySubject": {
       "fluid-mechanics": {
         "rawEntries": 1976,
@@ -15,6 +15,11 @@
         "rawEntries": 1379,
         "uniqueQuestions": 1231,
         "copiesConsolidated": 148
+      },
+      "heat-transfer": {
+        "rawEntries": 690,
+        "uniqueQuestions": 580,
+        "copiesConsolidated": 110
       }
     },
     "byExam": {
@@ -4660,5 +4665,6 @@
       "b": "fluid-mechanics:fm-gate-xe-296",
       "reason": "Distinct linked question, changed sign/value/option, or insufficient identity evidence"
     }
-  ]
+  ],
+  "heatTransferReview": "107 matching compilation/book appearances plus three repeated historical ESE questions; reordered alternatives have explicit option translations. Linked subquestions are kept separate."
 }

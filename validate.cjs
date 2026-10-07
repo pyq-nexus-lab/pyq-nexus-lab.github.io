@@ -1,15 +1,16 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),crypto=require('node:crypto');
 const catalog=require('./catalog.js'),ctx={window:{}};
-for(const file of ['bank.js','fluid-bank.js'])vm.runInNewContext(fs.readFileSync(file,'utf8'),ctx);
+for(const file of ['bank.js','fluid-bank.js','heat-bank.js'])vm.runInNewContext(fs.readFileSync(file,'utf8'),ctx);
 const bank=catalog.prepare([{subject:'som',questions:ctx.window.SOM_BANK},...ctx.window.PYQ_BANKS]);
-assert.equal(bank.length,3354);assert.equal(new Set(bank.map(q=>q.id)).size,bank.length);
+assert.equal(bank.length,4044);assert.equal(new Set(bank.map(q=>q.id)).size,bank.length);
 const packs=new Set();
 for(const q of bank){
- assert(q.title&&q.source&&q.chapter);assert(['MCQ','MSQ','NAT','WRITTEN','UNCLASSIFIED'].includes(q.type));
+ assert(q.title&&q.source&&q.chapter);assert(['MCQ','MSQ','NAT','TEXT','WRITTEN','UNCLASSIFIED'].includes(q.type));
  assert(fs.existsSync(q.pack),q.id+' missing pack');packs.add(q.pack);
  if(q.key){
   assert(q.marks>0&&q.keySource,q.id+' key provenance');
   if(q.type==='NAT'&&q.key.kind!=='all')for(const range of q.key.ranges||[[q.key.min,q.key.max]])assert(Number.isFinite(range[0])&&range[0]<=range[1]);
+  else if(q.type==='TEXT')assert(q.key.acceptedText?.length&&q.key.acceptedText.every(v=>typeof v==='string'&&v.trim()));
   else if(q.key.kind!=='all')for(const options of q.key.optionSets||[q.key.options])assert(options.length&&new Set(options).size===options.length&&options.every(o=>['A','B','C','D'].includes(o)));
  }
  if(q.archive)assert(q.sourcePage>0,q.id+' archive page');
@@ -26,16 +27,16 @@ for(const chapter of audit.bookChapters){
  assert.equal(questions.length,chapter.questions);
  assert.deepEqual(questions.map(q=>Number(q.number.split('.')[1])).sort((a,b)=>a-b),Array.from({length:chapter.questions},(_,i)=>i+1),'Complete printed numbering: '+chapter.title);
 }
-console.log(`Validated ${bank.length} entries across two subjects, ${packs.size} image packs, every asset reference, all crop digests and all 857 numbered core Fluid Mechanics archive entries.`);
+console.log(`Validated ${bank.length} entries across three subjects, ${packs.size} image packs, every asset reference, all crop digests and all 857 numbered core Fluid Mechanics archive entries.`);
 for(const file of ['answers-data.js','dedup-data.js','repair-assets.js'])vm.runInNewContext(fs.readFileSync(file,'utf8'),ctx);
 const A=require('./answers.js'),D=require('./dedup.js'),patched=A.apply(bank,ctx.window.PYQ_ANSWER_DATA),lib=D.build(patched,ctx.window.PYQ_DEDUP_DATA),coverage=A.coverage(lib.bank);
-assert.equal(patched.length,3355);assert.equal(lib.bank.length,3058);assert.equal(coverage.keyed,2850);assert.equal(coverage.written,197);assert.equal(coverage.issues,11);assert.equal(coverage.pending,0);
+assert.equal(patched.length,4045);assert.equal(lib.bank.length,3638);assert.equal(coverage.keyed,3426);assert.equal(coverage.written,197);assert.equal(coverage.issues,15);assert.equal(coverage.pending,0);
 for(const q of lib.bank)assert(q.marks>0,q.id+' canonical marks');
 let repaired=0;for(const q of patched){if(q.pack==='repair-assets.js'){repaired++;const image=ctx.window.SOM_IMAGES[q.assetId];assert(image?.startsWith('data:image/webp;base64,'),q.id);assert.equal(crypto.createHash('sha256').update(Buffer.from(image.split(',')[1],'base64')).digest('hex'),q.cropSha256,q.id+' repaired crop digest')}}assert.equal(repaired,19);
 console.log(`Validated ${lib.bank.length} unique questions, ${coverage.keyed} grading keys, ${coverage.written} Mains references, ${coverage.issues} explained errata and ${repaired} restored screenshots.`);
 vm.runInNewContext(fs.readFileSync('curriculum-data.js','utf8'),ctx);
 const U=require('./curriculum.js'),ordered=U.apply(lib.bank,ctx.window.PYQ_CURRICULUM_DATA),outline=U.outline(ordered);
-assert.equal(ordered.length,3058);assert.equal(outline.length,38);const topics=new Set(ordered.map(q=>q.topicId)).size;assert(topics>=150);
+assert.equal(ordered.length,3638);assert.equal(outline.length,47);const topics=new Set(ordered.map(q=>q.topicId)).size;assert(topics>=150);
 assert(ordered.every(q=>q.chapterId&&q.topicId&&q.topic&&q.sourceChapters.length));for(let i=1;i<ordered.length;i++)assert(U.compare(ordered[i-1],ordered[i])<=0);
 console.log(`Validated complete curriculum coverage: ${ordered.length} questions in ${outline.length} ordered chapters and ${topics} populated topics.`);
 vm.runInNewContext(fs.readFileSync('crops-data.js','utf8'),ctx);

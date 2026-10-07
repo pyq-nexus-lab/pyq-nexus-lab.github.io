@@ -1,21 +1,21 @@
 {
   "version": 2,
-  "auditedOn": "2026-10-06",
+  "auditedOn": "2026-10-07",
   "coverage": {
-    "total": 3058,
-    "official": 817,
-    "book": 1544,
-    "solved": 489,
+    "total": 3638,
+    "official": 915,
+    "book": 1936,
+    "solved": 575,
     "written": 197,
-    "issues": 11,
+    "issues": 15,
     "pending": 0,
-    "keyed": 2850
+    "keyed": 3426
   },
   "method": "Official GATE key matching by year, session, section and question number; printed solved-book tables; independently derived references where no usable key exists. All references identify their provenance in the question UI.",
   "limits": [
     "Derived references are not official marking schemes.",
     "Mains scores require student or teacher assessment of the working; no automatic proof checking.",
-    "Nine objective source inconsistencies have explained references and are excluded from automatic marks.",
+    "Fifteen objective source inconsistencies have explained references and are excluded from automatic marks.",
     "Conditional answers state missing data, sign conventions or approximations explicitly.",
     "26 source statements Q7.16–7.41 are missing from ESE Volume 1 PDF page 554. They are excluded from question and grading totals; source-completeness.json records the required replacement."
   ],
@@ -1378,5 +1378,19 @@
       "title": "A1.3  |  2021 ESE Mains — Mechanical Engineering Paper-I — Q3(a)",
       "provenance": "PYQ Nexus independently derived model reference. Written working and diagrams require self-assessment; not an official marking scheme."
     }
-  ]
+  ],
+  "heatTransfer": {
+    "coverage": {
+      "total": 580,
+      "official": 98,
+      "book": 392,
+      "solved": 86,
+      "written": 0,
+      "issues": 4,
+      "pending": 0,
+      "keyed": 576
+    },
+    "sourceAudit": "heat-source-audit.json",
+    "excludedMains": true
+  }
 }

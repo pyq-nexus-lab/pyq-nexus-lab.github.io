@@ -1,0 +1,59 @@
+{
+  "generatedOn": "2026-10-07",
+  "subject": "heat-transfer",
+  "entries": 580,
+  "uniqueQuestions": 580,
+  "sourceEntries": 690,
+  "duplicateCopiesMerged": 110,
+  "originalScreenshotEntries": 186,
+  "supplementaryBookEntries": 504,
+  "countsByExam": {
+    "gate-me": 200,
+    "ese-prelims": 380
+  },
+  "countsByFormat": {
+    "MCQ": 522,
+    "NAT": 54,
+    "MSQ": 2,
+    "TEXT": 2
+  },
+  "gradable": 576,
+  "officialKeys": 98,
+  "bookKeys": 392,
+  "independentlyDerivedKeys": 86,
+  "writtenSelfAssessment": 0,
+  "sourceIssues": [
+    {
+      "id": "heat-transfer:ht-gate-me-016",
+      "issue": "With positive uniform generation, an interior maximum above the hotter 100°C face is not guaranteed unless the generation is sufficiently large. Therefore the stated data do not imply any listed option.",
+      "referenceAnswer": "T(x) = 100x/L + (g/(2k))x(L−x). The maximum exceeds 100°C only when gL²/(2k) > 100°C. Do not use the book’s unconditional B choice as an automatic key."
+    },
+    {
+      "id": "heat-transfer:ht-ese-book-5-64",
+      "issue": "None of the four printed choices equals the radiosity for the stated opaque grey surface.",
+      "referenceAnswer": "Radiosity J = E + (1−ε)G = 400 + 0.6×1000 = 1000 W/m²."
+    },
+    {
+      "id": "heat-transfer:ht-ese-prelims-054",
+      "issue": "The calculated effectiveness is absent from the printed choices; the book choice C is inconsistent with the given values.",
+      "referenceAnswer": "ε = Q/[Cmin(Th,in−Tc,in)] = 0.75."
+    },
+    {
+      "id": "heat-transfer:ht-ese-prelims-055",
+      "issue": "The calculated effectiveness is absent from the printed choices. The solved book marks this entry with an asterisk.",
+      "referenceAnswer": "ε = 120/165 = 0.72727."
+    }
+  ],
+  "yearRange": [
+    1988,
+    2026
+  ],
+  "chapters": 9,
+  "populatedTopics": 36,
+  "limitations": [
+    "ESE Mains content has not been supplied and is intentionally excluded.",
+    "Printed and derived keys are not official examination keys.",
+    "Four inconsistent source items remain available with explained answers, outside automatic scores."
+  ],
+  "sourceAudit": "heat-source-audit.json"
+}

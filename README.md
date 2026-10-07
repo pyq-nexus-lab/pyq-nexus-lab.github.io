@@ -6,14 +6,24 @@ A shared GATE ME, GATE XE and ESE practice website, with a separately labelled C
 
 ## Question and answer library
 
-- **3,058 unique questions:** 1,231 Strength of Materials and 1,827 Fluid Mechanics.
-- **3,355 source entries** preserved; **297 duplicate copies** consolidated in 287 groups. Each merged question retains its appearances, years, chapters and source references. Material changes in signs, values or linked subquestions stay separate.
-- **2,850 automatically gradable questions:** 817 official-key matches, 1,544 printed-book keys and 489 independently derived keys. Grades include MCQ penalties, exact MSQ sets, inclusive NAT ranges and historical short-answer controls.
+- **3,638 unique questions:** 1,231 Strength of Materials, 1,827 Fluid Mechanics and 580 Heat Transfer.
+- **4,045 source entries** preserved; **407 duplicate copies** consolidated in 397 groups. Each merged question retains its appearances, years, chapters and source references. Material changes in signs, values or linked subquestions stay separate.
+- **3,426 automatically gradable questions:** 915 official-key matches, 1,936 printed-book keys and 575 independently derived keys. Grades include MCQ penalties, exact MSQ sets, inclusive NAT ranges and historical short-answer controls.
 - **197 written model references** for ESE Mains and the CSE supplement, with an explicitly self-assessed rubric for method, working, result and presentation.
-- **11 explained objective source inconsistencies**, available for study and excluded from automatic marks. No unexplained missing references remain among imported questions in this release.
+- **15 explained objective source inconsistencies**, available for study and excluded from automatic marks. No unexplained missing references remain among imported questions in this release.
 - **19 restored or repaired screenshots**, including one previously omitted SOM archive entry. The original 37 screenshot packs stay intact.
 
 The raw Fluid Mechanics solved-book sequence includes 223 GATE entries from 1987–2020, with 181 entries before 2017, plus 634 ESE Prelims archive entries. These are source-sequence counts before duplicate consolidation. Imported compilations and supplied book chapters define this bank's scope; other subjects await source files.
+
+### Heat Transfer (v4.4)
+
+580 unique questions from 690 source appearances: all 125 GATE ME and 61 ESE Prelims screenshots, 158 solved-book GATE items and 346 ESE Volume 1 items. The bank follows nine teaching chapters and 36 populated topics. 110 confirmed repeats are consolidated with their years, references and option translations preserved. GATE ME has 200 unique questions; ESE Prelims has 380.
+
+576 objective questions have grading keys: 98 official GATE matches, 392 printed-book keys and 86 derived answers. Four inconsistent questions have explained conditional or calculated answers and are excluded from automatic marks. Two historical true/false items use short-answer controls. Both physically equivalent single-choice alternatives are accepted for the reviewed ESE heat-transfer-coefficient question. Source key labels identify provenance; derived answers are not official claims.
+
+78 compilation crops were restored, including missing continuation choices, and ten linked book questions now include their complete shared statements. A dedicated Heat Transfer formula reference is available in untimed practice. Existing SOM/FM IDs and progress are unchanged. Heat Transfer ESE Mains is intentionally empty until its source content is supplied.
+
+See `heat-source-audit.json` and `heat-coverage.json` for source counts, repaired geometry, grading provenance and archive limits.
 
 ### Source recovery (v4.3)
 
@@ -33,7 +43,7 @@ Confidence, spaced revision, a mistake journal, attempt history, notes, bookmark
 
 Home combines subject scores, answer coverage, revision priorities, targets, daily activity, chapter performance, planner progress and recent submissions. Choose an exam track, date period and latest-attempt or all-attempt calculation. Coverage uses all-time answered unique questions; skips do not count. Written self-scores remain separate from objective grades.
 
-Advanced settings control exam and set defaults, adaptive selection, revision, targets, text size, density, focus layout and reduced motion. The subject hub has 17 spaces; SOM and Fluid Mechanics have banks. Empty subjects show honest empty states.
+Advanced settings control exam and set defaults, adaptive selection, revision, targets, text size, density, focus layout and reduced motion. The subject hub has 17 spaces; SOM, Fluid Mechanics and Heat Transfer have banks. Empty subjects show honest empty states.
 
 ## Saved progress and updated keys
 
@@ -57,7 +67,7 @@ Open http://127.0.0.1:4173. Each origin has separate browser storage; export a b
 
 ## Development and audits
 
-The app is dependency-free static JavaScript. Raw `bank.js` and `fluid-bank.js` metadata is prepared by `catalog.js`, enriched by `answers-data.js` / `answers.js`, then consolidated by `dedup-data.js` / `dedup.js`. Screenshots load as needed. `repair-assets.js` supplies restored scans. The app, dashboard, learning and answer UI are shared across subjects. See `SUBJECT-INTEGRATION.md` to add a bank.
+The app is dependency-free static JavaScript. Raw `bank.js`, `fluid-bank.js` and `heat-bank.js` metadata is prepared by `catalog.js`, enriched by `answers-data.js` / `answers.js`, then consolidated by `dedup-data.js` / `dedup.js`. Screenshots load as needed. `repair-assets.js` supplies restored scans. The app, dashboard, learning and answer UI are shared across subjects. See `SUBJECT-INTEGRATION.md` to add a bank.
 
 Screenshot corrections in `crops-data.js` / `crops.js` apply after answer enrichment and before deduplication. They can only replace image fields and source-crop provenance; they cannot change answers or curriculum metadata. `crop-assets-*.js` bundles load only when a question or preview needs them. `crop-source-audit.json` records source panels and image digests. Book screenshots were reconstructed with complete statements, diagrams, choices and shared data; matching original GATE papers recover clipped document screenshots. Complete clean originals are retained when a book scan is distorted. Original scan quality remains a limitation, and this audit does not certify every unchanged screenshot as perfect.
 
@@ -76,10 +86,10 @@ Official references: [GATE 2026 papers and keys](https://gate2026.iitg.ac.in/QPs
 
 ## Chapter and topic learning path (v4.1)
 
-All 3,058 canonical questions are organised into 38 chapters and 170 populated topics. SOM follows the detailed ESE volume 2 chapter order; Fluid Mechanics follows ESE volume 1. Applied Engineering Mechanics follows the core SOM path; Hydraulic Machines and Transmission follows pumps/turbines and precedes compressible flow. The GATE contents provide the crosswalk, with additional GATE/Mains applications appended after the core path. Topic categories progress from foundations to applications. These topic names are editorial, not claimed as official syllabus headings.
+All 3,638 canonical questions are organised into 47 chapters and 206 populated topics. SOM follows the detailed ESE volume 2 chapter order; Fluid Mechanics follows ESE volume 1. Applied Engineering Mechanics follows the core SOM path; Hydraulic Machines and Transmission follows pumps/turbines and precedes compressible flow. The GATE contents provide the crosswalk, with additional GATE/Mains applications appended after the core path. Topic categories progress from foundations to applications. These topic names are editorial, not claimed as official syllabus headings.
 
 The library is grouped and sorted by chapter and topic. Year remains a filter and source reference. Subject workspaces provide expandable chapter/topic maps with real practice counts. Topic filters stay within their chapter. New practice navigators use learning order; timed exam simulations keep their chosen test order. Chapter practice includes the entire chapter; broad library sets offer the next 200 unanswered questions.
 
 Quick practice now defaults to the earliest unanswered questions in teaching order. A one-time preference migration records the previous selection and preserves other settings. Existing sessions, question IDs, source appearances, screenshots, keys, saved answers, grades and notes retain their data. The user may still explicitly select adaptive or random practice in Settings.
 
-`curriculum-data.js` contains the registry and complete canonical-ID assignments; `curriculum.js` validates and applies them after answer patching and deduplication. `curriculum-audit.json` records contents-page evidence, counts and classification basis. `curriculum.test.cjs` checks full coverage, ordering, filters, intact answer/source data and progress preservation. `source-completeness.test.cjs` checks recovered numbering, shared response codes, answer provenance, conservative duplicate translations and transparent source gaps. All 65 tests pass.
+`curriculum-data.js` contains the registry and complete canonical-ID assignments; `curriculum.js` validates and applies them after answer patching and deduplication. `curriculum-audit.json` records contents-page evidence, counts and classification basis. `curriculum.test.cjs` checks full coverage, ordering, filters, intact answer/source data and progress preservation. `source-completeness.test.cjs` checks recovered numbering, shared response codes, answer provenance, conservative duplicate translations and transparent source gaps. All 72 tests pass.

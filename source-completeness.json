@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-06",
-  "scope": "SOM, Fluid Mechanics, hydraulics and related Applied SOM",
+  "date": "2026-10-07",
+  "scope": "SOM, Fluid Mechanics, hydraulics and related Applied SOM; Heat Transfer GATE ME and ESE Prelims",
   "addedSourceEntries": 324,
   "sections": [
     {
@@ -44,6 +44,34 @@
       "represented": 79,
       "status": "Source scan incomplete",
       "pages": "552–561"
+    },
+    {
+      "name": "GATE Heat Transfer Word compilation",
+      "expected": 125,
+      "represented": 125,
+      "status": "Complete",
+      "pages": "original GATE 2007–2026 paper references"
+    },
+    {
+      "name": "ESE Prelims Heat Transfer Word compilation",
+      "expected": 61,
+      "represented": 61,
+      "status": "Complete",
+      "pages": "original ESE 2017–2026 paper references"
+    },
+    {
+      "name": "GATE solved-book Heat Transfer",
+      "expected": 158,
+      "represented": 158,
+      "status": "Complete",
+      "pages": "392–443"
+    },
+    {
+      "name": "ESE Volume 1 Heat Transfer",
+      "expected": 346,
+      "represented": 346,
+      "status": "Complete",
+      "pages": "234–312"
     }
   ],
   "blocked": [
@@ -86,6 +114,7 @@
   "notes": [
     "Source numbering is reconciled before deduplication. Repeated appearances are preserved; practice uses unique questions.",
     "All four FM DOCX banks remain fully represented (824 separately answerable entries).",
-    "Other subjects in the complete PDFs are outside this release scope."
+    "All 186 Heat Transfer DOCX entries and all 504 numbered Heat Transfer book entries are represented before duplicate consolidation.",
+    "Heat Transfer ESE Mains has deliberately not been imported; user content is awaited."
   ]
 }
