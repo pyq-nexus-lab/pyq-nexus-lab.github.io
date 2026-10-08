@@ -1,9 +1,9 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),crypto=require('crypto');
 const C=require('./catalog.js'),A=require('./answers.js'),D=require('./dedup.js'),U=require('./curriculum.js'),X=require('./crops.js'),Core=require('./core.js'),ctx={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
-const d=ctx.window,raw=X.apply(A.apply(C.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),ht=bank.filter(q=>q.subject==='heat-transfer'),find=id=>bank.find(q=>q.id===lib.resolve('heat-transfer:'+id));
-test('all Heat Transfer source sequences and compilation entries survive consolidation; Mains is excluded',()=>{
- assert.equal(raw.filter(q=>q.subject==='heat-transfer').length,690);assert.equal(ht.length,580);
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
+const d=ctx.window,raw=X.apply(A.apply(C.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),ht=bank.filter(q=>q.subject==='heat-transfer'&&!q.exam.includes('mains')),find=id=>bank.find(q=>q.id===lib.resolve('heat-transfer:'+id));
+test('all Heat Transfer source sequences and compilation entries survive consolidation; objective sources remain intact alongside Mains',()=>{
+ assert.equal(raw.filter(q=>q.subject==='heat-transfer'&&!q.exam.includes('mains')).length,690);assert.equal(ht.length,580);
  for(const [prefix,counts]of [['ht-ese-book',[100,17,23,69,69,49,19]],['ht-gate-book',[44,19,16,31,27,21]]])for(const [i,count]of counts.entries()){const rows=raw.filter(q=>q.assetId.startsWith(prefix+'-'+(i+1)+'-'));assert.deepEqual(rows.map(q=>Number(q.number.split('.')[1])).sort((a,b)=>a-b),Array.from({length:count},(_,n)=>n+1))}
  for(const [prefix,count]of [['ht-gate-me',125],['ht-ese-prelims',61]])for(let i=1;i<=count;i++)assert(lib.original.has('heat-transfer:'+prefix+'-'+String(i).padStart(3,'0')));
  assert.equal(ht.filter(q=>q.exam==='gate-me').length,200);assert.equal(ht.filter(q=>q.exam==='ese-prelims').length,380);assert(!ht.some(q=>q.exam.includes('mains')));

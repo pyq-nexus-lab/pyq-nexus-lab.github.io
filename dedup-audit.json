@@ -1,8 +1,8 @@
 {
   "version": 2,
   "stats": {
-    "rawEntries": 4045,
-    "uniqueQuestions": 3638,
+    "rawEntries": 4173,
+    "uniqueQuestions": 3766,
     "copiesConsolidated": 407,
     "groups": 397,
     "bySubject": {
@@ -17,8 +17,8 @@
         "copiesConsolidated": 148
       },
       "heat-transfer": {
-        "rawEntries": 690,
-        "uniqueQuestions": 580,
+        "rawEntries": 818,
+        "uniqueQuestions": 708,
         "copiesConsolidated": 110
       }
     },

@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "subject": "heat-transfer",
-  "scope": "GATE ME and ESE Prelims only; ESE Mains awaits user content",
-  "rawEntries": 690,
-  "uniqueQuestions": 580,
+  "scope": "GATE ME and ESE Prelims compilation/book sources, plus official UPSC ESE and CSE Mains 2017–2026",
+  "rawEntries": 818,
+  "uniqueQuestions": 708,
   "copiesConsolidated": 110,
   "duplicateGroups": 110,
   "docxEntries": {
@@ -1051,5 +1051,7 @@
   "yearRange": [
     1988,
     2026
-  ]
+  ],
+  "mainsQuestions": 128,
+  "mainsSourceAudit": "heat-mains-source-audit.json"
 }

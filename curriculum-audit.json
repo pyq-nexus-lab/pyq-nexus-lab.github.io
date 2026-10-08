@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "generatedOn": "2026-10-07",
-  "questions": 3638,
+  "generatedOn": "2026-10-08",
+  "questions": 3766,
   "chapters": 47,
-  "populatedTopics": 206,
+  "populatedTopics": 208,
   "sources": [
     {
       "file": "ESE-Prelims vol 2.pdf",
@@ -22927,8 +22927,9 @@
     }
   ],
   "heatTransfer": {
-    "questions": 580,
+    "questions": 708,
     "chapters": 9,
-    "ordering": "Fundamentals → steady conduction → fins → transient → convection → radiation → heat exchangers → boiling/condensation → combined applications"
+    "ordering": "Fundamentals → steady conduction → fins → transient → convection → radiation → heat exchangers → boiling/condensation → combined applications",
+    "mains": 128
   }
 }

@@ -1,14 +1,14 @@
 {
-  "generatedOn": "2026-10-07",
-  "total": 3638,
+  "generatedOn": "2026-10-08",
+  "total": 3766,
   "official": 915,
   "book": 1936,
   "solved": 575,
-  "written": 197,
+  "written": 325,
   "issues": 15,
   "pending": 0,
   "keyed": 3426,
-  "sourceEntries": 4045,
+  "sourceEntries": 4173,
   "duplicateCopiesMerged": 407,
   "readySubjects": 3,
   "registeredSubjects": 17,
@@ -16,8 +16,8 @@
     "gate-me": 803,
     "gate-xe": 760,
     "ese-prelims": 1878,
-    "ese-mains": 148,
-    "cse-mains": 49
+    "ese-mains": 218,
+    "cse-mains": 107
   },
   "subjects": {
     "som": {
@@ -255,20 +255,23 @@
       ]
     },
     "heat-transfer": {
-      "generatedOn": "2026-10-07",
+      "generatedOn": "2026-10-08",
       "subject": "heat-transfer",
-      "entries": 580,
-      "uniqueQuestions": 580,
-      "sourceEntries": 690,
+      "entries": 708,
+      "uniqueQuestions": 708,
+      "sourceEntries": 818,
       "duplicateCopiesMerged": 110,
       "originalScreenshotEntries": 186,
       "supplementaryBookEntries": 504,
       "countsByExam": {
         "gate-me": 200,
-        "ese-prelims": 380
+        "ese-mains": 70,
+        "ese-prelims": 380,
+        "cse-mains": 58
       },
       "countsByFormat": {
         "MCQ": 522,
+        "WRITTEN": 128,
         "NAT": 54,
         "MSQ": 2,
         "TEXT": 2
@@ -277,7 +280,7 @@
       "officialKeys": 98,
       "bookKeys": 392,
       "independentlyDerivedKeys": 86,
-      "writtenSelfAssessment": 0,
+      "writtenSelfAssessment": 128,
       "sourceIssues": [
         {
           "id": "heat-transfer:ht-gate-me-016",
@@ -305,13 +308,14 @@
         2026
       ],
       "chapters": 9,
-      "populatedTopics": 36,
+      "populatedTopics": 38,
       "limitations": [
-        "ESE Mains content has not been supplied and is intentionally excluded.",
         "Printed and derived keys are not official examination keys.",
-        "Four inconsistent source items remain available with explained answers, outside automatic scores."
+        "Four inconsistent source items remain available with explained answers, outside automatic scores.",
+        "128 official UPSC Mains questions use independent model references and self-assessment, not automatic or official grading."
       ],
-      "sourceAudit": "heat-source-audit.json"
+      "sourceAudit": "heat-source-audit.json",
+      "mainsSourceAudit": "heat-mains-source-audit.json"
     }
   }
 }

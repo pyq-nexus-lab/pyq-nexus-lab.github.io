@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-08",
+  "existingCanonicalQuestions": 3638,
+  "checkedFields": [
+    "id",
+    "assetId",
+    "type",
+    "exam",
+    "year",
+    "marks",
+    "key",
+    "keyStatus",
+    "keySource",
+    "chapterId",
+    "topicId",
+    "chapter",
+    "topic",
+    "answerIssue",
+    "referenceAnswer",
+    "explanation",
+    "pack",
+    "cropSha256",
+    "curriculumVersion"
+  ],
+  "sha256": "46b62072229eb8e788efb6229eb908f9928c7158164875ef20326ce8988b2b98",
+  "result": "Every existing question, grading reference, image pack and teaching assignment is unchanged. Saved sessions keep their identities and order."
+}

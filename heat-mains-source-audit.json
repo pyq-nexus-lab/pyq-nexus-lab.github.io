@@ -1,0 +1,4187 @@
+{
+  "date": "2026-10-08",
+  "scope": "Official UPSC ESE Mains and CSE Mains Mechanical Engineering, 2017–2026, core Heat Transfer and related thermal applications",
+  "reviewedPapers": 40,
+  "selectedQuestions": 128,
+  "countsByExam": {
+    "cse-mains": 58,
+    "ese-mains": 70
+  },
+  "years": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "papers": [
+    {
+      "exam": "cse-mains",
+      "year": 2017,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG1.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2017-ME1.pdf",
+      "bytes": 6077516,
+      "sha256": "6b2d61fabd199f93bb53eadc2ea4305e8c94d682a4b8169b611d998c2c23c1c5",
+      "downloaded": true,
+      "selectedQuestions": 1
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2017,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG2.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2017-ME2.pdf",
+      "bytes": 6773126,
+      "sha256": "53fa21495cf1fb6f01068733e1184a1bd602352a4f8db7fe8225292761d53b3f",
+      "downloaded": true,
+      "selectedQuestions": 6
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2018,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH-ENGG-PAPER-I.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2018-ME1.pdf",
+      "bytes": 1091953,
+      "sha256": "9b6ec797f550a40381af64ba7c2d4a1a5a0782422f5c051ebd75b1fa1a26aa5f",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2018,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH-ENGG-PAPER-II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2018-ME2.pdf",
+      "bytes": 777308,
+      "sha256": "7dbbf6e9c10fa577b9f11355cb57fbc7a878654335a45301e0283344d7e83c82",
+      "downloaded": true,
+      "selectedQuestions": 6
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2019,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM19-MechEngg-I.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2019-ME1.pdf",
+      "bytes": 7676836,
+      "sha256": "b79a22ce4cd79f44b1c898c76bb6c06c474029416fceec815ec9e7f30d4dccb3",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2019,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM19-MechEngg-II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2019-ME2.pdf",
+      "bytes": 5781488,
+      "sha256": "5c75b36e950e002c2e522419f90d0c162a0b38d244a2fa7f033dcdbc99427cbd",
+      "downloaded": true,
+      "selectedQuestions": 5
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2020,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG_I.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2020-ME1.pdf",
+      "bytes": 1344119,
+      "sha256": "5eb60a26a8bd1040a4acc619875c7efccc9579141c9312302f1a42926c188bc2",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2020,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG_II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2020-ME2.pdf",
+      "bytes": 1049731,
+      "sha256": "d55a44edb590545a13aadb534adac838d573fb0ae5c6861726fc729ea4af41c6",
+      "downloaded": true,
+      "selectedQuestions": 4
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2021,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical%20Engineering%20Paper-I.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2021-ME1.pdf",
+      "bytes": 8727051,
+      "sha256": "88b6c10c7417231f1b8e51358b23ddcdc2511e1fa9b44d7a70ae31da452c7d60",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2021,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical%20Engineering%20Paper-II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2021-ME2.pdf",
+      "bytes": 7775271,
+      "sha256": "e6c6c1d1eef209a19ed61e304e68457a2178b4575b4fffc65ab04c97d6e77a15",
+      "downloaded": true,
+      "selectedQuestions": 4
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2022,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-22-MECHANICAL-ENGINEERING-PAPER-I-280922.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2022-ME1.pdf",
+      "bytes": 11543173,
+      "sha256": "b13e44a00a31ab91e0ceacdfb2a646c5f185566ba771c6ecfbe58d2376872988",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2022,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-22-MECHANICAL-ENGINEERING-PAPER-II-280922.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2022-ME2.pdf",
+      "bytes": 11043784,
+      "sha256": "1ff02284a525a8e4962f2c3e0d935aabda4ecc529b61763ed77c279ea7c9b405",
+      "downloaded": true,
+      "selectedQuestions": 6
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2023,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-23-MECHANICAL-ENGINEERING-PAPER-I-29092023.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2023-ME1.pdf",
+      "bytes": 7386178,
+      "sha256": "b76dc454f3045f81152663a444398551949fc0e26034ac9191c78f4bff99a45f",
+      "downloaded": true,
+      "selectedQuestions": 1
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2023,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-23-MECHANICAL-ENGINEERING-PAPER-II-29092023.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2023-ME2.pdf",
+      "bytes": 6951354,
+      "sha256": "076b370b745ee2f79d4291775ed2bab2062c5d05262669e97506bcbad5264f41",
+      "downloaded": true,
+      "selectedQuestions": 4
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2024,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-24-MECHANICAL-ENGINEERING-PAPER-I-031024.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2024-ME1.pdf",
+      "bytes": 6477691,
+      "sha256": "160dc606a8df45c14e89ec93bd174f82701eda78b94757c839b5dc7e4f3c1408",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2024,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-24-MECHANICAL-ENGINEERING-PAPER-II-031024.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2024-ME2.pdf",
+      "bytes": 18989477,
+      "sha256": "00c3b16051875f3fb736293171b4ac972c2ea448d3b56534cbd26ebc52c16cea",
+      "downloaded": true,
+      "selectedQuestions": 6
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2025,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-CSM-25-010925.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2025-ME1.pdf",
+      "bytes": 7975880,
+      "sha256": "527ad5d1305140a44899acdd180679880f65d78076d3ecf51ac4d1afd97d8850",
+      "downloaded": true,
+      "selectedQuestions": 1
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2025,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-II-QP-CSM-25-010925.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2025-ME2.pdf",
+      "bytes": 8653948,
+      "sha256": "c30a04387fb036ba19c5363dd21936bb153a51933975d894ac9b2e13968ad198",
+      "downloaded": true,
+      "selectedQuestions": 6
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2026,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-26-010926-Optional-MECHANICAL-ENGINEERING-PAPER_I.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2026-ME1.pdf",
+      "bytes": 8303111,
+      "sha256": "2503ea9be35c4cd171e051b011e766b4fcabed718fbc9e5cade222d3963a2572",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2026,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-26-010926-Optional-MECHANICAL-ENGINEERING-PAPER_II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2026-ME2.pdf",
+      "bytes": 7803615,
+      "sha256": "c91d93b47ce870e7c2f7e2eca1b85a32766071ec6286b2f73459fc06838037e0",
+      "downloaded": true,
+      "selectedQuestions": 8
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2017,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical_Engg_1_2.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2017-ME1.pdf",
+      "bytes": 3963634,
+      "sha256": "cfdc8da675a8c39fb56322875f05be6749f5603f7a95e79128a20a6709d5a17e",
+      "downloaded": true,
+      "selectedQuestions": 7
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2017,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical_Engg_2_1.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2017-ME2.pdf",
+      "bytes": 5879737,
+      "sha256": "ce764ee2149366fd638f9080b6bd5901641fefee60a4fcf3d6e4a56cf01a94ef",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2018,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MACH-ENGINEERING-PAPER-1.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2018-ME1.pdf",
+      "bytes": 4498819,
+      "sha256": "7e9fc6bab7a5e8e95e2094c0d9dd27449c59f749e43c8cc60e1be33596e69909",
+      "downloaded": true,
+      "selectedQuestions": 7
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2018,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH-ENGINEERING-PAPER-2.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2018-ME2.pdf",
+      "bytes": 5953000,
+      "sha256": "df895dbfa7ed93491d9f4c09aac69bbe0adf9202924518348dba98fe70911d79",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2019,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/ME_P1_ESEM19.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2019-ME1.pdf",
+      "bytes": 9429613,
+      "sha256": "c47b733f054b32f9777fba1d4cf56b5c12fdbf813ce580b7d6bc8f1cd9d62e2e",
+      "downloaded": true,
+      "selectedQuestions": 2
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2019,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/ME_P2_ESEM19.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2019-ME2.pdf",
+      "bytes": 2935382,
+      "sha256": "efcfd737e8ee0752b8f0db9420c2aa1d994ec8216f620538ded10b593f9e8c94",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2020,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/M_EN_P1-ESEM-20-QP.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2020-ME1.pdf",
+      "bytes": 530560,
+      "sha256": "d9aa6ac2b9dd5de53e9b7fc98554295b7fdd6bf8ad857556355c6a2a8db1b04c",
+      "downloaded": true,
+      "selectedQuestions": 6
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2020,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/M_EN_P2-ESEM-20-QP.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2020-ME2.pdf",
+      "bytes": 429760,
+      "sha256": "502e8e2709bf5ecc3e5577bd7ddd61069e304b6b5a1f4af34622a99ef2316123",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2021,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-21-MechEnggPaper-I-231121.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2021-ME1.pdf",
+      "bytes": 6461075,
+      "sha256": "b1b6a8bc6da8b198a2ee9d4fc2c884f986fe69d74ad75823f1380700dad8d967",
+      "downloaded": true,
+      "selectedQuestions": 7
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2021,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-21-MechEnggPaper-II-231121.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2021-ME2.pdf",
+      "bytes": 6036562,
+      "sha256": "f4e40be08ebeb035e69c901c88783ab6c798daa71c902f0ab9a721d6f6efb890",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2022,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MechEngg_I_28062022.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2022-ME1.pdf",
+      "bytes": 5967045,
+      "sha256": "ed5950aadea1acc2936644f38cc9cd4db716c6b53fc6e538bdf6ed449290e987",
+      "downloaded": true,
+      "selectedQuestions": 7
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2022,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MechEngg_II_28062022.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2022-ME2.pdf",
+      "bytes": 5411763,
+      "sha256": "5ffaeef3ef058fa542221afd95a1589266828cbccd9b165026eb73878852179a",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2023,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-23-MECHANICAL-ENGINEERING-PAPER-I-250623.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2023-ME1.pdf",
+      "bytes": 8248265,
+      "sha256": "062677950df7d05dd2ab89adf93662e2d447f2a23a427e1546207e92d05294cd",
+      "downloaded": true,
+      "selectedQuestions": 9
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2023,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-23-MECHANICAL-ENGINEERING-PAPER-II-260623.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2023-ME2.pdf",
+      "bytes": 5491765,
+      "sha256": "9c0c7799aa6c1c8905cb3107e28f8539fe07fc08a58637851c686a198ad8b04f",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2024,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-24-MECHANICAL-ENGINEERING-PAPER-I-240624.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2024-ME1.pdf",
+      "bytes": 8536538,
+      "sha256": "4d353a0881f1e4f46f715afc29b693b2effb343b944b5262db8ccb22c70047eb",
+      "downloaded": true,
+      "selectedQuestions": 9
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2024,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-24-MECHANICAL-ENGINEERING-PAPER-II-240624.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2024-ME2.pdf",
+      "bytes": 4172070,
+      "sha256": "7231bb2b0097de6211d62665a8f91353be750f87b7aeaed64b72730122b8ede3",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2025,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-ESEM-25-110825.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2025-ME1.pdf",
+      "bytes": 5466453,
+      "sha256": "b7739b80fbff7fe2f3588e8f9589260ac85141043ef5c9b81bc552ff878730e3",
+      "downloaded": true,
+      "selectedQuestions": 9
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2025,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-II-QP-ESEM-25-110825.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2025-ME2.pdf",
+      "bytes": 5194253,
+      "sha256": "24f698a80b06a97e8c90d4fc2efe6744a05445975819b2b43ff7738c9874866b",
+      "downloaded": true,
+      "selectedQuestions": 0
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2026,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-26-220626-MECHANICAL-ENGINEERING-PAPER-I.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2026-ME1.pdf",
+      "bytes": 6425011,
+      "sha256": "74e04c842c9c9e46de40712b92e8866b11ca6cb2c3c564b2c97db7922ce6a2c7",
+      "downloaded": true,
+      "selectedQuestions": 7
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2026,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-26-220626-MECHANICAL-ENGINEERING-PAPER-II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2026-ME2.pdf",
+      "bytes": 4412480,
+      "sha256": "8125b31d52d7aecb9a830510af79e3a7e04e1ca70aa4c2b169253ec56ce422ae",
+      "downloaded": true,
+      "selectedQuestions": 0
+    }
+  ],
+  "questions": [
+    {
+      "id": "heat-transfer:ht-csem-2017-1c",
+      "exam": "cse-mains",
+      "year": 2017,
+      "number": "1(c)",
+      "marks": 10,
+      "source": "cse-mains-2017-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG2.pdf",
+      "cropSha256": "44878c28541d1a2ff24a67adc260a9764d3f7072674c652a5394c3067d548ae6",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            394.76190476190476,
+            574.75,
+            434.76190476190476
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "What is the shape factor",
+          "endAnchor": "basic shape factor laws."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2017-2b",
+      "exam": "cse-mains",
+      "year": 2017,
+      "number": "2(b)",
+      "marks": 20,
+      "source": "cse-mains-2017-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG2.pdf",
+      "cropSha256": "e0fc358aa22c9c37b8e9f8905dd93b44b2d3c368c32ce0e0b8f738519aaa9d6d",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            196.66666666666666,
+            574.75,
+            349.5238095238095
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "A flue gas stream",
+          "endAnchor": "properties with temperature."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2017-3a",
+      "exam": "cse-mains",
+      "year": 2017,
+      "number": "3(a)",
+      "marks": 20,
+      "source": "cse-mains-2017-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG2.pdf",
+      "cropSha256": "bdbf18fabbac2b9c0f992b4f70a2d5788540a97a127608381ea44c0995d55e65",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            612.3809523809524,
+            574.75,
+            773.3333333333333
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "In an open heart surgery",
+          "endAnchor": "CPwater = 4.187 kJ/kg-K."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2017-4c",
+      "exam": "cse-mains",
+      "year": 2017,
+      "number": "4(c)",
+      "marks": 10,
+      "source": "cse-mains-2017-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG2.pdf",
+      "cropSha256": "1a16ccab13052599926c5c8e559ea0d63355375dded1af305403e9b3b2637e90",
+      "panels": [
+        {
+          "page": 5,
+          "box": [
+            20.0,
+            487.6190476190476,
+            574.75,
+            526.6666666666666
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "Explain clearly what is",
+          "endAnchor": "constant heat flux case."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2017-7b",
+      "exam": "cse-mains",
+      "year": 2017,
+      "number": "7(b)",
+      "marks": 20,
+      "source": "cse-mains-2017-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG2.pdf",
+      "cropSha256": "1e559482df4b2917d69a5c34159f649edacc9b5fd9edfb4d7112371a5b7d8ba3",
+      "panels": [
+        {
+          "page": 9,
+          "box": [
+            20.0,
+            300.95238095238096,
+            574.75,
+            501.4285714285714
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "A small disc-shaped earth satellite",
+          "endAnchor": "5.67 ×10-8 W/m2"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2017-8c",
+      "exam": "cse-mains",
+      "year": 2017,
+      "number": "8(c)",
+      "marks": 10,
+      "source": "cse-mains-2017-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG2.pdf",
+      "cropSha256": "06e150c3d30e47050d3c6aba7566be1ece6f87d829803a406e09969855ec02b6",
+      "panels": [
+        {
+          "page": 11,
+          "box": [
+            20.0,
+            473.3333333333333,
+            574.75,
+            545.7142857142857
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "Write down the assumptions to analyze",
+          "endAnchor": "terminal temperatures."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2018-1b",
+      "exam": "cse-mains",
+      "year": 2018,
+      "number": "1(b)",
+      "marks": 10,
+      "source": "cse-mains-2018-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH-ENGG-PAPER-II.pdf",
+      "cropSha256": "defc2b2793ece7ee22e8ace719c628c8c9e85219aed6a0a43d578c8c1241082a",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            285.23809523809524,
+            592.0,
+            369.5238095238095
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "A plane wall of thickness",
+          "endAnchor": "steady-state conditions."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2018-1e",
+      "exam": "cse-mains",
+      "year": 2018,
+      "number": "1(e)",
+      "marks": 10,
+      "source": "cse-mains-2018-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH-ENGG-PAPER-II.pdf",
+      "cropSha256": "461a7cf0ccb9a3cbbe88475cd0edd526c48d6df3e41ada3a567ebd86ae0cf79f",
+      "panels": [
+        {
+          "page": 4,
+          "box": [
+            20.0,
+            28.095238095238095,
+            592.0,
+            230.47619047619045
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "Air at 20",
+          "endAnchor": "Pr=0·7"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2018-2b",
+      "exam": "cse-mains",
+      "year": 2018,
+      "number": "2(b)",
+      "marks": 20,
+      "source": "cse-mains-2018-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH-ENGG-PAPER-II.pdf",
+      "cropSha256": "8d9c46cd039eabc2b6f59ec9542709f7d18e7a288e5317a28dc7e77971f50d54",
+      "panels": [
+        {
+          "page": 5,
+          "box": [
+            20.0,
+            50.0,
+            592.0,
+            74.28571428571428
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "What is Reynolds-Colburn analogy",
+          "endAnchor": "Colburn's j-factor?"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2018-3c",
+      "exam": "cse-mains",
+      "year": 2018,
+      "number": "3(c)",
+      "marks": 10,
+      "source": "cse-mains-2018-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH-ENGG-PAPER-II.pdf",
+      "cropSha256": "e9a98e5b8fb790845ec90ba7928a5241b75c3ccda58c8795f1a98f12c871a588",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            92.38095238095238,
+            592.0,
+            164.28571428571428
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "Heat is generated uniformly in uranium",
+          "endAnchor": "maximum temperature of the fuel rods."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2018-4a",
+      "exam": "cse-mains",
+      "year": 2018,
+      "number": "4(a)",
+      "marks": 20,
+      "source": "cse-mains-2018-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH-ENGG-PAPER-II.pdf",
+      "cropSha256": "1a443419771b4d8470441ea59a15b3dd55f53c4e62b908a3bcd47d22ed5dfb27",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            291.90476190476187,
+            592.0,
+            410.95238095238096
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "Water (Cp",
+          "endAnchor": "water flow rate is halved."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2018-4c",
+      "exam": "cse-mains",
+      "year": 2018,
+      "number": "4(c)",
+      "marks": 10,
+      "source": "cse-mains-2018-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH-ENGG-PAPER-II.pdf",
+      "cropSha256": "7ee661304bdd4c7167727601f02c6e022d5853fa4cae818f78471c6a751d52b5",
+      "panels": [
+        {
+          "page": 7,
+          "box": [
+            20.0,
+            598.0952380952381,
+            592.0,
+            709.5238095238095
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "Liquid air boiling",
+          "endAnchor": "rate of evaporation of liquid air."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2019-1d",
+      "exam": "cse-mains",
+      "year": 2019,
+      "number": "1(d)",
+      "marks": 10,
+      "source": "cse-mains-2019-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM19-MechEngg-II.pdf",
+      "cropSha256": "993b081113df8decde8a9583d95c4500d64fcc6d454ec14c1fe1386ca089d9eb",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            149.04761904761904,
+            580.0,
+            253.33333333333331
+          ],
+          "pageSize": [
+            600.0,
+            767.0
+          ],
+          "startAnchor": "A furnace wall consists",
+          "endAnchor": "junction of steel plate and outer insulation brick wall?"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2019-1e",
+      "exam": "cse-mains",
+      "year": 2019,
+      "number": "1(e)",
+      "marks": 10,
+      "source": "cse-mains-2019-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM19-MechEngg-II.pdf",
+      "cropSha256": "7de56a0ebe3b6a3c498f128af0e758153d29e0e2cc75f9e35513d40123ba7798",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            468.0952380952381,
+            580.0,
+            688.5714285714286
+          ],
+          "pageSize": [
+            600.0,
+            767.0
+          ],
+          "startAnchor": "Liquid mercury flows",
+          "endAnchor": "Pr=0·0248"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2019-2ai",
+      "exam": "cse-mains",
+      "year": 2019,
+      "number": "2(a)(i)",
+      "marks": 10,
+      "source": "cse-mains-2019-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM19-MechEngg-II.pdf",
+      "cropSha256": "8d09feec5dc8988e9a0f781f3788fec567ec42316cf46278659f541a45065ebb",
+      "panels": [
+        {
+          "page": 4,
+          "box": [
+            20.0,
+            260.4761904761905,
+            580.0,
+            416.19047619047615
+          ],
+          "pageSize": [
+            600.0,
+            767.0
+          ],
+          "startAnchor": "(i) A 40 litres electrical radiator",
+          "endAnchor": "is 1 bar."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2019-3b",
+      "exam": "cse-mains",
+      "year": 2019,
+      "number": "3(b)",
+      "marks": 20,
+      "source": "cse-mains-2019-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM19-MechEngg-II.pdf",
+      "cropSha256": "29e9f907fc42d0e2a917090bca56016e110558d24742ab054c0321dbd1ad6adf",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            173.8095238095238,
+            580.0,
+            301.90476190476187
+          ],
+          "pageSize": [
+            600.0,
+            766.0
+          ],
+          "startAnchor": "A counterflow double-pipe heat exchanger",
+          "endAnchor": "thermal resistance of the inner tube is negligible."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2019-4c",
+      "exam": "cse-mains",
+      "year": 2019,
+      "number": "4(c)",
+      "marks": 10,
+      "source": "cse-mains-2019-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM19-MechEngg-II.pdf",
+      "cropSha256": "d567432ad70a0a3b08c4c89df5ed5e554c4a0e19161129f95139621b1b3e4375",
+      "panels": [
+        {
+          "page": 8,
+          "box": [
+            20.0,
+            46.19047619047619,
+            580.0,
+            680.952380952381
+          ],
+          "pageSize": [
+            600.0,
+            767.0
+          ],
+          "startAnchor": "Daylight and incandescent light",
+          "endAnchor": "100000"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2020-1b",
+      "exam": "cse-mains",
+      "year": 2020,
+      "number": "1(b)",
+      "marks": 10,
+      "source": "cse-mains-2020-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG_II.pdf",
+      "cropSha256": "5404c6be3fd23821b9c085cb76b5fc81af20b43fcd3637caadbc6744ada38d8b",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            370.0,
+            575.2000122070312,
+            540.0
+          ],
+          "pageSize": [
+            595.2000122070312,
+            841.6799926757812
+          ],
+          "startAnchor": "Consider the base plate",
+          "endAnchor": "evaluate the inner surface temperature."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2020-2a",
+      "exam": "cse-mains",
+      "year": 2020,
+      "number": "2(a)",
+      "marks": 20,
+      "source": "cse-mains-2020-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG_II.pdf",
+      "cropSha256": "a468077887252fe9e0738ead535ba03538ed1df17d67beb79db4663cb3aab22e",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            312.38095238095235,
+            575.2000122070312,
+            480.0
+          ],
+          "pageSize": [
+            595.2000122070312,
+            841.6799926757812
+          ],
+          "startAnchor": "Consider a 3 m diameter spherical tank",
+          "endAnchor": "1 atm."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2020-3c",
+      "exam": "cse-mains",
+      "year": 2020,
+      "number": "3(c)",
+      "marks": 10,
+      "source": "cse-mains-2020-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG_II.pdf",
+      "cropSha256": "1eb514df508b5ed0bf233ded9bf5443bd0556213bc6b414c79f28d5db162f426",
+      "panels": [
+        {
+          "page": 5,
+          "box": [
+            20.0,
+            320.95238095238096,
+            575.2000122070312,
+            414.76190476190476
+          ],
+          "pageSize": [
+            595.2000122070312,
+            841.6799926757812
+          ],
+          "startAnchor": "A 2 m × 3 m flat plate",
+          "endAnchor": "Pr = 0· 7309."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2020-4b",
+      "exam": "cse-mains",
+      "year": 2020,
+      "number": "4(b)",
+      "marks": 20,
+      "source": "cse-mains-2020-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG_II.pdf",
+      "cropSha256": "c5c6b0b13ba813824999d19065943327be8b4ac9bf5bb0f47e3470e0d7aac84c",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            423.8095238095238,
+            575.2000122070312,
+            530.4761904761905
+          ],
+          "pageSize": [
+            595.2000122070312,
+            841.6799926757812
+          ],
+          "startAnchor": "A counter-flow double-pipe heat exchanger",
+          "endAnchor": "4·18 kJ/kg-K and 4·31 kJ/kg-K respectively."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2021-1c",
+      "exam": "cse-mains",
+      "year": 2021,
+      "number": "1(c)",
+      "marks": 10,
+      "source": "cse-mains-2021-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical%20Engineering%20Paper-II.pdf",
+      "cropSha256": "6363dcc4755ddcaf7fcc4d43096e8735d94e48573ab3d534c9960da44662da27",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            353.3333333333333,
+            541.1199951171875,
+            493.3333333333333
+          ],
+          "pageSize": [
+            561.1199951171875,
+            758.6400146484375
+          ],
+          "startAnchor": "Consider a large plane wall",
+          "endAnchor": "evaluate the rate of heat transfer through the wall."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2021-1d",
+      "exam": "cse-mains",
+      "year": 2021,
+      "number": "1(d)",
+      "marks": 10,
+      "source": "cse-mains-2021-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical%20Engineering%20Paper-II.pdf",
+      "cropSha256": "61ac62245d14b0ff8b5380a240582bdf229987941bf19c6b4bfc1e652c1f2481",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            163.8095238095238,
+            543.0399780273438,
+            468.0952380952381
+          ],
+          "pageSize": [
+            563.0399780273438,
+            764.1599731445312
+          ],
+          "startAnchor": "The following equation has been proposed",
+          "endAnchor": "Symbols have their usual meaning."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2021-3a",
+      "exam": "cse-mains",
+      "year": 2021,
+      "number": "3(a)",
+      "marks": 20,
+      "source": "cse-mains-2021-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical%20Engineering%20Paper-II.pdf",
+      "cropSha256": "d7833e9af22e8593828109a24b19bd0853fb1f285a26c62e0ab39ba9257fab4e",
+      "panels": [
+        {
+          "page": 4,
+          "box": [
+            20.0,
+            538.5714285714286,
+            543.52001953125,
+            706.1904761904761
+          ],
+          "pageSize": [
+            563.52001953125,
+            762.9600219726562
+          ],
+          "startAnchor": "3.(a)(i)",
+          "endAnchor": "A2"
+        },
+        {
+          "page": 5,
+          "box": [
+            20.0,
+            39.523809523809526,
+            543.0399780273438,
+            253.33333333333331
+          ],
+          "pageSize": [
+            563.0399780273438,
+            759.1199951171875
+          ],
+          "startAnchor": "Show that the effective conductance",
+          "endAnchor": "Stefan-Boltzmann constant"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2021-4a",
+      "exam": "cse-mains",
+      "year": 2021,
+      "number": "4(a)",
+      "marks": 20,
+      "source": "cse-mains-2021-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical%20Engineering%20Paper-II.pdf",
+      "cropSha256": "8a397534f8b6f45280ea60c5bb8abab72ca3065d36cb224b02b70056678dd9c2",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            40.476190476190474,
+            542.7999877929688,
+            157.61904761904762
+          ],
+          "pageSize": [
+            562.7999877929688,
+            757.6799926757812
+          ],
+          "startAnchor": "Two walls A and B",
+          "endAnchor": "the heat transferred from the wall A"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2022-1d",
+      "exam": "cse-mains",
+      "year": 2022,
+      "number": "1(d)",
+      "marks": 10,
+      "source": "cse-mains-2022-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-22-MECHANICAL-ENGINEERING-PAPER-II-280922.pdf",
+      "cropSha256": "7bbc0f09fa7dc5cc795950f9ebbe2b4d6662c168f3e9a5e4e2a78c3e241e6e3f",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            332.38095238095235,
+            568.239990234375,
+            453.3333333333333
+          ],
+          "pageSize": [
+            588.239990234375,
+            789.3599853515625
+          ],
+          "startAnchor": "Hot water is flowing",
+          "endAnchor": "coefficient at the outer surface of the pipe."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2022-1e",
+      "exam": "cse-mains",
+      "year": 2022,
+      "number": "1(e)",
+      "marks": 10,
+      "source": "cse-mains-2022-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-22-MECHANICAL-ENGINEERING-PAPER-II-280922.pdf",
+      "cropSha256": "60b5d3609108992888ad58e1ce4959b2a10765988eeac2c157261944f9851048",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            549.047619047619,
+            568.239990234375,
+            630.952380952381
+          ],
+          "pageSize": [
+            588.239990234375,
+            789.3599853515625
+          ],
+          "startAnchor": "(i) Define the total",
+          "endAnchor": "at a wavelength of 20 µm?"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2022-2b",
+      "exam": "cse-mains",
+      "year": 2022,
+      "number": "2(b)",
+      "marks": 20,
+      "source": "cse-mains-2022-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-22-MECHANICAL-ENGINEERING-PAPER-II-280922.pdf",
+      "cropSha256": "f1485ebe6de700d5c451169d34125e1038a10dc045b08a8d0ced2b4c07c3583e",
+      "panels": [
+        {
+          "page": 4,
+          "box": [
+            20.0,
+            259.5238095238095,
+            575.6799926757812,
+            420.4761904761905
+          ],
+          "pageSize": [
+            595.6799926757812,
+            787.9199829101562
+          ],
+          "startAnchor": "A shaft having diameter",
+          "endAnchor": "lubricating oil."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2022-3b",
+      "exam": "cse-mains",
+      "year": 2022,
+      "number": "3(b)",
+      "marks": 20,
+      "source": "cse-mains-2022-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-22-MECHANICAL-ENGINEERING-PAPER-II-280922.pdf",
+      "cropSha256": "d7a75d2d5068f24717cc84c10a171206991022f2ded7176a160b3f5bf140c1e8",
+      "panels": [
+        {
+          "page": 5,
+          "box": [
+            20.0,
+            620.952380952381,
+            562.47998046875,
+            702.3809523809524
+          ],
+          "pageSize": [
+            582.47998046875,
+            788.6400146484375
+          ],
+          "startAnchor": "A solar collector, as shown",
+          "endAnchor": "glass cover and the collector plate are 20"
+        },
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            56.666666666666664,
+            563.4400024414062,
+            321.4285714285714
+          ],
+          "pageSize": [
+            583.4400024414062,
+            787.6799926757812
+          ],
+          "startAnchor": "60 °C, respectively, determine",
+          "endAnchor": "Cp = 1007 J/kg-°C, Pr = 0·7268"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2022-3c",
+      "exam": "cse-mains",
+      "year": 2022,
+      "number": "3(c)",
+      "marks": 10,
+      "source": "cse-mains-2022-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-22-MECHANICAL-ENGINEERING-PAPER-II-280922.pdf",
+      "cropSha256": "05a54fd6fd9e655805fe42efc4dacd28bf18c7e4934a9e215c87cbfe6b4131c6",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            446.19047619047615,
+            563.4400024414062,
+            567.1428571428571
+          ],
+          "pageSize": [
+            583.4400024414062,
+            787.6799926757812
+          ],
+          "startAnchor": "A windshield of a car",
+          "endAnchor": "Cp =1·006 kJ/kg-K, Pr= 0·7362"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2022-4c",
+      "exam": "cse-mains",
+      "year": 2022,
+      "number": "4(c)",
+      "marks": 10,
+      "source": "cse-mains-2022-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-22-MECHANICAL-ENGINEERING-PAPER-II-280922.pdf",
+      "cropSha256": "85bc0aa0bac0bad7099d620146d8b13fc5d0cb151094cd76aba5d90ef3e668ae",
+      "panels": [
+        {
+          "page": 8,
+          "box": [
+            20.0,
+            58.57142857142857,
+            564.1599731445312,
+            538.5714285714286
+          ],
+          "pageSize": [
+            584.1599731445312,
+            787.9199829101562
+          ],
+          "startAnchor": "A shell and tube heat exchanger",
+          "endAnchor": "Number of transfer units"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2023-1d",
+      "exam": "cse-mains",
+      "year": 2023,
+      "number": "1(d)",
+      "marks": 10,
+      "source": "cse-mains-2023-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-23-MECHANICAL-ENGINEERING-PAPER-II-29092023.pdf",
+      "cropSha256": "0fc8e02bb96efda774ff4b26043dd06eb1b243737f23516b4e7a765d80d01445",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            568.0952380952381,
+            563.4400024414062,
+            681.9047619047619
+          ],
+          "pageSize": [
+            583.4400024414062,
+            781.2000122070312
+          ],
+          "startAnchor": "An industrial furnace",
+          "endAnchor": "Total emissive power"
+        },
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            33.33333333333333,
+            562.47998046875,
+            133.33333333333331
+          ],
+          "pageSize": [
+            582.47998046875,
+            782.4000244140625
+          ],
+          "startAnchor": "Use Planck's distribution law",
+          "endAnchor": "Takeσ=5.67"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2023-1e",
+      "exam": "cse-mains",
+      "year": 2023,
+      "number": "1(e)",
+      "marks": 10,
+      "source": "cse-mains-2023-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-23-MECHANICAL-ENGINEERING-PAPER-II-29092023.pdf",
+      "cropSha256": "ea64e65ffe22fbe886f25a48fbed60262ea876437d268a725ad38f68e9554aff",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            204.76190476190476,
+            562.47998046875,
+            279.04761904761904
+          ],
+          "pageSize": [
+            582.47998046875,
+            782.4000244140625
+          ],
+          "startAnchor": "(i) Write down the basic assumptions",
+          "endAnchor": "basic heat exchanger analysis."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2023-3a",
+      "exam": "cse-mains",
+      "year": 2023,
+      "number": "3(a)",
+      "marks": 20,
+      "source": "cse-mains-2023-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-23-MECHANICAL-ENGINEERING-PAPER-II-29092023.pdf",
+      "cropSha256": "0978cd957d055ad23c00e76e1100ddf15f0f85c77656138b2f638fb401b8ad49",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            134.0952380952381,
+            565.3599853515625,
+            230.47619047619045
+          ],
+          "pageSize": [
+            585.3599853515625,
+            779.760009765625
+          ],
+          "startAnchor": "of thickness 1 cm",
+          "endAnchor": "steady-state heat conduction."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2023-4b",
+      "exam": "cse-mains",
+      "year": 2023,
+      "number": "4(b)",
+      "marks": 20,
+      "source": "cse-mains-2023-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-23-MECHANICAL-ENGINEERING-PAPER-II-29092023.pdf",
+      "cropSha256": "f82358cea183d3902a5394994da8999a6642c12c6e01a20113b962a1d7c1cd10",
+      "panels": [
+        {
+          "page": 7,
+          "box": [
+            20.0,
+            625.2380952380952,
+            563.6799926757812,
+            700.952380952381
+          ],
+          "pageSize": [
+            583.6799926757812,
+            779.52001953125
+          ],
+          "startAnchor": "Water at 30",
+          "endAnchor": "tube is smooth."
+        },
+        {
+          "page": 8,
+          "box": [
+            20.0,
+            50.476190476190474,
+            564.1599731445312,
+            274.76190476190476
+          ],
+          "pageSize": [
+            584.1599731445312,
+            780.239990234375
+          ],
+          "startAnchor": "The properties of water are given",
+          "endAnchor": "drop across the tube."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2024-1c",
+      "exam": "cse-mains",
+      "year": 2024,
+      "number": "1(c)",
+      "marks": 10,
+      "source": "cse-mains-2024-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-24-MECHANICAL-ENGINEERING-PAPER-II-031024.pdf",
+      "cropSha256": "fde70ae83310a5bceae5618f740d753fbbc8d4b56e5ea0acfc2b1d4d5c52507d",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            151.42857142857142,
+            544.239990234375,
+            305.23809523809524
+          ],
+          "pageSize": [
+            564.239990234375,
+            765.3599853515625
+          ],
+          "startAnchor": "Deduce an expression",
+          "endAnchor": "mentioning the maximum and minimum temperatures and the location."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2024-2b",
+      "exam": "cse-mains",
+      "year": 2024,
+      "number": "2(b)",
+      "marks": 20,
+      "source": "cse-mains-2024-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-24-MECHANICAL-ENGINEERING-PAPER-II-031024.pdf",
+      "cropSha256": "aa699aeb6f9a58a0bc267518cc7d8f8583b18bad27511f9c90d46daffa16dc5b",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            273.3333333333333,
+            546.1599731445312,
+            532.8571428571429
+          ],
+          "pageSize": [
+            566.1599731445312,
+            764.4000244140625
+          ],
+          "startAnchor": "Saturated liquid refrigerant",
+          "endAnchor": "refrigerant. Also neglect the thermal resistance of copper tube."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2024-2c",
+      "exam": "cse-mains",
+      "year": 2024,
+      "number": "2(c)",
+      "marks": 10,
+      "source": "cse-mains-2024-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-24-MECHANICAL-ENGINEERING-PAPER-II-031024.pdf",
+      "cropSha256": "e7087de60af68c11407d12068bc99ce99a37890e062af1281d559e47d885b67e",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            613.8095238095237,
+            546.1599731445312,
+            687.6190476190476
+          ],
+          "pageSize": [
+            566.1599731445312,
+            764.4000244140625
+          ],
+          "startAnchor": "Explain the procedure to arrive",
+          "endAnchor": "Takeσ = 5.67"
+        },
+        {
+          "page": 7,
+          "box": [
+            20.0,
+            127.61904761904762,
+            544.47998046875,
+            239.52380952380952
+          ],
+          "pageSize": [
+            564.47998046875,
+            764.1599731445312
+          ],
+          "startAnchor": "Explain the procedure of arriving",
+          "endAnchor": "Take Wien's constant = 2.9 mm K."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2024-3a",
+      "exam": "cse-mains",
+      "year": 2024,
+      "number": "3(a)",
+      "marks": 20,
+      "source": "cse-mains-2024-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-24-MECHANICAL-ENGINEERING-PAPER-II-031024.pdf",
+      "cropSha256": "f0fd667c05dff60d3720b33f77b92a55de914c62355f5f712f485ee30fc93342",
+      "panels": [
+        {
+          "page": 8,
+          "box": [
+            20.0,
+            41.904761904761905,
+            545.2000122070312,
+            403.8095238095238
+          ],
+          "pageSize": [
+            565.2000122070312,
+            763.6799926757812
+          ],
+          "startAnchor": "A shell and tube heat exchanger",
+          "endAnchor": "hfg = 2600 kJ/kg"
+        },
+        {
+          "page": 7,
+          "box": [
+            20.0,
+            526.6666666666666,
+            544.47998046875,
+            656.6666666666666
+          ],
+          "pageSize": [
+            564.47998046875,
+            764.1599731445312
+          ],
+          "startAnchor": "Cp = 4.2 kJ/kg.K",
+          "endAnchor": "hfg = 2600kJ/kg"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2024-4b",
+      "exam": "cse-mains",
+      "year": 2024,
+      "number": "4(b)",
+      "marks": 20,
+      "source": "cse-mains-2024-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-24-MECHANICAL-ENGINEERING-PAPER-II-031024.pdf",
+      "cropSha256": "8af3503bffc057f96cab23045d33dfca11f76a284d3c80966b15d632ce34c278",
+      "panels": [
+        {
+          "page": 10,
+          "box": [
+            20.0,
+            327.6190476190476,
+            545.9199829101562,
+            621.9047619047619
+          ],
+          "pageSize": [
+            565.9199829101562,
+            764.1599731445312
+          ],
+          "startAnchor": "A stainless steel plate",
+          "endAnchor": "end."
+        },
+        {
+          "page": 24,
+          "box": [
+            20.0,
+            48.57142857142857,
+            545.9199829101562,
+            570.4761904761905
+          ],
+          "pageSize": [
+            565.9199829101562,
+            764.4000244140625
+          ],
+          "startAnchor": "Question 4(b)",
+          "endAnchor": "0.730"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2024-4c",
+      "exam": "cse-mains",
+      "year": 2024,
+      "number": "4(c)",
+      "marks": 10,
+      "source": "cse-mains-2024-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-24-MECHANICAL-ENGINEERING-PAPER-II-031024.pdf",
+      "cropSha256": "59a8e22dd1f5e594a666a6f9dd561eb507fed5f5560a22b8de3ba7e8c795a777",
+      "panels": [
+        {
+          "page": 11,
+          "box": [
+            20.0,
+            182.38095238095238,
+            545.9199829101562,
+            668.0952380952381
+          ],
+          "pageSize": [
+            565.9199829101562,
+            764.1599731445312
+          ],
+          "startAnchor": "A vertical flat plate",
+          "endAnchor": "increase in the heat transfer coefficient due to increased velocity."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2025-1d",
+      "exam": "cse-mains",
+      "year": 2025,
+      "number": "1(d)",
+      "marks": 10,
+      "source": "cse-mains-2025-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-II-QP-CSM-25-010925.pdf",
+      "cropSha256": "8160846b02645de2506b4bfc4fda3bd692816ed10ece219fead1ab52c67a4473",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            382.85714285714283,
+            556.47998046875,
+            710.0
+          ],
+          "pageSize": [
+            576.47998046875,
+            781.9199829101562
+          ],
+          "startAnchor": "At a certain instant of time",
+          "endAnchor": "x=0·5 m"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2025-1e",
+      "exam": "cse-mains",
+      "year": 2025,
+      "number": "1(e)",
+      "marks": 10,
+      "source": "cse-mains-2025-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-II-QP-CSM-25-010925.pdf",
+      "cropSha256": "678df1f9d60606bbc19c30a18befc17ded39499d7623c1944ddd63761ab8ddb4",
+      "panels": [
+        {
+          "page": 4,
+          "box": [
+            20.0,
+            311.4285714285714,
+            557.2000122070312,
+            532.8571428571429
+          ],
+          "pageSize": [
+            577.2000122070312,
+            783.5999755859375
+          ],
+          "startAnchor": "A 120 W electric bulb",
+          "endAnchor": "0·161366"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2025-2c",
+      "exam": "cse-mains",
+      "year": 2025,
+      "number": "2(c)",
+      "marks": 10,
+      "source": "cse-mains-2025-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-II-QP-CSM-25-010925.pdf",
+      "cropSha256": "5beeb481949ce2d19b253e0c4152d76720925918eb7f843a611ee47fa3581b8f",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            547.6190476190476,
+            553.5999755859375,
+            706.6666666666666
+          ],
+          "pageSize": [
+            573.5999755859375,
+            783.5999755859375
+          ],
+          "startAnchor": "A thin flat plate",
+          "endAnchor": "kair = 30"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2025-3a",
+      "exam": "cse-mains",
+      "year": 2025,
+      "number": "3(a)",
+      "marks": 20,
+      "source": "cse-mains-2025-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-II-QP-CSM-25-010925.pdf",
+      "cropSha256": "78549e7f565c66db35cb308f1c66df547aceda68c01f6861a32d32893a6ee939",
+      "panels": [
+        {
+          "page": 7,
+          "box": [
+            20.0,
+            184.28571428571428,
+            556.47998046875,
+            320.95238095238096
+          ],
+          "pageSize": [
+            576.47998046875,
+            782.1599731445312
+          ],
+          "startAnchor": "A long cylindrical rod",
+          "endAnchor": "under steady-state condition."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2025-4a",
+      "exam": "cse-mains",
+      "year": 2025,
+      "number": "4(a)",
+      "marks": 20,
+      "source": "cse-mains-2025-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-II-QP-CSM-25-010925.pdf",
+      "cropSha256": "fc55414c050913e83934cd2b4628ce2e5a2dfc5fe0df42a96ff808c86759aa93",
+      "panels": [
+        {
+          "page": 9,
+          "box": [
+            20.0,
+            301.4285714285714,
+            556.719970703125,
+            706.1904761904761
+          ],
+          "pageSize": [
+            576.719970703125,
+            781.6799926757812
+          ],
+          "startAnchor": "A shell and tube type condenser",
+          "endAnchor": "Assume fully developed flow through tubes and a single shell is used."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2025-4c",
+      "exam": "cse-mains",
+      "year": 2025,
+      "number": "4(c)",
+      "marks": 10,
+      "source": "cse-mains-2025-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-II-QP-CSM-25-010925.pdf",
+      "cropSha256": "478d71c703d83d1e08a57da7ab4623e081e8c2a8a7da2734fd317dbe6919b91e",
+      "panels": [
+        {
+          "page": 11,
+          "box": [
+            20.0,
+            53.80952380952381,
+            554.3200073242188,
+            224.76190476190476
+          ],
+          "pageSize": [
+            574.3200073242188,
+            781.9199829101562
+          ],
+          "startAnchor": "The heat transfer rate due to free convection",
+          "endAnchor": "0.25"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2026-1d",
+      "exam": "cse-mains",
+      "year": 2026,
+      "number": "1(d)",
+      "marks": 10,
+      "source": "cse-mains-2026-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-26-010926-Optional-MECHANICAL-ENGINEERING-PAPER_II.pdf",
+      "cropSha256": "05f4e39d3e1fe972a0bbf162ce8372741c9b6d44380c3760eced967c0f438367",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            46.666666666666664,
+            548.3200073242188,
+            215.23809523809524
+          ],
+          "pageSize": [
+            568.3200073242188,
+            776.1599731445312
+          ],
+          "startAnchor": "Determine the heat transfer through",
+          "endAnchor": "|cml"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2026-1e",
+      "exam": "cse-mains",
+      "year": 2026,
+      "number": "1(e)",
+      "marks": 10,
+      "source": "cse-mains-2026-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-26-010926-Optional-MECHANICAL-ENGINEERING-PAPER_II.pdf",
+      "cropSha256": "746db1a7afcdf27f5cfb8ea48bcc5d25f4f0b16c3a4cfeec2ea19b08ab155bf8",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            322.38095238095235,
+            548.3200073242188,
+            445.7142857142857
+          ],
+          "pageSize": [
+            568.3200073242188,
+            776.1599731445312
+          ],
+          "startAnchor": "Consider a large plane wall",
+          "endAnchor": "find the temperature of the right side of the wall."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2026-2aii",
+      "exam": "cse-mains",
+      "year": 2026,
+      "number": "2(a)(ii)",
+      "marks": 10,
+      "source": "cse-mains-2026-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-26-010926-Optional-MECHANICAL-ENGINEERING-PAPER_II.pdf",
+      "cropSha256": "d1f438e3b37715e553bf2d2db883e5814342f97c149873ed031c0dadfa542b82",
+      "panels": [
+        {
+          "page": 4,
+          "box": [
+            20.0,
+            97.14285714285714,
+            548.3200073242188,
+            231.9047619047619
+          ],
+          "pageSize": [
+            568.3200073242188,
+            776.1599731445312
+          ],
+          "startAnchor": "A refrigeration system is to cool bread loaves",
+          "endAnchor": "101·3 kPa."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2026-2c",
+      "exam": "cse-mains",
+      "year": 2026,
+      "number": "2(c)",
+      "marks": 10,
+      "source": "cse-mains-2026-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-26-010926-Optional-MECHANICAL-ENGINEERING-PAPER_II.pdf",
+      "cropSha256": "21847d54586f919e262200537d4bc049d24043d5b90227370988ca07bcb856da",
+      "panels": [
+        {
+          "page": 4,
+          "box": [
+            20.0,
+            544.7619047619047,
+            548.3200073242188,
+            696.1904761904761
+          ],
+          "pageSize": [
+            568.3200073242188,
+            776.1599731445312
+          ],
+          "startAnchor": "Wind is blowing",
+          "endAnchor": "Nu = (0·037Re0·8-871) Pr0·33"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2026-3a",
+      "exam": "cse-mains",
+      "year": 2026,
+      "number": "3(a)",
+      "marks": 20,
+      "source": "cse-mains-2026-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-26-010926-Optional-MECHANICAL-ENGINEERING-PAPER_II.pdf",
+      "cropSha256": "e36706b8bd153cb36d640693c97ebb8fff76c0d8cf518906c4ad738b9a9f396c",
+      "panels": [
+        {
+          "page": 5,
+          "box": [
+            20.0,
+            229.04761904761904,
+            548.3200073242188,
+            407.1428571428571
+          ],
+          "pageSize": [
+            568.3200073242188,
+            776.6400146484375
+          ],
+          "startAnchor": "Steam at 40 °C",
+          "endAnchor": "hfg (water) = 2406 kJ/kg"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2026-3c",
+      "exam": "cse-mains",
+      "year": 2026,
+      "number": "3(c)",
+      "marks": 10,
+      "source": "cse-mains-2026-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-26-010926-Optional-MECHANICAL-ENGINEERING-PAPER_II.pdf",
+      "cropSha256": "923d90c7090ec5f9d482a240f1692c62950ae153f636f24ecf50e1e291c210d1",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            56.666666666666664,
+            548.3200073242188,
+            152.38095238095238
+          ],
+          "pageSize": [
+            568.3200073242188,
+            776.6400146484375
+          ],
+          "startAnchor": "Thin square plates",
+          "endAnchor": "taken as v =2.859"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2026-4a",
+      "exam": "cse-mains",
+      "year": 2026,
+      "number": "4(a)",
+      "marks": 20,
+      "source": "cse-mains-2026-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-26-010926-Optional-MECHANICAL-ENGINEERING-PAPER_II.pdf",
+      "cropSha256": "56a76a0368b7f25cb0c5a716e8ec4b9212269b39a61a30161ace78fc8d6c1304",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            193.09523809523807,
+            548.3200073242188,
+            387.1428571428571
+          ],
+          "pageSize": [
+            568.3200073242188,
+            776.6400146484375
+          ],
+          "startAnchor": "with a very large NTU necessarily a good one?",
+          "endAnchor": "heat exchanger."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2026-4c",
+      "exam": "cse-mains",
+      "year": 2026,
+      "number": "4(c)",
+      "marks": 10,
+      "source": "cse-mains-2026-ME2.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-26-010926-Optional-MECHANICAL-ENGINEERING-PAPER_II.pdf",
+      "cropSha256": "3b848c1fb03dffff5c8b489161e964dad593e340c6c1aad8049887f479d3bd5c",
+      "panels": [
+        {
+          "page": 7,
+          "box": [
+            20.0,
+            520.0,
+            549.280029296875,
+            707.1428571428571
+          ],
+          "pageSize": [
+            569.280029296875,
+            777.5999755859375
+          ],
+          "startAnchor": "Consider two black surfaces A1 and A2",
+          "endAnchor": "A1"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2017-1d",
+      "exam": "ese-mains",
+      "year": 2017,
+      "number": "1(d)",
+      "marks": 12,
+      "source": "ese-mains-2017-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical_Engg_1_2.pdf",
+      "cropSha256": "c17cd889331ec0345432f9d45d0fff895379ce83714a2546aa3e66c5fbccb934",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            354.2857142857143,
+            574.75,
+            561.9047619047619
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "(d) A drying oven",
+          "endAnchor": "Fig. 1"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2017-2c",
+      "exam": "ese-mains",
+      "year": 2017,
+      "number": "2(c)",
+      "marks": 20,
+      "source": "ese-mains-2017-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical_Engg_1_2.pdf",
+      "cropSha256": "558cb8af7ae834e3601937962bd99a91c8b8785b45b48fbd33ac3d2741861385",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            244.76190476190476,
+            574.75,
+            681.4285714285714
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "The temperature distributions",
+          "endAnchor": "Fig. 2"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2017-4c",
+      "exam": "ese-mains",
+      "year": 2017,
+      "number": "4(c)",
+      "marks": 20,
+      "source": "ese-mains-2017-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical_Engg_1_2.pdf",
+      "cropSha256": "07bccedab9e6aef8a60c57fb9e5c4151a7b14d88558932a1b82244763b0805d8",
+      "panels": [
+        {
+          "page": 4,
+          "box": [
+            20.0,
+            474.76190476190476,
+            574.75,
+            611.4285714285714
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "(c) Steam enters the condenser",
+          "endAnchor": "Specific heat of water = 4·18"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2017-5d",
+      "exam": "ese-mains",
+      "year": 2017,
+      "number": "5(d)",
+      "marks": 12,
+      "source": "ese-mains-2017-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical_Engg_1_2.pdf",
+      "cropSha256": "17e6da4b432437a1a98284aeb92d858a5db2cf9d0c90a451a960cb80adb0c11d",
+      "panels": [
+        {
+          "page": 5,
+          "box": [
+            20.0,
+            180.95238095238093,
+            574.75,
+            230.47619047619045
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "(d) Show all the heatlosses",
+          "endAnchor": "explain graphically also."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2017-6c",
+      "exam": "ese-mains",
+      "year": 2017,
+      "number": "6(c)",
+      "marks": 20,
+      "source": "ese-mains-2017-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical_Engg_1_2.pdf",
+      "cropSha256": "ac6fe0074f3fef8c872df2febe6c5b8aff2e6181611541f360735ac1af854a4f",
+      "panels": [
+        {
+          "page": 5,
+          "box": [
+            20.0,
+            637.6190476190476,
+            574.75,
+            751.4285714285714
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "(c) A solar flux",
+          "endAnchor": "operating at a temperature of 30"
+        },
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            43.80952380952381,
+            574.75,
+            419.04761904761904
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "radiation exchange with the sky",
+          "endAnchor": "Fig. 3"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2017-8a",
+      "exam": "ese-mains",
+      "year": 2017,
+      "number": "8(a)",
+      "marks": 20,
+      "source": "ese-mains-2017-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical_Engg_1_2.pdf",
+      "cropSha256": "b640449d75d7ff89385770c45d89fd49fed8456a8eef00fe21a466d389c2a68d",
+      "panels": [
+        {
+          "page": 7,
+          "box": [
+            20.0,
+            157.14285714285714,
+            574.75,
+            259.5238095238095
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "8. (a) A thermoelectric refrigerator",
+          "endAnchor": "power consumed by the thermoelectric refrigerator."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2017-8c",
+      "exam": "ese-mains",
+      "year": 2017,
+      "number": "8(c)",
+      "marks": 20,
+      "source": "ese-mains-2017-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical_Engg_1_2.pdf",
+      "cropSha256": "81231e872ce3d89e8c764a9a6e02c11e9e13a76d7c20ca59c62e9f8e3c41d937",
+      "panels": [
+        {
+          "page": 7,
+          "box": [
+            20.0,
+            314.2857142857143,
+            574.75,
+            716.1904761904761
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "(c) A thermal energy storage unit",
+          "endAnchor": "Fig. 4"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2018-1c",
+      "exam": "ese-mains",
+      "year": 2018,
+      "number": "1(c)",
+      "marks": 12,
+      "source": "ese-mains-2018-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MACH-ENGINEERING-PAPER-1.pdf",
+      "cropSha256": "fe8686985f71374c3095e01f32acc2eccd3a250606f56267080c63617649e1c6",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            188.57142857142856,
+            592.0,
+            225.23809523809524
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "(c) Draw a typical boiling curve",
+          "endAnchor": "and mark each boiling regime."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2018-2b",
+      "exam": "ese-mains",
+      "year": 2018,
+      "number": "2(b)",
+      "marks": 20,
+      "source": "ese-mains-2018-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MACH-ENGINEERING-PAPER-1.pdf",
+      "cropSha256": "59665907b65a41aec2a9d6b1c1801388f4f19fe0f1da9752d9155d7ecf55d175",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            39.047619047619044,
+            592.0,
+            232.85714285714286
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "(b) A very long cylindrical rod",
+          "endAnchor": "√kA"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2018-3a",
+      "exam": "ese-mains",
+      "year": 2018,
+      "number": "3(a)",
+      "marks": 20,
+      "source": "ese-mains-2018-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MACH-ENGINEERING-PAPER-1.pdf",
+      "cropSha256": "9ca57913436949d02f537fc29c0743ef17b5456d57985eb5d35547b52aabc747",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            364.76190476190476,
+            592.0,
+            457.1428571428571
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "3. (a) A furnace is shaped",
+          "endAnchor": "maintain the given conditions."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2018-5c",
+      "exam": "ese-mains",
+      "year": 2018,
+      "number": "5(c)",
+      "marks": 12,
+      "source": "ese-mains-2018-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MACH-ENGINEERING-PAPER-1.pdf",
+      "cropSha256": "da12adc5ceb4aa38ac605395463787a6d5b50fbc2fcd77103bd2cff8802aef3c",
+      "panels": [
+        {
+          "page": 5,
+          "box": [
+            20.0,
+            128.0952380952381,
+            592.0,
+            399.04761904761904
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "(c) Dry saturated steam",
+          "endAnchor": "Condensed water leaves at saturated condition."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2018-6c",
+      "exam": "ese-mains",
+      "year": 2018,
+      "number": "6(c)",
+      "marks": 20,
+      "source": "ese-mains-2018-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MACH-ENGINEERING-PAPER-1.pdf",
+      "cropSha256": "a1f119d42729d14f74728f09776e79d146472b65be099b0f2087da78b4f9b8f9",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            132.38095238095238,
+            592.0,
+            293.8095238095238
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "(c) A hotel industry",
+          "endAnchor": "efficiency as 95%."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2018-8c",
+      "exam": "ese-mains",
+      "year": 2018,
+      "number": "8(c)",
+      "marks": 20,
+      "source": "ese-mains-2018-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MACH-ENGINEERING-PAPER-1.pdf",
+      "cropSha256": "3f9d67a4928baaa8ee5a006fbc5a2dc86607d6be85036a2cdb73e27eb2999818",
+      "panels": [
+        {
+          "page": 7,
+          "box": [
+            20.0,
+            466.19047619047615,
+            592.0,
+            517.1428571428571
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "(c) Explain the working principle of solar cooker",
+          "endAnchor": "system of solar energy."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2019-1d",
+      "exam": "ese-mains",
+      "year": 2019,
+      "number": "1(d)",
+      "marks": 12,
+      "source": "ese-mains-2019-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/ME_P1_ESEM19.pdf",
+      "cropSha256": "e41eb894bb810165fcaee065a70aa89830353c0441b8881828bbb6de62fea8a8",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            465.23809523809524,
+            559.0,
+            700.0
+          ],
+          "pageSize": [
+            579.0,
+            762.0
+          ],
+          "startAnchor": "The fuel rod of a nuclear reactor",
+          "endAnchor": "cladding material."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2019-4b",
+      "exam": "ese-mains",
+      "year": 2019,
+      "number": "4(b)",
+      "marks": 20,
+      "source": "ese-mains-2019-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/ME_P1_ESEM19.pdf",
+      "cropSha256": "b722884b182870a81f49b06fbba9b5b3b71bee8483f6ae56bd3613ac3dfb5234",
+      "panels": [
+        {
+          "page": 8,
+          "box": [
+            20.0,
+            262.38095238095235,
+            558.0,
+            536.1904761904761
+          ],
+          "pageSize": [
+            578.0,
+            761.0
+          ],
+          "startAnchor": "Air at a mean velocity",
+          "endAnchor": "thermal conductivity, k = 0·034425"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2020-1c",
+      "exam": "ese-mains",
+      "year": 2020,
+      "number": "1(c)",
+      "marks": 12,
+      "source": "ese-mains-2020-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/M_EN_P1-ESEM-20-QP.pdf",
+      "cropSha256": "a9f398530e7232ed1945783df0db60df3fc84e9dfddb18e73f88a057cd23f8c6",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            356.66666666666663,
+            592.0,
+            470.0
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "(c) A hollow sphere",
+          "endAnchor": "of the sphere."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2020-2c",
+      "exam": "ese-mains",
+      "year": 2020,
+      "number": "2(c)",
+      "marks": 20,
+      "source": "ese-mains-2020-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/M_EN_P1-ESEM-20-QP.pdf",
+      "cropSha256": "ff9364b53af9f6d857e0c2fc0f3dfcc9af55a688b90923b83268a6059bbabe11",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            336.1904761904762,
+            592.0,
+            427.1428571428571
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "Show that for fully developed laminar",
+          "endAnchor": "meanings."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2020-3b",
+      "exam": "ese-mains",
+      "year": 2020,
+      "number": "3(b)",
+      "marks": 20,
+      "source": "ese-mains-2020-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/M_EN_P1-ESEM-20-QP.pdf",
+      "cropSha256": "310228890c4cfb9f201c939b9ee33a438b6d72bd2e17f6755fb30d1c9d27ae96",
+      "panels": [
+        {
+          "page": 4,
+          "box": [
+            20.0,
+            30.476190476190474,
+            592.0,
+            162.85714285714286
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "A cubical oven",
+          "endAnchor": "filmwise condensation."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2020-5b",
+      "exam": "ese-mains",
+      "year": 2020,
+      "number": "5(b)",
+      "marks": 12,
+      "source": "ese-mains-2020-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/M_EN_P1-ESEM-20-QP.pdf",
+      "cropSha256": "3bfeab3c5e0a5ad02fe8490904f9ebcfdcb2c670ed8b7bf3bd23cbec3794f26d",
+      "panels": [
+        {
+          "page": 7,
+          "box": [
+            20.0,
+            89.09523809523809,
+            592.0,
+            139.04761904761904
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "collector with two glass covers",
+          "endAnchor": "glass covers. Neglect thermal resistance from sides."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2020-7cii",
+      "exam": "ese-mains",
+      "year": 2020,
+      "number": "7(c)(ii)",
+      "marks": 7,
+      "source": "ese-mains-2020-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/M_EN_P1-ESEM-20-QP.pdf",
+      "cropSha256": "121efe56ce9c73f81df9168cbbc30f75dde3c7ab0b87c558ef6ce9bc08769248",
+      "panels": [
+        {
+          "page": 8,
+          "box": [
+            20.0,
+            433.3333333333333,
+            592.0,
+            514.2857142857142
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "Feedwater enters the economizer",
+          "endAnchor": "surface area."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2020-7ciii",
+      "exam": "ese-mains",
+      "year": 2020,
+      "number": "7(c)(iii)",
+      "marks": 10,
+      "source": "ese-mains-2020-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/M_EN_P1-ESEM-20-QP.pdf",
+      "cropSha256": "a227ab6e9a627d997761dee07d5ad1e10765ba74da7c1fbaae3e13849ecd3885",
+      "panels": [
+        {
+          "page": 8,
+          "box": [
+            20.0,
+            513.3333333333333,
+            592.0,
+            673.3333333333333
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "A surface condenser receives",
+          "endAnchor": "= 19.544"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2021-1c",
+      "exam": "ese-mains",
+      "year": 2021,
+      "number": "1(c)",
+      "marks": 12,
+      "source": "ese-mains-2021-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-21-MechEnggPaper-I-231121.pdf",
+      "cropSha256": "ee5212bf5566ee61011a10af038a825e6a858b814e1a1de9e63bac5a418d7a29",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            500.0,
+            567.280029296875,
+            538.5714285714286
+          ],
+          "pageSize": [
+            587.280029296875,
+            770.8800048828125
+          ],
+          "startAnchor": "Deduce an expression for the shape factor",
+          "endAnchor": "within itself."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2021-2b",
+      "exam": "ese-mains",
+      "year": 2021,
+      "number": "2(b)",
+      "marks": 20,
+      "source": "ese-mains-2021-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-21-MechEnggPaper-I-231121.pdf",
+      "cropSha256": "5844cb02e3944eee9a801e96bb9c45654324699e20c97b2fdba54d4cfb8ea885",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            443.8095238095238,
+            565.3599853515625,
+            585.2380952380952
+          ],
+          "pageSize": [
+            585.3599853515625,
+            774.239990234375
+          ],
+          "startAnchor": "(b) An infinite slab",
+          "endAnchor": "out the position of maximum temperature in the slab."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2021-3a",
+      "exam": "ese-mains",
+      "year": 2021,
+      "number": "3(a)",
+      "marks": 20,
+      "source": "ese-mains-2021-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-21-MechEnggPaper-I-231121.pdf",
+      "cropSha256": "da5578684b4e01ed40c6591c314f70dcf079bba952257c98fcc47a00afa49b7e",
+      "panels": [
+        {
+          "page": 4,
+          "box": [
+            20.0,
+            45.714285714285715,
+            567.280029296875,
+            369.04761904761904
+          ],
+          "pageSize": [
+            587.280029296875,
+            772.0800170898438
+          ],
+          "startAnchor": "Q3. (a) An all glass body",
+          "endAnchor": "Pr0·33"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2021-3c",
+      "exam": "ese-mains",
+      "year": 2021,
+      "number": "3(c)",
+      "marks": 20,
+      "source": "ese-mains-2021-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-21-MechEnggPaper-I-231121.pdf",
+      "cropSha256": "7838e98d7bd85d8b93249a04d3ea8e90c536fbd374d8a638991f28a942cd83ab",
+      "panels": [
+        {
+          "page": 5,
+          "box": [
+            20.0,
+            43.33333333333333,
+            565.1199951171875,
+            534.7619047619047
+          ],
+          "pageSize": [
+            585.1199951171875,
+            774.239990234375
+          ],
+          "startAnchor": "(c) A vertical cylindrical rod",
+          "endAnchor": "Neglect heat loss from the ends."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2021-4b",
+      "exam": "ese-mains",
+      "year": 2021,
+      "number": "4(b)",
+      "marks": 20,
+      "source": "ese-mains-2021-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-21-MechEnggPaper-I-231121.pdf",
+      "cropSha256": "74e06e2648f2c5f5b64ed91c4550f8fd85faefe54b50107b05acbce528e9b9ac",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            36.666666666666664,
+            568.719970703125,
+            229.52380952380952
+          ],
+          "pageSize": [
+            588.719970703125,
+            771.5999755859375
+          ],
+          "startAnchor": "In a double pipe",
+          "endAnchor": "where N = NTU, C ="
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2021-5a",
+      "exam": "ese-mains",
+      "year": 2021,
+      "number": "5(a)",
+      "marks": 12,
+      "source": "ese-mains-2021-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-21-MechEnggPaper-I-231121.pdf",
+      "cropSha256": "f273fa3b115df748eb848298bda4676b36cdad2ec5101306446e972cf44af221",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            342.85714285714283,
+            568.719970703125,
+            415.7142857142857
+          ],
+          "pageSize": [
+            588.719970703125,
+            771.5999755859375
+          ],
+          "startAnchor": "Q5. (a) A compound parabolic collector",
+          "endAnchor": "concentrator."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2021-6b",
+      "exam": "ese-mains",
+      "year": 2021,
+      "number": "6(b)",
+      "marks": 20,
+      "source": "ese-mains-2021-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-21-MechEnggPaper-I-231121.pdf",
+      "cropSha256": "ebc402838bb02a5c8820798f15ebfc525f945d527ae9e46a40e1b3de7fac106e",
+      "panels": [
+        {
+          "page": 8,
+          "box": [
+            20.0,
+            424.76190476190476,
+            567.0399780273438,
+            700.952380952381
+          ],
+          "pageSize": [
+            587.0399780273438,
+            771.5999755859375
+          ],
+          "startAnchor": "What are the major sources of air leakage",
+          "endAnchor": "R = 0·287"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2022-1b",
+      "exam": "ese-mains",
+      "year": 2022,
+      "number": "1(b)",
+      "marks": 12,
+      "source": "ese-mains-2022-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MechEngg_I_28062022.pdf",
+      "cropSha256": "783c4d4dd48d32c1c63e1f660000d49f8880196afdec916f2f8d5aff25f164db",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            123.33333333333333,
+            536.3200073242188,
+            187.61904761904762
+          ],
+          "pageSize": [
+            556.3200073242188,
+            762.0
+          ],
+          "startAnchor": "In a cold winter night",
+          "endAnchor": "destruction within the wall in watts."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2022-1c",
+      "exam": "ese-mains",
+      "year": 2022,
+      "number": "1(c)",
+      "marks": 12,
+      "source": "ese-mains-2022-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MechEngg_I_28062022.pdf",
+      "cropSha256": "f31fc8c68ef452bcea2e25c0b9954b4f9a185a3b14f6589402841d970ce7de27",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            195.7142857142857,
+            536.3200073242188,
+            230.47619047619045
+          ],
+          "pageSize": [
+            556.3200073242188,
+            762.0
+          ],
+          "startAnchor": "What are the physical assumptions",
+          "endAnchor": "heat transfer analysis to be applied?"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2022-2c",
+      "exam": "ese-mains",
+      "year": 2022,
+      "number": "2(c)",
+      "marks": 20,
+      "source": "ese-mains-2022-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MechEngg_I_28062022.pdf",
+      "cropSha256": "b09289773081df8fc28ce426467362c0928134e6a4940f337e2627d20a9445ae",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            274.76190476190476,
+            541.5999755859375,
+            528.5714285714286
+          ],
+          "pageSize": [
+            561.5999755859375,
+            758.1599731445312
+          ],
+          "startAnchor": "Aluminum fins",
+          "endAnchor": "3.0"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2022-4a",
+      "exam": "ese-mains",
+      "year": 2022,
+      "number": "4(a)",
+      "marks": 20,
+      "source": "ese-mains-2022-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MechEngg_I_28062022.pdf",
+      "cropSha256": "45278817ee7143aae2c8e4362fd1bc51425c6831c96192a108beeca9c3321106",
+      "panels": [
+        {
+          "page": 4,
+          "box": [
+            20.0,
+            367.1428571428571,
+            546.4000244140625,
+            714.7619047619047
+          ],
+          "pageSize": [
+            566.4000244140625,
+            753.8400268554688
+          ],
+          "startAnchor": "A room with dimensions",
+          "endAnchor": "[Psychrometric chart attached]"
+        },
+        {
+          "page": 5,
+          "box": [
+            20.0,
+            45.714285714285715,
+            541.8400268554688,
+            744.7619047619047
+          ],
+          "pageSize": [
+            561.8400268554688,
+            755.280029296875
+          ],
+          "startAnchor": "Do not write your Roll No.",
+          "endAnchor": "GVP-U-MCH"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2022-4b",
+      "exam": "ese-mains",
+      "year": 2022,
+      "number": "4(b)",
+      "marks": 20,
+      "source": "ese-mains-2022-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MechEngg_I_28062022.pdf",
+      "cropSha256": "63c572c5aaf7a061743c074e2ce9a09f163215d8643b6b9c5c1701b93614fc50",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            45.238095238095234,
+            538.9600219726562,
+            100.0
+          ],
+          "pageSize": [
+            558.9600219726562,
+            756.9600219726562
+          ],
+          "startAnchor": "Determine the geometric shape factor",
+          "endAnchor": "of the large disk may be taken as α."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2022-4c",
+      "exam": "ese-mains",
+      "year": 2022,
+      "number": "4(c)",
+      "marks": 20,
+      "source": "ese-mains-2022-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MechEngg_I_28062022.pdf",
+      "cropSha256": "64c6e1e54d37c53ee642c137fa71e91c9c6d5a7d62b98cda78dfaefc8c7bb3ad",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            112.85714285714285,
+            538.9600219726562,
+            336.66666666666663
+          ],
+          "pageSize": [
+            558.9600219726562,
+            756.9600219726562
+          ],
+          "startAnchor": "An insulated 0.75 kg copper container",
+          "endAnchor": "Take specific heat of water as 4·187"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2022-5b",
+      "exam": "ese-mains",
+      "year": 2022,
+      "number": "5(b)",
+      "marks": 12,
+      "source": "ese-mains-2022-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MechEngg_I_28062022.pdf",
+      "cropSha256": "005105e7d06f3988086d60c0270d0b126fceaf3128754f881e7612dcfd158535",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            462.38095238095235,
+            538.9600219726562,
+            531.4285714285714
+          ],
+          "pageSize": [
+            558.9600219726562,
+            756.9600219726562
+          ],
+          "startAnchor": "There is a limitation on maximum temperature",
+          "endAnchor": "turbine blades resolved? Explain with a neat sketch."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2023-1b",
+      "exam": "ese-mains",
+      "year": 2023,
+      "number": "1(b)",
+      "marks": 12,
+      "source": "ese-mains-2023-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-23-MECHANICAL-ENGINEERING-PAPER-I-250623.pdf",
+      "cropSha256": "d83dde2ccb967b1490374f2ab083b0a2ff8cb451a62d78a232349899285c0e27",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            220.0,
+            561.760009765625,
+            325.23809523809524
+          ],
+          "pageSize": [
+            581.760009765625,
+            772.3200073242188
+          ],
+          "startAnchor": "(b) A refrigerated truck",
+          "endAnchor": "17·5"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2023-1c",
+      "exam": "ese-mains",
+      "year": 2023,
+      "number": "1(c)",
+      "marks": 12,
+      "source": "ese-mains-2023-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-23-MECHANICAL-ENGINEERING-PAPER-I-250623.pdf",
+      "cropSha256": "1fdad9bef2aae4964ee7aa21de4c102dc49b74fdc942097710842965ddcdfdfb",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            318.57142857142856,
+            561.760009765625,
+            431.90476190476187
+          ],
+          "pageSize": [
+            581.760009765625,
+            772.3200073242188
+          ],
+          "startAnchor": "An engine oil flows",
+          "endAnchor": "μ = 0·210"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2023-1e",
+      "exam": "ese-mains",
+      "year": 2023,
+      "number": "1(e)",
+      "marks": 12,
+      "source": "ese-mains-2023-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-23-MECHANICAL-ENGINEERING-PAPER-I-250623.pdf",
+      "cropSha256": "a94697db72c6d0f00cb8ad14d39bcf65a34d96213148dd7a990473b364ad5d04",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            455.23809523809524,
+            561.760009765625,
+            508.57142857142856
+          ],
+          "pageSize": [
+            581.760009765625,
+            772.3200073242188
+          ],
+          "startAnchor": "Why are higher heat transfer rates",
+          "endAnchor": "Distinguish between nucleate boiling and film boiling."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2023-2c",
+      "exam": "ese-mains",
+      "year": 2023,
+      "number": "2(c)",
+      "marks": 20,
+      "source": "ese-mains-2023-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-23-MECHANICAL-ENGINEERING-PAPER-I-250623.pdf",
+      "cropSha256": "ab3ab3d742524a8d458b93c3871c09b9bf1984560ad96227a565cc31d50a2f48",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            80.0,
+            560.7999877929688,
+            204.28571428571428
+          ],
+          "pageSize": [
+            580.7999877929688,
+            772.0800170898438
+          ],
+          "startAnchor": "(c) A square plate heater",
+          "endAnchor": "Assume steady-state heat flow."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2023-4a",
+      "exam": "ese-mains",
+      "year": 2023,
+      "number": "4(a)",
+      "marks": 20,
+      "source": "ese-mains-2023-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-23-MECHANICAL-ENGINEERING-PAPER-I-250623.pdf",
+      "cropSha256": "400bc5f05d02746e95ef7476ba54fc1033ffedb2b0cfc156dd362f7ff2207e56",
+      "panels": [
+        {
+          "page": 7,
+          "box": [
+            20.0,
+            55.238095238095234,
+            561.280029296875,
+            387.1428571428571
+          ],
+          "pageSize": [
+            581.280029296875,
+            771.8400268554688
+          ],
+          "startAnchor": "4. (a) A truncated cone",
+          "endAnchor": "Llr1"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2023-7cii",
+      "exam": "ese-mains",
+      "year": 2023,
+      "number": "7(c)(ii)",
+      "marks": 10,
+      "source": "ese-mains-2023-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-23-MECHANICAL-ENGINEERING-PAPER-I-250623.pdf",
+      "cropSha256": "5d84226972feae15193c1802da78be49b067fe66cb651ec132fca562524d6ebc",
+      "panels": [
+        {
+          "page": 13,
+          "box": [
+            20.0,
+            57.14285714285714,
+            561.0399780273438,
+            93.33333333333333
+          ],
+          "pageSize": [
+            581.0399780273438,
+            770.8800048828125
+          ],
+          "startAnchor": "What is a liquid-to-suction heat exchanger",
+          "endAnchor": "Illustrate the benefits of liquid-to-suction heat exchanger."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2023-8aii",
+      "exam": "ese-mains",
+      "year": 2023,
+      "number": "8(a)(ii)",
+      "marks": 10,
+      "source": "ese-mains-2023-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-23-MECHANICAL-ENGINEERING-PAPER-I-250623.pdf",
+      "cropSha256": "07dea8e3174e4ee33d167d45f4d622134f780a48ac2230ac5cc5e4deca2f3a90",
+      "panels": [
+        {
+          "page": 13,
+          "box": [
+            20.0,
+            128.57142857142856,
+            561.0399780273438,
+            250.47619047619045
+          ],
+          "pageSize": [
+            581.0399780273438,
+            770.8800048828125
+          ],
+          "startAnchor": "A flat plate solar collector measuring",
+          "endAnchor": "1000 kg/m³"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2023-8b",
+      "exam": "ese-mains",
+      "year": 2023,
+      "number": "8(b)",
+      "marks": 20,
+      "source": "ese-mains-2023-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-23-MECHANICAL-ENGINEERING-PAPER-I-250623.pdf",
+      "cropSha256": "e7bf0bdf63380b2f6c0f9b319ff04945a53d4b89d397149afd69e7be9b569d2f",
+      "panels": [
+        {
+          "page": 13,
+          "box": [
+            20.0,
+            245.7142857142857,
+            561.0399780273438,
+            484.2857142857143
+          ],
+          "pageSize": [
+            581.0399780273438,
+            770.8800048828125
+          ],
+          "startAnchor": "(b) A two-pass surface condenser",
+          "endAnchor": "[Saturated steam table is attached at the end of booklet]"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2024-1d",
+      "exam": "ese-mains",
+      "year": 2024,
+      "number": "1(d)",
+      "marks": 12,
+      "source": "ese-mains-2024-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-24-MECHANICAL-ENGINEERING-PAPER-I-240624.pdf",
+      "cropSha256": "3952cc0fd6d7ff57ea5a92d31fd623483aa672ddb95ba685542dc9e396793319",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            299.5238095238095,
+            563.4400024414062,
+            341.4285714285714
+          ],
+          "pageSize": [
+            583.4400024414062,
+            760.0800170898438
+          ],
+          "startAnchor": "What is condensation",
+          "endAnchor": "dropwise condensation. Which one is more preferred ? Justify."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2024-2c",
+      "exam": "ese-mains",
+      "year": 2024,
+      "number": "2(c)",
+      "marks": 20,
+      "source": "ese-mains-2024-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-24-MECHANICAL-ENGINEERING-PAPER-I-240624.pdf",
+      "cropSha256": "ee6342b625090eab6beb9ac7d0f2eea8c2a5dfd3402f9023e94cf893cda6ee94",
+      "panels": [
+        {
+          "page": 4,
+          "box": [
+            20.0,
+            22.857142857142858,
+            551.9199829101562,
+            466.19047619047615
+          ],
+          "pageSize": [
+            571.9199829101562,
+            753.1199951171875
+          ],
+          "startAnchor": "Write down the properties of a black body",
+          "endAnchor": "dA1"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2024-3c",
+      "exam": "ese-mains",
+      "year": 2024,
+      "number": "3(c)",
+      "marks": 20,
+      "source": "ese-mains-2024-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-24-MECHANICAL-ENGINEERING-PAPER-I-240624.pdf",
+      "cropSha256": "1b55a8332fa68edeace6605d76a416e5f4b7171dd61bb69419a57446ce37a8e5",
+      "panels": [
+        {
+          "page": 5,
+          "box": [
+            20.0,
+            13.809523809523808,
+            562.0,
+            706.1904761904761
+          ],
+          "pageSize": [
+            582.0,
+            747.8400268554688
+          ],
+          "startAnchor": "(c) A heat generating slab",
+          "endAnchor": "④"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2024-4aii",
+      "exam": "ese-mains",
+      "year": 2024,
+      "number": "4(a)(ii)",
+      "marks": 10,
+      "source": "ese-mains-2024-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-24-MECHANICAL-ENGINEERING-PAPER-I-240624.pdf",
+      "cropSha256": "3c23658b619f73b11f2877ed9ccf3ca2a8d62c5e5ded35c9df8c1c44b5bf804c",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            73.33333333333333,
+            557.6799926757812,
+            145.7142857142857
+          ],
+          "pageSize": [
+            577.6799926757812,
+            751.9199829101562
+          ],
+          "startAnchor": "Why do we use fins",
+          "endAnchor": "Give a few examples of different finned surfaces with sketches."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2024-5b",
+      "exam": "ese-mains",
+      "year": 2024,
+      "number": "5(b)",
+      "marks": 12,
+      "source": "ese-mains-2024-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-24-MECHANICAL-ENGINEERING-PAPER-I-240624.pdf",
+      "cropSha256": "4706cbcfa77ae33a21f69019e6f51b6030c91acd03c8304084dd9e65093633c1",
+      "panels": [
+        {
+          "page": 7,
+          "box": [
+            20.0,
+            211.9047619047619,
+            548.0800170898438,
+            670.952380952381
+          ],
+          "pageSize": [
+            568.0800170898438,
+            741.1199951171875
+          ],
+          "startAnchor": "A shell and coil type",
+          "endAnchor": "Find the tube length required."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2024-8ai",
+      "exam": "ese-mains",
+      "year": 2024,
+      "number": "8(a)(i)",
+      "marks": 10,
+      "source": "ese-mains-2024-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-24-MECHANICAL-ENGINEERING-PAPER-I-240624.pdf",
+      "cropSha256": "8efc8b597f947288a245d448c9c2156b8ea76afb420a699dba855486fa4cf71a",
+      "panels": [
+        {
+          "page": 10,
+          "box": [
+            20.0,
+            424.2857142857143,
+            565.3599853515625,
+            653.8095238095237
+          ],
+          "pageSize": [
+            585.3599853515625,
+            747.5999755859375
+          ],
+          "startAnchor": "Q8. (a) A flat plate collector",
+          "endAnchor": "correlations given below:"
+        },
+        {
+          "page": 11,
+          "box": [
+            20.0,
+            54.285714285714285,
+            547.3599853515625,
+            391.4285714285714
+          ],
+          "pageSize": [
+            567.3599853515625,
+            752.6400146484375
+          ],
+          "startAnchor": "Plate temperature",
+          "endAnchor": "(kg/s/m²)."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2024-8aii",
+      "exam": "ese-mains",
+      "year": 2024,
+      "number": "8(a)(ii)",
+      "marks": 10,
+      "source": "ese-mains-2024-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-24-MECHANICAL-ENGINEERING-PAPER-I-240624.pdf",
+      "cropSha256": "90de047bbf0658103c390006051301fa3d191222a6e753698fa089336a7e27f8",
+      "panels": [
+        {
+          "page": 11,
+          "box": [
+            20.0,
+            392.85714285714283,
+            547.3599853515625,
+            540.0
+          ],
+          "pageSize": [
+            567.3599853515625,
+            752.6400146484375
+          ],
+          "startAnchor": "A company wanted 2 hours",
+          "endAnchor": "conductivity 1·35"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2025-1d",
+      "exam": "ese-mains",
+      "year": 2025,
+      "number": "1(d)",
+      "marks": 12,
+      "source": "ese-mains-2025-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-ESEM-25-110825.pdf",
+      "cropSha256": "0d4e028b3de666d204944915579da6f8745ad11032897023304b910e3c3b73d8",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            263.8095238095238,
+            542.3200073242188,
+            366.19047619047615
+          ],
+          "pageSize": [
+            562.3200073242188,
+            776.4000244140625
+          ],
+          "startAnchor": "(d) Distinguish between",
+          "endAnchor": "(iii) Black body and Gray body"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2025-2b",
+      "exam": "ese-mains",
+      "year": 2025,
+      "number": "2(b)",
+      "marks": 20,
+      "source": "ese-mains-2025-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-ESEM-25-110825.pdf",
+      "cropSha256": "6752c9b95e512490b552cde48f893b3e46a648301e45e80a4d8a247bb8dfcd7a",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            43.80952380952381,
+            540.6400146484375,
+            284.2857142857143
+          ],
+          "pageSize": [
+            560.6400146484375,
+            779.0399780273438
+          ],
+          "startAnchor": "(b) Ethylene glycol",
+          "endAnchor": "80 °C are Cp"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2025-3a",
+      "exam": "ese-mains",
+      "year": 2025,
+      "number": "3(a)",
+      "marks": 20,
+      "source": "ese-mains-2025-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-ESEM-25-110825.pdf",
+      "cropSha256": "a31f7c7ba9f0cff52c03eac505a82412e2c315b3155133c579c74b36bec01e55",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            427.1428571428571,
+            540.6400146484375,
+            609.047619047619
+          ],
+          "pageSize": [
+            560.6400146484375,
+            779.0399780273438
+          ],
+          "startAnchor": "Let us define a thermal time constant",
+          "endAnchor": "warmer than the air outside. Why?"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2025-3b",
+      "exam": "ese-mains",
+      "year": 2025,
+      "number": "3(b)",
+      "marks": 20,
+      "source": "ese-mains-2025-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-ESEM-25-110825.pdf",
+      "cropSha256": "93b0cf0ae3039c49ab2feb2b03bc4df1cfc6e24062f3086b7e02de9588c0fcbc",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            621.4285714285714,
+            540.6400146484375,
+            694.7619047619047
+          ],
+          "pageSize": [
+            560.6400146484375,
+            779.0399780273438
+          ],
+          "startAnchor": "Establish a relation for the time taken",
+          "endAnchor": "mention applications for which they are used."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2025-5a",
+      "exam": "ese-mains",
+      "year": 2025,
+      "number": "5(a)",
+      "marks": 12,
+      "source": "ese-mains-2025-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-ESEM-25-110825.pdf",
+      "cropSha256": "c44d85bdabd5e2debf4f571a2c0895cb445f1c0a9ae3dd44d18dfc3c90345fa5",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            436.66666666666663,
+            545.9199829101562,
+            474.3809523809524
+          ],
+          "pageSize": [
+            565.9199829101562,
+            775.9199829101562
+          ],
+          "startAnchor": "5. (a) Enumerate the advantages",
+          "endAnchor": "EXxp"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2025-5c",
+      "exam": "ese-mains",
+      "year": 2025,
+      "number": "5(c)",
+      "marks": 12,
+      "source": "ese-mains-2025-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-ESEM-25-110825.pdf",
+      "cropSha256": "5674d29241acce9bd8a1b8bd0af874797933a31eef92e733afa441366418687c",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            534.2857142857142,
+            545.9199829101562,
+            570.952380952381
+          ],
+          "pageSize": [
+            565.9199829101562,
+            775.9199829101562
+          ],
+          "startAnchor": "(c) What is the need of mine ventilation",
+          "endAnchor": "Also mention the various heat sources in mines."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2025-5d",
+      "exam": "ese-mains",
+      "year": 2025,
+      "number": "5(d)",
+      "marks": 12,
+      "source": "ese-mains-2025-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-ESEM-25-110825.pdf",
+      "cropSha256": "729ec6c48d9ae3936d2288e02744973674f8785e482c17826f204140f20e5589",
+      "panels": [
+        {
+          "page": 6,
+          "box": [
+            20.0,
+            582.3809523809524,
+            545.9199829101562,
+            710.0
+          ],
+          "pageSize": [
+            565.9199829101562,
+            775.9199829101562
+          ],
+          "startAnchor": "Briefly discuss the impact",
+          "endAnchor": "Type of absorber surface"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2025-7a",
+      "exam": "ese-mains",
+      "year": 2025,
+      "number": "7(a)",
+      "marks": 20,
+      "source": "ese-mains-2025-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-ESEM-25-110825.pdf",
+      "cropSha256": "0191a887a6e4d480bf20ad7090c8c556d5e39c1b21bab617f9c6ce5994e7c362",
+      "panels": [
+        {
+          "page": 8,
+          "box": [
+            20.0,
+            412.38095238095235,
+            542.7999877929688,
+            708.5714285714286
+          ],
+          "pageSize": [
+            562.7999877929688,
+            777.8400268554688
+          ],
+          "startAnchor": "7. (a) Compare running costs",
+          "endAnchor": "and why?"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2026-1c",
+      "exam": "ese-mains",
+      "year": 2026,
+      "number": "1(c)",
+      "marks": 12,
+      "source": "ese-mains-2026-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-26-220626-MECHANICAL-ENGINEERING-PAPER-I.pdf",
+      "cropSha256": "6fd8f2c9be8813d4eb130a222890b44a45f97af9501dcf0cf78d1cc323470dce",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            310.95238095238096,
+            551.4400024414062,
+            411.4285714285714
+          ],
+          "pageSize": [
+            571.4400024414062,
+            762.719970703125
+          ],
+          "startAnchor": "A brick wall 0.16 m",
+          "endAnchor": "(σ) = 5.67"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2026-2c",
+      "exam": "ese-mains",
+      "year": 2026,
+      "number": "2(c)",
+      "marks": 20,
+      "source": "ese-mains-2026-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-26-220626-MECHANICAL-ENGINEERING-PAPER-I.pdf",
+      "cropSha256": "aba90a330229229aa2f429434108c4fe2a86fa438cfe9a423c613ce4417fbca0",
+      "panels": [
+        {
+          "page": 3,
+          "box": [
+            20.0,
+            506.66666666666663,
+            551.9199829101562,
+            700.4761904761905
+          ],
+          "pageSize": [
+            571.9199829101562,
+            763.9199829101562
+          ],
+          "startAnchor": "An electric current",
+          "endAnchor": "resistivity as 12"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2026-3a",
+      "exam": "ese-mains",
+      "year": 2026,
+      "number": "3(a)",
+      "marks": 20,
+      "source": "ese-mains-2026-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-26-220626-MECHANICAL-ENGINEERING-PAPER-I.pdf",
+      "cropSha256": "c88e028061ea89771f92f8b47bf3d891c00add62ee18533b1a02b0d1fe5e56d6",
+      "panels": [
+        {
+          "page": 4,
+          "box": [
+            20.0,
+            41.42857142857142,
+            552.8800048828125,
+            221.42857142857142
+          ],
+          "pageSize": [
+            572.8800048828125,
+            762.719970703125
+          ],
+          "startAnchor": "Oil is cooled to 375 K",
+          "endAnchor": "(ii) the length of the new heat exchanger."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2026-4a",
+      "exam": "ese-mains",
+      "year": 2026,
+      "number": "4(a)",
+      "marks": 20,
+      "source": "ese-mains-2026-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-26-220626-MECHANICAL-ENGINEERING-PAPER-I.pdf",
+      "cropSha256": "64af670f9c222747315aaf2b5551c1272b3eadaaacf1b01c8e3d539e6ed50263",
+      "panels": [
+        {
+          "page": 5,
+          "box": [
+            20.0,
+            38.57142857142857,
+            548.3200073242188,
+            438.57142857142856
+          ],
+          "pageSize": [
+            568.3200073242188,
+            763.2000122070312
+          ],
+          "startAnchor": "806 kg/h of cream cheese",
+          "endAnchor": "Cp = 2.75"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2026-7b",
+      "exam": "ese-mains",
+      "year": 2026,
+      "number": "7(b)",
+      "marks": 20,
+      "source": "ese-mains-2026-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-26-220626-MECHANICAL-ENGINEERING-PAPER-I.pdf",
+      "cropSha256": "2640f9ab61941883968d001934af262ac83271173b47d43425f01184e3026d7a",
+      "panels": [
+        {
+          "page": 11,
+          "box": [
+            20.0,
+            41.904761904761905,
+            551.2000122070312,
+            424.76190476190476
+          ],
+          "pageSize": [
+            571.2000122070312,
+            763.4400024414062
+          ],
+          "startAnchor": "Condenser of a thermal power plant",
+          "endAnchor": "[Steam table is given at the end of the question paper]"
+        },
+        {
+          "page": 14,
+          "box": [
+            20.0,
+            85.23809523809524,
+            550.239990234375,
+            735.2380952380952
+          ],
+          "pageSize": [
+            570.239990234375,
+            764.1599731445312
+          ],
+          "startAnchor": "Saturated Water and Steam",
+          "endAnchor": "SNCS-O-MCHN"
+        },
+        {
+          "page": 15,
+          "box": [
+            20.0,
+            84.76190476190476,
+            549.760009765625,
+            235.38095238095238
+          ],
+          "pageSize": [
+            569.760009765625,
+            766.7999877929688
+          ],
+          "startAnchor": "Specific",
+          "endAnchor": "SNCS-O-MCHN"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2026-7c",
+      "exam": "ese-mains",
+      "year": 2026,
+      "number": "7(c)",
+      "marks": 20,
+      "source": "ese-mains-2026-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-26-220626-MECHANICAL-ENGINEERING-PAPER-I.pdf",
+      "cropSha256": "3bb64038dc0e90f8d07f1c031da96603bb293c3f976dfdd3d0ea25a7b9c43e1e",
+      "panels": [
+        {
+          "page": 11,
+          "box": [
+            20.0,
+            473.3333333333333,
+            551.2000122070312,
+            683.3333333333333
+          ],
+          "pageSize": [
+            571.2000122070312,
+            763.4400024414062
+          ],
+          "startAnchor": "A solar flat plate collector",
+          "endAnchor": "Take σ = 5·67"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2026-8c",
+      "exam": "ese-mains",
+      "year": 2026,
+      "number": "8(c)",
+      "marks": 20,
+      "source": "ese-mains-2026-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-26-220626-MECHANICAL-ENGINEERING-PAPER-I.pdf",
+      "cropSha256": "14e6d2c0784200213af3338422eff417a64e844fbbfd99fc156905b463781a6b",
+      "panels": [
+        {
+          "page": 13,
+          "box": [
+            20.0,
+            358.57142857142856,
+            549.760009765625,
+            408.57142857142856
+          ],
+          "pageSize": [
+            569.760009765625,
+            767.0399780273438
+          ],
+          "startAnchor": "Explain the use of thermal energy storage",
+          "endAnchor": "and sensibleheat thermal energy storage systems."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2017-6b",
+      "exam": "cse-mains",
+      "year": 2017,
+      "number": "6(b)",
+      "marks": 15,
+      "source": "cse-mains-2017-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG1.pdf",
+      "cropSha256": "318fda4787031649bb65e127be46810d72740b90a5af7aa67beeb15f4916da19",
+      "panels": [
+        {
+          "page": 8,
+          "box": [
+            20.0,
+            641.9047619047619,
+            574.75,
+            748.0952380952381
+          ],
+          "pageSize": [
+            594.75,
+            841.5
+          ],
+          "startAnchor": "Two aluminium plates are welded",
+          "endAnchor": "weld joint is 20 mm²."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2023-5b",
+      "exam": "cse-mains",
+      "year": 2023,
+      "number": "5(b)",
+      "marks": 10,
+      "source": "cse-mains-2023-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-23-MECHANICAL-ENGINEERING-PAPER-I-29092023.pdf",
+      "cropSha256": "742ffc98974ec3134590410dbc58ebf6126cfcd3e9e49a5f4eefc203466b1a07",
+      "panels": [
+        {
+          "page": 10,
+          "box": [
+            20.0,
+            34.76190476190476,
+            544.0,
+            177.14285714285714
+          ],
+          "pageSize": [
+            564.0,
+            756.719970703125
+          ],
+          "startAnchor": "A laser beam with power intensity",
+          "endAnchor": "Melting point temperature = 1455°C"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-csem-2025-5b",
+      "exam": "cse-mains",
+      "year": 2025,
+      "number": "5(b)",
+      "marks": 10,
+      "source": "cse-mains-2025-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-CSM-25-010925.pdf",
+      "cropSha256": "d22123434272f06741d853fc1bdec3cca61f92c9a76861242b43805df7cc02a8",
+      "panels": [
+        {
+          "page": 13,
+          "box": [
+            20.0,
+            444.76190476190476,
+            530.0800170898438,
+            529.047619047619
+          ],
+          "pageSize": [
+            550.0800170898438,
+            770.6400146484375
+          ],
+          "startAnchor": "In an arc welding process of steel",
+          "endAnchor": "then calculate the melting efficiency."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2018-1e",
+      "exam": "ese-mains",
+      "year": 2018,
+      "number": "1(e)",
+      "marks": 12,
+      "source": "ese-mains-2018-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MACH-ENGINEERING-PAPER-1.pdf",
+      "cropSha256": "19ec8e4fc035263ce79ea56da9a893a2520bb49c228db176d6ee96931d01ab6e",
+      "panels": [
+        {
+          "page": 2,
+          "box": [
+            20.0,
+            380.95238095238096,
+            592.0,
+            592.3809523809524
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "(e) A natural draught cooling tower",
+          "endAnchor": "[Psychrometric Chart is placed at the end]"
+        },
+        {
+          "page": 8,
+          "box": [
+            20.0,
+            18.095238095238095,
+            592.0,
+            782.3809523809523
+          ],
+          "pageSize": [
+            612.0,
+            792.0
+          ],
+          "startAnchor": "Ref. Point for S.H.F.",
+          "endAnchor": "SB8—1230"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2023-5c",
+      "exam": "ese-mains",
+      "year": 2023,
+      "number": "5(c)",
+      "marks": 12,
+      "source": "ese-mains-2023-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-23-MECHANICAL-ENGINEERING-PAPER-I-250623.pdf",
+      "cropSha256": "758bf323a7b88c035bc72ba5be5b0dccb19b5c307c7e1de0983df02b9fa08591",
+      "panels": [
+        {
+          "page": 9,
+          "box": [
+            20.0,
+            261.42857142857144,
+            560.7999877929688,
+            292.85714285714283
+          ],
+          "pageSize": [
+            580.7999877929688,
+            772.3200073242188
+          ],
+          "startAnchor": "(c) Briefly describe a natural draught cooling tower",
+          "endAnchor": "shape."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2024-5d",
+      "exam": "ese-mains",
+      "year": 2024,
+      "number": "5(d)",
+      "marks": 12,
+      "source": "ese-mains-2024-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-24-MECHANICAL-ENGINEERING-PAPER-I-240624.pdf",
+      "cropSha256": "d13f71a2811a0cba453d37b8a10adb8c328c8a32f9af6cc40df9aa8208c7ea05",
+      "panels": [
+        {
+          "page": 8,
+          "box": [
+            20.0,
+            157.61904761904762,
+            540.8800048828125,
+            244.76190476190476
+          ],
+          "pageSize": [
+            560.8800048828125,
+            751.2000122070312
+          ],
+          "startAnchor": "What are the performance parameters of cooling towers",
+          "endAnchor": "draught cooling towers ?"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2024-6c",
+      "exam": "ese-mains",
+      "year": 2024,
+      "number": "6(c)",
+      "marks": 20,
+      "source": "ese-mains-2024-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-24-MECHANICAL-ENGINEERING-PAPER-I-240624.pdf",
+      "cropSha256": "83de15962860506d4ec83603dbebc02aef60a7015b911ae234a77445a5c3cb6c",
+      "panels": [
+        {
+          "page": 9,
+          "box": [
+            20.0,
+            196.66666666666666,
+            582.8800048828125,
+            526.1904761904761
+          ],
+          "pageSize": [
+            602.8800048828125,
+            748.7999877929688
+          ],
+          "startAnchor": "In a direct contact counterflow",
+          "endAnchor": "δT = difference in water entry and exit temperature."
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer:ht-esem-2025-4a",
+      "exam": "ese-mains",
+      "year": 2025,
+      "number": "4(a)",
+      "marks": 20,
+      "source": "ese-mains-2025-ME1.pdf",
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-ESEM-25-110825.pdf",
+      "cropSha256": "422f7eb3044d0be91f32948e03d43680ef290644a486fa7b341479958406c7a1",
+      "panels": [
+        {
+          "page": 4,
+          "box": [
+            20.0,
+            550.4761904761905,
+            542.3200073242188,
+            693.3333333333333
+          ],
+          "pageSize": [
+            562.3200073242188,
+            778.3200073242188
+          ],
+          "startAnchor": "4. (a) A cooling tower",
+          "endAnchor": "(ii the amount of water lost by evaporation per hour."
+        },
+        {
+          "page": 5,
+          "box": [
+            20.0,
+            66.19047619047619,
+            540.4000244140625,
+            356.38095238095235
+          ],
+          "pageSize": [
+            560.4000244140625,
+            783.5999755859375
+          ],
+          "startAnchor": "Saturated water",
+          "endAnchor": "2394·0"
+        }
+      ]
+    }
+  ],
+  "method": [
+    "Downloaded both Mechanical Engineering papers for each exam and year from the official UPSC current and archived listings; verified PDF signatures and hashes.",
+    "Reviewed OCR across all 40 papers, visually checked the selected English questions and all 128 complete native-PDF crops.",
+    "Grouped linked subparts when the official marks apply to the group; included diagrams, page continuations, supplied charts and relevant property tables.",
+    "Included solar collectors, thermal storage, condenser/cooling-tower transfer, thermal loads and direct welding/laser heat-transfer applications. Pure cycles and unrelated manufacturing, mechanics or fluid-flow questions remain outside this subject.",
+    "All questions have independently derived model references, stated assumptions and a question-specific self-review checklist. These are not official UPSC answer keys."
+  ],
+  "limitations": [
+    "Some official questions omit properties, specify inconsistent values or print ambiguous correlations. Their references state conditional results and distinguish the literal question from any proposed correction.",
+    "Conventional Mains working requires student or teacher self-assessment; no automatic correctness or official marks are claimed."
+  ],
+  "duplicateReview": {
+    "identicalCrops": [],
+    "policy": "Existing IDs and confirmed objective duplicates are unchanged. Similar concepts across different exam tracks or different required derivations are retained."
+  }
+}

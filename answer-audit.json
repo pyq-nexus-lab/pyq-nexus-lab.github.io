@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "auditedOn": "2026-10-07",
+  "auditedOn": "2026-10-08",
   "coverage": {
-    "total": 3638,
+    "total": 3766,
     "official": 915,
     "book": 1936,
     "solved": 575,
-    "written": 197,
+    "written": 325,
     "issues": 15,
     "pending": 0,
     "keyed": 3426
@@ -1381,16 +1381,17 @@
   ],
   "heatTransfer": {
     "coverage": {
-      "total": 580,
+      "total": 708,
       "official": 98,
       "book": 392,
       "solved": 86,
-      "written": 0,
+      "written": 128,
       "issues": 4,
       "pending": 0,
       "keyed": 576
     },
     "sourceAudit": "heat-source-audit.json",
-    "excludedMains": true
+    "mainsSourceAudit": "heat-mains-source-audit.json",
+    "excludedMains": false
   }
 }

@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-07",
-  "scope": "SOM, Fluid Mechanics, hydraulics and related Applied SOM; Heat Transfer GATE ME and ESE Prelims",
+  "date": "2026-10-08",
+  "scope": "SOM, Fluid Mechanics, hydraulics and related Applied SOM; Heat Transfer GATE ME, ESE Prelims, ESE Mains and CSE Mains",
   "addedSourceEntries": 324,
   "sections": [
     {
@@ -72,6 +72,20 @@
       "represented": 346,
       "status": "Complete",
       "pages": "234–312"
+    },
+    {
+      "name": "ESE official Mains Heat Transfer · 2017–2026",
+      "expected": 70,
+      "represented": 70,
+      "status": "Selected questions complete; 20 official papers reviewed",
+      "pages": "Native official PDF crops; source pages and URLs recorded per question"
+    },
+    {
+      "name": "CSE official Mains Heat Transfer · 2017–2026",
+      "expected": 58,
+      "represented": 58,
+      "status": "Selected questions complete; 20 official papers reviewed",
+      "pages": "Native official PDF crops; source pages and URLs recorded per question"
     }
   ],
   "blocked": [
@@ -115,6 +129,6 @@
     "Source numbering is reconciled before deduplication. Repeated appearances are preserved; practice uses unique questions.",
     "All four FM DOCX banks remain fully represented (824 separately answerable entries).",
     "All 186 Heat Transfer DOCX entries and all 504 numbered Heat Transfer book entries are represented before duplicate consolidation.",
-    "Heat Transfer ESE Mains has deliberately not been imported; user content is awaited."
+    "128 Heat Transfer Mains problems from 40 official UPSC papers are included: 70 ESE and 58 CSE; every year from 2017 to 2026 is represented. Independently derived references support self-assessment."
   ]
 }
