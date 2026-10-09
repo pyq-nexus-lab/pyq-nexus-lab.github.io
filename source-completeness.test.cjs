@@ -1,6 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),crypto=require('crypto');
 const Catalog=require('./catalog.js'),Answers=require('./answers.js'),Dedup=require('./dedup.js'),Crops=require('./crops.js'),Curriculum=require('./curriculum.js'),Core=require('./core.js'),ctx={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
 const d=ctx.window,raw=Crops.apply(Answers.apply(Catalog.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),lib=Dedup.build(raw,d.PYQ_DEDUP_DATA),bank=Curriculum.apply(lib.bank,d.PYQ_CURRICULUM_DATA),find=id=>raw.find(q=>q.id===id);
 function sequence(prefix,counts){for(const [ch,count]of counts.entries()){const found=new Set(raw.filter(q=>q.id.startsWith(prefix)&&Number(q.number.split('.')[0])===ch+1).map(q=>Number(q.number.split('.')[1])));assert.deepEqual([...found].sort((a,b)=>a-b),Array.from({length:count},(_,i)=>i+1),prefix+' chapter '+(ch+1))}}
 test('every numbered SOM and hydraulic book item is represented, including OCR-skipped markers',()=>{
@@ -28,5 +28,5 @@ test('derived corrections and valid historical answers grade correctly while inc
  for(const no of ['7.59','7.73','7.89']){const q=find('fluid-mechanics:fluid-ese-compressible-book-'+no.replace('.','-'));assert.equal(q.keyStatus,'solved');assert(q.answerReference.url);assert.equal(Core.grade(q,q.key.options).score,2)}
  assert.equal(Core.grade(find('ese-book-12-4'),'B').status,'correct');
  for(const id of ['gate-book-7-3','fluid-mechanics:fluid-ese-hydraulic-book-1-9']){const q=find(id);assert(q.answerIssue&&q.referenceAnswer&&q.explanation);assert.equal(Core.grade(q,'B').score,null)}
- assert.deepEqual(Answers.coverage(bank.filter(q=>q.subject!=='heat-transfer')),{total:3058,official:817,book:1544,solved:489,written:197,issues:11,pending:0,keyed:2850});assert.equal(bank.filter(q=>q.keyConflict).length,0);
+ assert.deepEqual(Answers.coverage(bank.filter(q=>['som','fluid-mechanics'].includes(q.subject))),{total:3058,official:817,book:1544,solved:489,written:197,issues:11,pending:0,keyed:2850});assert.equal(bank.filter(q=>q.keyConflict).length,0);
 });

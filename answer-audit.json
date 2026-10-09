@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "auditedOn": "2026-10-08",
+  "auditedOn": "2026-10-09",
   "coverage": {
-    "total": 3766,
-    "official": 915,
-    "book": 1936,
-    "solved": 575,
-    "written": 325,
-    "issues": 15,
+    "total": 4533,
+    "official": 986,
+    "book": 2218,
+    "solved": 798,
+    "written": 506,
+    "issues": 25,
     "pending": 0,
-    "keyed": 3426
+    "keyed": 4002
   },
   "method": "Official GATE key matching by year, session, section and question number; printed solved-book tables; independently derived references where no usable key exists. All references identify their provenance in the question UI.",
   "limits": [
@@ -1393,5 +1393,18 @@
     "sourceAudit": "heat-source-audit.json",
     "mainsSourceAudit": "heat-mains-source-audit.json",
     "excludedMains": false
+  },
+  "powerPlant": {
+    "coverage": {
+      "total": 767,
+      "official": 71,
+      "book": 282,
+      "solved": 223,
+      "written": 181,
+      "issues": 10,
+      "pending": 0,
+      "keyed": 576
+    },
+    "sourceAudit": "power-source-audit.json"
   }
 }

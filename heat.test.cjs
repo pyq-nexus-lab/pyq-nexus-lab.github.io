@@ -1,6 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),crypto=require('crypto');
 const C=require('./catalog.js'),A=require('./answers.js'),D=require('./dedup.js'),U=require('./curriculum.js'),X=require('./crops.js'),Core=require('./core.js'),ctx={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
 const d=ctx.window,raw=X.apply(A.apply(C.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),ht=bank.filter(q=>q.subject==='heat-transfer'&&!q.exam.includes('mains')),find=id=>bank.find(q=>q.id===lib.resolve('heat-transfer:'+id));
 test('all Heat Transfer source sequences and compilation entries survive consolidation; objective sources remain intact alongside Mains',()=>{
  assert.equal(raw.filter(q=>q.subject==='heat-transfer'&&!q.exam.includes('mains')).length,690);assert.equal(ht.length,580);
@@ -31,7 +31,7 @@ test('source screenshots have intact bytes and bounded geometry; linked data and
  for(const suffix of ['1-18','1-19','2-5','2-6','2-8','2-9','3-6','3-7','4-12','4-13'])assert(lib.original.get('heat-transfer:ht-gate-book-'+suffix).cropPanels.some(p=>p.sharedData));
 });
 test('existing SOM/FM questions, grading and learning order match the pre-Heat-Transfer fingerprint',()=>{
- const prior=JSON.parse(fs.readFileSync('heat-compatibility.json','utf8'));const rows=bank.filter(q=>q.subject!=='heat-transfer').map(q=>Object.fromEntries(prior.checkedFields.map(k=>[k,q[k]??null]))).sort((a,b)=>a.id.localeCompare(b.id));assert.equal(rows.length,3058);assert.equal(crypto.createHash('sha256').update(JSON.stringify(rows)).digest('hex'),prior.sha256);
+ const prior=JSON.parse(fs.readFileSync('heat-compatibility.json','utf8'));const rows=bank.filter(q=>['som','fluid-mechanics'].includes(q.subject)).map(q=>Object.fromEntries(prior.checkedFields.map(k=>[k,q[k]??null]))).sort((a,b)=>a.id.localeCompare(b.id));assert.equal(rows.length,3058);assert.equal(crypto.createHash('sha256').update(JSON.stringify(rows)).digest('hex'),prior.sha256);
  const outline=U.outline(ht);assert.equal(outline.length,9);assert.equal(outline[0].name,'Heat Transfer Fundamentals');assert.equal(outline[7].name,'Boiling and Condensation');assert(ht.every(q=>q.chapterId&&q.topicId));
  const session={ids:['gate-me-002','gate-me-001'],index:1,mode:'practice',answers:{'gate-me-001':'B'},times:{}};assert.deepEqual(D.migrate({session,attempts:[]},lib).session,session);
 });

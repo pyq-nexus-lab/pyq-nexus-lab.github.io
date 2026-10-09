@@ -1,9 +1,9 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto');
 const Catalog=require('./catalog.js'),A=require('./answers.js'),D=require('./dedup.js'),U=require('./curriculum.js'),C=require('./crops.js'),Core=require('./core.js'),ctx={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','answers-data.js','dedup-data.js','curriculum-data.js','crops-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','answers-data.js','dedup-data.js','curriculum-data.js','crops-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
 const raw=A.apply(Catalog.prepare([{subject:'som',questions:ctx.window.SOM_BANK},...ctx.window.PYQ_BANKS]),ctx.window.PYQ_ANSWER_DATA),data=ctx.window.PYQ_CROP_DATA,patched=C.apply(raw,data),before=U.apply(D.build(raw,ctx.window.PYQ_DEDUP_DATA).bank,ctx.window.PYQ_CURRICULUM_DATA),lib=D.build(patched,ctx.window.PYQ_DEDUP_DATA),after=U.apply(lib.bank,ctx.window.PYQ_CURRICULUM_DATA);
 test('screenshot replacement preserves every question, answer, identity and curriculum assignment',()=>{
- assert.equal(raw.length,4173);assert.equal(patched.length,4173);assert.equal(after.length,3766);assert.deepEqual(after.map(q=>q.id),before.map(q=>q.id));assert.deepEqual(A.coverage(after),A.coverage(before));
+ assert.equal(raw.length,4944);assert.equal(patched.length,4944);assert.equal(after.length,4533);assert.deepEqual(after.map(q=>q.id),before.map(q=>q.id));assert.deepEqual(A.coverage(after),A.coverage(before));
  const editable=new Set(['pack','assetId','width','height','cropSha256','sourceRepair','cropReview','cropPanels']);
  for(let i=0;i<raw.length;i++)for(const k of Object.keys(raw[i]).filter(k=>!editable.has(k)))assert.deepEqual(patched[i][k],raw[i][k],raw[i].id+' '+k);
  for(let i=0;i<before.length;i++)for(const k of ['id','type','year','exam','key','keySource','marks','referenceAnswer','explanation','answerIssue','chapterId','topicId','topic','aliases'])assert.deepEqual(after[i][k],before[i][k],before[i].id+' '+k);

@@ -1,6 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),crypto=require('crypto');
 const C=require('./catalog.js'),A=require('./answers.js'),D=require('./dedup.js'),U=require('./curriculum.js'),X=require('./crops.js'),Core=require('./core.js'),ctx={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
 const d=ctx.window,raw=X.apply(A.apply(C.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),qs=bank.filter(q=>q.assetId.startsWith('ht-esem-')||q.assetId.startsWith('ht-csem-')),audit=JSON.parse(fs.readFileSync('heat-mains-source-audit.json','utf8'));
 test('official Heat Transfer Mains covers both exams in every year 2017–2026 with source provenance',()=>{
  assert.equal(qs.length,128);assert.equal(audit.papers.length,40);
@@ -16,7 +16,7 @@ test('all 128 Mains screenshot bytes and native crop bounds are verified; multi-
  assert.equal(new Set(qs.map(q=>q.cropSha256)).size,128);
 });
 test('all pre-existing questions, images, answers, teaching assignments and saved session IDs remain stable',()=>{
- const prior=JSON.parse(fs.readFileSync('heat-mains-compatibility.json','utf8')),rows=bank.filter(q=>!qs.includes(q)).map(q=>Object.fromEntries(prior.checkedFields.map(k=>[k,q[k]??null]))).sort((a,b)=>a.id.localeCompare(b.id));assert.equal(rows.length,3638);assert.equal(crypto.createHash('sha256').update(JSON.stringify(rows)).digest('hex'),prior.sha256);
+ const prior=JSON.parse(fs.readFileSync('heat-mains-compatibility.json','utf8')),rows=bank.filter(q=>q.subject!=='power-plant'&&!qs.includes(q)).map(q=>Object.fromEntries(prior.checkedFields.map(k=>[k,q[k]??null]))).sort((a,b)=>a.id.localeCompare(b.id));assert.equal(rows.length,3638);assert.equal(crypto.createHash('sha256').update(JSON.stringify(rows)).digest('hex'),prior.sha256);
  const session={ids:['gate-me-002','gate-me-001'],index:1,mode:'practice',answers:{'gate-me-001':'B'},times:{}};assert.deepEqual(D.migrate({session,attempts:[]},lib).session,session);
 });
 test('printed inconsistencies and missing data have conditional model references',()=>{

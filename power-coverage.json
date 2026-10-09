@@ -1,0 +1,40 @@
+{
+  "generatedOn": "2026-10-09",
+  "subject": "power-plant",
+  "sourceEntries": 771,
+  "uniqueQuestions": 767,
+  "entries": 767,
+  "countsByExam": {
+    "gate-xe": 78,
+    "ese-prelims": 397,
+    "gate-me": 111,
+    "cse-mains": 83,
+    "ese-mains": 98
+  },
+  "countsByFormat": {
+    "MCQ": 509,
+    "NAT": 61,
+    "WRITTEN": 181,
+    "TEXT": 9,
+    "MSQ": 7
+  },
+  "chapters": 12,
+  "populatedTopics": 44,
+  "answerCoverage": {
+    "total": 767,
+    "official": 71,
+    "book": 282,
+    "solved": 223,
+    "written": 181,
+    "issues": 10,
+    "pending": 0,
+    "keyed": 576
+  },
+  "sourceAudit": "power-source-audit.json",
+  "limitations": [
+    "The supplied ME1-2017.pdf has zero readable pages. Its Power Plant chapter questions are represented through the solved book; full original-paper completeness cannot be certified from that damaged file.",
+    "Mains model solutions are independently derived self-assessment references, not official UPSC marking schemes.",
+    "Ten contradictory or disputed source items have explanations and are excluded from automatic scoring.",
+    "The bank covers the supplied Power Plant chapter and related nozzle, compressor, nuclear and renewable-energy questions. It is not a claim that every thermodynamics question is a Power Plant question."
+  ]
+}

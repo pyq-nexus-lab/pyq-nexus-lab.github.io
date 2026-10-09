@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-09",
+  "existingCanonicalQuestions": 3766,
+  "checkedFields": [
+    "id",
+    "assetId",
+    "type",
+    "exam",
+    "year",
+    "marks",
+    "key",
+    "keyStatus",
+    "keySource",
+    "chapterId",
+    "topicId",
+    "chapter",
+    "topic",
+    "answerIssue",
+    "referenceAnswer",
+    "explanation",
+    "pack",
+    "cropSha256",
+    "curriculumVersion"
+  ],
+  "sha256": "1ca39e4395df49c7e6128ae13a5945477acd8d1a9722aab0d71ffb18b428cfba",
+  "result": "Every pre-existing SOM, FM and HT question, image, answer and curriculum assignment is unchanged. Existing saved-session IDs and order are retained."
+}

@@ -1,52 +1,57 @@
 {
   "version": 2,
   "stats": {
-    "rawEntries": 4173,
-    "uniqueQuestions": 3766,
-    "copiesConsolidated": 407,
-    "groups": 397,
+    "rawEntries": 4944,
+    "uniqueQuestions": 4533,
+    "copiesConsolidated": 411,
+    "groups": 399,
     "bySubject": {
-      "fluid-mechanics": {
-        "rawEntries": 1976,
-        "uniqueQuestions": 1827,
-        "copiesConsolidated": 149
-      },
       "som": {
         "rawEntries": 1379,
         "uniqueQuestions": 1231,
         "copiesConsolidated": 148
       },
+      "fluid-mechanics": {
+        "rawEntries": 1976,
+        "uniqueQuestions": 1827,
+        "copiesConsolidated": 149
+      },
       "heat-transfer": {
         "rawEntries": 818,
         "uniqueQuestions": 708,
         "copiesConsolidated": 110
+      },
+      "power-plant": {
+        "rawEntries": 771,
+        "uniqueQuestions": 767,
+        "copiesConsolidated": 4
       }
     },
     "byExam": {
-      "cse-mains": {
-        "rawEntries": 50,
-        "uniqueQuestions": 49,
-        "copiesConsolidated": 1
+      "gate-me": {
+        "rawEntries": 1207,
+        "uniqueQuestions": 914,
+        "copiesConsolidated": 293
       },
-      "ese-mains": {
-        "rawEntries": 148,
-        "uniqueQuestions": 148,
+      "gate-xe": {
+        "rawEntries": 838,
+        "uniqueQuestions": 838,
         "copiesConsolidated": 0
       },
       "ese-prelims": {
-        "rawEntries": 1585,
-        "uniqueQuestions": 1498,
-        "copiesConsolidated": 87
+        "rawEntries": 2392,
+        "uniqueQuestions": 2275,
+        "copiesConsolidated": 117
       },
-      "gate-me": {
-        "rawEntries": 812,
-        "uniqueQuestions": 603,
-        "copiesConsolidated": 209
-      },
-      "gate-xe": {
-        "rawEntries": 760,
-        "uniqueQuestions": 760,
+      "ese-mains": {
+        "rawEntries": 316,
+        "uniqueQuestions": 316,
         "copiesConsolidated": 0
+      },
+      "cse-mains": {
+        "rawEntries": 191,
+        "uniqueQuestions": 190,
+        "copiesConsolidated": 1
       }
     }
   },

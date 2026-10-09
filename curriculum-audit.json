@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "generatedOn": "2026-10-08",
-  "questions": 3766,
+  "generatedOn": "2026-10-09",
+  "questions": 4533,
   "chapters": 47,
-  "populatedTopics": 208,
+  "populatedTopics": 252,
   "sources": [
     {
       "file": "ESE-Prelims vol 2.pdf",
@@ -22931,5 +22931,11 @@
     "chapters": 9,
     "ordering": "Fundamentals → steady conduction → fins → transient → convection → radiation → heat exchangers → boiling/condensation → combined applications",
     "mains": 128
+  },
+  "powerPlant": {
+    "questions": 767,
+    "chapters": 12,
+    "topics": 44,
+    "teachingOrder": "Properties; fuels and draught; boilers; nozzles; turbines; Rankine; condensers; gas turbines; compressors; nuclear; renewables; economics"
   }
 }

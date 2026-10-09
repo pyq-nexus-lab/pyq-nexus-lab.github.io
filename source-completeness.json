@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-08",
-  "scope": "SOM, Fluid Mechanics, hydraulics and related Applied SOM; Heat Transfer GATE ME, ESE Prelims, ESE Mains and CSE Mains",
+  "date": "2026-10-09",
+  "scope": "SOM, Fluid Mechanics, hydraulics and related Applied SOM; Heat Transfer GATE ME, ESE Prelims, ESE Mains and CSE Mains; Power Plant Engineering",
   "addedSourceEntries": 324,
   "sections": [
     {
@@ -86,6 +86,25 @@
       "represented": 58,
       "status": "Selected questions complete; 20 official papers reviewed",
       "pages": "Native official PDF crops; source pages and URLs recorded per question"
+    },
+    {
+      "name": "Power Plant ESE Word compilation",
+      "expected": 400,
+      "represented": 400,
+      "status": "Complete before duplicate consolidation"
+    },
+    {
+      "name": "GATE solved-book Power Plant chapter",
+      "expected": 87,
+      "represented": 87,
+      "status": "Complete",
+      "pages": "499–508"
+    },
+    {
+      "name": "Official UPSC Power Plant Mains 2017–2026",
+      "expected": 40,
+      "represented": 40,
+      "status": "40 source papers reviewed; 181 relevant written problems selected"
     }
   ],
   "blocked": [
@@ -129,6 +148,8 @@
     "Source numbering is reconciled before deduplication. Repeated appearances are preserved; practice uses unique questions.",
     "All four FM DOCX banks remain fully represented (824 separately answerable entries).",
     "All 186 Heat Transfer DOCX entries and all 504 numbered Heat Transfer book entries are represented before duplicate consolidation.",
-    "128 Heat Transfer Mains problems from 40 official UPSC papers are included: 70 ESE and 58 CSE; every year from 2017 to 2026 is represented. Independently derived references support self-assessment."
+    "128 Heat Transfer Mains problems from 40 official UPSC papers are included: 70 ESE and 58 CSE; every year from 2017 to 2026 is represented. Independently derived references support self-assessment.",
+    "Power Plant adds 771 source entries and 767 unique problems with 576 grading keys, 181 Mains model references and 10 explained source issues. See power-source-audit.json.",
+    "The supplied ME1-2017.pdf has zero readable pages. Its Power Plant chapter questions are represented through the solved book; full original-paper completeness cannot be certified from that damaged file."
   ]
 }
