@@ -4,6 +4,16 @@ A shared GATE ME, GATE XE and ESE practice website, with a separately labelled C
 
 **Open the lab: https://pyq-nexus-lab.github.io/**
 
+## Workspace redesign (v5.0)
+
+Home opens with all five live subjects, real scores, question coverage, a resume button, daily activity and revision priorities. Start a 20-question subject set directly from a card, choose a chapter or topic from its teaching roadmap, or use Quick practice for a 10/20/50/100-question set. Existing sessions, answers and notes use the same browser storage and question identities.
+
+The question library keeps search, chapter and topic selection visible. Extra type/year/source/progress filters expand on demand. Results are grouped in learning order with a desktop chapter index, previews and configurable set sizes. Previewing a question also offers direct practice.
+
+Practice puts the scan and answer controls first, keeps actions within reach, and folds source details, notes and learning history into expandable sections. Calculator, sketchpad, formulas and question navigation remain available. Phone layouts use a bottom navigation bar and a separate menu.
+
+**Ctrl/Cmd K** searches subjects, actions and questions across the lab. Arrow keys select results and Enter opens them. Topic matches rank ahead of incidental OCR text. Search is indexed once per load, typed library searches are debounced, repeated learning summaries are cached per render, and fonts/icons require no third-party download. Performance owns the exam/period/score filters and reporting tools. Light/dark appearance, focus mode and existing advanced preferences remain available.
+
 ## Question and answer library
 
 - **6,075 unique questions:** 1,231 Strength of Materials, 1,827 Fluid Mechanics, 708 Heat Transfer, 767 Power Plant Engineering and 1,542 Thermodynamics.
@@ -63,9 +73,9 @@ Practice is **untimed**, with answer checking and View answer reference. Timed e
 
 Confidence, spaced revision, a mistake journal, attempt history, notes, bookmarks and a sketchpad support learning. Again / Hard / Good / Easy schedules the next review; same-day ratings never compound intervals. Secure recall requires success on at least three separate study days, a confident latest answer and a seven-day or longer interval. It is a study indicator, not an exam prediction.
 
-Home combines subject scores, answer coverage, revision priorities, targets, daily activity, chapter performance, planner progress and recent submissions. Choose an exam track, date period and latest-attempt or all-attempt calculation. Coverage uses all-time answered unique questions; skips do not count. Written self-scores remain separate from objective grades.
+Home combines subject scores, answer coverage, revision priorities, targets, daily activity and study plans. Performance provides exam-track, date-period and latest-attempt/all-attempt filters, chapter focus areas and an exportable report. Coverage uses all-time answered unique questions; skips do not count. Written self-scores remain separate from objective grades.
 
-Advanced settings control exam and set defaults, adaptive selection, revision, targets, text size, density, focus layout and reduced motion. The subject hub has 18 spaces; SOM, Fluid Mechanics, Heat Transfer and Power Plant Engineering have banks. Empty subjects show honest empty states.
+Advanced settings control exam and set defaults, adaptive selection, revision, targets, text size, density, focus layout and reduced motion. The subject hub shows the five available banks first: SOM, Thermodynamics, Heat Transfer, Fluid Mechanics and Power Plant Engineering. Its 13 remaining subject spaces are collapsed until needed and show honest empty states.
 
 ## Saved progress and updated keys
 
