@@ -37,5 +37,16 @@
   return (fresh.length?fresh:ordered).slice(0,count).map(q=>q.id);
  }
  function preferences(input){return input?.learningOrderVersion===1?{...input}:{...input,previousSelection:input?.selection||'adaptive',selection:'curriculum',learningOrderVersion:1}}
- const api={apply,compare,sort,matches,outline,sessionIds,next,preferences};root.PYQCurriculum=api;if(typeof module!=='undefined')module.exports=api;
+ function migrateSession(input,bank,{revision=2,scope=null}={}){
+  const current=input.session;if(!current||current.finished||current.mode==='exam'||current.orderRevision>=revision)return input;
+  const map=new Map(bank.map(q=>[q.id,q])),valid=sessionIds(current.ids,bank);let subject=current.subjectScope||scope;
+  let ids=valid.filter(id=>!subject||map.get(id).subject===subject);
+  if(!ids.length&&valid.length){const subjects=new Set(valid.map(id=>map.get(id).subject));if(subjects.size===1){subject=[...subjects][0];ids=valid}}
+  if(!ids.length)return input;
+  const selected=current.ids[current.index],nextId=ids.includes(selected)?selected:ids.find(id=>!current.submitted?.[id])||ids[0];
+  const session={...current,ids,index:ids.indexOf(nextId),subjectScope:subject,orderRevision:revision};
+  const recovery=input.migrationRecovery||{items:[],sessions:[]};
+  return {...input,session,migrationRecovery:{...recovery,at:new Date().toISOString(),sessions:[...(recovery.sessions||[]),JSON.parse(JSON.stringify(current))]}};
+ }
+ const api={apply,compare,sort,matches,outline,sessionIds,next,preferences,migrateSession};root.PYQCurriculum=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

@@ -124,7 +124,7 @@
       "name": "Thermodynamics UPSC Mains 2017–2026",
       "expected": 40,
       "represented": 40,
-      "status": "40 official paper sources reviewed; 145 relevant written problems selected",
+      "status": "40 official paper sources reviewed; 86 Thermodynamics problems retained; 59 copied plant-specific problems remain in Power Plant Engineering.",
       "pages": "ESE ME1 and CSE ME2 core, with related reviewed applications"
     }
   ],
@@ -172,6 +172,6 @@
     "128 Heat Transfer Mains problems from 40 official UPSC papers are included: 70 ESE and 58 CSE; every year from 2017 to 2026 is represented. Independently derived references support self-assessment.",
     "Power Plant adds 771 source entries and 767 unique problems with 576 grading keys, 181 Mains model references and 10 explained source issues. See power-source-audit.json.",
     "The supplied ME1-2017.pdf has zero readable pages. Its Power Plant chapter questions are represented through the solved book; full original-paper completeness cannot be certified from that damaged file.",
-    "Thermodynamics adds 1,898 source entries and 1,709 canonical questions, including 1,548 grading keys, 145 Mains worked references and 16 explained objective source issues. See thermo-source-audit.json."
+    "Thermodynamics: 1,542 questions, 1,442 keys and 86 Mains references. 167 plant-specific copies remain in Power Plant Engineering, with saved-work redirects. All 595 numbered book items and 456 original XE Thermodynamics questions remain represented. See scope-order-audit.json."
   ]
 }

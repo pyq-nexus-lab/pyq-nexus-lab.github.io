@@ -30,13 +30,13 @@ for(const chapter of audit.bookChapters){
 console.log(`Validated ${bank.length} entries across five subjects, ${packs.size} image packs, every asset reference, all crop digests and all 857 numbered core Fluid Mechanics archive entries.`);
 for(const file of ['answers-data.js','dedup-data.js','repair-assets.js'])vm.runInNewContext(fs.readFileSync(file,'utf8'),ctx);
 const A=require('./answers.js'),D=require('./dedup.js'),patched=A.apply(bank,ctx.window.PYQ_ANSWER_DATA),lib=D.build(patched,ctx.window.PYQ_DEDUP_DATA),coverage=A.coverage(lib.bank);
-assert.equal(patched.length,6842);assert.equal(lib.bank.length,6242);assert.equal(coverage.keyed,5550);assert.equal(coverage.written,651);assert.equal(coverage.issues,41);assert.equal(coverage.pending,0);
+assert.equal(patched.length,6842);assert.equal(lib.bank.length,6075);assert.equal(coverage.keyed,5444);assert.equal(coverage.written,592);assert.equal(coverage.issues,39);assert.equal(coverage.pending,0);
 for(const q of lib.bank)assert(q.marks>0,q.id+' canonical marks');
 let repaired=0;for(const q of patched){if(q.pack==='repair-assets.js'){repaired++;const image=ctx.window.SOM_IMAGES[q.assetId];assert(image?.startsWith('data:image/webp;base64,'),q.id);assert.equal(crypto.createHash('sha256').update(Buffer.from(image.split(',')[1],'base64')).digest('hex'),q.cropSha256,q.id+' repaired crop digest')}}assert.equal(repaired,19);
 console.log(`Validated ${lib.bank.length} unique questions, ${coverage.keyed} grading keys, ${coverage.written} Mains references, ${coverage.issues} explained errata and ${repaired} restored screenshots.`);
 vm.runInNewContext(fs.readFileSync('curriculum-data.js','utf8'),ctx);
 const U=require('./curriculum.js'),ordered=U.apply(lib.bank,ctx.window.PYQ_CURRICULUM_DATA),outline=U.outline(ordered);
-assert.equal(ordered.length,6242);assert.equal(outline.length,77);const topics=new Set(ordered.map(q=>q.topicId)).size;assert(topics>=150);
+assert.equal(ordered.length,6075);assert.equal(outline.length,73);const topics=new Set(ordered.map(q=>q.topicId)).size;assert(topics>=150);
 assert(ordered.every(q=>q.chapterId&&q.topicId&&q.topic&&q.sourceChapters.length));for(let i=1;i<ordered.length;i++)assert(U.compare(ordered[i-1],ordered[i])<=0);
 console.log(`Validated complete curriculum coverage: ${ordered.length} questions in ${outline.length} ordered chapters and ${topics} populated topics.`);
 vm.runInNewContext(fs.readFileSync('crops-data.js','utf8'),ctx);

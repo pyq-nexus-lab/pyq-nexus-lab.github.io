@@ -1,7 +1,7 @@
 {
   "version": 2,
   "generatedOn": "2026-10-09",
-  "questions": 6242,
+  "questions": 6075,
   "chapters": 47,
   "populatedTopics": 313,
   "sources": [
@@ -22939,9 +22939,26 @@
     "teachingOrder": "Properties; fuels and draught; boilers; nozzles; turbines; Rankine; condensers; gas turbines; compressors; nuclear; renewables; economics"
   },
   "thermodynamics": {
-    "questions": 1709,
-    "chapters": 18,
+    "questions": 1542,
+    "chapters": 14,
     "topics": 61,
-    "teachingOrder": "Basic concepts; heat/work; first law; steady flow; second law; entropy; exergy; relations; pure substances; ideal-gas mixtures; air cycles; vapour cycles; gas turbines; compressors; refrigeration; psychrometry; combustion; compressible flow"
-  }
+    "teachingOrder": [
+      "Thermodynamic Systems, Processes and Zeroth Law",
+      "First Law, Heat, Work and Energy",
+      "Second Law, Carnot Cycle and Entropy",
+      "Irreversibility and Availability",
+      "Thermodynamic Relations",
+      "Pure Substances",
+      "Air-Standard Engine Cycles",
+      "Vapour Power Cycles",
+      "Gas-Turbine Cycles and Propulsion",
+      "Air and Refrigerant Compressors",
+      "Refrigeration and Heat Pumps",
+      "Psychrometry and Moist-Air Processes",
+      "Combustion and Energy Conversion",
+      "Compressible Flow Applications"
+    ],
+    "source": "ESE-Prelims vol 1 chapters 1–6; matching GATE core sections; applications after the core."
+  },
+  "orderRevision": 2
 }

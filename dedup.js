@@ -10,6 +10,18 @@
    for(const id of group.ids){const q=original.get(id);if(!q||used.has(id)||q.subject!==first.subject||q.exam!==first.exam||q.type!==first.type)throw Error('Unsafe duplicate group');used.add(id);aliases.set(id,group.id);if(group.optionMaps?.[id]){const m=group.optionMaps[id];if(Object.keys(m).sort().join('')!=='ABCD'||Object.values(m).sort().join('')!=='ABCD')throw Error('Invalid option translation');maps.set(id,m)}}
    groups.set(group.id,group.ids);
   }
+  // Explicit subject corrections keep old saved IDs recoverable without showing
+  // a second copy of a question in the wrong subject.
+  for(const move of data.relocations||[]){
+   const from=original.get(move.id),to=original.get(move.targetId);
+   if(!from||!to||aliases.get(move.id)!==move.id||aliases.get(move.targetId)!==move.targetId||from.subject===to.subject||from.exam!==to.exam||from.type!==to.type)throw Error('Unsafe subject relocation');
+   const targetMap=move.optionMap;
+   if(targetMap&&(Object.keys(targetMap).sort().join('')!=='ABCD'||Object.values(targetMap).sort().join('')!=='ABCD'))throw Error('Invalid relocation option translation');
+   for(const [id,canonical]of aliases)if(canonical===move.id){
+    const prior=maps.get(id);if(targetMap||prior)maps.set(id,Object.fromEntries('ABCD'.split('').map(k=>[k,targetMap?.[prior?.[k]||k]||prior?.[k]||k])));
+    aliases.set(id,move.targetId);
+   }
+  }
   const resolve=id=>aliases.get(id)||id;
   const translate=(id,answer)=>{const m=maps.get(id);return !m?answer:Array.isArray(answer)?answer.map(v=>m[v]||v):m[answer]||answer};
   const translateKey=(id,key)=>{if(!key)return null;const out=clone(key);if(out.options)out.options=translate(id,out.options);if(out.optionSets)out.optionSets=out.optionSets.map(s=>translate(id,s));return out};

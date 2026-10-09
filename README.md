@@ -6,20 +6,22 @@ A shared GATE ME, GATE XE and ESE practice website, with a separately labelled C
 
 ## Question and answer library
 
-- **6,242 unique questions:** 1,231 Strength of Materials, 1,827 Fluid Mechanics, 708 Heat Transfer, 767 Power Plant Engineering and 1,709 Thermodynamics.
-- **6,842 source entries** preserved; **600 duplicate copies** consolidated in 582 groups. Each merged question retains its appearances, years, chapters and source references. Material changes in signs, values or linked subquestions stay separate.
-- **5,550 automatically gradable questions:** 1,393 official-key matches, 2,946 printed-book keys and 1,211 independently derived keys. Grades include MCQ penalties, exact MSQ sets, inclusive NAT ranges and historical short-answer controls.
-- **651 written model references** for ESE Mains and the CSE supplement, with an explicitly self-assessed rubric for method, working, result and presentation.
-- **41 explained objective source inconsistencies**, available for study and excluded from automatic marks. No unexplained missing references remain among imported questions in this release.
-- **19 restored or repaired screenshots**, including one previously omitted SOM archive entry. The original 37 screenshot packs stay intact.
+- **6,075 unique questions:** 1,231 Strength of Materials, 1,827 Fluid Mechanics, 708 Heat Transfer, 767 Power Plant Engineering and 1,542 Thermodynamics.
+- **6,842 source entries** preserved; 600 within-subject duplicate copies and 167 copied plant-specific questions consolidated. Saved answers, notes and history redirect to the original question.
+- **5,444 automatically gradable questions:** 1,392 official-key matches, 2,884 printed-book keys and 1,168 independently derived keys.
+- **592 written model references** with explicitly self-assessed rubrics.
+- **39 explained objective source inconsistencies**, excluded from automatic marks.
+- Chapter and topic order follows the supplied PDFs. Existing untimed practice sets are updated safely to the corrected learning sequence.
 
 The raw Fluid Mechanics solved-book sequence includes 223 GATE entries from 1987–2020, with 181 entries before 2017, plus 634 ESE Prelims archive entries. These are source-sequence counts before duplicate consolidation. Imported compilations and supplied book chapters define this bank's scope; other subjects await source files.
 
-### Thermodynamics (v4.7)
+### Thermodynamics (v4.7.1)
 
-1,709 canonical questions from 1,898 source appearances, in 18 chapters and 61 populated topics. Includes GATE ME/XE, older and recent ESE Prelims, and 145 worked ESE/CSE Mains problems from 2017–2026. All 595 numbered supplied Thermodynamics book items and all 456 original XE Thermodynamics section questions from 2007–2026 are represented. There are 1,548 grading keys and 16 explained objective source issues outside automatic scores. Official keys, printed book keys and independent solutions are labelled separately. See thermo-source-audit.json and thermo-coverage.json.
+1,542 questions in 14 chapters and 61 populated topics. The six core chapters follow the supplied ESE book: systems/processes/zeroth law; first law, heat, work and energy; second law, Carnot and entropy; irreversibility/availability; thermodynamic relations; pure substances. Applications follow the core.
 
-The complete platform now contains 6,242 canonical questions from 6,842 source appearances, with 5,550 objective/historical grading keys, 651 written references and 41 explained source issues. All existing 4,533 question identities, answers, images and teaching assignments remain unchanged; see thermo-compatibility.json.
+167 plant-specific copied questions, including boiler ratings, plant equipment, turbine stages and plant cycles, are available through their existing Power Plant questions. Core energy, entropy, exergy and property problems remain in Thermodynamics. Original source entries are retained for audit and saved-work redirects.
+
+All 595 numbered supplied Thermodynamics book items and 456 original XE Thermodynamics section questions from 2007–2026 remain represented. Includes 1,442 grading keys, 86 worked ESE/CSE Mains references across 2017–2026 and 14 explained source issues outside scoring. See thermo-source-audit.json, thermo-coverage.json and scope-order-audit.json.
 
 ### Power Plant Engineering (v4.6)
 

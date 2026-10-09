@@ -2,14 +2,14 @@
   "version": 2,
   "auditedOn": "2026-10-09",
   "coverage": {
-    "total": 6242,
-    "official": 1393,
-    "book": 2946,
-    "solved": 1211,
-    "written": 651,
-    "issues": 41,
+    "total": 6075,
+    "official": 1392,
+    "book": 2884,
+    "solved": 1168,
+    "written": 592,
+    "issues": 39,
     "pending": 0,
-    "keyed": 5550
+    "keyed": 5444
   },
   "method": "Official GATE key matching by year, session, section and question number; printed solved-book tables; independently derived references where no usable key exists. All references identify their provenance in the question UI.",
   "limits": [
@@ -1409,14 +1409,14 @@
   },
   "thermodynamics": {
     "coverage": {
-      "total": 1709,
-      "official": 407,
-      "book": 728,
-      "solved": 413,
-      "written": 145,
-      "issues": 16,
+      "total": 1542,
+      "official": 406,
+      "book": 666,
+      "solved": 370,
+      "written": 86,
+      "issues": 14,
       "pending": 0,
-      "keyed": 1548
+      "keyed": 1442
     },
     "sourceAudit": "thermo-source-audit.json"
   }

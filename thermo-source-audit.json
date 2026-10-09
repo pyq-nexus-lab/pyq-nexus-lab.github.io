@@ -1,6 +1,6 @@
 {
   "date": "2026-10-09",
-  "scope": "Older supplied GATE/ESE solved books; GATE ME and the full XE Thermodynamics section 2007–2026; ESE Prelims 2017–2026; official UPSC ESE/CSE Mains 2017–2026. Related cycle, combustion, compressor and nozzle applications are included.",
+  "scope": "Older supplied GATE/ESE solved books; GATE ME and the full XE Thermodynamics section 2007–2026; ESE Prelims 2017–2026; official UPSC ESE/CSE Mains 2017–2026. Related cycle, combustion, compressor and nozzle applications are included. Subject boundaries corrected: 167 plant-specific copied questions redirected to the existing Power Plant bank.",
   "bookSections": [
     {
       "source": "td-ese-book",
@@ -2472,48 +2472,51 @@
     "generatedOn": "2026-10-09",
     "subject": "thermodynamics",
     "sourceEntries": 1898,
-    "uniqueQuestions": 1709,
-    "entries": 1709,
+    "uniqueQuestions": 1542,
+    "entries": 1542,
     "countsByExam": {
-      "gate-xe": 458,
-      "ese-prelims": 712,
-      "gate-me": 394,
-      "ese-mains": 72,
-      "cse-mains": 73
+      "gate-xe": 457,
+      "ese-prelims": 654,
+      "ese-mains": 41,
+      "gate-me": 345,
+      "cse-mains": 45
     },
     "countsByFormat": {
-      "MCQ": 1269,
-      "NAT": 266,
+      "MCQ": 1172,
+      "WRITTEN": 86,
       "MSQ": 16,
-      "WRITTEN": 145,
-      "TEXT": 13
+      "NAT": 260,
+      "TEXT": 8
     },
-    "chapters": 18,
+    "chapters": 14,
     "populatedTopics": 61,
     "answerCoverage": {
-      "total": 1709,
-      "official": 407,
-      "book": 728,
-      "solved": 413,
-      "written": 145,
-      "issues": 16,
+      "total": 1542,
+      "official": 406,
+      "book": 666,
+      "solved": 370,
+      "written": 86,
+      "issues": 14,
       "pending": 0,
-      "keyed": 1548
+      "keyed": 1442
     },
     "sourceAudit": "thermo-source-audit.json",
     "limitations": [
       "Independent Mains references are worked self-review guides, not official UPSC marking schemes.",
       "Explained contradictory or disputed objective questions are excluded from automatic scores.",
-      "The numbered supplied book sections are complete. Original papers were reviewed for Thermodynamics and its cycle/energy applications; subjects such as heat-transfer correlations, hydraulic machinery and engine hardware remain in their own subject scope.",
+      "Supplied Thermodynamics book sections and original Thermodynamics section questions are retained. Plant-specific copied questions are available in Power Plant Engineering; core energy, entropy, exergy and property problems remain in Thermodynamics. Saved question IDs and responses redirect safely.",
       "The damaged ME1-2017 file was recovered as a readable 21-page paper for this import."
-    ]
+    ],
+    "subjectCorrections": 167,
+    "scopeOrderAudit": "scope-order-audit.json"
   },
   "duplicates": {
     "sourceEntries": 1898,
-    "uniqueQuestions": 1709,
+    "uniqueQuestions": 1542,
     "copiesConsolidated": 189,
     "groups": 183,
-    "policy": "Merge reviewed same problems within one exam/subject with compatible types. Preserve changed values and linked requested quantities. Original source appearances remain in occurrence references."
+    "policy": "189 within-subject duplicate copies consolidated; 167 plant-specific copies redirected to their already represented original subject.",
+    "subjectRelocations": 167
   },
   "issues": [
     {
@@ -2529,16 +2532,16 @@
       "referenceAnswer": "The source states that volume doubles while p falls500→100 kPa andT falls370→300 K. For a fixed ideal-gas mass, pV/T must stay constant; those endpoints do not satisfy it. No unique maximum work can be obtained without correcting the data."
     },
     {
-      "id": "thermodynamics:td-reuse-esep-1-110",
-      "title": "ESE Prelims 2019 · Paper Q44",
-      "issue": "The printed optimum velocity does not agree with the stated 6% relative-velocity loss.",
-      "referenceAnswer": "U/C1=cos18°/2=0.47553. With k=0.94, 120000=(1+k)C1²cos²18°/4 gives C1≈523.0 m/s. No option has that velocity; D gives the correct speed ratio but assumes no blade loss."
+      "id": "thermodynamics:td-esep-2023-31",
+      "title": "ESE Prelims 2023 · Q31",
+      "issue": "The supplied question has no uniquely supported listed answer.",
+      "referenceAnswer": "The speed ratio gives nozzle exit speed 144/0.48=300 m/s, so its actual enthalpy drop from rest is 300²/2000=45 kJ/kg. An isentropic heat drop additionally requires nozzle efficiency, which is not supplied. Blade velocity coefficient cannot substitute for nozzle efficiency."
     },
     {
-      "id": "thermodynamics:td-ese-book-3-91",
-      "title": "ESE Prelims 2015 | Thermodynamics Book Q3.91",
-      "issue": "The supplied answer table marks this exercise with an asterisk; no reliable unique option is supplied.",
-      "referenceAnswer": "The supplied solved-book answer table on PDF page196 gives * for Q3.91."
+      "id": "thermodynamics:td-xe2008-s1-q29-p48",
+      "title": "GATE XE 2008 · Set1 · Q29",
+      "issue": "Exit pressure0.1MPa contradicts the1.5bar property table supplied with the question.",
+      "referenceAnswer": "h2=2756.7+(50²−600²)/2000=2577.95 kJ/kg. Using the supplied1.5 bar table givesx≈0.948(optionD), but the stem says exit0.1 MPa, whose correct saturation data give a different quality."
     },
     {
       "id": "thermodynamics:td-xe2013-s1-q12-p29",
@@ -2553,28 +2556,28 @@
       "referenceAnswer": "Carnot requires reversible processes, so statement 2 is false. Statement 1 explains a practical limitation. A perfect gas with constant specific heat is not a necessary Carnot-cycle condition, so statement 3 is not generally true. The only generally correct statement is 1, absent from the options."
     },
     {
-      "id": "thermodynamics:td-gate-book-3-7",
-      "title": "GATE ME 1994 | Thermodynamics Book Q3.7",
-      "issue": "The printed key leaves the heater entropy blank/asterisked; its thermodynamic state is not specified.",
-      "referenceAnswer": "Water entropy change=20×4186ln(353.15/303.15)≈12781.72J/K (the book uses roundedKelvin values and prints12786.99). Entropy change of the heater requires its state/mass or an explicit reservoir model. Electrical energy carries no entropy, so a steady heater cannot simply be assigned the negative water entropy."
-    },
-    {
       "id": "thermodynamics:td-esep-2018-13",
       "title": "ESE Prelims 2018 · Q13",
       "issue": "The supplied answer table marks this exercise with an asterisk; no reliable unique option is supplied.",
       "referenceAnswer": "The supplied solved-book answer table on PDF page196 gives * for Q3.114."
     },
     {
-      "id": "thermodynamics:td-esep-2023-31",
-      "title": "ESE Prelims 2023 · Q31",
-      "issue": "The supplied question has no uniquely supported listed answer.",
-      "referenceAnswer": "The speed ratio gives nozzle exit speed 144/0.48=300 m/s, so its actual enthalpy drop from rest is 300²/2000=45 kJ/kg. An isentropic heat drop additionally requires nozzle efficiency, which is not supplied. Blade velocity coefficient cannot substitute for nozzle efficiency."
+      "id": "thermodynamics:td-gate-book-3-7",
+      "title": "GATE ME 1994 | Thermodynamics Book Q3.7",
+      "issue": "The printed key leaves the heater entropy blank/asterisked; its thermodynamic state is not specified.",
+      "referenceAnswer": "Water entropy change=20×4186ln(353.15/303.15)≈12781.72J/K (the book uses roundedKelvin values and prints12786.99). Entropy change of the heater requires its state/mass or an explicit reservoir model. Electrical energy carries no entropy, so a steady heater cannot simply be assigned the negative water entropy."
     },
     {
-      "id": "thermodynamics:td-xe2008-s1-q29-p48",
-      "title": "GATE XE 2008 · Set1 · Q29",
-      "issue": "Exit pressure0.1MPa contradicts the1.5bar property table supplied with the question.",
-      "referenceAnswer": "h2=2756.7+(50²−600²)/2000=2577.95 kJ/kg. Using the supplied1.5 bar table givesx≈0.948(optionD), but the stem says exit0.1 MPa, whose correct saturation data give a different quality."
+      "id": "thermodynamics:td-ese-book-3-15",
+      "title": "ESE Prelims 2000 | Thermodynamics Book Q3.15",
+      "issue": "The supplied answer table marks this exercise with an asterisk; no reliable unique option is supplied.",
+      "referenceAnswer": "The supplied solved-book answer table on PDF page196 gives * for Q3.15."
+    },
+    {
+      "id": "thermodynamics:td-ese-book-3-91",
+      "title": "ESE Prelims 2015 | Thermodynamics Book Q3.91",
+      "issue": "The supplied answer table marks this exercise with an asterisk; no reliable unique option is supplied.",
+      "referenceAnswer": "The supplied solved-book answer table on PDF page196 gives * for Q3.91."
     },
     {
       "id": "thermodynamics:td-ese-cycle-book-1-35",
@@ -2593,18 +2596,6 @@
       "title": "GATE XE 2008 · Set1 · Q26",
       "issue": "The formula choices contain a printed exponent error; a reliable unique automatic choice is not assigned.",
       "referenceAnswer": "Ideal Brayton maximum-work pressure ratio is (Tmax/Tmin)^[γ/(2(γ−1))]. The supplied scan instead prints γ/(2γ−1) in optionB, so no printed option exactly matches."
-    },
-    {
-      "id": "thermodynamics:td-reuse-esep-1-136",
-      "title": "ESE Prelims 2021 · Paper Q15",
-      "issue": "The supplied question has no uniquely supported listed answer.",
-      "referenceAnswer": "Pulverized firing gives high efficiency, rapid response to load changes and large steam capacity: statements 1, 2 and 4. Statement 3 is false; no offered combination is 1, 2 and 4."
-    },
-    {
-      "id": "thermodynamics:td-ese-book-3-15",
-      "title": "ESE Prelims 2000 | Thermodynamics Book Q3.15",
-      "issue": "The supplied answer table marks this exercise with an asterisk; no reliable unique option is supplied.",
-      "referenceAnswer": "The supplied solved-book answer table on PDF page196 gives * for Q3.15."
     },
     {
       "id": "thermodynamics:td-esep-2025-55",
@@ -79356,5 +79347,843 @@
         "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-ESEM-25-110825.pdf"
       }
     }
-  ]
+  ],
+  "subjectRelocations": [
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-39",
+      "targetId": "power-plant:pp-gate-book-6-39",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-10",
+      "targetId": "power-plant:pp-gate-book-6-10",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-18",
+      "targetId": "power-plant:pp-gate-book-6-18",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-23",
+      "targetId": "power-plant:pp-gate-book-6-23",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-27",
+      "targetId": "power-plant:pp-gate-book-6-27",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-28",
+      "targetId": "power-plant:pp-gate-book-6-28",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-31",
+      "targetId": "power-plant:pp-gate-book-6-31",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-33",
+      "targetId": "power-plant:pp-gate-book-6-33",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-37",
+      "targetId": "power-plant:pp-gate-book-6-37",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-77",
+      "targetId": "power-plant:pp-gate-book-6-77",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-110",
+      "targetId": "power-plant:pp-esep-1-110",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-146",
+      "targetId": "power-plant:pp-esep-1-146",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-2-13",
+      "targetId": "power-plant:pp-esep-2-13",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-2-42",
+      "targetId": "power-plant:pp-esep-2-42",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-8",
+      "targetId": "power-plant:pp-gate-book-6-8",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-12",
+      "targetId": "power-plant:pp-gate-book-6-12",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-24",
+      "targetId": "power-plant:pp-gate-book-6-24",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-29",
+      "targetId": "power-plant:pp-gate-book-6-29",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-66",
+      "targetId": "power-plant:pp-gate-book-6-66",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-86",
+      "targetId": "power-plant:pp-gate-book-6-86",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2020-8b",
+      "targetId": "power-plant:pp-esem-2020-8b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2026-1b",
+      "targetId": "power-plant:pp-esem-2026-1b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2019-5e",
+      "targetId": "power-plant:pp-esem-2019-5e",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2020-5d",
+      "targetId": "power-plant:pp-esem-2020-5d",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2023-8a",
+      "targetId": "power-plant:pp-esem-2023-8a",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-211",
+      "targetId": "power-plant:pp-esep-1-211",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-25",
+      "targetId": "power-plant:pp-esep-1-25",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2017-6b",
+      "targetId": "power-plant:pp-esem-2017-6b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2024-5b",
+      "targetId": "power-plant:pp-csem-2024-5b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2026-8b",
+      "targetId": "power-plant:pp-esem-2026-8b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-212",
+      "targetId": "power-plant:pp-esep-1-212",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-63",
+      "targetId": "power-plant:pp-gate-book-6-63",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-104",
+      "targetId": "power-plant:pp-esep-1-104",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-113",
+      "targetId": "power-plant:pp-esep-1-113",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-165",
+      "targetId": "power-plant:pp-esep-1-165",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-166",
+      "targetId": "power-plant:pp-esep-1-166",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-4-47",
+      "targetId": "power-plant:pp-esep-4-47",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-2",
+      "targetId": "power-plant:pp-gate-book-6-2",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-7",
+      "targetId": "power-plant:pp-gate-book-6-7",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-11",
+      "targetId": "power-plant:pp-gate-book-6-11",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-22",
+      "targetId": "power-plant:pp-gate-book-6-22",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-50",
+      "targetId": "power-plant:pp-gate-book-6-50",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-54",
+      "targetId": "power-plant:pp-gate-book-6-54",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-55",
+      "targetId": "power-plant:pp-gate-book-6-55",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-76",
+      "targetId": "power-plant:pp-gate-book-6-76",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-84",
+      "targetId": "power-plant:pp-gate-book-6-84",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-21",
+      "targetId": "power-plant:pp-gate-book-6-21",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-95",
+      "targetId": "power-plant:pp-esep-1-95",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-111",
+      "targetId": "power-plant:pp-esep-1-111",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-5",
+      "targetId": "power-plant:pp-gate-book-6-5",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-35",
+      "targetId": "power-plant:pp-gate-book-6-35",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-40",
+      "targetId": "power-plant:pp-gate-book-6-40",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-41",
+      "targetId": "power-plant:pp-gate-book-6-41",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-72",
+      "targetId": "power-plant:pp-gate-book-6-72",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-87",
+      "targetId": "power-plant:pp-gate-book-6-87",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2020-1e",
+      "targetId": "power-plant:pp-csem-2020-1e",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-17",
+      "targetId": "power-plant:pp-gate-book-6-17",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-36",
+      "targetId": "power-plant:pp-gate-book-6-36",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-122",
+      "targetId": "power-plant:pp-esep-1-122",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-127",
+      "targetId": "power-plant:pp-esep-1-127",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-1",
+      "targetId": "power-plant:pp-gate-book-6-1",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-13",
+      "targetId": "power-plant:pp-gate-book-6-13",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-25",
+      "targetId": "power-plant:pp-gate-book-6-25",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-49",
+      "targetId": "power-plant:pp-gate-book-6-49",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2018-8b",
+      "targetId": "power-plant:pp-csem-2018-8b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2021-6b",
+      "targetId": "power-plant:pp-csem-2021-6b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2022-5c",
+      "targetId": "power-plant:pp-csem-2022-5c",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2022-6b",
+      "targetId": "power-plant:pp-csem-2022-6b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2025-5c",
+      "targetId": "power-plant:pp-csem-2025-5c",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2025-6b",
+      "targetId": "power-plant:pp-csem-2025-6b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2018-7b",
+      "targetId": "power-plant:pp-esem-2018-7b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2019-8b",
+      "targetId": "power-plant:pp-esem-2019-8b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2020-7c",
+      "targetId": "power-plant:pp-esem-2020-7c",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2021-7b",
+      "targetId": "power-plant:pp-esem-2021-7b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2023-7a",
+      "targetId": "power-plant:pp-esem-2023-7a",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-4-58",
+      "targetId": "power-plant:pp-esep-4-58",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2019-7b",
+      "targetId": "power-plant:pp-csem-2019-7b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2021-8b",
+      "targetId": "power-plant:pp-csem-2021-8b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2022-8b",
+      "targetId": "power-plant:pp-csem-2022-8b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2024-8a",
+      "targetId": "power-plant:pp-csem-2024-8a",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2026-7a",
+      "targetId": "power-plant:pp-csem-2026-7a",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-19",
+      "targetId": "power-plant:pp-gate-book-6-19",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-119",
+      "targetId": "power-plant:pp-esep-1-119",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-4-10",
+      "targetId": "power-plant:pp-esep-4-10",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-4-12",
+      "targetId": "power-plant:pp-esep-4-12",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-4-13",
+      "targetId": "power-plant:pp-esep-4-13",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-4-31",
+      "targetId": "power-plant:pp-esep-4-31",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-3",
+      "targetId": "power-plant:pp-gate-book-6-3",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-38",
+      "targetId": "power-plant:pp-gate-book-6-38",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-59",
+      "targetId": "power-plant:pp-gate-book-6-59",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-60",
+      "targetId": "power-plant:pp-gate-book-6-60",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2017-2a",
+      "targetId": "power-plant:pp-csem-2017-2a",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2019-1c",
+      "targetId": "power-plant:pp-csem-2019-1c",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2019-3b",
+      "targetId": "power-plant:pp-csem-2019-3b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2020-1a",
+      "targetId": "power-plant:pp-csem-2020-1a",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2020-8a",
+      "targetId": "power-plant:pp-csem-2020-8a",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2021-2c",
+      "targetId": "power-plant:pp-csem-2021-2c",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2022-3a",
+      "targetId": "power-plant:pp-csem-2022-3a",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2026-1b",
+      "targetId": "power-plant:pp-csem-2026-1b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2020-5e",
+      "targetId": "power-plant:pp-esem-2020-5e",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2022-5b",
+      "targetId": "power-plant:pp-esem-2022-5b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-4",
+      "targetId": "power-plant:pp-gate-book-6-4",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-16",
+      "targetId": "power-plant:pp-gate-book-6-16",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2023-1b",
+      "targetId": "power-plant:pp-csem-2023-1b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2017-8b",
+      "targetId": "power-plant:pp-esem-2017-8b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2019-8c",
+      "targetId": "power-plant:pp-esem-2019-8c",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2021-8a",
+      "targetId": "power-plant:pp-esem-2021-8a",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2022-8b",
+      "targetId": "power-plant:pp-esem-2022-8b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-4-66",
+      "targetId": "power-plant:pp-esep-4-66",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2025-7b",
+      "targetId": "power-plant:pp-esem-2025-7b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2026-8a",
+      "targetId": "power-plant:pp-esem-2026-8a",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-83",
+      "targetId": "power-plant:pp-esep-1-83",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-218",
+      "targetId": "power-plant:pp-esep-1-218",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-4-50",
+      "targetId": "power-plant:pp-esep-4-50",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-4-51",
+      "targetId": "power-plant:pp-esep-4-51",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-43",
+      "targetId": "power-plant:pp-gate-book-6-43",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2022-4b",
+      "targetId": "power-plant:pp-csem-2022-4b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2026-3b",
+      "targetId": "power-plant:pp-csem-2026-3b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2022-8a",
+      "targetId": "power-plant:pp-esem-2022-8a",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-4-37",
+      "targetId": "power-plant:pp-esep-4-37",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2017-6b",
+      "targetId": "power-plant:pp-csem-2017-6b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-shared-esem-2025-4a",
+      "targetId": "power-plant:pp-shared-esem-2025-4a",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-shared-esem-2026-7b",
+      "targetId": "power-plant:pp-shared-esem-2026-7b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-35",
+      "targetId": "power-plant:pp-esep-1-35",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-39",
+      "targetId": "power-plant:pp-esep-1-39",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-97",
+      "targetId": "power-plant:pp-esep-1-97",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-98",
+      "targetId": "power-plant:pp-esep-1-98",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-137",
+      "targetId": "power-plant:pp-esep-1-137",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-142",
+      "targetId": "power-plant:pp-esep-1-142",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-149",
+      "targetId": "power-plant:pp-esep-1-149",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-150",
+      "targetId": "power-plant:pp-esep-1-150",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-156",
+      "targetId": "power-plant:pp-esep-1-156",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-182",
+      "targetId": "power-plant:pp-esep-1-182",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-189",
+      "targetId": "power-plant:pp-esep-1-189",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-191",
+      "targetId": "power-plant:pp-esep-1-191",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-214",
+      "targetId": "power-plant:pp-esep-1-214",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-3-29",
+      "targetId": "power-plant:pp-esep-3-29",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-4-1",
+      "targetId": "power-plant:pp-esep-4-1",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-4-2",
+      "targetId": "power-plant:pp-esep-4-2",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-4-5",
+      "targetId": "power-plant:pp-esep-4-5",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2017-5c",
+      "targetId": "power-plant:pp-csem-2017-5c",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2017-4b",
+      "targetId": "power-plant:pp-esem-2017-4b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-8",
+      "targetId": "power-plant:pp-esep-1-8",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-36",
+      "targetId": "power-plant:pp-esep-1-36",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-128",
+      "targetId": "power-plant:pp-esep-1-128",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-138",
+      "targetId": "power-plant:pp-esep-1-138",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2024-8b",
+      "targetId": "power-plant:pp-csem-2024-8b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2021-1e",
+      "targetId": "power-plant:pp-esem-2021-1e",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2025-8a",
+      "targetId": "power-plant:pp-esem-2025-8a",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-18",
+      "targetId": "power-plant:pp-esep-1-18",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-38",
+      "targetId": "power-plant:pp-esep-1-38",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-44",
+      "targetId": "power-plant:pp-esep-1-44",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-45",
+      "targetId": "power-plant:pp-esep-1-45",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-85",
+      "targetId": "power-plant:pp-esep-1-85",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-136",
+      "targetId": "power-plant:pp-esep-1-136",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-143",
+      "targetId": "power-plant:pp-esep-1-143",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-198",
+      "targetId": "power-plant:pp-esep-1-198",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-esep-1-201",
+      "targetId": "power-plant:pp-esep-1-201",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-xe26-190",
+      "targetId": "power-plant:pp-xe26-190",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2018-5b",
+      "targetId": "power-plant:pp-esem-2018-5b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2018-8b",
+      "targetId": "power-plant:pp-esem-2018-8b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2023-7b",
+      "targetId": "power-plant:pp-esem-2023-7b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2024-8b",
+      "targetId": "power-plant:pp-esem-2024-8b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-esem-2026-5b",
+      "targetId": "power-plant:pp-esem-2026-5b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-82",
+      "targetId": "power-plant:pp-gate-book-6-82",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-reuse-gate-book-6-83",
+      "targetId": "power-plant:pp-gate-book-6-82",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    },
+    {
+      "id": "thermodynamics:td-shared-csem-2019-8b",
+      "targetId": "power-plant:pp-csem-2019-8b",
+      "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
+    }
+  ],
+  "scopeOrderAudit": "scope-order-audit.json"
 }
