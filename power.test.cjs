@@ -1,6 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),crypto=require('crypto');
 const P=require('./catalog.js'),A=require('./answers.js'),D=require('./dedup.js'),U=require('./curriculum.js'),X=require('./crops.js'),Core=require('./core.js'),ctx={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
 const d=ctx.window,raw=X.apply(A.apply(P.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),pp=bank.filter(q=>q.subject==='power-plant'),source=raw.filter(q=>q.subject==='power-plant'),audit=JSON.parse(fs.readFileSync('power-source-audit.json','utf8')),by=id=>pp.find(q=>q.assetId===id);
 test('Power Plant includes the complete numbered Word and solved-book chapters and all five exam sections',()=>{
  assert.equal(source.length,771);assert.equal(pp.length,767);
@@ -45,6 +45,6 @@ test('duplicate consolidation translates reordered choices and keeps linked requ
 test('teaching order and existing SOM/FM/HT progress identities remain stable',()=>{
  const outline=U.outline(pp);assert.equal(outline.length,12);assert.equal(new Set(pp.map(q=>q.topicId)).size,44);assert.equal(outline[0].name,'Steam Properties and Energy Balances');assert.equal(outline.at(-1).name,'Plant Economics and Energy Management');
  assert.equal(by('pp-csem-2020-1c').topicId,'power-plant-04-02');assert.equal(by('pp-xe26-187').topicId,'power-plant-11-02');assert(pp.every(q=>q.chapterId&&q.topicId));
- const prior=JSON.parse(fs.readFileSync('power-compatibility.json','utf8')),rows=bank.filter(q=>q.subject!=='power-plant').map(q=>Object.fromEntries(prior.checkedFields.map(k=>[k,q[k]??null]))).sort((a,b)=>a.id.localeCompare(b.id));assert.equal(rows.length,3766);assert.equal(crypto.createHash('sha256').update(JSON.stringify(rows)).digest('hex'),prior.sha256);
+ const prior=JSON.parse(fs.readFileSync('power-compatibility.json','utf8')),rows=bank.filter(q=>!['power-plant','thermodynamics'].includes(q.subject)).map(q=>Object.fromEntries(prior.checkedFields.map(k=>[k,q[k]??null]))).sort((a,b)=>a.id.localeCompare(b.id));assert.equal(rows.length,3766);assert.equal(crypto.createHash('sha256').update(JSON.stringify(rows)).digest('hex'),prior.sha256);
  const session={ids:['gate-me-002','gate-me-001'],index:1,mode:'practice',answers:{'gate-me-001':'B'},times:{}};assert.deepEqual(D.migrate({session,attempts:[]},lib).session,session);
 });

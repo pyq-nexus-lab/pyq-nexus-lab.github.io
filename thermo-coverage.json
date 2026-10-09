@@ -1,0 +1,40 @@
+{
+  "generatedOn": "2026-10-09",
+  "subject": "thermodynamics",
+  "sourceEntries": 1898,
+  "uniqueQuestions": 1709,
+  "entries": 1709,
+  "countsByExam": {
+    "gate-xe": 458,
+    "ese-prelims": 712,
+    "gate-me": 394,
+    "ese-mains": 72,
+    "cse-mains": 73
+  },
+  "countsByFormat": {
+    "MCQ": 1269,
+    "NAT": 266,
+    "MSQ": 16,
+    "WRITTEN": 145,
+    "TEXT": 13
+  },
+  "chapters": 18,
+  "populatedTopics": 61,
+  "answerCoverage": {
+    "total": 1709,
+    "official": 407,
+    "book": 728,
+    "solved": 413,
+    "written": 145,
+    "issues": 16,
+    "pending": 0,
+    "keyed": 1548
+  },
+  "sourceAudit": "thermo-source-audit.json",
+  "limitations": [
+    "Independent Mains references are worked self-review guides, not official UPSC marking schemes.",
+    "Explained contradictory or disputed objective questions are excluded from automatic scores.",
+    "The numbered supplied book sections are complete. Original papers were reviewed for Thermodynamics and its cycle/energy applications; subjects such as heat-transfer correlations, hydraulic machinery and engine hardware remain in their own subject scope.",
+    "The damaged ME1-2017 file was recovered as a readable 21-page paper for this import."
+  ]
+}

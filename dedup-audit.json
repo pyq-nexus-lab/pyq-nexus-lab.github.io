@@ -1,10 +1,10 @@
 {
   "version": 2,
   "stats": {
-    "rawEntries": 4944,
-    "uniqueQuestions": 4533,
-    "copiesConsolidated": 411,
-    "groups": 399,
+    "rawEntries": 6842,
+    "uniqueQuestions": 6242,
+    "copiesConsolidated": 600,
+    "groups": 582,
     "bySubject": {
       "som": {
         "rawEntries": 1379,
@@ -25,32 +25,37 @@
         "rawEntries": 771,
         "uniqueQuestions": 767,
         "copiesConsolidated": 4
+      },
+      "thermodynamics": {
+        "rawEntries": 1898,
+        "uniqueQuestions": 1709,
+        "copiesConsolidated": 189
       }
     },
     "byExam": {
       "gate-me": {
-        "rawEntries": 1207,
-        "uniqueQuestions": 914,
-        "copiesConsolidated": 293
+        "rawEntries": 1686,
+        "uniqueQuestions": 1308,
+        "copiesConsolidated": 378
       },
       "gate-xe": {
-        "rawEntries": 838,
-        "uniqueQuestions": 838,
-        "copiesConsolidated": 0
+        "rawEntries": 1347,
+        "uniqueQuestions": 1296,
+        "copiesConsolidated": 51
       },
       "ese-prelims": {
-        "rawEntries": 2392,
-        "uniqueQuestions": 2275,
-        "copiesConsolidated": 117
+        "rawEntries": 3157,
+        "uniqueQuestions": 2987,
+        "copiesConsolidated": 170
       },
       "ese-mains": {
-        "rawEntries": 316,
-        "uniqueQuestions": 316,
+        "rawEntries": 388,
+        "uniqueQuestions": 388,
         "copiesConsolidated": 0
       },
       "cse-mains": {
-        "rawEntries": 191,
-        "uniqueQuestions": 190,
+        "rawEntries": 264,
+        "uniqueQuestions": 263,
         "copiesConsolidated": 1
       }
     }

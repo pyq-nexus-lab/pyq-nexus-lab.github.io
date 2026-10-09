@@ -1,6 +1,6 @@
 {
   "date": "2026-10-09",
-  "scope": "SOM, Fluid Mechanics, hydraulics and related Applied SOM; Heat Transfer GATE ME, ESE Prelims, ESE Mains and CSE Mains; Power Plant Engineering",
+  "scope": "SOM, Fluid Mechanics, hydraulics and related Applied SOM; Heat Transfer GATE ME, ESE Prelims, ESE Mains and CSE Mains; Power Plant Engineering; Thermodynamics",
   "addedSourceEntries": 324,
   "sections": [
     {
@@ -105,6 +105,27 @@
       "expected": 40,
       "represented": 40,
       "status": "40 source papers reviewed; 181 relevant written problems selected"
+    },
+    {
+      "name": "Thermodynamics supplied solved-book chapters",
+      "expected": 595,
+      "represented": 595,
+      "status": "All printed question numbers represented",
+      "pages": "ESE 150–232 and 316–324; GATE 451–498 and 526–540"
+    },
+    {
+      "name": "GATE XE Thermodynamics 2007–2026 original sections",
+      "expected": 456,
+      "represented": 456,
+      "status": "Every printed section question included",
+      "pages": "Original XE Thermodynamics sections"
+    },
+    {
+      "name": "Thermodynamics UPSC Mains 2017–2026",
+      "expected": 40,
+      "represented": 40,
+      "status": "40 official paper sources reviewed; 145 relevant written problems selected",
+      "pages": "ESE ME1 and CSE ME2 core, with related reviewed applications"
     }
   ],
   "blocked": [
@@ -150,6 +171,7 @@
     "All 186 Heat Transfer DOCX entries and all 504 numbered Heat Transfer book entries are represented before duplicate consolidation.",
     "128 Heat Transfer Mains problems from 40 official UPSC papers are included: 70 ESE and 58 CSE; every year from 2017 to 2026 is represented. Independently derived references support self-assessment.",
     "Power Plant adds 771 source entries and 767 unique problems with 576 grading keys, 181 Mains model references and 10 explained source issues. See power-source-audit.json.",
-    "The supplied ME1-2017.pdf has zero readable pages. Its Power Plant chapter questions are represented through the solved book; full original-paper completeness cannot be certified from that damaged file."
+    "The supplied ME1-2017.pdf has zero readable pages. Its Power Plant chapter questions are represented through the solved book; full original-paper completeness cannot be certified from that damaged file.",
+    "Thermodynamics adds 1,898 source entries and 1,709 canonical questions, including 1,548 grading keys, 145 Mains worked references and 16 explained objective source issues. See thermo-source-audit.json."
   ]
 }

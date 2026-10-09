@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-09",
+  "existingCanonicalQuestions": 4533,
+  "checkedFields": [
+    "id",
+    "assetId",
+    "type",
+    "exam",
+    "year",
+    "marks",
+    "key",
+    "keyStatus",
+    "keySource",
+    "chapterId",
+    "topicId",
+    "chapter",
+    "topic",
+    "answerIssue",
+    "referenceAnswer",
+    "explanation",
+    "pack",
+    "cropSha256",
+    "curriculumVersion"
+  ],
+  "sha256": "e22821facbe6a6cf26018c2a3ff5b51b73d5370c4427578866dc33f1b40d794c",
+  "result": "All existing SOM, FM, HT and PPE question identities, screenshots, answers and teaching assignments are unchanged. Existing saved-session order and progress remain intact."
+}

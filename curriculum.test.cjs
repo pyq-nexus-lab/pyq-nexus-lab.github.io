@@ -1,8 +1,8 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),U=require('./curriculum.js'),A=require('./answers.js'),D=require('./dedup.js'),Catalog=require('./catalog.js'),I=require('./insights.js');
-const ctx={window:{}};for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','answers-data.js','dedup-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
+const ctx={window:{}};for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','answers-data.js','dedup-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
 const raw=Catalog.prepare([{subject:'som',questions:ctx.window.SOM_BANK},...ctx.window.PYQ_BANKS]),lib=D.build(A.apply(raw,ctx.window.PYQ_ANSWER_DATA),ctx.window.PYQ_DEDUP_DATA),data=ctx.window.PYQ_CURRICULUM_DATA,bank=U.apply(lib.bank,data),by=new Map(bank.map(q=>[q.id,q]));
 test('every unique question is mapped to one subject, chapter and topic without losing sources, assets or answers',()=>{
- assert.equal(bank.length,4533);assert.equal(Object.keys(data.assignments).length,4533);assert.equal(new Set(bank.map(q=>q.id)).size,4533);
+ assert.equal(bank.length,6242);assert.equal(Object.keys(data.assignments).length,6242);assert.equal(new Set(bank.map(q=>q.id)).size,6242);
  for(const original of lib.bank){const q=by.get(original.id);assert(q.chapterId&&q.topicId&&q.topic&&q.curriculumVersion===1);for(const k of ['id','assetId','pack','key','marks','occurrences','aliases','answerIssue','explanation','referenceAnswer'])assert.deepEqual(q[k],original[k]);assert.equal(q.sourceChapter,original.chapter);assert.deepEqual(q.sourceChapters,original.chapters)}
  assert.deepEqual(A.coverage(bank),A.coverage(lib.bank));assert.equal(bank.filter(q=>q.subject==='som').length,1231);assert.equal(bank.filter(q=>q.subject==='fluid-mechanics').length,1827);
 });

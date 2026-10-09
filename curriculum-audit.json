@@ -1,9 +1,9 @@
 {
   "version": 2,
   "generatedOn": "2026-10-09",
-  "questions": 4533,
+  "questions": 6242,
   "chapters": 47,
-  "populatedTopics": 252,
+  "populatedTopics": 313,
   "sources": [
     {
       "file": "ESE-Prelims vol 2.pdf",
@@ -22937,5 +22937,11 @@
     "chapters": 12,
     "topics": 44,
     "teachingOrder": "Properties; fuels and draught; boilers; nozzles; turbines; Rankine; condensers; gas turbines; compressors; nuclear; renewables; economics"
+  },
+  "thermodynamics": {
+    "questions": 1709,
+    "chapters": 18,
+    "topics": 61,
+    "teachingOrder": "Basic concepts; heat/work; first law; steady flow; second law; entropy; exergy; relations; pure substances; ideal-gas mixtures; air cycles; vapour cycles; gas turbines; compressors; refrigeration; psychrometry; combustion; compressible flow"
   }
 }
