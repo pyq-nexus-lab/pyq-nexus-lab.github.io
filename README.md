@@ -6,21 +6,27 @@ A shared GATE ME, GATE XE and ESE practice website, with a separately labelled C
 
 ## Workspace redesign (v5.0)
 
-Home opens with all five live subjects, real scores, question coverage, a resume button, daily activity and revision priorities. Start a 20-question subject set directly from a card, choose a chapter or topic from its teaching roadmap, or use Quick practice for a 10/20/50/100-question set. Existing sessions, answers and notes use the same browser storage and question identities.
+Home opens with all six live subjects, real scores, question coverage, a resume button, daily activity and revision priorities. Start the full subject path from a card, choose a chapter or topic, or continue from a saved position. Untimed practice includes every matching question in teaching order. Existing sessions, answers and notes use the same browser storage and question identities.
 
-The question library keeps search, chapter and topic selection visible. Extra type/year/source/progress filters expand on demand. Results are grouped in learning order with a desktop chapter index, previews and configurable set sizes. Previewing a question also offers direct practice.
+The question library keeps search, chapter and topic selection visible. Extra type/year/source/progress filters expand on demand. Results are grouped in learning order with a desktop chapter index, previews and continuous ordered practice. Previewing a question also offers direct practice.
 
 Practice puts the scan and answer controls first, keeps actions within reach, and folds source details, notes and learning history into expandable sections. Calculator, sketchpad, formulas and question navigation remain available. Phone layouts use a bottom navigation bar and a separate menu.
 
 **Ctrl/Cmd K** searches subjects, actions and questions across the lab. Arrow keys select results and Enter opens them. Topic matches rank ahead of incidental OCR text. Search is indexed once per load, typed library searches are debounced, repeated learning summaries are cached per render, and fonts/icons require no third-party download. Performance owns the exam/period/score filters and reporting tools. Light/dark appearance, focus mode and existing advanced preferences remain available.
 
+## RAC (v5.2)
+
+656 unique questions from 732 source appearances, in 11 chapters and 34 populated topics. All 430 numbered exercises in the supplied RAC book chapters are represented. Includes original GATE ME/XE 2007–2026 and ESE Prelims 2017–2026 sources, plus 51 ESE Mains and 56 CSE Mains questions across 2017–2026.
+
+542 objective/historical answers are gradable;107 written answers provide independent self-review references. Seven objective print/key issues remain explained outside automatic marks. Required common data, charts, property tables and continuations accompany the scans. See rac-source-audit.json, rac-coverage.json and rac-compatibility.json. All 6,075 previous question identities, keys, assets and learning assignments remain unchanged.
+
 ## Question and answer library
 
-- **6,075 unique questions:** 1,231 Strength of Materials, 1,827 Fluid Mechanics, 708 Heat Transfer, 767 Power Plant Engineering and 1,542 Thermodynamics.
-- **6,842 source entries** preserved; 600 within-subject duplicate copies and 167 copied plant-specific questions consolidated. Saved answers, notes and history redirect to the original question.
-- **5,444 automatically gradable questions:** 1,392 official-key matches, 2,884 printed-book keys and 1,168 independently derived keys.
-- **592 written model references** with explicitly self-assessed rubrics.
-- **39 explained objective source inconsistencies**, excluded from automatic marks.
+- **6,731 unique questions:** 1,231 Strength of Materials, 1,827 Fluid Mechanics, 708 Heat Transfer, 767 Power Plant Engineering 1,542 Thermodynamics and 656 Refrigeration & Air Conditioning.
+- **7,574 source entries** preserved; 676 within-subject duplicate copies and 167 copied plant-specific questions consolidated. Saved answers, notes and history redirect to the original question.
+- **5,986 automatically gradable questions:** 1,455 official-key matches,3,270 printed-book keys and 1,261 independently derived keys.
+- **699 written model references** with explicitly self-assessed rubrics.
+- **46 explained objective source inconsistencies**, excluded from automatic marks.
 - Chapter and topic order follows the supplied PDFs. Existing untimed practice sets are updated safely to the corrected learning sequence.
 
 The raw Fluid Mechanics solved-book sequence includes 223 GATE entries from 1987–2020, with 181 entries before 2017, plus 634 ESE Prelims archive entries. These are source-sequence counts before duplicate consolidation. Imported compilations and supplied book chapters define this bank's scope; other subjects await source files.

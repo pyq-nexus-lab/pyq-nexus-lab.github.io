@@ -1,0 +1,777 @@
+{
+  "date": "2026-10-12",
+  "scope": "RAC chapters in supplied older solved books; original GATE ME/XE2007–2026 and ESE Prelims2017–2026; selected RAC and direct cooling applications from ESE/CSE Mechanical Mains2017–2026. Overlapping fundamentals remain available in their earlier subject banks.",
+  "bookSections": [
+    {
+      "source": "rac-ese-book",
+      "file": "ESE-Prelims vol 1 (1).pdf",
+      "chapter": 1,
+      "title": "Heat Pump and Refrigeration Systems",
+      "first": 368,
+      "answerPage": 372,
+      "questions": 44,
+      "expected": 44,
+      "missing": [],
+      "keyCount": 41
+    },
+    {
+      "source": "rac-ese-book",
+      "file": "ESE-Prelims vol 1 (1).pdf",
+      "chapter": 2,
+      "title": "Ideal Vapour and Air Refrigeration Cycles and Refrigerants",
+      "first": 379,
+      "answerPage": 393,
+      "questions": 130,
+      "expected": 130,
+      "missing": [],
+      "keyCount": 99
+    },
+    {
+      "source": "rac-ese-book",
+      "file": "ESE-Prelims vol 1 (1).pdf",
+      "chapter": 3,
+      "title": "Refrigeration Equipment",
+      "first": 406,
+      "answerPage": 410,
+      "questions": 31,
+      "expected": 31,
+      "missing": [],
+      "keyCount": 31
+    },
+    {
+      "source": "rac-ese-book",
+      "file": "ESE-Prelims vol 1 (1).pdf",
+      "chapter": 4,
+      "title": "Psychrometry and Psychrometric Processes",
+      "first": 412,
+      "answerPage": 424,
+      "questions": 111,
+      "expected": 111,
+      "missing": [],
+      "keyCount": 110
+    },
+    {
+      "source": "rac-ese-book",
+      "file": "ESE-Prelims vol 1 (1).pdf",
+      "chapter": 5,
+      "title": "Cooling Load Calculations and Duct Design",
+      "first": 434,
+      "answerPage": 440,
+      "questions": 52,
+      "expected": 52,
+      "missing": [],
+      "keyCount": 52
+    },
+    {
+      "source": "rac-gate-book",
+      "file": "gate previous year solved papers (2).pdf",
+      "chapter": 1,
+      "title": "Vapour Refrigeration",
+      "first": 543,
+      "answerPage": 545,
+      "questions": 19,
+      "expected": 19,
+      "missing": [],
+      "keyCount": 19
+    },
+    {
+      "source": "rac-gate-book",
+      "file": "gate previous year solved papers (2).pdf",
+      "chapter": 2,
+      "title": "Psychrometric Processes",
+      "first": 550,
+      "answerPage": 552,
+      "questions": 16,
+      "expected": 16,
+      "missing": [],
+      "keyCount": 9
+    },
+    {
+      "source": "rac-gate-book",
+      "file": "gate previous year solved papers (2).pdf",
+      "chapter": 3,
+      "title": "Heat Pumps and Cycles",
+      "first": 556,
+      "answerPage": 557,
+      "questions": 12,
+      "expected": 12,
+      "missing": [],
+      "keyCount": 8
+    },
+    {
+      "source": "rac-gate-book",
+      "file": "gate previous year solved papers (2).pdf",
+      "chapter": 4,
+      "title": "Properties of Moist Air",
+      "first": 561,
+      "answerPage": 562,
+      "questions": 15,
+      "expected": 15,
+      "missing": [],
+      "keyCount": 14
+    }
+  ],
+  "sourceSelection": {
+    "gateCandidateExclusions": [
+      {
+        "index": 3,
+        "name": "ME1-2021",
+        "number": 11,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 6,
+        "name": "ME1-2022",
+        "number": 29,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 10,
+        "name": "ME2-2020",
+        "number": 24,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 12,
+        "name": "ME2-2020",
+        "number": 52,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 18,
+        "name": "ME2008",
+        "number": 47,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 19,
+        "name": "ME2008",
+        "number": 54,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 21,
+        "name": "ME2009",
+        "number": 7,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 24,
+        "name": "ME2010",
+        "number": 41,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 27,
+        "name": "ME2012",
+        "number": 49,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 34,
+        "name": "ME2014",
+        "number": 55,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 36,
+        "name": "ME2014",
+        "number": 55,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 38,
+        "name": "ME2014",
+        "number": 55,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 41,
+        "name": "ME2014",
+        "number": 35,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 47,
+        "name": "ME2016",
+        "number": 10,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 55,
+        "name": "XE2008",
+        "number": 6,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 63,
+        "name": "XE2009",
+        "number": 20,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 67,
+        "name": "XE2011",
+        "number": 2,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 72,
+        "name": "XE2013",
+        "number": 16,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      },
+      {
+        "index": 74,
+        "name": "XE2013",
+        "number": 20,
+        "reason": "Different subject or adjacent stem/common-data contamination"
+      }
+    ],
+    "prelimCandidateExclusions": [
+      {
+        "index": 46,
+        "year": 2020,
+        "number": "102",
+        "reason": "Different subject, vibration, generic heat exchanger or power-station tower"
+      },
+      {
+        "index": 54,
+        "year": 2022,
+        "number": "96",
+        "reason": "Different subject, vibration, generic heat exchanger or power-station tower"
+      },
+      {
+        "index": 64,
+        "year": 2022,
+        "number": "128",
+        "reason": "Different subject, vibration, generic heat exchanger or power-station tower"
+      },
+      {
+        "index": 67,
+        "year": 2023,
+        "number": "10",
+        "reason": "Different subject, vibration, generic heat exchanger or power-station tower"
+      },
+      {
+        "index": 75,
+        "year": 2024,
+        "number": "72",
+        "reason": "Different subject, vibration, generic heat exchanger or power-station tower"
+      },
+      {
+        "index": 76,
+        "year": 2024,
+        "number": "106",
+        "reason": "Different subject, vibration, generic heat exchanger or power-station tower"
+      },
+      {
+        "index": 85,
+        "year": 2026,
+        "number": "32",
+        "reason": "Different subject, vibration, generic heat exchanger or power-station tower"
+      }
+    ]
+  },
+  "officialMainsSources": [
+    {
+      "exam": "cse-mains",
+      "year": 2017,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG1.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2017-ME1.pdf",
+      "bytes": 6077516,
+      "sha256": "6b2d61fabd199f93bb53eadc2ea4305e8c94d682a4b8169b611d998c2c23c1c5",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2017,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG2.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2017-ME2.pdf",
+      "bytes": 6773126,
+      "sha256": "53fa21495cf1fb6f01068733e1184a1bd602352a4f8db7fe8225292761d53b3f",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2018,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH-ENGG-PAPER-I.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2018-ME1.pdf",
+      "bytes": 1091953,
+      "sha256": "9b6ec797f550a40381af64ba7c2d4a1a5a0782422f5c051ebd75b1fa1a26aa5f",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2018,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH-ENGG-PAPER-II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2018-ME2.pdf",
+      "bytes": 777308,
+      "sha256": "7dbbf6e9c10fa577b9f11355cb57fbc7a878654335a45301e0283344d7e83c82",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2019,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM19-MechEngg-I.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2019-ME1.pdf",
+      "bytes": 7676836,
+      "sha256": "b79a22ce4cd79f44b1c898c76bb6c06c474029416fceec815ec9e7f30d4dccb3",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2019,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM19-MechEngg-II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2019-ME2.pdf",
+      "bytes": 5781488,
+      "sha256": "5c75b36e950e002c2e522419f90d0c162a0b38d244a2fa7f033dcdbc99427cbd",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2020,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG_I.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2020-ME1.pdf",
+      "bytes": 1344119,
+      "sha256": "5eb60a26a8bd1040a4acc619875c7efccc9579141c9312302f1a42926c188bc2",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2020,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG_II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2020-ME2.pdf",
+      "bytes": 1049731,
+      "sha256": "d55a44edb590545a13aadb534adac838d573fb0ae5c6861726fc729ea4af41c6",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2021,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical%20Engineering%20Paper-I.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2021-ME1.pdf",
+      "bytes": 8727051,
+      "sha256": "88b6c10c7417231f1b8e51358b23ddcdc2511e1fa9b44d7a70ae31da452c7d60",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2021,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical%20Engineering%20Paper-II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2021-ME2.pdf",
+      "bytes": 7775271,
+      "sha256": "e6c6c1d1eef209a19ed61e304e68457a2178b4575b4fffc65ab04c97d6e77a15",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2022,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-22-MECHANICAL-ENGINEERING-PAPER-I-280922.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2022-ME1.pdf",
+      "bytes": 11543173,
+      "sha256": "b13e44a00a31ab91e0ceacdfb2a646c5f185566ba771c6ecfbe58d2376872988",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2022,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-22-MECHANICAL-ENGINEERING-PAPER-II-280922.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2022-ME2.pdf",
+      "bytes": 11043784,
+      "sha256": "1ff02284a525a8e4962f2c3e0d935aabda4ecc529b61763ed77c279ea7c9b405",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2023,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-23-MECHANICAL-ENGINEERING-PAPER-I-29092023.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2023-ME1.pdf",
+      "bytes": 7386178,
+      "sha256": "b76dc454f3045f81152663a444398551949fc0e26034ac9191c78f4bff99a45f",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2023,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-23-MECHANICAL-ENGINEERING-PAPER-II-29092023.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2023-ME2.pdf",
+      "bytes": 6951354,
+      "sha256": "076b370b745ee2f79d4291775ed2bab2062c5d05262669e97506bcbad5264f41",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2024,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-24-MECHANICAL-ENGINEERING-PAPER-I-031024.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2024-ME1.pdf",
+      "bytes": 6477691,
+      "sha256": "160dc606a8df45c14e89ec93bd174f82701eda78b94757c839b5dc7e4f3c1408",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2024,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-24-MECHANICAL-ENGINEERING-PAPER-II-031024.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2024-ME2.pdf",
+      "bytes": 18989477,
+      "sha256": "00c3b16051875f3fb736293171b4ac972c2ea448d3b56534cbd26ebc52c16cea",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2025,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-CSM-25-010925.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2025-ME1.pdf",
+      "bytes": 7975880,
+      "sha256": "527ad5d1305140a44899acdd180679880f65d78076d3ecf51ac4d1afd97d8850",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2025,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-II-QP-CSM-25-010925.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2025-ME2.pdf",
+      "bytes": 8653948,
+      "sha256": "c30a04387fb036ba19c5363dd21936bb153a51933975d894ac9b2e13968ad198",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2026,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-26-010926-Optional-MECHANICAL-ENGINEERING-PAPER_I.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2026-ME1.pdf",
+      "bytes": 8303111,
+      "sha256": "2503ea9be35c4cd171e051b011e766b4fcabed718fbc9e5cade222d3963a2572",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2026,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-26-010926-Optional-MECHANICAL-ENGINEERING-PAPER_II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2026-ME2.pdf",
+      "bytes": 7803615,
+      "sha256": "c91d93b47ce870e7c2f7e2eca1b85a32766071ec6286b2f73459fc06838037e0",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2017,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical_Engg_1_2.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2017-ME1.pdf",
+      "bytes": 3963634,
+      "sha256": "cfdc8da675a8c39fb56322875f05be6749f5603f7a95e79128a20a6709d5a17e",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2017,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical_Engg_2_1.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2017-ME2.pdf",
+      "bytes": 5879737,
+      "sha256": "ce764ee2149366fd638f9080b6bd5901641fefee60a4fcf3d6e4a56cf01a94ef",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2018,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MACH-ENGINEERING-PAPER-1.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2018-ME1.pdf",
+      "bytes": 4498819,
+      "sha256": "7e9fc6bab7a5e8e95e2094c0d9dd27449c59f749e43c8cc60e1be33596e69909",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2018,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH-ENGINEERING-PAPER-2.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2018-ME2.pdf",
+      "bytes": 5953000,
+      "sha256": "df895dbfa7ed93491d9f4c09aac69bbe0adf9202924518348dba98fe70911d79",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2019,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/ME_P1_ESEM19.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2019-ME1.pdf",
+      "bytes": 9429613,
+      "sha256": "c47b733f054b32f9777fba1d4cf56b5c12fdbf813ce580b7d6bc8f1cd9d62e2e",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2019,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/ME_P2_ESEM19.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2019-ME2.pdf",
+      "bytes": 2935382,
+      "sha256": "efcfd737e8ee0752b8f0db9420c2aa1d994ec8216f620538ded10b593f9e8c94",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2020,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/M_EN_P1-ESEM-20-QP.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2020-ME1.pdf",
+      "bytes": 530560,
+      "sha256": "d9aa6ac2b9dd5de53e9b7fc98554295b7fdd6bf8ad857556355c6a2a8db1b04c",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2020,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/M_EN_P2-ESEM-20-QP.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2020-ME2.pdf",
+      "bytes": 429760,
+      "sha256": "502e8e2709bf5ecc3e5577bd7ddd61069e304b6b5a1f4af34622a99ef2316123",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2021,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-21-MechEnggPaper-I-231121.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2021-ME1.pdf",
+      "bytes": 6461075,
+      "sha256": "b1b6a8bc6da8b198a2ee9d4fc2c884f986fe69d74ad75823f1380700dad8d967",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2021,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-21-MechEnggPaper-II-231121.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2021-ME2.pdf",
+      "bytes": 6036562,
+      "sha256": "f4e40be08ebeb035e69c901c88783ab6c798daa71c902f0ab9a721d6f6efb890",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2022,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MechEngg_I_28062022.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2022-ME1.pdf",
+      "bytes": 5967045,
+      "sha256": "ed5950aadea1acc2936644f38cc9cd4db716c6b53fc6e538bdf6ed449290e987",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2022,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MechEngg_II_28062022.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2022-ME2.pdf",
+      "bytes": 5411763,
+      "sha256": "5ffaeef3ef058fa542221afd95a1589266828cbccd9b165026eb73878852179a",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2023,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-23-MECHANICAL-ENGINEERING-PAPER-I-250623.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2023-ME1.pdf",
+      "bytes": 8248265,
+      "sha256": "062677950df7d05dd2ab89adf93662e2d447f2a23a427e1546207e92d05294cd",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2023,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-23-MECHANICAL-ENGINEERING-PAPER-II-260623.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2023-ME2.pdf",
+      "bytes": 5491765,
+      "sha256": "9c0c7799aa6c1c8905cb3107e28f8539fe07fc08a58637851c686a198ad8b04f",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2024,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-24-MECHANICAL-ENGINEERING-PAPER-I-240624.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2024-ME1.pdf",
+      "bytes": 8536538,
+      "sha256": "4d353a0881f1e4f46f715afc29b693b2effb343b944b5262db8ccb22c70047eb",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2024,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-24-MECHANICAL-ENGINEERING-PAPER-II-240624.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2024-ME2.pdf",
+      "bytes": 4172070,
+      "sha256": "7231bb2b0097de6211d62665a8f91353be750f87b7aeaed64b72730122b8ede3",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2025,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-ESEM-25-110825.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2025-ME1.pdf",
+      "bytes": 5466453,
+      "sha256": "b7739b80fbff7fe2f3588e8f9589260ac85141043ef5c9b81bc552ff878730e3",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2025,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-II-QP-ESEM-25-110825.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2025-ME2.pdf",
+      "bytes": 5194253,
+      "sha256": "24f698a80b06a97e8c90d4fc2efe6744a05445975819b2b43ff7738c9874866b",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2026,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-26-220626-MECHANICAL-ENGINEERING-PAPER-I.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2026-ME1.pdf",
+      "bytes": 6425011,
+      "sha256": "74e04c842c9c9e46de40712b92e8866b11ca6cb2c3c564b2c97db7922ce6a2c7",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2026,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-26-220626-MECHANICAL-ENGINEERING-PAPER-II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2026-ME2.pdf",
+      "bytes": 4412480,
+      "sha256": "8125b31d52d7aecb9a830510af79e3a7e04e1ca70aa4c2b169253ec56ce422ae",
+      "downloaded": true
+    }
+  ],
+  "rawEntries": 732,
+  "uniqueQuestions": 656,
+  "duplicateCopies": 76,
+  "duplicateGroups": 73,
+  "sharedContextRestored": [
+    "rac-me2012-s1-q50-p10",
+    "rac-me2012-s1-q51-p10",
+    "rac-xe2007-s1-q27-p50",
+    "rac-xe2007-s1-q28-p50",
+    "rac-xe2009-s1-q21-p25",
+    "rac-xe2009-s1-q22-p25",
+    "rac-xe2013-s1-q18-p30",
+    "rac-xe2013-s1-q17-p30",
+    "rac-xe2013-s1-q21-p31",
+    "rac-xe2013-s1-q22-p31",
+    "rac-esep-2023-12",
+    "rac-esep-2023-11"
+  ],
+  "recoveredHeaders": [
+    "GATE ME2010 Q42",
+    "GATE ME2020 Set2 Q53"
+  ],
+  "visualReview": {
+    "contactSheets": 16,
+    "crops": 732,
+    "columns": "Scanned columns checked and expanded to retain actual text edges",
+    "mains": "107 complete written questions with required diagrams/charts/tables; three premature text anchors repaired",
+    "finalEdgeRepair": "ESE Mains2021 Q3b(ii): complete final thermodynamics line and marks restored; preceding unrelated marks excluded"
+  },
+  "limitations": [
+    "UPSC references are independently worked self-review guidance, not official marking schemes.",
+    "Historical print/key inconsistencies remain explained outside automatic objective scoring.",
+    "GATE ME2023 and ME2026 were searched and have no selected RAC question; those years are not filled with invented questions.",
+    "ESE2024 Q5b has a malformed printed heat-transfer correlation; its numerical result is explicitly conditional.",
+    "ESE2023 Q7c(i) uses the attached R22 p-h chart and gives the two enthalpy-based answer expressions."
+  ],
+  "answerCoverage": {
+    "total": 656,
+    "official": 63,
+    "book": 386,
+    "solved": 93,
+    "written": 107,
+    "issues": 7,
+    "pending": 0,
+    "keyed": 542
+  },
+  "finalVisualReview": {
+    "bookCrops": 430,
+    "completeBottomMargins": true,
+    "sharedStatementCodes": 14,
+    "extraDuplicateCopies": 4,
+    "variantPolicy": "Changed numerical data, requested quantities or distractor options remain separate exercises."
+  },
+  "learningSequenceReview": {
+    "date": "2026-10-12",
+    "writtenQuestionsReviewed": 107,
+    "explicitRefinements": 108,
+    "basis": "Requested process or calculation takes precedence over incidental wording and distractor options. Refrigerant property questions, saturation/psychrometric definitions, actual mixing, sensible heating, cooling with dehumidification, heat pumps and duct sizing reviewed independently."
+  }
+}

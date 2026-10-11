@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-12",
+  "total": 656,
+  "official": 63,
+  "book": 386,
+  "solved": 93,
+  "written": 107,
+  "issues": [
+    {
+      "id": "refrigeration:rac-esep-2021-43",
+      "title": "ESE Prelims 2021 · Q43",
+      "issue": "The question does not define its historical relative ozone-destruction scale. Standard ODP for R12 is1.0, absent from the options. An official key or defined alternative scale is needed before automatic scoring. Reference: https://www.epa.gov/ozone-layer-protection/ozone-depleting-substances"
+    },
+    {
+      "id": "refrigeration:rac-esep-2017-46",
+      "title": "ESE Prelims 2017 · Q46",
+      "issue": "Only statement2 is unconditionally correct. The medium being cooled must be warmer than the evaporator. Solar storage or backup can permit continuous operation. The book accepts2and3(C), which assumes an unstated solar configuration; no option contains only2. Excluded from automatic scoring."
+    },
+    {
+      "id": "refrigeration:rac-gate-book-1-9",
+      "title": "GATE ME 2004 | RAC Book Q1.9",
+      "issue": "The source answer table marks this question with an asterisk; it supplies no dependable unique option."
+    },
+    {
+      "id": "refrigeration:rac-esep-2022-108",
+      "title": "ESE Prelims 2022 · Q108",
+      "issue": "The question asks for length, but printed options have viscosity-like units kg·s⁻¹·m⁻¹. Refrigerant property/viscosity data for sectionwise integration are also absent. Use adiabatic flash enthalpy and momentum with friction/acceleration across48,40,30,20,10,5°C. No numerical option is safely verified from these data alone."
+    },
+    {
+      "id": "refrigeration:rac-ese-book-4-54",
+      "title": "ESE Prelims 2008 | RAC Book Q4.54",
+      "issue": "The source answer table marks this question with an asterisk; it supplies no dependable unique option."
+    },
+    {
+      "id": "refrigeration:rac-ese-book-4-96",
+      "title": "ESE Prelims 2016 | RAC Book Q4.96",
+      "issue": "The source answer table marks this question with an asterisk; it supplies no dependable unique option."
+    },
+    {
+      "id": "refrigeration:rac-esep-2017-126",
+      "title": "ESE Prelims 2017 · Q126",
+      "issue": "The source answer table marks this question with an asterisk; it supplies no dependable unique option."
+    }
+  ],
+  "pending": 0,
+  "keyed": 542,
+  "rawEntries": 732,
+  "duplicateCopies": 76,
+  "chapters": 11,
+  "populatedTopics": 34,
+  "byExam": {
+    "ese-prelims": {
+      "total": 413,
+      "official": 0,
+      "book": 346,
+      "solved": 61,
+      "written": 0,
+      "issues": 6,
+      "pending": 0,
+      "keyed": 407
+    },
+    "gate-me": {
+      "total": 76,
+      "official": 27,
+      "book": 38,
+      "solved": 10,
+      "written": 0,
+      "issues": 1,
+      "pending": 0,
+      "keyed": 75
+    },
+    "gate-xe": {
+      "total": 60,
+      "official": 36,
+      "book": 2,
+      "solved": 22,
+      "written": 0,
+      "issues": 0,
+      "pending": 0,
+      "keyed": 60
+    },
+    "cse-mains": {
+      "total": 56,
+      "official": 0,
+      "book": 0,
+      "solved": 0,
+      "written": 56,
+      "issues": 0,
+      "pending": 0,
+      "keyed": 0
+    },
+    "ese-mains": {
+      "total": 51,
+      "official": 0,
+      "book": 0,
+      "solved": 0,
+      "written": 51,
+      "issues": 0,
+      "pending": 0,
+      "keyed": 0
+    }
+  },
+  "imagePacks": 14,
+  "issueCount": 7
+}
