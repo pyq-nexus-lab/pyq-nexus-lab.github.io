@@ -1,0 +1,2630 @@
+{
+  "date": "2026-10-16",
+  "scope": "IC Engines, directly related air-standard cycles, engine fuels, combustion and testing. Historical numbered exercises from the supplied solved books; original GATE ME/XE 2007–2026 and ESE Prelims 2017–2026 source selection; ESE/CSE Mechanical Mains 2017–2026. This is source-bound coverage, not a claim to every examination paper ever published.",
+  "rawEntries": 504,
+  "uniqueQuestions": 459,
+  "duplicateCopies": 45,
+  "duplicateGroups": [
+    {
+      "id": "ic-engines:ic-esep-2018-34",
+      "ids": [
+        "ic-engines:ic-ese-book-2-19",
+        "ic-engines:ic-ese-book-4-58",
+        "ic-engines:ic-esep-2018-34"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained",
+      "optionMaps": {
+        "ic-engines:ic-ese-book-2-19": {
+          "A": "D",
+          "B": "A",
+          "C": "B",
+          "D": "C"
+        }
+      }
+    },
+    {
+      "id": "ic-engines:ic-esep-2017-125",
+      "ids": [
+        "ic-engines:ic-ese-book-2-22",
+        "ic-engines:ic-esep-2017-125"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2018-37",
+      "ids": [
+        "ic-engines:ic-ese-book-2-23",
+        "ic-engines:ic-esep-2018-37"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2018-147",
+      "ids": [
+        "ic-engines:ic-ese-book-2-24",
+        "ic-engines:ic-esep-2018-147"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2019-52",
+      "ids": [
+        "ic-engines:ic-ese-book-2-25",
+        "ic-engines:ic-esep-2019-52"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-ese-book-4-54",
+      "ids": [
+        "ic-engines:ic-ese-book-3-65",
+        "ic-engines:ic-ese-book-4-54"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2017-24",
+      "ids": [
+        "ic-engines:ic-ese-book-3-79",
+        "ic-engines:ic-esep-2017-24"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2019-25",
+      "ids": [
+        "ic-engines:ic-ese-book-3-80",
+        "ic-engines:ic-esep-2019-25"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2020-25",
+      "ids": [
+        "ic-engines:ic-ese-book-3-81",
+        "ic-engines:ic-esep-2020-25"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-ese-book-4-38",
+      "ids": [
+        "ic-engines:ic-ese-book-4-30",
+        "ic-engines:ic-ese-book-4-38"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2020-55",
+      "ids": [
+        "ic-engines:ic-ese-book-4-59",
+        "ic-engines:ic-esep-2020-55"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2017-26",
+      "ids": [
+        "ic-engines:ic-ese-book-5-14",
+        "ic-engines:ic-ese-book-5-43",
+        "ic-engines:ic-esep-2017-26"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained",
+      "optionMaps": {
+        "ic-engines:ic-ese-book-5-14": {
+          "A": "A",
+          "B": "B",
+          "C": "D",
+          "D": "C"
+        }
+      }
+    },
+    {
+      "id": "ic-engines:ic-esep-2017-37",
+      "ids": [
+        "ic-engines:ic-ese-book-5-44",
+        "ic-engines:ic-esep-2017-37"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2018-30",
+      "ids": [
+        "ic-engines:ic-ese-book-5-45",
+        "ic-engines:ic-esep-2018-30"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2018-31",
+      "ids": [
+        "ic-engines:ic-ese-book-5-46",
+        "ic-engines:ic-esep-2018-31"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2018-33",
+      "ids": [
+        "ic-engines:ic-ese-book-5-47",
+        "ic-engines:ic-esep-2018-33"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2018-36",
+      "ids": [
+        "ic-engines:ic-ese-book-5-48",
+        "ic-engines:ic-esep-2018-36"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2018-38",
+      "ids": [
+        "ic-engines:ic-ese-book-5-49",
+        "ic-engines:ic-esep-2018-38"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2018-40",
+      "ids": [
+        "ic-engines:ic-ese-book-5-50",
+        "ic-engines:ic-esep-2018-40"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2019-26",
+      "ids": [
+        "ic-engines:ic-ese-book-5-51",
+        "ic-engines:ic-esep-2019-26"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2019-27",
+      "ids": [
+        "ic-engines:ic-ese-book-5-52",
+        "ic-engines:ic-esep-2019-27"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2019-36",
+      "ids": [
+        "ic-engines:ic-ese-book-5-53",
+        "ic-engines:ic-esep-2019-36"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-me2008-s1-q16-p4",
+      "ids": [
+        "ic-engines:ic-shared-td-gate-book-7-22",
+        "ic-engines:ic-me2008-s1-q16-p4"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2018-28",
+      "ids": [
+        "ic-engines:ic-shared-td-ese-cycle-book-1-31",
+        "ic-engines:ic-esep-2018-28"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2020-17",
+      "ids": [
+        "ic-engines:ic-shared-td-ese-cycle-book-1-33",
+        "ic-engines:ic-esep-2020-17"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2020-18",
+      "ids": [
+        "ic-engines:ic-shared-td-ese-cycle-book-1-34",
+        "ic-engines:ic-esep-2020-18"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2020-26",
+      "ids": [
+        "ic-engines:ic-shared-td-ese-cycle-book-1-35",
+        "ic-engines:ic-esep-2020-26"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2020-51",
+      "ids": [
+        "ic-engines:ic-shared-td-ese-cycle-book-1-36",
+        "ic-engines:ic-esep-2020-51"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-me2011-s1-q38-p8",
+      "ids": [
+        "ic-engines:ic-shared-td-gate-book-7-25",
+        "ic-engines:ic-me2011-s1-q38-p8"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-me2014-s4-q49-p73",
+      "ids": [
+        "ic-engines:ic-shared-td-gate-book-7-28",
+        "ic-engines:ic-me2014-s4-q49-p73"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-me1-2018-s1-q46-p14",
+      "ids": [
+        "ic-engines:ic-shared-td-gate-book-7-36",
+        "ic-engines:ic-me1-2018-s1-q46-p14"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2019-16",
+      "ids": [
+        "ic-engines:ic-shared-td-ese-cycle-book-1-32",
+        "ic-engines:ic-esep-2019-16"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-me2014-s3-q49-p56",
+      "ids": [
+        "ic-engines:ic-shared-td-gate-book-7-27",
+        "ic-engines:ic-me2014-s3-q49-p56"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-me2015-s3-q35-p60",
+      "ids": [
+        "ic-engines:ic-shared-td-gate-book-7-31",
+        "ic-engines:ic-me2015-s3-q35-p60"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-me2010-s1-q15-p3",
+      "ids": [
+        "ic-engines:ic-shared-td-gate-book-7-24",
+        "ic-engines:ic-me2010-s1-q15-p3"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-esep-2017-25",
+      "ids": [
+        "ic-engines:ic-shared-td-ese-cycle-book-1-29",
+        "ic-engines:ic-esep-2017-25"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-me2015-s1-q21-p9",
+      "ids": [
+        "ic-engines:ic-shared-td-gate-book-7-29",
+        "ic-engines:ic-me2015-s1-q21-p9"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-me2015-s2-q29-p35",
+      "ids": [
+        "ic-engines:ic-shared-td-gate-book-7-30",
+        "ic-engines:ic-me2015-s2-q29-p35"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-csem-2026-7b",
+      "ids": [
+        "ic-engines:ic-csem-2018-5a",
+        "ic-engines:ic-csem-2026-7b"
+      ],
+      "reason": "Manually checked same question; original paper preferred, all source appearances retained"
+    },
+    {
+      "id": "ic-engines:ic-me2-2018-s2-q55-p18",
+      "ids": [
+        "ic-engines:ic-me2-2018-s2-q55-p18",
+        "ic-engines:ic-shared-td-gate-book-7-35"
+      ],
+      "reason": "Original GATE paper and supplied solved-book reproduction, visually verified despite OCR/answer-table spillover in search text"
+    },
+    {
+      "id": "ic-engines:ic-me1-2020-s1-q55-p17",
+      "ids": [
+        "ic-engines:ic-me1-2020-s1-q55-p17",
+        "ic-engines:ic-shared-td-gate-book-7-38"
+      ],
+      "reason": "Original GATE paper and supplied solved-book reproduction, visually verified despite OCR/answer-table spillover in search text"
+    },
+    {
+      "id": "ic-engines:ic-me2-2020-s2-q17-p7",
+      "ids": [
+        "ic-engines:ic-me2-2020-s2-q17-p7",
+        "ic-engines:ic-shared-td-gate-book-7-39"
+      ],
+      "reason": "Original GATE paper and supplied solved-book reproduction, visually verified despite OCR/answer-table spillover in search text"
+    },
+    {
+      "id": "ic-engines:ic-me2-2020-s2-q55-p17",
+      "ids": [
+        "ic-engines:ic-me2-2020-s2-q55-p17",
+        "ic-engines:ic-shared-td-gate-book-7-40"
+      ],
+      "reason": "Original GATE paper and supplied solved-book reproduction, visually verified despite OCR/answer-table spillover in search text"
+    }
+  ],
+  "bookSections": [
+    {
+      "source": "ic-ese-book",
+      "file": "ESE-Prelims vol 1 (1).pdf",
+      "chapter": 2,
+      "title": "Fuel Characteristics",
+      "first": 325,
+      "answerPage": 328,
+      "questions": 25,
+      "expected": 25,
+      "missing": [],
+      "keyCount": 25
+    },
+    {
+      "source": "ic-ese-book",
+      "file": "ESE-Prelims vol 1 (1).pdf",
+      "chapter": 3,
+      "title": "Combustion and Knocking in SI and CI Engines",
+      "first": 330,
+      "answerPage": 339,
+      "questions": 81,
+      "expected": 81,
+      "missing": [],
+      "keyCount": 81
+    },
+    {
+      "source": "ic-ese-book",
+      "file": "ESE-Prelims vol 1 (1).pdf",
+      "chapter": 4,
+      "title": "Fuels, Emissions and Flue Gas Analysis",
+      "first": 345,
+      "answerPage": 352,
+      "questions": 59,
+      "expected": 59,
+      "missing": [],
+      "keyCount": 58
+    },
+    {
+      "source": "ic-ese-book",
+      "file": "ESE-Prelims vol 1 (1).pdf",
+      "chapter": 5,
+      "title": "Testing and Performance of IC Engines",
+      "first": 356,
+      "answerPage": 362,
+      "questions": 53,
+      "expected": 53,
+      "missing": [],
+      "keyCount": 53
+    }
+  ],
+  "inheritedBookSections": [
+    {
+      "source": "GATE solved book",
+      "chapters": "7.1–7.40 and 8.1–8.4",
+      "expected": 44
+    },
+    {
+      "source": "ESE Prelims Volume 1",
+      "chapter": "1.1–1.36",
+      "expected": 36
+    }
+  ],
+  "answerCoverage": {
+    "total": 459,
+    "official": 34,
+    "book": 247,
+    "solved": 88,
+    "written": 87,
+    "issues": 3,
+    "pending": 0,
+    "keyed": 369
+  },
+  "sourceIssues": [
+    {
+      "id": "ic-engines:ic-esep-2020-26",
+      "title": "ESE Prelims 2020 · Q26",
+      "issue": "Literal6kg fuel/min withA/F9 gives total mixture60kg/min. Per cylinder per cycle mass=60/[4×800/2]=0.0375kg;Vc=mRT/p=0.00585m³. Vs=π(0.08)²(0.1)/4=0.00050265m³, so r=1.08592, matching no option. If consumption were6kg/hour instead,r≈6.155→A. The time unit is inconsistent; automatic grading is disabled."
+    },
+    {
+      "id": "ic-engines:ic-esep-2024-110",
+      "title": "ESE Prelims 2024 · Q110",
+      "issue": "Under the intended complete-combustion convention, carbon formsCO₂ rather thanCO and only2,3are selected(C). As printed, statement1 can also describe oxygen-limited incomplete combustion, givingD. No condition resolves that distinction in the stem; review the explanation rather than score a unique choice."
+    },
+    {
+      "id": "ic-engines:ic-esep-2018-36",
+      "title": "ESE Prelims 2018 · Q36",
+      "issue": "Printed4.4kg/min gives BSFC=4.4×60/105=2.5143kg/kWh, which matches no option. If4.4kg is the total consumed over10min,the result is0.2514kg/kWh (B). The source has an extra /min or incompatible options; automatic grading is disabled."
+    }
+  ],
+  "byExam": {
+    "ese-prelims": {
+      "total": 300,
+      "official": 0,
+      "book": 221,
+      "solved": 76,
+      "written": 0,
+      "issues": 3,
+      "pending": 0,
+      "keyed": 297
+    },
+    "gate-me": {
+      "total": 47,
+      "official": 17,
+      "book": 26,
+      "solved": 4,
+      "written": 0,
+      "issues": 0,
+      "pending": 0,
+      "keyed": 47
+    },
+    "ese-mains": {
+      "total": 36,
+      "official": 0,
+      "book": 0,
+      "solved": 0,
+      "written": 36,
+      "issues": 0,
+      "pending": 0,
+      "keyed": 0
+    },
+    "cse-mains": {
+      "total": 51,
+      "official": 0,
+      "book": 0,
+      "solved": 0,
+      "written": 51,
+      "issues": 0,
+      "pending": 0,
+      "keyed": 0
+    },
+    "gate-xe": {
+      "total": 25,
+      "official": 17,
+      "book": 0,
+      "solved": 8,
+      "written": 0,
+      "issues": 0,
+      "pending": 0,
+      "keyed": 25
+    }
+  },
+  "yearCoverage": {
+    "ese-prelims": {
+      "1995": 12,
+      "1996": 13,
+      "1997": 13,
+      "1998": 8,
+      "1999": 9,
+      "2000": 6,
+      "2001": 10,
+      "2002": 12,
+      "2003": 8,
+      "2004": 9,
+      "2005": 12,
+      "2006": 9,
+      "2007": 9,
+      "2008": 6,
+      "2009": 3,
+      "2010": 13,
+      "2011": 9,
+      "2012": 4,
+      "2013": 18,
+      "2014": 11,
+      "2015": 15,
+      "2016": 15,
+      "2017": 11,
+      "2018": 22,
+      "2019": 12,
+      "2020": 12,
+      "2021": 7,
+      "2022": 3,
+      "2023": 12,
+      "2024": 7,
+      "2025": 8,
+      "2026": 11,
+      "null": 2
+    },
+    "gate-me": {
+      "1989": 1,
+      "1990": 2,
+      "1991": 3,
+      "1992": 2,
+      "1993": 2,
+      "1995": 1,
+      "1998": 3,
+      "1999": 1,
+      "2001": 1,
+      "2002": 1,
+      "2003": 4,
+      "2004": 3,
+      "2007": 1,
+      "2008": 2,
+      "2009": 1,
+      "2010": 2,
+      "2011": 2,
+      "2014": 5,
+      "2015": 8,
+      "2016": 1,
+      "2017": 1,
+      "2018": 4,
+      "2019": 1,
+      "2020": 6,
+      "2022": 1,
+      "2025": 1
+    },
+    "ese-mains": {
+      "2017": 4,
+      "2018": 4,
+      "2019": 2,
+      "2020": 3,
+      "2021": 4,
+      "2022": 3,
+      "2023": 3,
+      "2024": 3,
+      "2025": 6,
+      "2026": 4
+    },
+    "cse-mains": {
+      "2017": 7,
+      "2018": 6,
+      "2019": 5,
+      "2020": 4,
+      "2021": 6,
+      "2022": 3,
+      "2023": 4,
+      "2024": 5,
+      "2025": 6,
+      "2026": 6
+    },
+    "gate-xe": {
+      "2007": 1,
+      "2008": 2,
+      "2010": 1,
+      "2011": 2,
+      "2012": 1,
+      "2013": 2,
+      "2014": 2,
+      "2016": 2,
+      "2018": 1,
+      "2020": 2,
+      "2021": 1,
+      "2022": 1,
+      "2023": 3,
+      "2025": 2,
+      "2026": 2
+    }
+  },
+  "selectedOriginalQuestions": {
+    "gate": [
+      {
+        "exam": "gate-me",
+        "year": 2017,
+        "paper": "recovered-ME1-2017",
+        "number": 36,
+        "page": 10
+      },
+      {
+        "exam": "gate-me",
+        "year": 2018,
+        "paper": "ME1-2018",
+        "number": 46,
+        "page": 14
+      },
+      {
+        "exam": "gate-me",
+        "year": 2020,
+        "paper": "ME1-2020",
+        "number": 55,
+        "page": 17
+      },
+      {
+        "exam": "gate-me",
+        "year": 2022,
+        "paper": "ME1-2022",
+        "number": 62,
+        "page": 44
+      },
+      {
+        "exam": "gate-me",
+        "year": 2018,
+        "paper": "ME2-2018",
+        "number": 55,
+        "page": 18
+      },
+      {
+        "exam": "gate-me",
+        "year": 2019,
+        "paper": "ME2-2019",
+        "number": 49,
+        "page": 21
+      },
+      {
+        "exam": "gate-me",
+        "year": 2020,
+        "paper": "ME2-2020",
+        "number": 17,
+        "page": 7
+      },
+      {
+        "exam": "gate-me",
+        "year": 2020,
+        "paper": "ME2-2020",
+        "number": 55,
+        "page": 17
+      },
+      {
+        "exam": "gate-me",
+        "year": 2007,
+        "paper": "ME2007",
+        "number": 34,
+        "page": 7
+      },
+      {
+        "exam": "gate-me",
+        "year": 2008,
+        "paper": "ME2008",
+        "number": 16,
+        "page": 4
+      },
+      {
+        "exam": "gate-me",
+        "year": 2009,
+        "paper": "ME2009",
+        "number": 29,
+        "page": 5
+      },
+      {
+        "exam": "gate-me",
+        "year": 2010,
+        "paper": "ME2010",
+        "number": 15,
+        "page": 3
+      },
+      {
+        "exam": "gate-me",
+        "year": 2011,
+        "paper": "ME2011",
+        "number": 38,
+        "page": 8
+      },
+      {
+        "exam": "gate-me",
+        "year": 2014,
+        "paper": "ME2014",
+        "number": 47,
+        "page": 16
+      },
+      {
+        "exam": "gate-me",
+        "year": 2014,
+        "paper": "ME2014",
+        "number": 49,
+        "page": 56
+      },
+      {
+        "exam": "gate-me",
+        "year": 2014,
+        "paper": "ME2014",
+        "number": 49,
+        "page": 73
+      },
+      {
+        "exam": "gate-me",
+        "year": 2015,
+        "paper": "ME2015",
+        "number": 21,
+        "page": 9
+      },
+      {
+        "exam": "gate-me",
+        "year": 2015,
+        "paper": "ME2015",
+        "number": 29,
+        "page": 35
+      },
+      {
+        "exam": "gate-me",
+        "year": 2015,
+        "paper": "ME2015",
+        "number": 56,
+        "page": 43
+      },
+      {
+        "exam": "gate-me",
+        "year": 2015,
+        "paper": "ME2015",
+        "number": 35,
+        "page": 60
+      },
+      {
+        "exam": "gate-me",
+        "year": 2015,
+        "paper": "ME2015",
+        "number": 57,
+        "page": 67
+      },
+      {
+        "exam": "gate-me",
+        "year": 2016,
+        "paper": "ME2016",
+        "number": 17,
+        "page": 5
+      },
+      {
+        "exam": "gate-me",
+        "year": 2025,
+        "paper": "ME2025",
+        "number": 32,
+        "page": 23
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2007,
+        "paper": "XE2007",
+        "number": 12,
+        "page": 48
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2008,
+        "paper": "XE2008",
+        "number": 5,
+        "page": 44
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2008,
+        "paper": "XE2008",
+        "number": 19,
+        "page": 47
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2010,
+        "paper": "XE2010",
+        "number": 14,
+        "page": 25
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2012,
+        "paper": "XE2012",
+        "number": 7,
+        "page": 21
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2013,
+        "paper": "XE2013",
+        "number": 2,
+        "page": 27
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2013,
+        "paper": "XE2013",
+        "number": 7,
+        "page": 28
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2014,
+        "paper": "XE2014",
+        "number": 8,
+        "page": 32
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2014,
+        "paper": "XE2014",
+        "number": 17,
+        "page": 34
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2016,
+        "paper": "XE2016",
+        "number": 11,
+        "page": 25
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2016,
+        "paper": "XE2016",
+        "number": 17,
+        "page": 26
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2018,
+        "paper": "XE2018",
+        "number": 11,
+        "page": 23
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2020,
+        "paper": "XE2020",
+        "number": 9,
+        "page": 27
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2020,
+        "paper": "XE2020",
+        "number": 14,
+        "page": 28
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2021,
+        "paper": "XE2021",
+        "number": 22,
+        "page": 63
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2022,
+        "paper": "XE2022",
+        "number": 89,
+        "page": 73
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2023,
+        "paper": "XE2023",
+        "number": 91,
+        "page": 57
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2023,
+        "paper": "XE2023",
+        "number": 98,
+        "page": 62
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2023,
+        "paper": "XE2023",
+        "number": 104,
+        "page": 64
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2025,
+        "paper": "XE2025",
+        "number": 92,
+        "page": 62
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2025,
+        "paper": "XE2025",
+        "number": 101,
+        "page": 65
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2026,
+        "paper": "XE26",
+        "number": 96,
+        "page": 65
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2026,
+        "paper": "XE26",
+        "number": 107,
+        "page": 71
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2011,
+        "paper": "XE2011",
+        "number": 19,
+        "page": 24
+      },
+      {
+        "exam": "gate-xe",
+        "year": 2011,
+        "paper": "XE2011",
+        "number": 20,
+        "page": 24
+      }
+    ],
+    "prelims": [
+      {
+        "year": 2017,
+        "number": "24",
+        "source": "ESE 17 PRE PAPER 2.pdf",
+        "sourcePage": 5
+      },
+      {
+        "year": 2017,
+        "number": "25",
+        "source": "ESE 17 PRE PAPER 2.pdf",
+        "sourcePage": 6
+      },
+      {
+        "year": 2017,
+        "number": "26",
+        "source": "ESE 17 PRE PAPER 2.pdf",
+        "sourcePage": 6
+      },
+      {
+        "year": 2017,
+        "number": "37",
+        "source": "ESE 17 PRE PAPER 2.pdf",
+        "sourcePage": 8
+      },
+      {
+        "year": 2017,
+        "number": "125",
+        "source": "ESE 17 PRE PAPER 2.pdf",
+        "sourcePage": 25
+      },
+      {
+        "year": 2018,
+        "number": "23",
+        "source": "ESE 18 PRE PAPER 2.pdf",
+        "sourcePage": 5
+      },
+      {
+        "year": 2018,
+        "number": "28",
+        "source": "ESE 18 PRE PAPER 2.pdf",
+        "sourcePage": 6
+      },
+      {
+        "year": 2018,
+        "number": "30",
+        "source": "ESE 18 PRE PAPER 2.pdf",
+        "sourcePage": 6
+      },
+      {
+        "year": 2018,
+        "number": "31",
+        "source": "ESE 18 PRE PAPER 2.pdf",
+        "sourcePage": 7
+      },
+      {
+        "year": 2018,
+        "number": "33",
+        "source": "ESE 18 PRE PAPER 2.pdf",
+        "sourcePage": 7
+      },
+      {
+        "year": 2018,
+        "number": "34",
+        "source": "ESE 18 PRE PAPER 2.pdf",
+        "sourcePage": 7
+      },
+      {
+        "year": 2018,
+        "number": "36",
+        "source": "ESE 18 PRE PAPER 2.pdf",
+        "sourcePage": 8
+      },
+      {
+        "year": 2018,
+        "number": "37",
+        "source": "ESE 18 PRE PAPER 2.pdf",
+        "sourcePage": 8
+      },
+      {
+        "year": 2018,
+        "number": "38",
+        "source": "ESE 18 PRE PAPER 2.pdf",
+        "sourcePage": 8
+      },
+      {
+        "year": 2018,
+        "number": "40",
+        "source": "ESE 18 PRE PAPER 2.pdf",
+        "sourcePage": 9
+      },
+      {
+        "year": 2018,
+        "number": "141",
+        "source": "ESE 18 PRE PAPER 2.pdf",
+        "sourcePage": 27
+      },
+      {
+        "year": 2019,
+        "number": "16",
+        "source": "ESE 19 PRE PAPER 2.pdf",
+        "sourcePage": 4
+      },
+      {
+        "year": 2019,
+        "number": "26",
+        "source": "ESE 19 PRE PAPER 2.pdf",
+        "sourcePage": 6
+      },
+      {
+        "year": 2019,
+        "number": "27",
+        "source": "ESE 19 PRE PAPER 2.pdf",
+        "sourcePage": 6
+      },
+      {
+        "year": 2019,
+        "number": "36",
+        "source": "ESE 19 PRE PAPER 2.pdf",
+        "sourcePage": 7
+      },
+      {
+        "year": 2020,
+        "number": "17",
+        "source": "ESE 20 PRE PAPER 2.pdf",
+        "sourcePage": 4
+      },
+      {
+        "year": 2020,
+        "number": "18",
+        "source": "ESE 20 PRE PAPER 2.pdf",
+        "sourcePage": 4
+      },
+      {
+        "year": 2020,
+        "number": "26",
+        "source": "ESE 20 PRE PAPER 2.pdf",
+        "sourcePage": 6
+      },
+      {
+        "year": 2020,
+        "number": "51",
+        "source": "ESE 20 PRE PAPER 2.pdf",
+        "sourcePage": 9
+      },
+      {
+        "year": 2021,
+        "number": "17",
+        "source": "ESE 21 PRE PAPER 2.pdf",
+        "sourcePage": 4
+      },
+      {
+        "year": 2021,
+        "number": "38",
+        "source": "ESE 21 PRE PAPER 2.pdf",
+        "sourcePage": 7
+      },
+      {
+        "year": 2021,
+        "number": "39",
+        "source": "ESE 21 PRE PAPER 2.pdf",
+        "sourcePage": 8
+      },
+      {
+        "year": 2021,
+        "number": "40",
+        "source": "ESE 21 PRE PAPER 2.pdf",
+        "sourcePage": 8
+      },
+      {
+        "year": 2021,
+        "number": "41",
+        "source": "ESE 21 PRE PAPER 2.pdf",
+        "sourcePage": 8
+      },
+      {
+        "year": 2023,
+        "number": "1",
+        "source": "ESE 23 PRE PAPER 2.pdf",
+        "sourcePage": 2
+      },
+      {
+        "year": 2023,
+        "number": "3",
+        "source": "ESE 23 PRE PAPER 2.pdf",
+        "sourcePage": 2
+      },
+      {
+        "year": 2023,
+        "number": "4",
+        "source": "ESE 23 PRE PAPER 2.pdf",
+        "sourcePage": 2
+      },
+      {
+        "year": 2023,
+        "number": "5",
+        "source": "ESE 23 PRE PAPER 2.pdf",
+        "sourcePage": 2
+      },
+      {
+        "year": 2023,
+        "number": "6",
+        "source": "ESE 23 PRE PAPER 2.pdf",
+        "sourcePage": 2
+      },
+      {
+        "year": 2023,
+        "number": "8",
+        "source": "ESE 23 PRE PAPER 2.pdf",
+        "sourcePage": 3
+      },
+      {
+        "year": 2023,
+        "number": "9",
+        "source": "ESE 23 PRE PAPER 2.pdf",
+        "sourcePage": 3
+      },
+      {
+        "year": 2023,
+        "number": "65",
+        "source": "ESE 23 PRE PAPER 2.pdf",
+        "sourcePage": 12
+      },
+      {
+        "year": 2023,
+        "number": "72",
+        "source": "ESE 23 PRE PAPER 2.pdf",
+        "sourcePage": 13
+      },
+      {
+        "year": 2023,
+        "number": "96",
+        "source": "ESE 23 PRE PAPER 2.pdf",
+        "sourcePage": 16
+      },
+      {
+        "year": 2023,
+        "number": "147",
+        "source": "ESE 23 PRE PAPER 2.pdf",
+        "sourcePage": 24
+      },
+      {
+        "year": 2024,
+        "number": "51",
+        "source": "ESE 24 PRE PAPER 2.pdf",
+        "sourcePage": 13
+      },
+      {
+        "year": 2024,
+        "number": "52",
+        "source": "ESE 24 PRE PAPER 2.pdf",
+        "sourcePage": 13
+      },
+      {
+        "year": 2024,
+        "number": "62",
+        "source": "ESE 24 PRE PAPER 2.pdf",
+        "sourcePage": 15
+      },
+      {
+        "year": 2024,
+        "number": "135",
+        "source": "ESE 24 PRE PAPER 2.pdf",
+        "sourcePage": 33
+      },
+      {
+        "year": 2025,
+        "number": "41",
+        "source": "ESE 25 PRE PAPER 2.pdf",
+        "sourcePage": 11
+      },
+      {
+        "year": 2025,
+        "number": "42",
+        "source": "ESE 25 PRE PAPER 2.pdf",
+        "sourcePage": 12
+      },
+      {
+        "year": 2025,
+        "number": "43",
+        "source": "ESE 25 PRE PAPER 2.pdf",
+        "sourcePage": 12
+      },
+      {
+        "year": 2025,
+        "number": "60",
+        "source": "ESE 25 PRE PAPER 2.pdf",
+        "sourcePage": 15
+      },
+      {
+        "year": 2025,
+        "number": "61",
+        "source": "ESE 25 PRE PAPER 2.pdf",
+        "sourcePage": 16
+      },
+      {
+        "year": 2026,
+        "number": "91",
+        "source": "ESE 26 PRE PAPER 2.pdf",
+        "sourcePage": 19
+      },
+      {
+        "year": 2026,
+        "number": "103",
+        "source": "ESE 26 PRE PAPER 2.pdf",
+        "sourcePage": 21
+      },
+      {
+        "year": 2026,
+        "number": "104",
+        "source": "ESE 26 PRE PAPER 2.pdf",
+        "sourcePage": 21
+      },
+      {
+        "year": 2026,
+        "number": "105",
+        "source": "ESE 26 PRE PAPER 2.pdf",
+        "sourcePage": 21
+      },
+      {
+        "year": 2026,
+        "number": "106",
+        "source": "ESE 26 PRE PAPER 2.pdf",
+        "sourcePage": 21
+      },
+      {
+        "year": 2026,
+        "number": "107",
+        "source": "ESE 26 PRE PAPER 2.pdf",
+        "sourcePage": 21
+      },
+      {
+        "year": 2026,
+        "number": "130",
+        "source": "ESE 26 PRE PAPER 2.pdf",
+        "sourcePage": 25
+      },
+      {
+        "year": 2019,
+        "number": "25",
+        "source": "ESE 19 PRE PAPER 2.pdf",
+        "sourcePage": 6
+      },
+      {
+        "year": 2020,
+        "number": "25",
+        "source": "ESE 20 PRE PAPER 2.pdf",
+        "sourcePage": 5
+      },
+      {
+        "year": 2022,
+        "number": "123",
+        "source": "ESE 22 PRE PAPER 2.pdf",
+        "sourcePage": 24
+      },
+      {
+        "year": 2022,
+        "number": "130",
+        "source": "ESE 22 PRE PAPER 2.pdf",
+        "sourcePage": 26
+      },
+      {
+        "year": 2023,
+        "number": "2",
+        "source": "ESE 23 PRE PAPER 2.pdf",
+        "sourcePage": 2
+      },
+      {
+        "year": 2024,
+        "number": "110",
+        "source": "ESE 24 PRE PAPER 2.pdf",
+        "sourcePage": 27
+      },
+      {
+        "year": 2025,
+        "number": "40",
+        "source": "ESE 25 PRE PAPER 2.pdf",
+        "sourcePage": 11
+      },
+      {
+        "year": 2026,
+        "number": "101",
+        "source": "ESE 26 PRE PAPER 2.pdf",
+        "sourcePage": 20
+      },
+      {
+        "year": 2026,
+        "number": "102",
+        "source": "ESE 26 PRE PAPER 2.pdf",
+        "sourcePage": 21
+      },
+      {
+        "year": 2026,
+        "number": "108",
+        "source": "ESE 26 PRE PAPER 2.pdf",
+        "sourcePage": 21
+      },
+      {
+        "year": 2017,
+        "number": "135",
+        "source": "ESE 17 PRE PAPER 2.pdf",
+        "sourcePage": 27
+      },
+      {
+        "year": 2018,
+        "number": "147",
+        "source": "ESE 18 PRE PAPER 2.pdf",
+        "sourcePage": 28
+      },
+      {
+        "year": 2019,
+        "number": "52",
+        "source": "ESE 19 PRE PAPER 2.pdf",
+        "sourcePage": 10
+      },
+      {
+        "year": 2020,
+        "number": "55",
+        "source": "ESE 20 PRE PAPER 2.pdf",
+        "sourcePage": 10
+      },
+      {
+        "year": 2021,
+        "number": "16",
+        "source": "ESE 21 PRE PAPER 2.pdf",
+        "sourcePage": 4
+      },
+      {
+        "year": 2021,
+        "number": "21",
+        "source": "ESE 21 PRE PAPER 2.pdf",
+        "sourcePage": 5
+      },
+      {
+        "year": 2022,
+        "number": "124",
+        "source": "ESE 22 PRE PAPER 2.pdf",
+        "sourcePage": 25
+      },
+      {
+        "year": 2024,
+        "number": "102",
+        "source": "ESE 24 PRE PAPER 2.pdf",
+        "sourcePage": 24
+      },
+      {
+        "year": 2024,
+        "number": "112",
+        "source": "ESE 24 PRE PAPER 2.pdf",
+        "sourcePage": 27
+      },
+      {
+        "year": 2025,
+        "number": "12",
+        "source": "ESE 25 PRE PAPER 2.pdf",
+        "sourcePage": 5
+      },
+      {
+        "year": 2025,
+        "number": "106",
+        "source": "ESE 25 PRE PAPER 2.pdf",
+        "sourcePage": 27
+      },
+      {
+        "year": 2026,
+        "number": "131",
+        "source": "ESE 26 PRE PAPER 2.pdf",
+        "sourcePage": 25
+      }
+    ],
+    "mains": [
+      {
+        "exam": "cse-mains",
+        "year": 2021,
+        "number": "6a",
+        "linePanels": [
+          [
+            10,
+            11,
+            15
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2017,
+        "number": "1d",
+        "linePanels": [
+          [
+            2,
+            22,
+            24
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2017,
+        "number": "3b",
+        "linePanels": [
+          [
+            4,
+            3,
+            8
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2017,
+        "number": "4a",
+        "linePanels": [
+          [
+            4,
+            32,
+            41
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2017,
+        "number": "5c",
+        "linePanels": [
+          [
+            6,
+            3,
+            5
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2017,
+        "number": "5d",
+        "linePanels": [
+          [
+            6,
+            12,
+            18
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2017,
+        "number": "5e",
+        "linePanels": [
+          [
+            6,
+            22,
+            25
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2017,
+        "number": "8a",
+        "linePanels": [
+          [
+            10,
+            13,
+            29
+          ],
+          [
+            11,
+            0,
+            5
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2018,
+        "number": "1e",
+        "linePanels": [
+          [
+            3,
+            18,
+            20
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2018,
+        "number": "2c",
+        "linePanels": [
+          [
+            5,
+            4,
+            5
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2018,
+        "number": "5a",
+        "linePanels": [
+          [
+            8,
+            2,
+            3
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2018,
+        "number": "6c",
+        "linePanels": [
+          [
+            9,
+            25,
+            28
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2018,
+        "number": "7a",
+        "linePanels": [
+          [
+            10,
+            6,
+            29
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2019,
+        "number": "5a",
+        "linePanels": [
+          [
+            9,
+            2,
+            4
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2019,
+        "number": "5d",
+        "linePanels": [
+          [
+            9,
+            24,
+            26
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2019,
+        "number": "6b",
+        "linePanels": [
+          [
+            10,
+            43,
+            48
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2019,
+        "number": "7a",
+        "linePanels": [
+          [
+            14,
+            1,
+            5
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2020,
+        "number": "5a",
+        "linePanels": [
+          [
+            7,
+            8,
+            16
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2020,
+        "number": "6a",
+        "linePanels": [
+          [
+            8,
+            38,
+            46
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2020,
+        "number": "7c",
+        "linePanels": [
+          [
+            11,
+            20,
+            22
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2020,
+        "number": "8b",
+        "linePanels": [
+          [
+            12,
+            9,
+            17
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2021,
+        "number": "4c",
+        "linePanels": [
+          [
+            9,
+            3,
+            6
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2021,
+        "number": "5a",
+        "linePanels": [
+          [
+            9,
+            9,
+            11
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2021,
+        "number": "7c",
+        "linePanels": [
+          [
+            13,
+            7,
+            18
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2022,
+        "number": "6a",
+        "linePanels": [
+          [
+            10,
+            19,
+            28
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2022,
+        "number": "7ai",
+        "linePanels": [
+          [
+            11,
+            23,
+            26
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2023,
+        "number": "5a",
+        "linePanels": [
+          [
+            9,
+            0,
+            10
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2023,
+        "number": "6a",
+        "linePanels": [
+          [
+            11,
+            13,
+            29
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2023,
+        "number": "6c",
+        "linePanels": [
+          [
+            14,
+            0,
+            6
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2024,
+        "number": "5d",
+        "linePanels": [
+          [
+            13,
+            1,
+            3
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2024,
+        "number": "6a",
+        "linePanels": [
+          [
+            14,
+            0,
+            16
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2024,
+        "number": "7c",
+        "linePanels": [
+          [
+            16,
+            24,
+            26
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2024,
+        "number": "8c",
+        "linePanels": [
+          [
+            18,
+            2,
+            4
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2025,
+        "number": "5a",
+        "linePanels": [
+          [
+            11,
+            15,
+            18
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2025,
+        "number": "5b",
+        "linePanels": [
+          [
+            11,
+            21,
+            24
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2025,
+        "number": "7c",
+        "linePanels": [
+          [
+            14,
+            27,
+            29
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2025,
+        "number": "8bi",
+        "linePanels": [
+          [
+            16,
+            51,
+            53
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2025,
+        "number": "8bii",
+        "linePanels": [
+          [
+            16,
+            56,
+            59
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2026,
+        "number": "5a",
+        "linePanels": [
+          [
+            8,
+            6,
+            12
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2026,
+        "number": "5b",
+        "linePanels": [
+          [
+            8,
+            14,
+            16
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2026,
+        "number": "7b",
+        "linePanels": [
+          [
+            11,
+            36,
+            37
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2026,
+        "number": "8bi",
+        "linePanels": [
+          [
+            12,
+            1,
+            3
+          ]
+        ],
+        "marks": 5
+      },
+      {
+        "exam": "cse-mains",
+        "year": 2026,
+        "number": "8bii",
+        "linePanels": [
+          [
+            12,
+            18,
+            32
+          ]
+        ],
+        "marks": 15
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2017,
+        "number": "1b",
+        "linePanels": [
+          [
+            2,
+            7,
+            10
+          ]
+        ],
+        "marks": 12
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2018,
+        "number": "7bii",
+        "linePanels": [
+          [
+            6,
+            21,
+            23
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2022,
+        "number": "5b",
+        "linePanels": [
+          [
+            6,
+            23,
+            27
+          ]
+        ],
+        "marks": 12
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2025,
+        "number": "8ai",
+        "linePanels": [
+          [
+            9,
+            25,
+            34
+          ]
+        ],
+        "marks": 14
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2026,
+        "number": "8b",
+        "linePanels": [
+          [
+            13,
+            0,
+            10
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2017,
+        "number": "3a",
+        "linePanels": [
+          [
+            3,
+            39,
+            41
+          ],
+          [
+            4,
+            0,
+            5
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2017,
+        "number": "5e",
+        "linePanels": [
+          [
+            5,
+            13,
+            13
+          ]
+        ],
+        "marks": 12
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2017,
+        "number": "6a",
+        "linePanels": [
+          [
+            5,
+            14,
+            24
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2018,
+        "number": "2c",
+        "linePanels": [
+          [
+            3,
+            16,
+            22
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2018,
+        "number": "3c",
+        "linePanels": [
+          [
+            3,
+            50,
+            52
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2019,
+        "number": "1e",
+        "linePanels": [
+          [
+            3,
+            0,
+            7
+          ]
+        ],
+        "marks": 12
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2019,
+        "number": "3a",
+        "linePanels": [
+          [
+            4,
+            0,
+            15
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2020,
+        "number": "1d",
+        "linePanels": [
+          [
+            2,
+            31,
+            39
+          ]
+        ],
+        "marks": 12
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2020,
+        "number": "4c",
+        "linePanels": [
+          [
+            5,
+            45,
+            63
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2021,
+        "number": "2a",
+        "linePanels": [
+          [
+            3,
+            11,
+            17
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2021,
+        "number": "4c",
+        "linePanels": [
+          [
+            6,
+            17,
+            20
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2021,
+        "number": "5b",
+        "linePanels": [
+          [
+            6,
+            27,
+            37
+          ]
+        ],
+        "marks": 12
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2022,
+        "number": "3a",
+        "linePanels": [
+          [
+            3,
+            31,
+            41
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2023,
+        "number": "5a",
+        "linePanels": [
+          [
+            9,
+            1,
+            8
+          ]
+        ],
+        "marks": 12
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2023,
+        "number": "5e",
+        "linePanels": [
+          [
+            9,
+            26,
+            29
+          ]
+        ],
+        "marks": 12,
+        "referenceUrl": "https://morth.gov.in/sites/default/files/notifications_document/Notification_no_G_S_R_889_E_dated_16_09_2016_regarding_Mass_Emission_Standards_for_BS_VI.pdf"
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2024,
+        "number": "1e",
+        "linePanels": [
+          [
+            2,
+            23,
+            25
+          ]
+        ],
+        "marks": 12
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2024,
+        "number": "3b",
+        "linePanels": [
+          [
+            4,
+            22,
+            28
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2025,
+        "number": "1e",
+        "linePanels": [
+          [
+            2,
+            16,
+            24
+          ]
+        ],
+        "marks": 12
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2025,
+        "number": "2c",
+        "linePanels": [
+          [
+            3,
+            14,
+            21
+          ]
+        ],
+        "marks": 20
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2025,
+        "number": "4ci",
+        "linePanels": [
+          [
+            6,
+            0,
+            9
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2025,
+        "number": "4cii",
+        "linePanels": [
+          [
+            6,
+            10,
+            19
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2025,
+        "number": "8bi",
+        "linePanels": [
+          [
+            10,
+            0,
+            2
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2026,
+        "number": "1d",
+        "linePanels": [
+          [
+            2,
+            25,
+            30
+          ]
+        ],
+        "marks": 12
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2026,
+        "number": "4ci",
+        "linePanels": [
+          [
+            6,
+            12,
+            14
+          ]
+        ],
+        "marks": 10
+      },
+      {
+        "exam": "ese-mains",
+        "year": 2026,
+        "number": "4cii",
+        "linePanels": [
+          [
+            6,
+            15,
+            22
+          ]
+        ],
+        "marks": 10
+      }
+    ]
+  },
+  "officialMainsSources": [
+    {
+      "exam": "cse-mains",
+      "year": 2017,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG2.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2017-ME2.pdf",
+      "bytes": 6773126,
+      "sha256": "53fa21495cf1fb6f01068733e1184a1bd602352a4f8db7fe8225292761d53b3f",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2018,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH-ENGG-PAPER-II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2018-ME2.pdf",
+      "bytes": 777308,
+      "sha256": "7dbbf6e9c10fa577b9f11355cb57fbc7a878654335a45301e0283344d7e83c82",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2019,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM19-MechEngg-II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2019-ME2.pdf",
+      "bytes": 5781488,
+      "sha256": "5c75b36e950e002c2e522419f90d0c162a0b38d244a2fa7f033dcdbc99427cbd",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2020,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECH_ENGG_II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2020-ME2.pdf",
+      "bytes": 1049731,
+      "sha256": "d55a44edb590545a13aadb534adac838d573fb0ae5c6861726fc729ea4af41c6",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2021,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical%20Engineering%20Paper-II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2021-ME2.pdf",
+      "bytes": 7775271,
+      "sha256": "e6c6c1d1eef209a19ed61e304e68457a2178b4575b4fffc65ab04c97d6e77a15",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2022,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-22-MECHANICAL-ENGINEERING-PAPER-II-280922.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2022-ME2.pdf",
+      "bytes": 11043784,
+      "sha256": "1ff02284a525a8e4962f2c3e0d935aabda4ecc529b61763ed77c279ea7c9b405",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2023,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-23-MECHANICAL-ENGINEERING-PAPER-II-29092023.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "cse-mains-2023-ME2.pdf",
+      "bytes": 6951354,
+      "sha256": "076b370b745ee2f79d4291775ed2bab2062c5d05262669e97506bcbad5264f41",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2024,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-24-MECHANICAL-ENGINEERING-PAPER-II-031024.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2024-ME2.pdf",
+      "bytes": 18989477,
+      "sha256": "00c3b16051875f3fb736293171b4ac972c2ea448d3b56534cbd26ebc52c16cea",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2025,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-II-QP-CSM-25-010925.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2025-ME2.pdf",
+      "bytes": 8653948,
+      "sha256": "c30a04387fb036ba19c5363dd21936bb153a51933975d894ac9b2e13968ad198",
+      "downloaded": true
+    },
+    {
+      "exam": "cse-mains",
+      "year": 2026,
+      "paper": 2,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CSM-26-010926-Optional-MECHANICAL-ENGINEERING-PAPER_II.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "cse-mains-2026-ME2.pdf",
+      "bytes": 7803615,
+      "sha256": "c91d93b47ce870e7c2f7e2eca1b85a32766071ec6286b2f73459fc06838037e0",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2017,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/Mechanical_Engg_1_2.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2017-ME1.pdf",
+      "bytes": 3963634,
+      "sha256": "cfdc8da675a8c39fb56322875f05be6749f5603f7a95e79128a20a6709d5a17e",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2018,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MACH-ENGINEERING-PAPER-1.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2018-ME1.pdf",
+      "bytes": 4498819,
+      "sha256": "7e9fc6bab7a5e8e95e2094c0d9dd27449c59f749e43c8cc60e1be33596e69909",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2019,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/ME_P1_ESEM19.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2019-ME1.pdf",
+      "bytes": 9429613,
+      "sha256": "c47b733f054b32f9777fba1d4cf56b5c12fdbf813ce580b7d6bc8f1cd9d62e2e",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2020,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/M_EN_P1-ESEM-20-QP.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2020-ME1.pdf",
+      "bytes": 530560,
+      "sha256": "d9aa6ac2b9dd5de53e9b7fc98554295b7fdd6bf8ad857556355c6a2a8db1b04c",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2021,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-21-MechEnggPaper-I-231121.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2021-ME1.pdf",
+      "bytes": 6461075,
+      "sha256": "b1b6a8bc6da8b198a2ee9d4fc2c884f986fe69d74ad75823f1380700dad8d967",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2022,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MechEngg_I_28062022.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2022-ME1.pdf",
+      "bytes": 5967045,
+      "sha256": "ed5950aadea1acc2936644f38cc9cd4db716c6b53fc6e538bdf6ed449290e987",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2023,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-23-MECHANICAL-ENGINEERING-PAPER-I-250623.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers/archives",
+      "file": "ese-mains-2023-ME1.pdf",
+      "bytes": 8248265,
+      "sha256": "062677950df7d05dd2ab89adf93662e2d447f2a23a427e1546207e92d05294cd",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2024,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-24-MECHANICAL-ENGINEERING-PAPER-I-240624.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2024-ME1.pdf",
+      "bytes": 8536538,
+      "sha256": "4d353a0881f1e4f46f715afc29b693b2effb343b944b5262db8ccb22c70047eb",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2025,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/MECHANICAL-ENGINEERING-PAPER-I-QP-ESEM-25-110825.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2025-ME1.pdf",
+      "bytes": 5466453,
+      "sha256": "b7739b80fbff7fe2f3588e8f9589260ac85141043ef5c9b81bc552ff878730e3",
+      "downloaded": true
+    },
+    {
+      "exam": "ese-mains",
+      "year": 2026,
+      "paper": 1,
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-ESEM-26-220626-MECHANICAL-ENGINEERING-PAPER-I.pdf",
+      "listing": "https://www.upsc.gov.in/examinations/previous-question-papers",
+      "file": "ese-mains-2026-ME1.pdf",
+      "bytes": 6425011,
+      "sha256": "74e04c842c9c9e46de40712b92e8866b11ca6cb2c3c564b2c97db7922ce6a2c7",
+      "downloaded": true
+    }
+  ],
+  "visualReview": {
+    "initialCrops": 504,
+    "initialContactSheets": 26,
+    "secondPassCrops": 222,
+    "secondPassContactSheets": 14,
+    "finalFocusedTrims": 37,
+    "sharedDataRestored": [
+      "ESE 2023 Q5/Q6 and Q8/Q9",
+      "GATE XE 2011 Q19/Q20"
+    ],
+    "review": "All crops visually reviewed; original Prelims columns widened; book continuations repaired; appended answer tables and neighbouring-question spillover removed."
+  },
+  "limitations": [
+    "Mains references are independently derived self-review guidance, not official UPSC marking schemes.",
+    "Three objective questions have inconsistent or ambiguous printed data; their conditional answers are explained and excluded from automatic scoring.",
+    "Shared air-standard and fuel-analysis material remains accessible in its earlier subjects; all earlier question identities and saved-progress references remain intact.",
+    "Questions with changed numerical data or different asks are retained as distinct problems."
+  ]
+}

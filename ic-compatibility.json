@@ -1,0 +1,16 @@
+{
+  "checked": "2026-10-16",
+  "priorQuestions": 6731,
+  "preserved": 6731,
+  "fields": [
+    "identity",
+    "keys",
+    "marks",
+    "screenshots",
+    "chapters",
+    "topics",
+    "written references"
+  ],
+  "storage": "som-lab-v1",
+  "continuousPracticePreserved": true
+}

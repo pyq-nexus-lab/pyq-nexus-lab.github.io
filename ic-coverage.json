@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-16",
+  "total": 459,
+  "official": 34,
+  "book": 247,
+  "solved": 88,
+  "written": 87,
+  "issues": 3,
+  "pending": 0,
+  "keyed": 369,
+  "raw": 504,
+  "unique": 459,
+  "duplicateCopies": 45,
+  "packs": 8,
+  "chapters": 10,
+  "populatedTopics": 33,
+  "byExam": {
+    "ese-prelims": {
+      "total": 300,
+      "official": 0,
+      "book": 221,
+      "solved": 76,
+      "written": 0,
+      "issues": 3,
+      "pending": 0,
+      "keyed": 297
+    },
+    "gate-me": {
+      "total": 47,
+      "official": 17,
+      "book": 26,
+      "solved": 4,
+      "written": 0,
+      "issues": 0,
+      "pending": 0,
+      "keyed": 47
+    },
+    "ese-mains": {
+      "total": 36,
+      "official": 0,
+      "book": 0,
+      "solved": 0,
+      "written": 36,
+      "issues": 0,
+      "pending": 0,
+      "keyed": 0
+    },
+    "cse-mains": {
+      "total": 51,
+      "official": 0,
+      "book": 0,
+      "solved": 0,
+      "written": 51,
+      "issues": 0,
+      "pending": 0,
+      "keyed": 0
+    },
+    "gate-xe": {
+      "total": 25,
+      "official": 17,
+      "book": 0,
+      "solved": 8,
+      "written": 0,
+      "issues": 0,
+      "pending": 0,
+      "keyed": 25
+    }
+  },
+  "sourceIssues": [
+    {
+      "id": "ic-engines:ic-esep-2020-26",
+      "title": "ESE Prelims 2020 · Q26",
+      "issue": "Literal6kg fuel/min withA/F9 gives total mixture60kg/min. Per cylinder per cycle mass=60/[4×800/2]=0.0375kg;Vc=mRT/p=0.00585m³. Vs=π(0.08)²(0.1)/4=0.00050265m³, so r=1.08592, matching no option. If consumption were6kg/hour instead,r≈6.155→A. The time unit is inconsistent; automatic grading is disabled."
+    },
+    {
+      "id": "ic-engines:ic-esep-2024-110",
+      "title": "ESE Prelims 2024 · Q110",
+      "issue": "Under the intended complete-combustion convention, carbon formsCO₂ rather thanCO and only2,3are selected(C). As printed, statement1 can also describe oxygen-limited incomplete combustion, givingD. No condition resolves that distinction in the stem; review the explanation rather than score a unique choice."
+    },
+    {
+      "id": "ic-engines:ic-esep-2018-36",
+      "title": "ESE Prelims 2018 · Q36",
+      "issue": "Printed4.4kg/min gives BSFC=4.4×60/105=2.5143kg/kWh, which matches no option. If4.4kg is the total consumed over10min,the result is0.2514kg/kWh (B). The source has an extra /min or incompatible options; automatic grading is disabled."
+    }
+  ]
+}
