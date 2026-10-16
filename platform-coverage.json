@@ -38,7 +38,10 @@
         "cse-mains": 49
       },
       "countsByFormat": {
-        "undefined": 1231
+        "MCQ": 909,
+        "MSQ": 13,
+        "NAT": 191,
+        "WRITTEN": 118
       },
       "gradable": 1107,
       "officialKeys": 398,
@@ -148,7 +151,11 @@
         "ese-mains": 79
       },
       "countsByFormat": {
-        "undefined": 1827
+        "MCQ": 1517,
+        "MSQ": 15,
+        "NAT": 203,
+        "WRITTEN": 79,
+        "TEXT": 13
       },
       "gradable": 1743,
       "officialKeys": 419,
@@ -263,7 +270,11 @@
         "cse-mains": 58
       },
       "countsByFormat": {
-        "undefined": 708
+        "MCQ": 522,
+        "WRITTEN": 128,
+        "NAT": 54,
+        "MSQ": 2,
+        "TEXT": 2
       },
       "gradable": 576,
       "officialKeys": 98,
@@ -320,7 +331,11 @@
         "ese-mains": 98
       },
       "countsByFormat": {
-        "undefined": 767
+        "MCQ": 509,
+        "NAT": 61,
+        "WRITTEN": 181,
+        "TEXT": 9,
+        "MSQ": 7
       },
       "chapters": 12,
       "populatedTopics": 44,
@@ -414,7 +429,11 @@
         "cse-mains": 45
       },
       "countsByFormat": {
-        "undefined": 1542
+        "MCQ": 1172,
+        "WRITTEN": 86,
+        "MSQ": 16,
+        "NAT": 260,
+        "TEXT": 8
       },
       "chapters": 14,
       "populatedTopics": 61,
@@ -531,7 +550,12 @@
         "cse-mains": 56
       },
       "countsByFormat": {
-        "undefined": 656
+        "MCQ": 491,
+        "TEXT": 3,
+        "WRITTEN": 107,
+        "NAT": 52,
+        "UNCLASSIFIED": 1,
+        "MSQ": 2
       },
       "gradable": 542,
       "officialKeys": 63,
@@ -591,7 +615,10 @@
         "gate-xe": 25
       },
       "countsByFormat": {
-        "undefined": 459
+        "MCQ": 348,
+        "WRITTEN": 87,
+        "NAT": 23,
+        "MSQ": 1
       },
       "gradable": 369,
       "officialKeys": 34,
@@ -630,7 +657,9 @@
         "cse-mains": 40
       },
       "countsByFormat": {
-        "undefined": 746
+        "MCQ": 598,
+        "WRITTEN": 99,
+        "NAT": 49
       },
       "gradable": 642,
       "officialKeys": 44,
@@ -680,7 +709,10 @@
         "ese-mains": 15
       },
       "countsByFormat": {
-        "undefined": 269
+        "MCQ": 214,
+        "NAT": 28,
+        "MSQ": 2,
+        "WRITTEN": 25
       },
       "gradable": 243,
       "officialKeys": 43,
@@ -709,7 +741,10 @@
         "ese-mains": 64
       },
       "countsByFormat": {
-        "undefined": 722
+        "MSQ": 3,
+        "MCQ": 579,
+        "NAT": 54,
+        "WRITTEN": 86
       },
       "gradable": 629,
       "officialKeys": 93,
