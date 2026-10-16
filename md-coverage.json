@@ -1,0 +1,197 @@
+{
+  "date": "2026-10-16",
+  "raw": 834,
+  "unique": 722,
+  "duplicateCopies": 112,
+  "packs": 15,
+  "chapters": 12,
+  "topics": 35,
+  "answerCoverage": {
+    "total": 722,
+    "official": 93,
+    "book": 417,
+    "solved": 119,
+    "written": 86,
+    "issues": 7,
+    "pending": 0,
+    "keyed": 629
+  },
+  "byExam": {
+    "gate-me": {
+      "total": 179,
+      "official": 93,
+      "book": 62,
+      "solved": 20,
+      "written": 3,
+      "issues": 1,
+      "pending": 0,
+      "keyed": 175
+    },
+    "ese-prelims": {
+      "total": 460,
+      "official": 0,
+      "book": 355,
+      "solved": 99,
+      "written": 0,
+      "issues": 6,
+      "pending": 0,
+      "keyed": 454
+    },
+    "cse-mains": {
+      "total": 19,
+      "official": 0,
+      "book": 0,
+      "solved": 0,
+      "written": 19,
+      "issues": 0,
+      "pending": 0,
+      "keyed": 0
+    },
+    "ese-mains": {
+      "total": 64,
+      "official": 0,
+      "book": 0,
+      "solved": 0,
+      "written": 64,
+      "issues": 0,
+      "pending": 0,
+      "keyed": 0
+    }
+  },
+  "yearCoverage": {
+    "gate-me": {
+      "1987": 4,
+      "1988": 2,
+      "1989": 2,
+      "1990": 1,
+      "1991": 2,
+      "1992": 5,
+      "1993": 2,
+      "1994": 1,
+      "1996": 4,
+      "1997": 3,
+      "1998": 2,
+      "2002": 1,
+      "2003": 5,
+      "2004": 4,
+      "2005": 4,
+      "2006": 3,
+      "2007": 14,
+      "2008": 12,
+      "2009": 6,
+      "2010": 6,
+      "2011": 3,
+      "2012": 7,
+      "2013": 7,
+      "2014": 28,
+      "2015": 17,
+      "2016": 12,
+      "2017": 14,
+      "2018": 15,
+      "2019": 10,
+      "2020": 13,
+      "2021": 6,
+      "2022": 9,
+      "2023": 4,
+      "2024": 5,
+      "2025": 4,
+      "2026": 4,
+      "null": 1
+    },
+    "ese-prelims": {
+      "1995": 17,
+      "1996": 20,
+      "1997": 17,
+      "1998": 18,
+      "1999": 16,
+      "2000": 25,
+      "2001": 22,
+      "2002": 17,
+      "2003": 12,
+      "2004": 15,
+      "2005": 11,
+      "2006": 15,
+      "2007": 16,
+      "2008": 22,
+      "2009": 9,
+      "2010": 11,
+      "2011": 14,
+      "2012": 14,
+      "2013": 18,
+      "2014": 16,
+      "2015": 14,
+      "2016": 20,
+      "2017": 12,
+      "2018": 10,
+      "2019": 16,
+      "2020": 25,
+      "2021": 12,
+      "2022": 14,
+      "2023": 18,
+      "2024": 15,
+      "2025": 15,
+      "2026": 13
+    },
+    "ese-mains": {
+      "2017": 7,
+      "2018": 6,
+      "2019": 6,
+      "2020": 5,
+      "2021": 6,
+      "2022": 5,
+      "2023": 5,
+      "2024": 8,
+      "2025": 7,
+      "2026": 9
+    },
+    "cse-mains": {
+      "2017": 2,
+      "2018": 2,
+      "2019": 1,
+      "2020": 2,
+      "2021": 1,
+      "2022": 3,
+      "2023": 2,
+      "2024": 1,
+      "2025": 3,
+      "2026": 2
+    }
+  },
+  "sourceIssues": [
+    {
+      "id": "machine-design:md-esep-2025-101",
+      "title": "ESE Prelims 2025 · Q101",
+      "issue": "Statement 1 is correct. A key transmits torque between a shaft and a fitted hub, gear, pulley or coupling; the literal “between the shafts” describes a coupling, not a key alone. A power screw converts rotary motion to axial force/motion, rather than serving as an energy-storage spring. Thus only statement 1 is strictly correct, but this option is absent. Option A is the apparent intended answer if statement 2 is read as torque transfer through keyed shaft–hub coupling members. The ambiguity is retained without an automatic grade."
+    },
+    {
+      "id": "machine-design:md-me2007-s1-q54-p12",
+      "title": "GATE ME 2007 · Set 1 · Q54",
+      "issue": "The printed data and end-condition wording do not produce an exact listed Euler result. I=pi×20^4/64=7853.98 mm^4 and pi²EI/L²=31.6385 kN. If “guided at the piston” is treated as laterally fixed with zero rotation and the other end hinged, exact effective-length factor K≈0.699 gives FOS≈6.48. Using the older approximate K=0.75 gives FOS=5.6246, matching intended option C. A laterally sliding guided support gives a different boundary-value problem. Because no approximation is specified, the conditional result is shown and the item is excluded from automatic grading."
+    },
+    {
+      "id": "machine-design:md-esep-2023-105",
+      "title": "ESE Prelims 2023 · Q105",
+      "issue": "With a total clamping load of 4000 N shared equally by three bolts, each bolt carries 1333.33 N and requires tensile area At=1333.33/800=1.66667 mm². None of the choices gives this per-bolt area. Option C, 5 mm², is the required combined area of all three bolts, or the per-bolt area only if each bolt carries 4000 N. The question asks for the area “for the bolt”; this ambiguity is explained rather than forcing an incorrect grade."
+    },
+    {
+      "id": "machine-design:md-ese-book-3-87",
+      "title": "ESE Prelims 2013 | Machine Design Book Q3.87",
+      "issue": "The supplied key is A (pitting). Removal of surface particles/flakes from a rolling-contact raceway is also termed spalling (C); pitting and spalling describe related surface-fatigue damage and this wording does not distinguish their scale. Compare the terms and the printed key; this item is excluded from automatic scoring."
+    },
+    {
+      "id": "machine-design:md-ese-book-3-103",
+      "title": "ESE Prelims 2016 | Machine Design Book Q3.103",
+      "issue": "Sommerfeld number S=(mu n/p)(r/c)^2. Here p=W/(LD)=3672/(0.1×0.05)=734400 Pa, n=500/60 s−1, r/c=D/(diametral clearance)=0.05/0.0001=500. Thus S=0.170207, dimensionless. The printed choices do not match; a dimensional or exponent error is present in the source."
+    },
+    {
+      "id": "machine-design:md-ese-book-6-26",
+      "title": "ESE Prelims 2012 | Machine Design Book Q6.26",
+      "issue": "Both square and Acme threads can transmit power in either direction. The identical source appearances print A (Acme, 1999) and B (square, 2012). B is the conventional textbook selection, but the statement does not uniquely exclude A. This item is excluded from automatic scoring."
+    },
+    {
+      "id": "machine-design:md-esep-2023-82",
+      "title": "ESE Prelims 2023 · Q82",
+      "issue": "The intended textbook combination appears to be 1 and 3 (option C), with Vitallium correctly rejected because it is cobalt-based rather than vanadium-based. However statement 1 calls both Discalloy and Incoloy nickel-based while describing iron–nickel alloys. Incoloy is a family with varying Fe/Ni proportions (for example alloy 800 has Fe at least 39.5% and Ni 30–35%); a blanket base-metal classification is imprecise. No unqualified automatic grade is imposed on this inconsistent wording. Reference: Special Metals INCOLOY alloy 800 technical bulletin, https://www.specialmetals.com/documents/technical-bulletins/incoloy/incoloy-alloy-800.pdf ."
+    }
+  ]
+}

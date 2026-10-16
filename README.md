@@ -6,7 +6,7 @@ A shared GATE ME, GATE XE and ESE practice website, with a separately labelled C
 
 ## Workspace redesign (v5.0)
 
-Home opens with all nine live subjects, real scores, question coverage, a resume button, daily activity and revision priorities. Start the full subject path from a card, choose a chapter or topic, or continue from a saved position. Untimed practice includes every matching question in teaching order. Existing sessions, answers and notes use the same browser storage and question identities.
+Home opens with all ten live subjects, real scores, question coverage, a resume button, daily activity and revision priorities. Start the full subject path from a card, choose a chapter or topic, or continue from a saved position. Untimed practice includes every matching question in teaching order. Existing sessions, answers and notes use the same browser storage and question identities.
 
 The question library keeps search, chapter and topic selection visible. Extra type/year/source/progress filters expand on demand. Results are grouped in learning order with a desktop chapter index, previews and continuous ordered practice. Previewing a question also offers direct practice.
 
@@ -19,6 +19,14 @@ Practice puts the scan and answer controls first, keeps actions within reach, an
 656 unique questions from 732 source appearances, in 11 chapters and 34 populated topics. All 430 numbered exercises in the supplied RAC book chapters are represented. Includes original GATE ME/XE 2007–2026 and ESE Prelims 2017–2026 sources, plus 51 ESE Mains and 56 CSE Mains questions across 2017–2026.
 
 542 objective/historical answers are gradable;107 written answers provide independent self-review references. Seven objective print/key issues remain explained outside automatic marks. Required common data, charts, property tables and continuations accompany the scans. See rac-source-audit.json, rac-coverage.json and rac-compatibility.json. All 6,075 previous question identities, keys, assets and learning assignments remain unchanged.
+
+## Machine Design (v5.5)
+
+**722 unique questions** in **12 chapters and 35 topics**, with continuous ordered practice. The bank represents 834 source appearances and consolidates 112 repeated copies. It contains 179 GATE ME, 460 ESE Prelims, 64 ESE Mains and 19 CSE Mains questions. The complete numbered Machine Design sections of the supplied historical books (500 entries) are represented alongside original recent papers. Both Mains streams cover 2017–2026.
+
+There are 629 automatically gradable objectives, 83 Mains references and three historical written-response answers. Seven source ambiguities have explained references and are excluded from automatic scoring. All entries have a key, written reference or source-issue explanation; independent references are not official UPSC marking schemes. Source appearances, answer provenance and year coverage are in [the audit](md-source-audit.json) and [coverage](md-coverage.json).
+
+Crops retain shared statements, diagrams and all options. Recent ESE column edges and GATE question boundaries have been rebuilt from the PDFs. A few historical ESE scans contain faint or damaged lettering in the original source. All 8,205 prior questions and their progress identities are preserved; the complete lab now contains 8,927 unique questions. [Compatibility record](md-compatibility.json).
 
 ## Theory of Machines and Mechanical Vibrations (v5.4)
 
@@ -38,12 +46,12 @@ The release preserves all 6,731 earlier questions, keys, images, teaching assign
 
 ## Question and answer library
 
-- **8,205 unique questions:** 1,231 Strength of Materials, 1,827 Fluid Mechanics, 708 Heat Transfer, 767 Power Plant Engineering, 1,542 Thermodynamics, 656 Refrigeration & Air Conditioning, 459 IC Engines, 746 Theory of Machines and 269 Mechanical Vibrations.
-- **9,105 source entries** preserved; 733 within-subject duplicate copies and 167 copied plant-specific questions consolidated. Saved answers, notes and history redirect to the original question.
-- **7,240 automatically gradable questions:** 1,576 official-key matches, 4,169 printed-book keys and 1,495 independently derived keys.
-- **910 written references** for self-review, including one historical GATE fill-in exercise.
-- **55 explained objective source inconsistencies**, excluded from automatic marks.
-- Chapter and topic order follows the supplied PDFs. Existing untimed practice sets are updated safely to the corrected learning sequence.
+- **8,927 unique questions:** 1,231 SOM, 1,827 Fluid Mechanics, 708 Heat Transfer, 767 Power Plant Engineering, 1,542 Thermodynamics, 656 RAC, 459 IC Engines, 746 Theory of Machines, 269 Mechanical Vibrations and 722 Machine Design.
+- **9,939 source entries** preserved; 845 repeated within-subject copies and 167 plant-specific copies consolidated.
+- **7,869 automatically gradable questions:** 1,669 official-key matches, 4,586 printed-book keys and 1,614 independently derived keys.
+- **996 written references** for self-review, including four historical written-response exercises.
+- **62 explained objective source inconsistencies**, excluded from automatic marks.
+- Questions follow the teaching chapter and topic sequence; there are no arbitrary practice set-size limits.
 
 The raw Fluid Mechanics solved-book sequence includes 223 GATE entries from 1987–2020, with 181 entries before 2017, plus 634 ESE Prelims archive entries. These are source-sequence counts before duplicate consolidation. Imported compilations and supplied book chapters define this bank's scope; other subjects await source files.
 
@@ -97,7 +105,7 @@ Confidence, spaced revision, a mistake journal, attempt history, notes, bookmark
 
 Home combines subject scores, answer coverage, revision priorities, targets, daily activity and study plans. Performance provides exam-track, date-period and latest-attempt/all-attempt filters, chapter focus areas and an exportable report. Coverage uses all-time answered unique questions; skips do not count. Written self-scores remain separate from objective grades.
 
-Advanced settings control exam preferences, adaptive selection, revision, targets, text size, density, focus layout and reduced motion. The subject hub shows the nine available banks first: SOM, Theory of Machines, Mechanical Vibrations, Thermodynamics, Heat Transfer, Fluid Mechanics, Power Plant Engineering, Refrigeration & Air Conditioning and IC Engines. Remaining subject spaces are collapsed until needed and show honest empty states.
+Advanced settings control exam preferences, adaptive selection, revision, targets, text size, density, focus layout and reduced motion. The subject hub shows the ten available banks first: SOM, Theory of Machines, Mechanical Vibrations, Thermodynamics, Heat Transfer, Fluid Mechanics, Power Plant Engineering, Refrigeration & Air Conditioning, IC Engines and Machine Design. Remaining subject spaces are collapsed until needed and show honest empty states.
 
 ## Saved progress and updated keys
 

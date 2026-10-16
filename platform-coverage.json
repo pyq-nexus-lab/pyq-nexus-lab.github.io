@@ -1,27 +1,27 @@
 {
-  "generatedOn": "2026-10-09",
-  "total": 6075,
-  "official": 1392,
-  "book": 2884,
-  "solved": 1168,
-  "written": 592,
-  "issues": 39,
+  "generatedOn": "2026-10-16",
+  "total": 8927,
+  "official": 1669,
+  "book": 4586,
+  "solved": 1614,
+  "written": 996,
+  "issues": 62,
   "pending": 0,
-  "keyed": 5444,
-  "sourceEntries": 6842,
-  "duplicateCopiesMerged": 767,
-  "readySubjects": 5,
+  "keyed": 7869,
+  "sourceEntries": 9939,
+  "duplicateCopiesMerged": 1012,
+  "readySubjects": 10,
   "registeredSubjects": 18,
   "countsByExam": {
-    "gate-me": 1259,
-    "gate-xe": 1295,
-    "ese-prelims": 2929,
-    "ese-mains": 357,
-    "cse-mains": 235
+    "gate-me": 1827,
+    "gate-xe": 1413,
+    "ese-prelims": 4695,
+    "ese-mains": 581,
+    "cse-mains": 411
   },
   "subjects": {
     "som": {
-      "generatedOn": "2026-10-06",
+      "generatedOn": "2026-10-16",
       "subject": "som",
       "entries": 1231,
       "uniqueQuestions": 1231,
@@ -38,10 +38,7 @@
         "cse-mains": 49
       },
       "countsByFormat": {
-        "MCQ": 909,
-        "MSQ": 13,
-        "NAT": 191,
-        "WRITTEN": 118
+        "undefined": 1231
       },
       "gradable": 1107,
       "officialKeys": 398,
@@ -135,7 +132,7 @@
       ]
     },
     "fluid-mechanics": {
-      "generatedOn": "2026-10-06",
+      "generatedOn": "2026-10-16",
       "subject": "fluid-mechanics",
       "entries": 1827,
       "uniqueQuestions": 1827,
@@ -151,11 +148,7 @@
         "ese-mains": 79
       },
       "countsByFormat": {
-        "MCQ": 1517,
-        "MSQ": 15,
-        "NAT": 203,
-        "WRITTEN": 79,
-        "TEXT": 13
+        "undefined": 1827
       },
       "gradable": 1743,
       "officialKeys": 419,
@@ -255,7 +248,7 @@
       ]
     },
     "heat-transfer": {
-      "generatedOn": "2026-10-08",
+      "generatedOn": "2026-10-16",
       "subject": "heat-transfer",
       "entries": 708,
       "uniqueQuestions": 708,
@@ -270,11 +263,7 @@
         "cse-mains": 58
       },
       "countsByFormat": {
-        "MCQ": 522,
-        "WRITTEN": 128,
-        "NAT": 54,
-        "MSQ": 2,
-        "TEXT": 2
+        "undefined": 708
       },
       "gradable": 576,
       "officialKeys": 98,
@@ -318,7 +307,7 @@
       "mainsSourceAudit": "heat-mains-source-audit.json"
     },
     "power-plant": {
-      "generatedOn": "2026-10-09",
+      "generatedOn": "2026-10-16",
       "subject": "power-plant",
       "sourceEntries": 771,
       "uniqueQuestions": 767,
@@ -331,11 +320,7 @@
         "ese-mains": 98
       },
       "countsByFormat": {
-        "MCQ": 509,
-        "NAT": 61,
-        "WRITTEN": 181,
-        "TEXT": 9,
-        "MSQ": 7
+        "undefined": 767
       },
       "chapters": 12,
       "populatedTopics": 44,
@@ -355,10 +340,68 @@
         "Mains model solutions are independently derived self-assessment references, not official UPSC marking schemes.",
         "Ten contradictory or disputed source items have explanations and are excluded from automatic scoring.",
         "The bank covers the supplied Power Plant chapter and related nozzle, compressor, nuclear and renewable-energy questions. It is not a claim that every thermodynamics question is a Power Plant question."
+      ],
+      "duplicateCopiesMerged": 4,
+      "gradable": 576,
+      "officialKeys": 71,
+      "bookKeys": 282,
+      "independentlyDerivedKeys": 223,
+      "writtenSelfAssessment": 181,
+      "sourceIssues": [
+        {
+          "id": "power-plant:pp-xe2008-29",
+          "issue": "Exit pressure0.1MPa contradicts the1.5bar property table supplied with the question.",
+          "referenceAnswer": "h2=2756.7+(50²−600²)/2000=2577.95 kJ/kg. Using the supplied1.5 bar table givesx≈0.948(optionD), but the stem says exit0.1 MPa, whose correct saturation data give a different quality."
+        },
+        {
+          "id": "power-plant:pp-esep-1-56",
+          "issue": "Printed answer table marks this question with an asterisk.",
+          "referenceAnswer": "Fan blade selection depends on duty, pressure, dust loading and manufacturer design; the supplied alternatives do not provide a reliable unique universal combination."
+        },
+        {
+          "id": "power-plant:pp-esep-1-136",
+          "issue": "The supplied question has no uniquely supported listed answer.",
+          "referenceAnswer": "Pulverized firing gives high efficiency, rapid response to load changes and large steam capacity: statements 1, 2 and 4. Statement 3 is false; no offered combination is 1, 2 and 4."
+        },
+        {
+          "id": "power-plant:pp-esep-1-110",
+          "issue": "The printed optimum velocity does not agree with the stated 6% relative-velocity loss.",
+          "referenceAnswer": "U/C1=cos18°/2=0.47553. With k=0.94, 120000=(1+k)C1²cos²18°/4 gives C1≈523.0 m/s. No option has that velocity; D gives the correct speed ratio but assumes no blade loss."
+        },
+        {
+          "id": "power-plant:pp-esep-1-171",
+          "issue": "The supplied question has no uniquely supported listed answer.",
+          "referenceAnswer": "The speed ratio gives nozzle exit speed 144/0.48=300 m/s, so its actual enthalpy drop from rest is 300²/2000=45 kJ/kg. An isentropic heat drop additionally requires nozzle efficiency, which is not supplied. Blade velocity coefficient cannot substitute for nozzle efficiency."
+        },
+        {
+          "id": "power-plant:pp-xe2008-16",
+          "issue": "The supplied thermodynamic data give h≈1994.2kJ/kg with x≈0.766, but no option gives both values consistently.",
+          "referenceAnswer": "Isentropic exhaustx=(6.5422−0.4763)/(8.3960−0.4763)=0.76593; h≈1994.42 kJ/kgusing the supplied data; the closest combined choice isD (0.77, 2004.12)."
+        },
+        {
+          "id": "power-plant:pp-esep-1-174",
+          "issue": "The supplied question has no uniquely supported listed answer.",
+          "referenceAnswer": "The listed 99.31% is vacuum efficiency: 720/[765−(0.0533/1.013)×760]×100≈99.31%. Cooling-water condenser effectiveness is (25−15)/(34−15)=52.63%. A separate “under cooling efficiency” is not defined by the stem."
+        },
+        {
+          "id": "power-plant:pp-esep-1-61",
+          "issue": "The printed key gives increased air recirculation, which normally worsens cooling-tower inlet conditions. A reliable unique choice has not been established.",
+          "referenceAnswer": "Cooling capability improves as entering-air wet-bulb temperature falls. Recirculation brings warm humid exhaust air back to the inlet and usually degrades performance. The comparative mechanical-versus-natural-draft wording requires operating conditions not given here."
+        },
+        {
+          "id": "power-plant:pp-xe2008-26",
+          "issue": "The formula choices contain a printed exponent error; a reliable unique automatic choice is not assigned.",
+          "referenceAnswer": "Ideal Brayton maximum-work pressure ratio is (Tmax/Tmin)^[γ/(2(γ−1))]. The supplied scan instead prints γ/(2γ−1) in optionB, so no printed option exactly matches."
+        },
+        {
+          "id": "power-plant:pp-esep-4-61",
+          "issue": "The generally correct combination is not among the supplied alternatives.",
+          "referenceAnswer": "Carnot requires reversible processes, so statement 2 is false. Statement 1 explains a practical limitation. A perfect gas with constant specific heat is not a necessary Carnot-cycle condition, so statement 3 is not generally true. The only generally correct statement is 1, absent from the options."
+        }
       ]
     },
     "thermodynamics": {
-      "generatedOn": "2026-10-09",
+      "generatedOn": "2026-10-16",
       "subject": "thermodynamics",
       "sourceEntries": 1898,
       "uniqueQuestions": 1542,
@@ -371,11 +414,7 @@
         "cse-mains": 45
       },
       "countsByFormat": {
-        "MCQ": 1172,
-        "WRITTEN": 86,
-        "MSQ": 16,
-        "NAT": 260,
-        "TEXT": 8
+        "undefined": 1542
       },
       "chapters": 14,
       "populatedTopics": 61,
@@ -397,7 +436,323 @@
         "The damaged ME1-2017 file was recovered as a readable 21-page paper for this import."
       ],
       "subjectCorrections": 167,
-      "scopeOrderAudit": "scope-order-audit.json"
+      "scopeOrderAudit": "scope-order-audit.json",
+      "duplicateCopiesMerged": 356,
+      "gradable": 1442,
+      "officialKeys": 406,
+      "bookKeys": 666,
+      "independentlyDerivedKeys": 370,
+      "writtenSelfAssessment": 86,
+      "sourceIssues": [
+        {
+          "id": "thermodynamics:td-esep-2021-54",
+          "issue": "The printed emf law gives an indicated temperature of 100[E(30)−E(0)]/[E(100)−E(0)]=30.3559°C. None of the four printed options matches; excluded from automatic scores pending an authoritative correction.",
+          "referenceAnswer": "The printed emf law gives an indicated temperature of 100[E(30)−E(0)]/[E(100)−E(0)]=30.3559°C. None of the four printed options matches; excluded from automatic scores pending an authoritative correction."
+        },
+        {
+          "id": "thermodynamics:td-xe2008-s1-q23-p47",
+          "issue": "Inconsistent fixed-mass ideal-gas endpoint data; the doubled-volume condition contradicts the stated final pressure and temperature.",
+          "referenceAnswer": "The source states that volume doubles while p falls500→100 kPa andT falls370→300 K. For a fixed ideal-gas mass, pV/T must stay constant; those endpoints do not satisfy it. No unique maximum work can be obtained without correcting the data."
+        },
+        {
+          "id": "thermodynamics:td-esep-2023-31",
+          "issue": "The supplied question has no uniquely supported listed answer.",
+          "referenceAnswer": "The speed ratio gives nozzle exit speed 144/0.48=300 m/s, so its actual enthalpy drop from rest is 300²/2000=45 kJ/kg. An isentropic heat drop additionally requires nozzle efficiency, which is not supplied. Blade velocity coefficient cannot substitute for nozzle efficiency."
+        },
+        {
+          "id": "thermodynamics:td-xe2008-s1-q29-p48",
+          "issue": "Exit pressure0.1MPa contradicts the1.5bar property table supplied with the question.",
+          "referenceAnswer": "h2=2756.7+(50²−600²)/2000=2577.95 kJ/kg. Using the supplied1.5 bar table givesx≈0.948(optionD), but the stem says exit0.1 MPa, whose correct saturation data give a different quality."
+        },
+        {
+          "id": "thermodynamics:td-xe2013-s1-q12-p29",
+          "issue": "The source does not require reversibility; its first/second-law conditions permit a range of temperatures, with maximum400K.",
+          "referenceAnswer": "Energy balance gives2 kJ rejected. Entropy inequality1/600+1/300−2/T≤0 gives0<T≤400 K. The limiting reversible value is400 K, but the printed conditions alone do not select a unique temperature."
+        },
+        {
+          "id": "thermodynamics:td-esep-2025-58",
+          "issue": "The generally correct combination is not among the supplied alternatives.",
+          "referenceAnswer": "Carnot requires reversible processes, so statement 2 is false. Statement 1 explains a practical limitation. A perfect gas with constant specific heat is not a necessary Carnot-cycle condition, so statement 3 is not generally true. The only generally correct statement is 1, absent from the options."
+        },
+        {
+          "id": "thermodynamics:td-esep-2018-13",
+          "issue": "The supplied answer table marks this exercise with an asterisk; no reliable unique option is supplied.",
+          "referenceAnswer": "The supplied solved-book answer table on PDF page196 gives * for Q3.114."
+        },
+        {
+          "id": "thermodynamics:td-gate-book-3-7",
+          "issue": "The printed key leaves the heater entropy blank/asterisked; its thermodynamic state is not specified.",
+          "referenceAnswer": "Water entropy change=20×4186ln(353.15/303.15)≈12781.72J/K (the book uses roundedKelvin values and prints12786.99). Entropy change of the heater requires its state/mass or an explicit reservoir model. Electrical energy carries no entropy, so a steady heater cannot simply be assigned the negative water entropy."
+        },
+        {
+          "id": "thermodynamics:td-ese-book-3-15",
+          "issue": "The supplied answer table marks this exercise with an asterisk; no reliable unique option is supplied.",
+          "referenceAnswer": "The supplied solved-book answer table on PDF page196 gives * for Q3.15."
+        },
+        {
+          "id": "thermodynamics:td-ese-book-3-91",
+          "issue": "The supplied answer table marks this exercise with an asterisk; no reliable unique option is supplied.",
+          "referenceAnswer": "The supplied solved-book answer table on PDF page196 gives * for Q3.91."
+        },
+        {
+          "id": "thermodynamics:td-ese-cycle-book-1-35",
+          "issue": "The supplied answer table marks this exercise with an asterisk; no reliable unique option is supplied.",
+          "referenceAnswer": "The supplied solved-book answer table on PDF page321 gives * for Q1.35."
+        },
+        {
+          "id": "thermodynamics:td-xe2008-s1-q16-p46",
+          "issue": "The supplied thermodynamic data give h≈1994.2kJ/kg with x≈0.766, but no option gives both values consistently.",
+          "referenceAnswer": "Isentropic exhaustx=(6.5422−0.4763)/(8.3960−0.4763)=0.76593; h≈1994.42 kJ/kgusing the supplied data; the closest combined choice isD (0.77, 2004.12)."
+        },
+        {
+          "id": "thermodynamics:td-xe2008-s1-q26-p48",
+          "issue": "The formula choices contain a printed exponent error; a reliable unique automatic choice is not assigned.",
+          "referenceAnswer": "Ideal Brayton maximum-work pressure ratio is (Tmax/Tmin)^[γ/(2(γ−1))]. The supplied scan instead prints γ/(2γ−1) in optionB, so no printed option exactly matches."
+        },
+        {
+          "id": "thermodynamics:td-esep-2025-55",
+          "issue": "The wording claims that every complete cycle necessarily has nonzero net work. The first law requires Qnet=Wnet, which may both be zero. Statements 1 and 2 hold, but statement 3 needs a qualification; no unique unambiguous key is assigned.",
+          "referenceAnswer": "The wording claims that every complete cycle necessarily has nonzero net work. The first law requires Qnet=Wnet, which may both be zero. Statements 1 and 2 hold, but statement 3 needs a qualification; no unique unambiguous key is assigned."
+        }
+      ]
+    },
+    "refrigeration": {
+      "generatedOn": "2026-10-16",
+      "subject": "refrigeration",
+      "entries": 656,
+      "uniqueQuestions": 656,
+      "sourceEntries": 732,
+      "duplicateCopiesMerged": 76,
+      "countsByExam": {
+        "ese-prelims": 413,
+        "gate-me": 76,
+        "ese-mains": 51,
+        "gate-xe": 60,
+        "cse-mains": 56
+      },
+      "countsByFormat": {
+        "undefined": 656
+      },
+      "gradable": 542,
+      "officialKeys": 63,
+      "bookKeys": 386,
+      "independentlyDerivedKeys": 93,
+      "writtenSelfAssessment": 107,
+      "sourceIssues": [
+        {
+          "id": "refrigeration:rac-esep-2017-126",
+          "issue": "The source answer table marks this question with an asterisk; it supplies no dependable unique option.",
+          "referenceAnswer": "The printed source answer table gives * for Q2.117."
+        },
+        {
+          "id": "refrigeration:rac-esep-2021-43",
+          "issue": "The question does not define its historical relative ozone-destruction scale. Standard ODP for R12 is1.0, absent from the options. An official key or defined alternative scale is needed before automatic scoring. Reference: https://www.epa.gov/ozone-layer-protection/ozone-depleting-substances",
+          "referenceAnswer": "The question does not define its historical relative ozone-destruction scale. Standard ODP for R12 is1.0, absent from the options. An official key or defined alternative scale is needed before automatic scoring. Reference: https://www.epa.gov/ozone-layer-protection/ozone-depleting-substances"
+        },
+        {
+          "id": "refrigeration:rac-esep-2017-46",
+          "issue": "Only statement2 is unconditionally correct. The medium being cooled must be warmer than the evaporator. Solar storage or backup can permit continuous operation. The book accepts2and3(C), which assumes an unstated solar configuration; no option contains only2. Excluded from automatic scoring.",
+          "referenceAnswer": "Only statement2 is unconditionally correct. The medium being cooled must be warmer than the evaporator. Solar storage or backup can permit continuous operation. The book accepts2and3(C), which assumes an unstated solar configuration; no option contains only2. Excluded from automatic scoring."
+        },
+        {
+          "id": "refrigeration:rac-gate-book-1-9",
+          "issue": "The source answer table marks this question with an asterisk; it supplies no dependable unique option.",
+          "referenceAnswer": "The printed source answer table gives * for Q1.9."
+        },
+        {
+          "id": "refrigeration:rac-esep-2022-108",
+          "issue": "The question asks for length, but printed options have viscosity-like units kg·s⁻¹·m⁻¹. Refrigerant property/viscosity data for sectionwise integration are also absent. Use adiabatic flash enthalpy and momentum with friction/acceleration across48,40,30,20,10,5°C. No numerical option is safely verified from these data alone.",
+          "referenceAnswer": "The question asks for length, but printed options have viscosity-like units kg·s⁻¹·m⁻¹. Refrigerant property/viscosity data for sectionwise integration are also absent. Use adiabatic flash enthalpy and momentum with friction/acceleration across48,40,30,20,10,5°C. No numerical option is safely verified from these data alone."
+        },
+        {
+          "id": "refrigeration:rac-ese-book-4-54",
+          "issue": "The source answer table marks this question with an asterisk; it supplies no dependable unique option.",
+          "referenceAnswer": "The printed source answer table gives * for Q4.54."
+        },
+        {
+          "id": "refrigeration:rac-ese-book-4-96",
+          "issue": "The source answer table marks this question with an asterisk; it supplies no dependable unique option.",
+          "referenceAnswer": "The printed source answer table gives * for Q4.96."
+        }
+      ]
+    },
+    "ic-engines": {
+      "generatedOn": "2026-10-16",
+      "subject": "ic-engines",
+      "entries": 459,
+      "uniqueQuestions": 459,
+      "sourceEntries": 504,
+      "duplicateCopiesMerged": 45,
+      "countsByExam": {
+        "ese-prelims": 300,
+        "gate-me": 47,
+        "ese-mains": 36,
+        "cse-mains": 51,
+        "gate-xe": 25
+      },
+      "countsByFormat": {
+        "undefined": 459
+      },
+      "gradable": 369,
+      "officialKeys": 34,
+      "bookKeys": 247,
+      "independentlyDerivedKeys": 88,
+      "writtenSelfAssessment": 87,
+      "sourceIssues": [
+        {
+          "id": "ic-engines:ic-esep-2020-26",
+          "issue": "Literal6kg fuel/min withA/F9 gives total mixture60kg/min. Per cylinder per cycle mass=60/[4×800/2]=0.0375kg;Vc=mRT/p=0.00585m³. Vs=π(0.08)²(0.1)/4=0.00050265m³, so r=1.08592, matching no option. If consumption were6kg/hour instead,r≈6.155→A. The time unit is inconsistent; automatic grading is disabled.",
+          "referenceAnswer": "Literal6kg fuel/min withA/F9 gives total mixture60kg/min. Per cylinder per cycle mass=60/[4×800/2]=0.0375kg;Vc=mRT/p=0.00585m³. Vs=π(0.08)²(0.1)/4=0.00050265m³, so r=1.08592, matching no option. If consumption were6kg/hour instead,r≈6.155→A. The time unit is inconsistent; automatic grading is disabled."
+        },
+        {
+          "id": "ic-engines:ic-esep-2024-110",
+          "issue": "Under the intended complete-combustion convention, carbon formsCO₂ rather thanCO and only2,3are selected(C). As printed, statement1 can also describe oxygen-limited incomplete combustion, givingD. No condition resolves that distinction in the stem; review the explanation rather than score a unique choice.",
+          "referenceAnswer": "Under the intended complete-combustion convention, carbon formsCO₂ rather thanCO and only2,3are selected(C). As printed, statement1 can also describe oxygen-limited incomplete combustion, givingD. No condition resolves that distinction in the stem; review the explanation rather than score a unique choice."
+        },
+        {
+          "id": "ic-engines:ic-esep-2018-36",
+          "issue": "Printed4.4kg/min gives BSFC=4.4×60/105=2.5143kg/kWh, which matches no option. If4.4kg is the total consumed over10min,the result is0.2514kg/kWh (B). The source has an extra /min or incompatible options; automatic grading is disabled.",
+          "referenceAnswer": "Printed4.4kg/min gives BSFC=4.4×60/105=2.5143kg/kWh, which matches no option. If4.4kg is the total consumed over10min,the result is0.2514kg/kWh (B). The source has an extra /min or incompatible options; automatic grading is disabled."
+        }
+      ]
+    },
+    "theory-of-machines": {
+      "generatedOn": "2026-10-16",
+      "subject": "theory-of-machines",
+      "entries": 746,
+      "uniqueQuestions": 746,
+      "sourceEntries": 757,
+      "duplicateCopiesMerged": 11,
+      "countsByExam": {
+        "ese-prelims": 467,
+        "gate-me": 181,
+        "ese-mains": 58,
+        "cse-mains": 40
+      },
+      "countsByFormat": {
+        "undefined": 746
+      },
+      "gradable": 642,
+      "officialKeys": 44,
+      "bookKeys": 490,
+      "independentlyDerivedKeys": 108,
+      "writtenSelfAssessment": 99,
+      "sourceIssues": [
+        {
+          "id": "theory-of-machines:tv-ese-b04_016",
+          "issue": "With crank radius r=0.20 m, rod length l=1 m and N=210 rpm, omega=21.991 rad/s. At theta=45 degrees, exact slider speed is r omega[sin theta+(r/l)sin theta cos theta/sqrt(1−(r/l)^2 sin^2 theta)]=3.554 m/s. None of 1.8,1.9,18,19 m/s matches. If “20 cm crank” were intended as the stroke, r=0.10 m gives 1.665 m/s. The printed book key also marks this item with an asterisk.",
+          "referenceAnswer": "With crank radius r=0.20 m, rod length l=1 m and N=210 rpm, omega=21.991 rad/s. At theta=45 degrees, exact slider speed is r omega[sin theta+(r/l)sin theta cos theta/sqrt(1−(r/l)^2 sin^2 theta)]=3.554 m/s. None of 1.8,1.9,18,19 m/s matches. If “20 cm crank” were intended as the stroke, r=0.10 m gives 1.665 m/s. The printed book key also marks this item with an asterisk."
+        },
+        {
+          "id": "theory-of-machines:tv-extra-me2007-s1-q73-p15",
+          "issue": "The printed common statement gives 20 kW at 30 rev/s, module 5 mm and 20 pinion teeth. Pitch radius = 0.05 m; tangential force = 20000/(2π × 30 × 0.05) = 2122.07 N. Normal force = 2122.07/cos20° = 2258.28 N. None of the printed choices matches. Option C (225.80 N) would follow from 2 kW instead of 20 kW. Automatic scoring is disabled because the source data and options disagree.",
+          "referenceAnswer": "The printed common statement gives 20 kW at 30 rev/s, module 5 mm and 20 pinion teeth. Pitch radius = 0.05 m; tangential force = 20000/(2π × 30 × 0.05) = 2122.07 N. Normal force = 2122.07/cos20° = 2258.28 N. None of the printed choices matches. Option C (225.80 N) would follow from 2 kW instead of 20 kW. Automatic scoring is disabled because the source data and options disagree."
+        },
+        {
+          "id": "theory-of-machines:tv-ese-p2024_071",
+          "issue": "The printed phrase “mass of 3 kN” uses a force unit. Interpreting it as weight gives m=3000/9.81 kg and I=m×1.6^2. The energy increase is I[(340×2pi/60)^2−(315×2pi/60)^2]/2=70.29 kJ. None of the listed choices matches. Interpreting 3 kN as 3000 kg gives 689.56 kJ, but that changes the stated unit. The inconsistent source is retained with this calculation rather than forced into an option.",
+          "referenceAnswer": "The printed phrase “mass of 3 kN” uses a force unit. Interpreting it as weight gives m=3000/9.81 kg and I=m×1.6^2. The energy increase is I[(340×2pi/60)^2−(315×2pi/60)^2]/2=70.29 kJ. None of the listed choices matches. Interpreting 3 kN as 3000 kg gives 689.56 kJ, but that changes the stated unit. The inconsistent source is retained with this calculation rather than forced into an option."
+        },
+        {
+          "id": "theory-of-machines:tv-ese-p2022_028",
+          "issue": "The conventional descriptions make statements 1,2 and4 correct, while the spring-controlled gravity governor pivots are not on the moving sleeve as stated. No option gives 1,2,4. The publisher’s model solution also notes the missing combination and suggests A as a best fit; it is not an exact answer, so this item is excluded from automatic scoring.",
+          "referenceAnswer": "The conventional descriptions make statements 1,2 and4 correct, while the spring-controlled gravity governor pivots are not on the moving sleeve as stated. No option gives 1,2,4. The publisher’s model solution also notes the missing combination and suggests A as a best fit; it is not an exact answer, so this item is excluded from automatic scoring."
+        },
+        {
+          "id": "theory-of-machines:tv-ese-p2023_095",
+          "issue": "With total extreme-to-extreme pitch 10 degrees, angular amplitude is 5 degrees=pi/36 rad. Maximum pitch rate=(pi/36)(2pi/20)=0.027416 rad/s. I=8000×0.75^2=4500 kg m^2 and spin=188.496 rad/s give C=23254.7 N m. None of the options matches. Taking 10 degrees as the amplitude would instead give 46509.4 N m (C), but contradicts the printed total angular movement. Both interpretations are shown; automatic scoring is withheld.",
+          "referenceAnswer": "With total extreme-to-extreme pitch 10 degrees, angular amplitude is 5 degrees=pi/36 rad. Maximum pitch rate=(pi/36)(2pi/20)=0.027416 rad/s. I=8000×0.75^2=4500 kg m^2 and spin=188.496 rad/s give C=23254.7 N m. None of the options matches. Taking 10 degrees as the amplitude would instead give 46509.4 N m (C), but contradicts the printed total angular movement. Both interpretations are shown; automatic scoring is withheld."
+        }
+      ]
+    },
+    "vibrations": {
+      "generatedOn": "2026-10-16",
+      "subject": "vibrations",
+      "entries": 269,
+      "uniqueQuestions": 269,
+      "sourceEntries": 270,
+      "duplicateCopiesMerged": 1,
+      "countsByExam": {
+        "ese-prelims": 126,
+        "gate-xe": 33,
+        "gate-me": 85,
+        "cse-mains": 10,
+        "ese-mains": 15
+      },
+      "countsByFormat": {
+        "undefined": 269
+      },
+      "gradable": 243,
+      "officialKeys": 43,
+      "bookKeys": 162,
+      "independentlyDerivedKeys": 38,
+      "writtenSelfAssessment": 25,
+      "sourceIssues": [
+        {
+          "id": "vibrations:tv-gate-book-7-18",
+          "issue": "Shared data: m=12.5 kg, k=1000 N/m, c=15 N s/m. Damping ratio=c/(2sqrt(km))=0.067082; logarithmic decrement=2pi zeta/sqrt(1−zeta^2)=0.42244. None of 1.35,1.32,0.68,0.66 agrees. The printed key is an asterisk. No automatic grade is assigned.",
+          "referenceAnswer": "Shared data: m=12.5 kg, k=1000 N/m, c=15 N s/m. Damping ratio=c/(2sqrt(km))=0.067082; logarithmic decrement=2pi zeta/sqrt(1−zeta^2)=0.42244. None of 1.35,1.32,0.68,0.66 agrees. The printed key is an asterisk. No automatic grade is assigned."
+        }
+      ]
+    },
+    "machine-design": {
+      "generatedOn": "2026-10-16",
+      "subject": "machine-design",
+      "entries": 722,
+      "uniqueQuestions": 722,
+      "sourceEntries": 834,
+      "duplicateCopiesMerged": 112,
+      "countsByExam": {
+        "gate-me": 179,
+        "ese-prelims": 460,
+        "cse-mains": 19,
+        "ese-mains": 64
+      },
+      "countsByFormat": {
+        "undefined": 722
+      },
+      "gradable": 629,
+      "officialKeys": 93,
+      "bookKeys": 417,
+      "independentlyDerivedKeys": 119,
+      "writtenSelfAssessment": 86,
+      "sourceIssues": [
+        {
+          "id": "machine-design:md-esep-2025-101",
+          "issue": "Statement 1 is correct. A key transmits torque between a shaft and a fitted hub, gear, pulley or coupling; the literal “between the shafts” describes a coupling, not a key alone. A power screw converts rotary motion to axial force/motion, rather than serving as an energy-storage spring. Thus only statement 1 is strictly correct, but this option is absent. Option A is the apparent intended answer if statement 2 is read as torque transfer through keyed shaft–hub coupling members. The ambiguity is retained without an automatic grade.",
+          "referenceAnswer": "Statement 1 is correct. A key transmits torque between a shaft and a fitted hub, gear, pulley or coupling; the literal “between the shafts” describes a coupling, not a key alone. A power screw converts rotary motion to axial force/motion, rather than serving as an energy-storage spring. Thus only statement 1 is strictly correct, but this option is absent. Option A is the apparent intended answer if statement 2 is read as torque transfer through keyed shaft–hub coupling members. The ambiguity is retained without an automatic grade."
+        },
+        {
+          "id": "machine-design:md-me2007-s1-q54-p12",
+          "issue": "The printed data and end-condition wording do not produce an exact listed Euler result. I=pi×20^4/64=7853.98 mm^4 and pi²EI/L²=31.6385 kN. If “guided at the piston” is treated as laterally fixed with zero rotation and the other end hinged, exact effective-length factor K≈0.699 gives FOS≈6.48. Using the older approximate K=0.75 gives FOS=5.6246, matching intended option C. A laterally sliding guided support gives a different boundary-value problem. Because no approximation is specified, the conditional result is shown and the item is excluded from automatic grading.",
+          "referenceAnswer": "The printed data and end-condition wording do not produce an exact listed Euler result. I=pi×20^4/64=7853.98 mm^4 and pi²EI/L²=31.6385 kN. If “guided at the piston” is treated as laterally fixed with zero rotation and the other end hinged, exact effective-length factor K≈0.699 gives FOS≈6.48. Using the older approximate K=0.75 gives FOS=5.6246, matching intended option C. A laterally sliding guided support gives a different boundary-value problem. Because no approximation is specified, the conditional result is shown and the item is excluded from automatic grading."
+        },
+        {
+          "id": "machine-design:md-esep-2023-105",
+          "issue": "With a total clamping load of 4000 N shared equally by three bolts, each bolt carries 1333.33 N and requires tensile area At=1333.33/800=1.66667 mm². None of the choices gives this per-bolt area. Option C, 5 mm², is the required combined area of all three bolts, or the per-bolt area only if each bolt carries 4000 N. The question asks for the area “for the bolt”; this ambiguity is explained rather than forcing an incorrect grade.",
+          "referenceAnswer": "With a total clamping load of 4000 N shared equally by three bolts, each bolt carries 1333.33 N and requires tensile area At=1333.33/800=1.66667 mm². None of the choices gives this per-bolt area. Option C, 5 mm², is the required combined area of all three bolts, or the per-bolt area only if each bolt carries 4000 N. The question asks for the area “for the bolt”; this ambiguity is explained rather than forcing an incorrect grade."
+        },
+        {
+          "id": "machine-design:md-ese-book-3-87",
+          "issue": "The supplied key is A (pitting). Removal of surface particles/flakes from a rolling-contact raceway is also termed spalling (C); pitting and spalling describe related surface-fatigue damage and this wording does not distinguish their scale. Compare the terms and the printed key; this item is excluded from automatic scoring.",
+          "referenceAnswer": "The supplied key is A (pitting). Removal of surface particles/flakes from a rolling-contact raceway is also termed spalling (C); pitting and spalling describe related surface-fatigue damage and this wording does not distinguish their scale. Compare the terms and the printed key; this item is excluded from automatic scoring."
+        },
+        {
+          "id": "machine-design:md-ese-book-3-103",
+          "issue": "Sommerfeld number S=(mu n/p)(r/c)^2. Here p=W/(LD)=3672/(0.1×0.05)=734400 Pa, n=500/60 s−1, r/c=D/(diametral clearance)=0.05/0.0001=500. Thus S=0.170207, dimensionless. The printed choices do not match; a dimensional or exponent error is present in the source.",
+          "referenceAnswer": "Sommerfeld number S=(mu n/p)(r/c)^2. Here p=W/(LD)=3672/(0.1×0.05)=734400 Pa, n=500/60 s−1, r/c=D/(diametral clearance)=0.05/0.0001=500. Thus S=0.170207, dimensionless. The printed choices do not match; a dimensional or exponent error is present in the source."
+        },
+        {
+          "id": "machine-design:md-ese-book-6-26",
+          "issue": "Both square and Acme threads can transmit power in either direction. The identical source appearances print A (Acme, 1999) and B (square, 2012). B is the conventional textbook selection, but the statement does not uniquely exclude A. This item is excluded from automatic scoring.",
+          "referenceAnswer": "Both square and Acme threads can transmit power in either direction. The identical source appearances print A (Acme, 1999) and B (square, 2012). B is the conventional textbook selection, but the statement does not uniquely exclude A. This item is excluded from automatic scoring."
+        },
+        {
+          "id": "machine-design:md-esep-2023-82",
+          "issue": "The intended textbook combination appears to be 1 and 3 (option C), with Vitallium correctly rejected because it is cobalt-based rather than vanadium-based. However statement 1 calls both Discalloy and Incoloy nickel-based while describing iron–nickel alloys. Incoloy is a family with varying Fe/Ni proportions (for example alloy 800 has Fe at least 39.5% and Ni 30–35%); a blanket base-metal classification is imprecise. No unqualified automatic grade is imposed on this inconsistent wording. Reference: Special Metals INCOLOY alloy 800 technical bulletin, https://www.specialmetals.com/documents/technical-bulletins/incoloy/incoloy-alloy-800.pdf .",
+          "referenceAnswer": "The intended textbook combination appears to be 1 and 3 (option C), with Vitallium correctly rejected because it is cobalt-based rather than vanadium-based. However statement 1 calls both Discalloy and Incoloy nickel-based while describing iron–nickel alloys. Incoloy is a family with varying Fe/Ni proportions (for example alloy 800 has Fe at least 39.5% and Ni 30–35%); a blanket base-metal classification is imprecise. No unqualified automatic grade is imposed on this inconsistent wording. Reference: Special Metals INCOLOY alloy 800 technical bulletin, https://www.specialmetals.com/documents/technical-bulletins/incoloy/incoloy-alloy-800.pdf ."
+        }
+      ]
     }
   },
   "subjectRelocations": 167

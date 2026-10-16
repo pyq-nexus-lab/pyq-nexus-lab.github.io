@@ -1,6 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),crypto=require('crypto');
 const C=require('./catalog.js'),A=require('./answers.js'),D=require('./dedup.js'),U=require('./curriculum.js'),X=require('./crops.js'),Core=require('./core.js'),P=require('./ordered-practice.js'),ctx={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
 const d=ctx.window,raw=X.apply(A.apply(C.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),rac=bank.filter(q=>q.subject==='refrigeration'),source=raw.filter(q=>q.subject==='refrigeration');
 test('RAC represents every numbered supplied book exercise and all five exam tracks',()=>{
  assert.equal(source.length,732);assert.equal(rac.length,656);
@@ -22,7 +22,7 @@ test('RAC images have verified bytes and intact source bounds, including shared 
 test('RAC follows an uninterrupted teaching path and preserves existing progress storage',()=>{
  const outline=U.outline(rac);assert.equal(outline.length,11);assert.equal(new Set(rac.map(q=>q.topicId)).size,34);assert.equal(outline[0].name,'Refrigeration Fundamentals and Heat Pumps');assert.equal(outline.at(-1).name,'Duct Design and Air Distribution');
  const ids=U.sessionIds(rac.map(q=>q.id).reverse(),bank),path=P.open(null,ids);assert.equal(path.ids.length,656);assert.deepEqual(path.ids,rac.map(q=>q.id));assert.equal(path.deadline,null);
- const prior=JSON.parse(fs.readFileSync('rac-compatibility.json','utf8'));assert.equal(prior.preserved,6075);assert.equal(prior.storage,'som-lab-v1');assert.equal(bank.filter(q=>!['refrigeration','ic-engines','theory-of-machines','vibrations'].includes(q.subject)).length,6075);
+ const prior=JSON.parse(fs.readFileSync('rac-compatibility.json','utf8'));assert.equal(prior.preserved,6075);assert.equal(prior.storage,'som-lab-v1');assert.equal(bank.filter(q=>!['refrigeration','ic-engines','theory-of-machines','vibrations','machine-design'].includes(q.subject)).length,6075);
  const session={ids:['gate-me-002','gate-me-001'],index:1,mode:'practice',answers:{'gate-me-001':'B'},times:{}};assert.deepEqual(D.migrate({session,attempts:[]},lib).session,session);
 });
 test('RAC teaching topics follow the problem asked, including mixed wording and written applications',()=>{

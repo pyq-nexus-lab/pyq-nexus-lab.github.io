@@ -1,6 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm');
 const C=require('./catalog.js'),A=require('./answers.js'),D=require('./dedup.js'),U=require('./curriculum.js'),Core=require('./core.js'),c={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','answers-data.js','dedup-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),c);
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','answers-data.js','dedup-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),c);
 const d=c.window,raw=A.apply(C.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),by=new Map(bank.map(q=>[q.id,q]));
 test('the reported boiler rating and all 167 plant-specific copies are absent from Thermodynamics and safely redirect',()=>{
  assert.equal(d.PYQ_DEDUP_DATA.relocations.length,167);
