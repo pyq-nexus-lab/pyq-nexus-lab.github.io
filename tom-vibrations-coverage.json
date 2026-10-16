@@ -1,0 +1,390 @@
+{
+  "date": "2026-10-16",
+  "raw": 1027,
+  "unique": 1015,
+  "duplicateCopies": 12,
+  "packs": 23,
+  "chapters": 20,
+  "subjects": {
+    "theory-of-machines": {
+      "raw": 757,
+      "unique": 746
+    },
+    "vibrations": {
+      "raw": 270,
+      "unique": 269
+    }
+  },
+  "answerCoverage": {
+    "total": 1015,
+    "official": 87,
+    "book": 652,
+    "solved": 146,
+    "written": 124,
+    "issues": 6,
+    "pending": 0,
+    "keyed": 885
+  },
+  "bySubject": {
+    "theory-of-machines": {
+      "total": 746,
+      "official": 44,
+      "book": 490,
+      "solved": 108,
+      "written": 99,
+      "issues": 5,
+      "pending": 0,
+      "keyed": 642,
+      "chapters": 12,
+      "topics": 35,
+      "byExam": {
+        "ese-prelims": {
+          "total": 467,
+          "official": 0,
+          "book": 366,
+          "solved": 97,
+          "written": 0,
+          "issues": 4,
+          "pending": 0,
+          "keyed": 463
+        },
+        "gate-me": {
+          "total": 181,
+          "official": 44,
+          "book": 124,
+          "solved": 11,
+          "written": 1,
+          "issues": 1,
+          "pending": 0,
+          "keyed": 179
+        },
+        "ese-mains": {
+          "total": 58,
+          "official": 0,
+          "book": 0,
+          "solved": 0,
+          "written": 58,
+          "issues": 0,
+          "pending": 0,
+          "keyed": 0
+        },
+        "cse-mains": {
+          "total": 40,
+          "official": 0,
+          "book": 0,
+          "solved": 0,
+          "written": 40,
+          "issues": 0,
+          "pending": 0,
+          "keyed": 0
+        }
+      }
+    },
+    "vibrations": {
+      "total": 269,
+      "official": 43,
+      "book": 162,
+      "solved": 38,
+      "written": 25,
+      "issues": 1,
+      "pending": 0,
+      "keyed": 243,
+      "chapters": 8,
+      "topics": 18,
+      "byExam": {
+        "ese-prelims": {
+          "total": 126,
+          "official": 0,
+          "book": 100,
+          "solved": 26,
+          "written": 0,
+          "issues": 0,
+          "pending": 0,
+          "keyed": 126
+        },
+        "gate-xe": {
+          "total": 33,
+          "official": 23,
+          "book": 0,
+          "solved": 10,
+          "written": 0,
+          "issues": 0,
+          "pending": 0,
+          "keyed": 33
+        },
+        "gate-me": {
+          "total": 85,
+          "official": 20,
+          "book": 62,
+          "solved": 2,
+          "written": 0,
+          "issues": 1,
+          "pending": 0,
+          "keyed": 84
+        },
+        "cse-mains": {
+          "total": 10,
+          "official": 0,
+          "book": 0,
+          "solved": 0,
+          "written": 10,
+          "issues": 0,
+          "pending": 0,
+          "keyed": 0
+        },
+        "ese-mains": {
+          "total": 15,
+          "official": 0,
+          "book": 0,
+          "solved": 0,
+          "written": 15,
+          "issues": 0,
+          "pending": 0,
+          "keyed": 0
+        }
+      }
+    }
+  },
+  "yearCoverage": {
+    "theory-of-machines": {
+      "gate-me": {
+        "1988": 1,
+        "1989": 1,
+        "1991": 1,
+        "1992": 1,
+        "1993": 2,
+        "1994": 1,
+        "1995": 5,
+        "1996": 2,
+        "1997": 2,
+        "1998": 2,
+        "1999": 2,
+        "2000": 2,
+        "2001": 1,
+        "2002": 2,
+        "2003": 5,
+        "2004": 8,
+        "2005": 6,
+        "2006": 9,
+        "2007": 8,
+        "2008": 6,
+        "2009": 3,
+        "2010": 8,
+        "2011": 2,
+        "2012": 4,
+        "2013": 4,
+        "2014": 18,
+        "2015": 9,
+        "2016": 11,
+        "2017": 6,
+        "2018": 8,
+        "2019": 10,
+        "2020": 8,
+        "2021": 9,
+        "2022": 5,
+        "2023": 1,
+        "2024": 3,
+        "2025": 3,
+        "2026": 4
+      },
+      "ese-prelims": {
+        "1995": 12,
+        "1996": 16,
+        "1997": 13,
+        "1998": 17,
+        "1999": 16,
+        "2000": 12,
+        "2001": 16,
+        "2002": 15,
+        "2003": 19,
+        "2004": 20,
+        "2005": 18,
+        "2006": 13,
+        "2007": 15,
+        "2008": 12,
+        "2009": 12,
+        "2010": 6,
+        "2011": 10,
+        "2012": 15,
+        "2013": 22,
+        "2014": 17,
+        "2015": 22,
+        "2016": 22,
+        "2017": 20,
+        "2018": 13,
+        "2019": 13,
+        "2020": 12,
+        "2021": 12,
+        "2022": 15,
+        "2023": 12,
+        "2024": 17,
+        "2025": 11,
+        "2026": 11
+      },
+      "cse-mains": {
+        "2017": 4,
+        "2018": 2,
+        "2019": 4,
+        "2020": 6,
+        "2021": 4,
+        "2022": 5,
+        "2023": 3,
+        "2024": 4,
+        "2025": 5,
+        "2026": 3
+      },
+      "ese-mains": {
+        "2017": 5,
+        "2018": 8,
+        "2019": 7,
+        "2020": 5,
+        "2021": 6,
+        "2022": 5,
+        "2023": 5,
+        "2024": 7,
+        "2025": 4,
+        "2026": 6
+      }
+    },
+    "vibrations": {
+      "gate-me": {
+        "1996": 1,
+        "1999": 1,
+        "2000": 1,
+        "2001": 2,
+        "2003": 4,
+        "2004": 3,
+        "2005": 2,
+        "2006": 4,
+        "2007": 3,
+        "2008": 2,
+        "2009": 3,
+        "2010": 2,
+        "2011": 2,
+        "2012": 1,
+        "2013": 2,
+        "2014": 10,
+        "2015": 7,
+        "2016": 6,
+        "2017": 4,
+        "2018": 3,
+        "2019": 3,
+        "2020": 4,
+        "2021": 4,
+        "2022": 4,
+        "2023": 1,
+        "2024": 2,
+        "2025": 2,
+        "2026": 2
+      },
+      "ese-prelims": {
+        "1995": 7,
+        "1996": 5,
+        "1997": 6,
+        "1998": 4,
+        "1999": 5,
+        "2000": 4,
+        "2001": 6,
+        "2002": 3,
+        "2004": 1,
+        "2005": 2,
+        "2006": 2,
+        "2007": 4,
+        "2008": 2,
+        "2009": 5,
+        "2010": 3,
+        "2011": 4,
+        "2012": 3,
+        "2013": 7,
+        "2014": 5,
+        "2015": 5,
+        "2016": 2,
+        "2017": 7,
+        "2018": 5,
+        "2019": 6,
+        "2020": 3,
+        "2021": 3,
+        "2022": 5,
+        "2023": 3,
+        "2025": 3,
+        "2026": 7
+      },
+      "gate-xe": {
+        "2007": 1,
+        "2008": 3,
+        "2009": 3,
+        "2010": 1,
+        "2011": 1,
+        "2012": 2,
+        "2013": 1,
+        "2014": 2,
+        "2015": 1,
+        "2016": 2,
+        "2017": 2,
+        "2018": 2,
+        "2019": 1,
+        "2020": 1,
+        "2021": 2,
+        "2022": 1,
+        "2023": 1,
+        "2024": 1,
+        "2025": 3,
+        "2026": 2
+      },
+      "cse-mains": {
+        "2017": 1,
+        "2018": 2,
+        "2019": 1,
+        "2020": 1,
+        "2021": 1,
+        "2023": 1,
+        "2024": 1,
+        "2025": 1,
+        "2026": 1
+      },
+      "ese-mains": {
+        "2017": 1,
+        "2018": 1,
+        "2019": 2,
+        "2020": 1,
+        "2022": 1,
+        "2023": 3,
+        "2024": 1,
+        "2025": 2,
+        "2026": 3
+      }
+    }
+  },
+  "sourceIssues": [
+    {
+      "id": "theory-of-machines:tv-ese-b04_016",
+      "title": "ESE Prelims 2015 · Book Q4.16",
+      "issue": "With crank radius r=0.20 m, rod length l=1 m and N=210 rpm, omega=21.991 rad/s. At theta=45 degrees, exact slider speed is r omega[sin theta+(r/l)sin theta cos theta/sqrt(1−(r/l)^2 sin^2 theta)]=3.554 m/s. None of 1.8,1.9,18,19 m/s matches. If “20 cm crank” were intended as the stroke, r=0.10 m gives 1.665 m/s. The printed book key also marks this item with an asterisk."
+    },
+    {
+      "id": "theory-of-machines:tv-extra-me2007-s1-q73-p15",
+      "title": "GATE ME 2007 · Set 1 · Q73",
+      "issue": "The printed common statement gives 20 kW at 30 rev/s, module 5 mm and 20 pinion teeth. Pitch radius = 0.05 m; tangential force = 20000/(2π × 30 × 0.05) = 2122.07 N. Normal force = 2122.07/cos20° = 2258.28 N. None of the printed choices matches. Option C (225.80 N) would follow from 2 kW instead of 20 kW. Automatic scoring is disabled because the source data and options disagree."
+    },
+    {
+      "id": "theory-of-machines:tv-ese-p2024_071",
+      "title": "ESE Prelims 2024 · Q71",
+      "issue": "The printed phrase “mass of 3 kN” uses a force unit. Interpreting it as weight gives m=3000/9.81 kg and I=m×1.6^2. The energy increase is I[(340×2pi/60)^2−(315×2pi/60)^2]/2=70.29 kJ. None of the listed choices matches. Interpreting 3 kN as 3000 kg gives 689.56 kJ, but that changes the stated unit. The inconsistent source is retained with this calculation rather than forced into an option."
+    },
+    {
+      "id": "theory-of-machines:tv-ese-p2022_028",
+      "title": "ESE Prelims 2022 · Q28",
+      "issue": "The conventional descriptions make statements 1,2 and4 correct, while the spring-controlled gravity governor pivots are not on the moving sleeve as stated. No option gives 1,2,4. The publisher’s model solution also notes the missing combination and suggests A as a best fit; it is not an exact answer, so this item is excluded from automatic scoring."
+    },
+    {
+      "id": "theory-of-machines:tv-ese-p2023_095",
+      "title": "ESE Prelims 2023 · Q95",
+      "issue": "With total extreme-to-extreme pitch 10 degrees, angular amplitude is 5 degrees=pi/36 rad. Maximum pitch rate=(pi/36)(2pi/20)=0.027416 rad/s. I=8000×0.75^2=4500 kg m^2 and spin=188.496 rad/s give C=23254.7 N m. None of the options matches. Taking 10 degrees as the amplitude would instead give 46509.4 N m (C), but contradicts the printed total angular movement. Both interpretations are shown; automatic scoring is withheld."
+    },
+    {
+      "id": "vibrations:tv-gate-book-7-18",
+      "title": "GATE ME 2006 | Theory of Machines Book Q7.18",
+      "issue": "Shared data: m=12.5 kg, k=1000 N/m, c=15 N s/m. Damping ratio=c/(2sqrt(km))=0.067082; logarithmic decrement=2pi zeta/sqrt(1−zeta^2)=0.42244. None of 1.35,1.32,0.68,0.66 agrees. The printed key is an asterisk. No automatic grade is assigned."
+    }
+  ]
+}
