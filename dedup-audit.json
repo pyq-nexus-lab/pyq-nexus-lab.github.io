@@ -1,10 +1,10 @@
 {
   "version": 2,
   "stats": {
-    "rawEntries": 9939,
-    "uniqueQuestions": 8927,
-    "copiesConsolidated": 1012,
-    "groups": 820,
+    "rawEntries": 11959,
+    "uniqueQuestions": 10683,
+    "copiesConsolidated": 1276,
+    "groups": 1058,
     "subjectRelocations": 167,
     "bySubject": {
       "som": {
@@ -56,13 +56,18 @@
         "rawEntries": 834,
         "uniqueQuestions": 722,
         "copiesConsolidated": 112
+      },
+      "manufacturing": {
+        "rawEntries": 2020,
+        "uniqueQuestions": 1756,
+        "copiesConsolidated": 264
       }
     },
     "byExam": {
       "gate-me": {
-        "rawEntries": 2363,
-        "uniqueQuestions": 1827,
-        "copiesConsolidated": 536
+        "rawEntries": 3155,
+        "uniqueQuestions": 2380,
+        "copiesConsolidated": 775
       },
       "gate-xe": {
         "rawEntries": 1465,
@@ -70,19 +75,24 @@
         "copiesConsolidated": 52
       },
       "ese-prelims": {
-        "rawEntries": 5058,
-        "uniqueQuestions": 4695,
-        "copiesConsolidated": 363
+        "rawEntries": 5765,
+        "uniqueQuestions": 5380,
+        "copiesConsolidated": 385
       },
       "ese-mains": {
-        "rawEntries": 612,
-        "uniqueQuestions": 581,
+        "rawEntries": 664,
+        "uniqueQuestions": 633,
         "copiesConsolidated": 31
       },
       "cse-mains": {
-        "rawEntries": 441,
-        "uniqueQuestions": 411,
-        "copiesConsolidated": 30
+        "rawEntries": 515,
+        "uniqueQuestions": 484,
+        "copiesConsolidated": 31
+      },
+      "gate-pi": {
+        "rawEntries": 395,
+        "uniqueQuestions": 393,
+        "copiesConsolidated": 2
       }
     }
   },
@@ -6678,6 +6688,1936 @@
         "machine-design:md-esep-2022-43"
       ],
       "reason": "Same reviewed question, including historical reappearances; distinct asks and changed data are retained separately."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q16-p4",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q16-p4",
+        "manufacturing:mfg-gate-book-2-28"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q20-p4",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q20-p4",
+        "manufacturing:mfg-gate-book-2-29"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q65-p14",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q65-p14",
+        "manufacturing:mfg-gate-book-2-30"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2008-s1-q63-p14",
+      "ids": [
+        "manufacturing:mfg-me2008-s1-q63-p14",
+        "manufacturing:mfg-gate-book-2-31"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2009-s1-q17-p4",
+      "ids": [
+        "manufacturing:mfg-me2009-s1-q17-p4",
+        "manufacturing:mfg-gate-book-2-32"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2009-s1-q50-p10",
+      "ids": [
+        "manufacturing:mfg-me2009-s1-q50-p10",
+        "manufacturing:mfg-gate-book-2-33"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2010-s1-q19-p3",
+      "ids": [
+        "manufacturing:mfg-me2010-s1-q19-p3",
+        "manufacturing:mfg-gate-book-2-34"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2011-s1-q12-p3",
+      "ids": [
+        "manufacturing:mfg-me2011-s1-q12-p3",
+        "manufacturing:mfg-gate-book-2-35"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2011-s1-q47-p10",
+      "ids": [
+        "manufacturing:mfg-me2011-s1-q47-p10",
+        "manufacturing:mfg-gate-book-2-36"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2013-s1-q16-p5",
+      "ids": [
+        "manufacturing:mfg-me2013-s1-q16-p5",
+        "manufacturing:mfg-me2013-s2-q10-p18",
+        "manufacturing:mfg-me2013-s3-q23-p34",
+        "manufacturing:mfg-me2013-s4-q3-p45",
+        "manufacturing:mfg-gate-book-2-37"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s3-q22-p49",
+      "ids": [
+        "manufacturing:mfg-me2014-s3-q22-p49",
+        "manufacturing:mfg-gate-book-2-85"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s3-q25-p50",
+      "ids": [
+        "manufacturing:mfg-me2014-s3-q25-p50",
+        "manufacturing:mfg-gate-book-2-86"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s4-q53-p74",
+      "ids": [
+        "manufacturing:mfg-me2014-s4-q53-p74",
+        "manufacturing:mfg-gate-book-2-88"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s3-q17-p54",
+      "ids": [
+        "manufacturing:mfg-me2015-s3-q17-p54",
+        "manufacturing:mfg-gate-book-2-89"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s1-q46-p18",
+      "ids": [
+        "manufacturing:mfg-me2015-s1-q46-p18",
+        "manufacturing:mfg-gate-book-2-90"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s2-q58-p44",
+      "ids": [
+        "manufacturing:mfg-me2015-s2-q58-p44",
+        "manufacturing:mfg-gate-book-2-91"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s3-q42-p63",
+      "ids": [
+        "manufacturing:mfg-me2015-s3-q42-p63",
+        "manufacturing:mfg-gate-book-2-92"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s3-q60-p68",
+      "ids": [
+        "manufacturing:mfg-me2015-s3-q60-p68",
+        "manufacturing:mfg-gate-book-2-93"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s3-q21-p42",
+      "ids": [
+        "manufacturing:mfg-me2016-s3-q21-p42",
+        "manufacturing:mfg-gate-book-2-94"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s1-q22-p6",
+      "ids": [
+        "manufacturing:mfg-me2016-s1-q22-p6",
+        "manufacturing:mfg-gate-book-2-96"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s1-q51-p13",
+      "ids": [
+        "manufacturing:mfg-me2016-s1-q51-p13",
+        "manufacturing:mfg-gate-book-2-97"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-recovered-me1-2017-s1-q54-p16",
+      "ids": [
+        "manufacturing:mfg-recovered-me1-2017-s1-q54-p16",
+        "manufacturing:mfg-gate-book-2-98"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2018-s2-q13-p6",
+      "ids": [
+        "manufacturing:mfg-me2-2018-s2-q13-p6",
+        "manufacturing:mfg-gate-book-2-99"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2018-s2-q50-p17",
+      "ids": [
+        "manufacturing:mfg-me2-2018-s2-q50-p17",
+        "manufacturing:mfg-gate-book-2-100"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2019-s1-q13-p8",
+      "ids": [
+        "manufacturing:mfg-me1-2019-s1-q13-p8",
+        "manufacturing:mfg-gate-book-2-101"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2019-s1-q37-p16",
+      "ids": [
+        "manufacturing:mfg-me1-2019-s1-q37-p16",
+        "manufacturing:mfg-gate-book-2-102"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2019-s2-q15-p8",
+      "ids": [
+        "manufacturing:mfg-me2-2019-s2-q15-p8",
+        "manufacturing:mfg-gate-book-2-103"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2019-s2-q50-p21",
+      "ids": [
+        "manufacturing:mfg-me2-2019-s2-q50-p21",
+        "manufacturing:mfg-gate-book-2-104"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q62-p13",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q62-p13",
+        "manufacturing:mfg-gate-book-3-19"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q63-p13",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q63-p13",
+        "manufacturing:mfg-gate-book-3-20"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q64-p13",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q64-p13",
+        "manufacturing:mfg-gate-book-3-21"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q66-p14",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q66-p14",
+        "manufacturing:mfg-gate-book-3-22"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2008-s1-q66-p15",
+      "ids": [
+        "manufacturing:mfg-me2008-s1-q66-p15",
+        "manufacturing:mfg-gate-book-3-23"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2011-s1-q6-p2",
+      "ids": [
+        "manufacturing:mfg-me2011-s1-q6-p2",
+        "manufacturing:mfg-gate-book-3-24"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2012-s1-q2-p2",
+      "ids": [
+        "manufacturing:mfg-me2012-s1-q2-p2",
+        "manufacturing:mfg-gate-book-3-26"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2012-s1-q16-p3",
+      "ids": [
+        "manufacturing:mfg-me2012-s1-q16-p3",
+        "manufacturing:mfg-gate-book-3-27"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2012-s1-q38-p8",
+      "ids": [
+        "manufacturing:mfg-me2012-s1-q38-p8",
+        "manufacturing:mfg-gate-book-3-28"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2013-s1-q10-p4",
+      "ids": [
+        "manufacturing:mfg-me2013-s1-q10-p4",
+        "manufacturing:mfg-me2013-s2-q16-p18",
+        "manufacturing:mfg-me2013-s3-q4-p31",
+        "manufacturing:mfg-me2013-s4-q22-p48",
+        "manufacturing:mfg-gate-book-3-29"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s2-q25-p30",
+      "ids": [
+        "manufacturing:mfg-me2014-s2-q25-p30",
+        "manufacturing:mfg-gate-book-3-74"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s1-q51-p16",
+      "ids": [
+        "manufacturing:mfg-me2014-s1-q51-p16",
+        "manufacturing:mfg-gate-book-3-75"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s1-q31-p13",
+      "ids": [
+        "manufacturing:mfg-me2015-s1-q31-p13",
+        "manufacturing:mfg-gate-book-3-76"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s1-q47-p18",
+      "ids": [
+        "manufacturing:mfg-me2015-s1-q47-p18",
+        "manufacturing:mfg-gate-book-3-78"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s2-q59-p44",
+      "ids": [
+        "manufacturing:mfg-me2015-s2-q59-p44",
+        "manufacturing:mfg-gate-book-3-79"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s3-q41-p63",
+      "ids": [
+        "manufacturing:mfg-me2015-s3-q41-p63",
+        "manufacturing:mfg-gate-book-3-81"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-recovered-me1-2017-s1-q48-p14",
+      "ids": [
+        "manufacturing:mfg-recovered-me1-2017-s1-q48-p14",
+        "manufacturing:mfg-gate-book-3-83"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2017-s2-q25-p7",
+      "ids": [
+        "manufacturing:mfg-me2-2017-s2-q25-p7",
+        "manufacturing:mfg-gate-book-3-84"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2017-s2-q52-p16",
+      "ids": [
+        "manufacturing:mfg-me2-2017-s2-q52-p16",
+        "manufacturing:mfg-gate-book-3-85"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2018-s1-q35-p11",
+      "ids": [
+        "manufacturing:mfg-me1-2018-s1-q35-p11",
+        "manufacturing:mfg-gate-book-3-88"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2018-s2-q14-p6",
+      "ids": [
+        "manufacturing:mfg-me2-2018-s2-q14-p6",
+        "manufacturing:mfg-gate-book-3-90"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2018-s2-q46-p17",
+      "ids": [
+        "manufacturing:mfg-me2-2018-s2-q46-p17",
+        "manufacturing:mfg-gate-book-3-92"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2019-s1-q34-p15",
+      "ids": [
+        "manufacturing:mfg-me1-2019-s1-q34-p15",
+        "manufacturing:mfg-gate-book-3-94"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2019-s2-q16-p8",
+      "ids": [
+        "manufacturing:mfg-me2-2019-s2-q16-p8",
+        "manufacturing:mfg-gate-book-3-95"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2019-s2-q52-p22",
+      "ids": [
+        "manufacturing:mfg-me2-2019-s2-q52-p22",
+        "manufacturing:mfg-gate-book-3-96"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2020-s2-q22-p8",
+      "ids": [
+        "manufacturing:mfg-me2-2020-s2-q22-p8",
+        "manufacturing:mfg-gate-book-3-97"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2020-s1-q46-p14",
+      "ids": [
+        "manufacturing:mfg-me1-2020-s1-q46-p14",
+        "manufacturing:mfg-gate-book-3-99"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2008-s1-q68-p15",
+      "ids": [
+        "manufacturing:mfg-me2008-s1-q68-p15",
+        "manufacturing:mfg-gate-book-4-12"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2010-s1-q54-p10",
+      "ids": [
+        "manufacturing:mfg-me2010-s1-q54-p10",
+        "manufacturing:mfg-gate-book-4-13"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2010-s1-q55-p10",
+      "ids": [
+        "manufacturing:mfg-me2010-s1-q55-p10",
+        "manufacturing:mfg-gate-book-4-14"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2011-s1-q36-p8",
+      "ids": [
+        "manufacturing:mfg-me2011-s1-q36-p8",
+        "manufacturing:mfg-gate-book-4-15"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2012-s1-q37-p8",
+      "ids": [
+        "manufacturing:mfg-me2012-s1-q37-p8",
+        "manufacturing:mfg-gate-book-4-16"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-gate-book-4-35",
+      "ids": [
+        "manufacturing:mfg-gate-book-4-35",
+        "manufacturing:mfg-gate-book-4-42"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s4-q25-p69",
+      "ids": [
+        "manufacturing:mfg-me2014-s4-q25-p69",
+        "manufacturing:mfg-gate-book-4-51"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s2-q53-p35",
+      "ids": [
+        "manufacturing:mfg-me2014-s2-q53-p35",
+        "manufacturing:mfg-gate-book-4-52"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s2-q55-p36",
+      "ids": [
+        "manufacturing:mfg-me2014-s2-q55-p36",
+        "manufacturing:mfg-gate-book-4-53"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s3-q23-p43",
+      "ids": [
+        "manufacturing:mfg-me2016-s3-q23-p43",
+        "manufacturing:mfg-gate-book-4-54"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s3-q50-p49",
+      "ids": [
+        "manufacturing:mfg-me2016-s3-q50-p49",
+        "manufacturing:mfg-gate-book-4-55"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s3-q51-p49",
+      "ids": [
+        "manufacturing:mfg-me2016-s3-q51-p49",
+        "manufacturing:mfg-gate-book-4-56"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2018-s1-q36-p11",
+      "ids": [
+        "manufacturing:mfg-me1-2018-s1-q36-p11",
+        "manufacturing:mfg-gate-book-4-59"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2020-s1-q22-p8",
+      "ids": [
+        "manufacturing:mfg-me1-2020-s1-q22-p8",
+        "manufacturing:mfg-gate-book-4-60"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q17-p4",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q17-p4",
+        "manufacturing:mfg-gate-book-5-23"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q57-p12",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q57-p12",
+        "manufacturing:mfg-gate-book-5-24"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q60-p13",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q60-p13",
+        "manufacturing:mfg-gate-book-5-25"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2008-s1-q67-p15",
+      "ids": [
+        "manufacturing:mfg-me2008-s1-q67-p15",
+        "manufacturing:mfg-gate-book-5-26"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2010-s1-q43-p7",
+      "ids": [
+        "manufacturing:mfg-me2010-s1-q43-p7",
+        "manufacturing:mfg-gate-book-5-27"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2011-s1-q24-p5",
+      "ids": [
+        "manufacturing:mfg-me2011-s1-q24-p5",
+        "manufacturing:mfg-gate-book-5-28"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2012-s1-q39-p8",
+      "ids": [
+        "manufacturing:mfg-me2012-s1-q39-p8",
+        "manufacturing:mfg-gate-book-5-29"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-gate-book-5-67",
+      "ids": [
+        "manufacturing:mfg-gate-book-5-67",
+        "manufacturing:mfg-gate-book-9-58"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2013-s1-q11-p5",
+      "ids": [
+        "manufacturing:mfg-me2013-s1-q11-p5",
+        "manufacturing:mfg-me2013-s2-q15-p18",
+        "manufacturing:mfg-me2013-s3-q3-p31",
+        "manufacturing:mfg-me2013-s4-q23-p48",
+        "manufacturing:mfg-gate-book-5-77"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s1-q22-p11",
+      "ids": [
+        "manufacturing:mfg-me2014-s1-q22-p11",
+        "manufacturing:mfg-gate-book-5-78"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s1-q25-p11",
+      "ids": [
+        "manufacturing:mfg-me2014-s1-q25-p11",
+        "manufacturing:mfg-gate-book-5-79"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s4-q20-p68",
+      "ids": [
+        "manufacturing:mfg-me2014-s4-q20-p68",
+        "manufacturing:mfg-gate-book-5-80"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s3-q55-p57",
+      "ids": [
+        "manufacturing:mfg-me2014-s3-q55-p57",
+        "manufacturing:mfg-gate-book-5-81"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s1-q34-p14",
+      "ids": [
+        "manufacturing:mfg-me2015-s1-q34-p14",
+        "manufacturing:mfg-gate-book-5-82"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s3-q31-p58",
+      "ids": [
+        "manufacturing:mfg-me2015-s3-q31-p58",
+        "manufacturing:mfg-gate-book-5-83"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s1-q41-p16",
+      "ids": [
+        "manufacturing:mfg-me2015-s1-q41-p16",
+        "manufacturing:mfg-gate-book-5-84"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s2-q61-p45",
+      "ids": [
+        "manufacturing:mfg-me2015-s2-q61-p45",
+        "manufacturing:mfg-gate-book-5-85"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s3-q48-p49",
+      "ids": [
+        "manufacturing:mfg-me2016-s3-q48-p49",
+        "manufacturing:mfg-gate-book-5-86"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s2-q22-p22",
+      "ids": [
+        "manufacturing:mfg-me2016-s2-q22-p22",
+        "manufacturing:mfg-gate-book-5-87"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s1-q21-p6",
+      "ids": [
+        "manufacturing:mfg-me2016-s1-q21-p6",
+        "manufacturing:mfg-gate-book-5-89"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-recovered-me1-2017-s1-q23-p7",
+      "ids": [
+        "manufacturing:mfg-recovered-me1-2017-s1-q23-p7",
+        "manufacturing:mfg-gate-book-5-91"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2018-s1-q12-p5",
+      "ids": [
+        "manufacturing:mfg-me1-2018-s1-q12-p5",
+        "manufacturing:mfg-gate-book-5-92"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2018-s2-q53-p18",
+      "ids": [
+        "manufacturing:mfg-me2-2018-s2-q53-p18",
+        "manufacturing:mfg-gate-book-5-93"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2019-s1-q14-p8",
+      "ids": [
+        "manufacturing:mfg-me1-2019-s1-q14-p8",
+        "manufacturing:mfg-gate-book-5-94"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2019-s2-q51-p21",
+      "ids": [
+        "manufacturing:mfg-me2-2019-s2-q51-p21",
+        "manufacturing:mfg-gate-book-5-95"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2020-s2-q10-p6",
+      "ids": [
+        "manufacturing:mfg-me2-2020-s2-q10-p6",
+        "manufacturing:mfg-gate-book-5-96"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q18-p4",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q18-p4",
+        "manufacturing:mfg-gate-book-6-60"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q56-p12",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q56-p12",
+        "manufacturing:mfg-gate-book-6-61"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q59-p12",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q59-p12",
+        "manufacturing:mfg-gate-book-6-62"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q84-p19",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q84-p19",
+        "manufacturing:mfg-gate-book-6-63"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q85-p19",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q85-p19",
+        "manufacturing:mfg-gate-book-6-64"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2008-s1-q64-p14",
+      "ids": [
+        "manufacturing:mfg-me2008-s1-q64-p14",
+        "manufacturing:mfg-gate-book-6-66"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2008-s1-q69-p15",
+      "ids": [
+        "manufacturing:mfg-me2008-s1-q69-p15",
+        "manufacturing:mfg-gate-book-6-67"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2008-s1-q82-p20",
+      "ids": [
+        "manufacturing:mfg-me2008-s1-q82-p20",
+        "manufacturing:mfg-gate-book-6-68"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2008-s1-q83-p20",
+      "ids": [
+        "manufacturing:mfg-me2008-s1-q83-p20",
+        "manufacturing:mfg-gate-book-6-69"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2009-s1-q16-p4",
+      "ids": [
+        "manufacturing:mfg-me2009-s1-q16-p4",
+        "manufacturing:mfg-gate-book-6-70"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2009-s1-q46-p9",
+      "ids": [
+        "manufacturing:mfg-me2009-s1-q46-p9",
+        "manufacturing:mfg-gate-book-6-71"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2009-s1-q57-p12",
+      "ids": [
+        "manufacturing:mfg-me2009-s1-q57-p12",
+        "manufacturing:mfg-gate-book-6-72"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2009-s1-q58-p12",
+      "ids": [
+        "manufacturing:mfg-me2009-s1-q58-p12",
+        "manufacturing:mfg-gate-book-6-73"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2010-s1-q44-p7",
+      "ids": [
+        "manufacturing:mfg-me2010-s1-q44-p7",
+        "manufacturing:mfg-gate-book-6-74"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2011-s1-q45-p10",
+      "ids": [
+        "manufacturing:mfg-me2011-s1-q45-p10",
+        "manufacturing:mfg-gate-book-6-75"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2012-s1-q28-p6",
+      "ids": [
+        "manufacturing:mfg-me2012-s1-q28-p6",
+        "manufacturing:mfg-gate-book-6-76"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2012-s1-q27-p6",
+      "ids": [
+        "manufacturing:mfg-me2012-s1-q27-p6",
+        "manufacturing:mfg-gate-book-6-77"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2013-s1-q15-p5",
+      "ids": [
+        "manufacturing:mfg-me2013-s1-q15-p5",
+        "manufacturing:mfg-me2013-s2-q11-p18",
+        "manufacturing:mfg-me2013-s3-q24-p34",
+        "manufacturing:mfg-me2013-s4-q2-p45",
+        "manufacturing:mfg-gate-book-6-200"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s1-q23-p11",
+      "ids": [
+        "manufacturing:mfg-me2014-s1-q23-p11",
+        "manufacturing:mfg-gate-book-6-201"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s2-q22-p29",
+      "ids": [
+        "manufacturing:mfg-me2014-s2-q22-p29",
+        "manufacturing:mfg-gate-book-6-202"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s3-q20-p49",
+      "ids": [
+        "manufacturing:mfg-me2014-s3-q20-p49",
+        "manufacturing:mfg-gate-book-6-203"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s3-q23-p49",
+      "ids": [
+        "manufacturing:mfg-me2014-s3-q23-p49",
+        "manufacturing:mfg-gate-book-6-204"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s4-q21-p68",
+      "ids": [
+        "manufacturing:mfg-me2014-s4-q21-p68",
+        "manufacturing:mfg-gate-book-6-205"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s4-q23-p68",
+      "ids": [
+        "manufacturing:mfg-me2014-s4-q23-p68",
+        "manufacturing:mfg-gate-book-6-206"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s1-q52-p16",
+      "ids": [
+        "manufacturing:mfg-me2014-s1-q52-p16",
+        "manufacturing:mfg-gate-book-6-207"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s1-q54-p17",
+      "ids": [
+        "manufacturing:mfg-me2014-s1-q54-p17",
+        "manufacturing:mfg-gate-book-6-208"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s2-q54-p36",
+      "ids": [
+        "manufacturing:mfg-me2014-s2-q54-p36",
+        "manufacturing:mfg-gate-book-6-209"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s3-q54-p57",
+      "ids": [
+        "manufacturing:mfg-me2014-s3-q54-p57",
+        "manufacturing:mfg-gate-book-6-210"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s4-q54-p74",
+      "ids": [
+        "manufacturing:mfg-me2014-s4-q54-p74",
+        "manufacturing:mfg-gate-book-6-211"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s1-q33-p13",
+      "ids": [
+        "manufacturing:mfg-me2015-s1-q33-p13",
+        "manufacturing:mfg-gate-book-6-212"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s3-q16-p54",
+      "ids": [
+        "manufacturing:mfg-me2015-s3-q16-p54",
+        "manufacturing:mfg-gate-book-6-213"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s1-q45-p17",
+      "ids": [
+        "manufacturing:mfg-me2015-s1-q45-p17",
+        "manufacturing:mfg-gate-book-6-214"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s2-q62-p45",
+      "ids": [
+        "manufacturing:mfg-me2015-s2-q62-p45",
+        "manufacturing:mfg-gate-book-6-215"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s3-q44-p63",
+      "ids": [
+        "manufacturing:mfg-me2015-s3-q44-p63",
+        "manufacturing:mfg-gate-book-6-216"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s3-q49-p49",
+      "ids": [
+        "manufacturing:mfg-me2016-s3-q49-p49",
+        "manufacturing:mfg-gate-book-6-218"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s2-q24-p22",
+      "ids": [
+        "manufacturing:mfg-me2016-s2-q24-p22",
+        "manufacturing:mfg-gate-book-6-220"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s1-q24-p6",
+      "ids": [
+        "manufacturing:mfg-me2016-s1-q24-p6",
+        "manufacturing:mfg-gate-book-6-222"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s1-q50-p12",
+      "ids": [
+        "manufacturing:mfg-me2016-s1-q50-p12",
+        "manufacturing:mfg-gate-book-6-223"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-recovered-me1-2017-s1-q55-p16",
+      "ids": [
+        "manufacturing:mfg-recovered-me1-2017-s1-q55-p16",
+        "manufacturing:mfg-gate-book-6-224"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-recovered-me1-2017-s1-q53-p16",
+      "ids": [
+        "manufacturing:mfg-recovered-me1-2017-s1-q53-p16",
+        "manufacturing:mfg-gate-book-6-225"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2017-s2-q55-p16",
+      "ids": [
+        "manufacturing:mfg-me2-2017-s2-q55-p16",
+        "manufacturing:mfg-gate-book-6-226"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2017-s2-q54-p16",
+      "ids": [
+        "manufacturing:mfg-me2-2017-s2-q54-p16",
+        "manufacturing:mfg-gate-book-6-227"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2018-s1-q13-p5",
+      "ids": [
+        "manufacturing:mfg-me1-2018-s1-q13-p5",
+        "manufacturing:mfg-gate-book-6-228"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2018-s1-q14-p5",
+      "ids": [
+        "manufacturing:mfg-me1-2018-s1-q14-p5",
+        "manufacturing:mfg-gate-book-6-229"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2018-s1-q49-p15",
+      "ids": [
+        "manufacturing:mfg-me1-2018-s1-q49-p15",
+        "manufacturing:mfg-gate-book-6-230"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2018-s2-q17-p7",
+      "ids": [
+        "manufacturing:mfg-me2-2018-s2-q17-p7",
+        "manufacturing:mfg-gate-book-6-231"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2018-s2-q15-p7",
+      "ids": [
+        "manufacturing:mfg-me2-2018-s2-q15-p7",
+        "manufacturing:mfg-gate-book-6-232"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2018-s2-q49-p17",
+      "ids": [
+        "manufacturing:mfg-me2-2018-s2-q49-p17",
+        "manufacturing:mfg-gate-book-6-233"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2018-s2-q48-p17",
+      "ids": [
+        "manufacturing:mfg-me2-2018-s2-q48-p17",
+        "manufacturing:mfg-gate-book-6-234"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2019-s1-q15-p8",
+      "ids": [
+        "manufacturing:mfg-me1-2019-s1-q15-p8",
+        "manufacturing:mfg-gate-book-6-235"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2019-s1-q35-p15",
+      "ids": [
+        "manufacturing:mfg-me1-2019-s1-q35-p15",
+        "manufacturing:mfg-gate-book-6-236"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2019-s1-q52-p22",
+      "ids": [
+        "manufacturing:mfg-me1-2019-s1-q52-p22",
+        "manufacturing:mfg-gate-book-6-237"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2019-s1-q53-p22",
+      "ids": [
+        "manufacturing:mfg-me1-2019-s1-q53-p22",
+        "manufacturing:mfg-gate-book-6-238"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2019-s2-q54-p22",
+      "ids": [
+        "manufacturing:mfg-me2-2019-s2-q54-p22",
+        "manufacturing:mfg-gate-book-6-239"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2019-s2-q53-p22",
+      "ids": [
+        "manufacturing:mfg-me2-2019-s2-q53-p22",
+        "manufacturing:mfg-gate-book-6-240"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2020-s1-q12-p6",
+      "ids": [
+        "manufacturing:mfg-me1-2020-s1-q12-p6",
+        "manufacturing:mfg-gate-book-6-241"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2020-s1-q42-p14",
+      "ids": [
+        "manufacturing:mfg-me1-2020-s1-q42-p14",
+        "manufacturing:mfg-gate-book-6-242"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2020-s1-q45-p14",
+      "ids": [
+        "manufacturing:mfg-me1-2020-s1-q45-p14",
+        "manufacturing:mfg-gate-book-6-243"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2020-s2-q43-p14",
+      "ids": [
+        "manufacturing:mfg-me2-2020-s2-q43-p14",
+        "manufacturing:mfg-gate-book-6-244"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2020-s2-q44-p14",
+      "ids": [
+        "manufacturing:mfg-me2-2020-s2-q44-p14",
+        "manufacturing:mfg-gate-book-6-245"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2020-s2-q45-p15",
+      "ids": [
+        "manufacturing:mfg-me2-2020-s2-q45-p15",
+        "manufacturing:mfg-gate-book-6-246"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q58-p12",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q58-p12",
+        "manufacturing:mfg-gate-book-7-55"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2009-s1-q49-p10",
+      "ids": [
+        "manufacturing:mfg-me2009-s1-q49-p10",
+        "manufacturing:mfg-gate-book-7-60"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2010-s1-q20-p4",
+      "ids": [
+        "manufacturing:mfg-me2010-s1-q20-p4",
+        "manufacturing:mfg-gate-book-7-61"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2011-s1-q8-p3",
+      "ids": [
+        "manufacturing:mfg-me2011-s1-q8-p3",
+        "manufacturing:mfg-gate-book-7-66"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2013-s1-q37-p9",
+      "ids": [
+        "manufacturing:mfg-me2013-s1-q37-p9",
+        "manufacturing:mfg-me2013-s2-q36-p22",
+        "manufacturing:mfg-me2013-s3-q47-p38",
+        "manufacturing:mfg-me2013-s4-q26-p49",
+        "manufacturing:mfg-gate-book-7-71"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s1-q21-p11",
+      "ids": [
+        "manufacturing:mfg-me2014-s1-q21-p11",
+        "manufacturing:mfg-gate-book-7-73"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s2-q20-p29",
+      "ids": [
+        "manufacturing:mfg-me2014-s2-q20-p29",
+        "manufacturing:mfg-gate-book-7-74"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s1-q53-p17",
+      "ids": [
+        "manufacturing:mfg-me2014-s1-q53-p17",
+        "manufacturing:mfg-gate-book-7-75"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s4-q52-p74",
+      "ids": [
+        "manufacturing:mfg-me2014-s4-q52-p74",
+        "manufacturing:mfg-gate-book-7-76"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s3-q53-p57",
+      "ids": [
+        "manufacturing:mfg-me2014-s3-q53-p57",
+        "manufacturing:mfg-gate-book-7-77"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s1-q25-p6",
+      "ids": [
+        "manufacturing:mfg-me2016-s1-q25-p6",
+        "manufacturing:mfg-gate-book-7-82"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-recovered-me1-2017-s1-q24-p7",
+      "ids": [
+        "manufacturing:mfg-recovered-me1-2017-s1-q24-p7",
+        "manufacturing:mfg-gate-book-7-83"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-recovered-me1-2017-s1-q50-p15",
+      "ids": [
+        "manufacturing:mfg-recovered-me1-2017-s1-q50-p15",
+        "manufacturing:mfg-gate-book-7-84"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2017-s2-q53-p16",
+      "ids": [
+        "manufacturing:mfg-me2-2017-s2-q53-p16",
+        "manufacturing:mfg-gate-book-7-85"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2018-s1-q25-p7",
+      "ids": [
+        "manufacturing:mfg-me1-2018-s1-q25-p7",
+        "manufacturing:mfg-gate-book-7-86"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2019-s1-q36-p16",
+      "ids": [
+        "manufacturing:mfg-me1-2019-s1-q36-p16",
+        "manufacturing:mfg-gate-book-7-87"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2019-s2-q17-p8",
+      "ids": [
+        "manufacturing:mfg-me2-2019-s2-q17-p8",
+        "manufacturing:mfg-gate-book-7-88"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2020-s2-q32-p11",
+      "ids": [
+        "manufacturing:mfg-me2-2020-s2-q32-p11",
+        "manufacturing:mfg-gate-book-7-90"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2020-s1-q43-p14",
+      "ids": [
+        "manufacturing:mfg-me1-2020-s1-q43-p14",
+        "manufacturing:mfg-gate-book-7-91"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q19-p4",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q19-p4",
+        "manufacturing:mfg-gate-book-8-18"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2008-s1-q84-p21",
+      "ids": [
+        "manufacturing:mfg-me2008-s1-q84-p21",
+        "manufacturing:mfg-gate-book-8-20"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2008-s1-q85-p21",
+      "ids": [
+        "manufacturing:mfg-me2008-s1-q85-p21",
+        "manufacturing:mfg-gate-book-8-21"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2009-s1-q48-p9",
+      "ids": [
+        "manufacturing:mfg-me2009-s1-q48-p9",
+        "manufacturing:mfg-gate-book-8-22"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2010-s1-q21-p4",
+      "ids": [
+        "manufacturing:mfg-me2010-s1-q21-p4",
+        "manufacturing:mfg-gate-book-8-23"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2012-s1-q15-p3",
+      "ids": [
+        "manufacturing:mfg-me2012-s1-q15-p3",
+        "manufacturing:mfg-gate-book-8-24"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s1-q20-p11",
+      "ids": [
+        "manufacturing:mfg-me2014-s1-q20-p11",
+        "manufacturing:mfg-gate-book-8-54"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s2-q52-p35",
+      "ids": [
+        "manufacturing:mfg-me2014-s2-q52-p35",
+        "manufacturing:mfg-gate-book-8-57"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s1-q35-p14",
+      "ids": [
+        "manufacturing:mfg-me2015-s1-q35-p14",
+        "manufacturing:mfg-gate-book-8-58"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s3-q30-p58",
+      "ids": [
+        "manufacturing:mfg-me2015-s3-q30-p58",
+        "manufacturing:mfg-gate-book-8-59"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s1-q42-p16",
+      "ids": [
+        "manufacturing:mfg-me2015-s1-q42-p16",
+        "manufacturing:mfg-gate-book-8-60"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s3-q45-p64",
+      "ids": [
+        "manufacturing:mfg-me2015-s3-q45-p64",
+        "manufacturing:mfg-gate-book-8-61"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-recovered-me1-2017-s1-q49-p15",
+      "ids": [
+        "manufacturing:mfg-recovered-me1-2017-s1-q49-p15",
+        "manufacturing:mfg-gate-book-8-66"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2018-s1-q15-p5",
+      "ids": [
+        "manufacturing:mfg-me1-2018-s1-q15-p5",
+        "manufacturing:mfg-gate-book-8-67"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2020-s2-q46-p15",
+      "ids": [
+        "manufacturing:mfg-me2-2020-s2-q46-p15",
+        "manufacturing:mfg-gate-book-8-70"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q55-p12",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q55-p12",
+        "manufacturing:mfg-gate-book-9-26"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2007-s1-q67-p14",
+      "ids": [
+        "manufacturing:mfg-me2007-s1-q67-p14",
+        "manufacturing:mfg-gate-book-9-27"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2008-s1-q65-p14",
+      "ids": [
+        "manufacturing:mfg-me2008-s1-q65-p14",
+        "manufacturing:mfg-gate-book-9-28"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2009-s1-q47-p9",
+      "ids": [
+        "manufacturing:mfg-me2009-s1-q47-p9",
+        "manufacturing:mfg-gate-book-9-29"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2012-s1-q1-p2",
+      "ids": [
+        "manufacturing:mfg-me2012-s1-q1-p2",
+        "manufacturing:mfg-gate-book-9-30"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2011-s1-q46-p10",
+      "ids": [
+        "manufacturing:mfg-me2011-s1-q46-p10",
+        "manufacturing:mfg-gate-book-9-31"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2013-s1-q38-p9",
+      "ids": [
+        "manufacturing:mfg-me2013-s1-q38-p9",
+        "manufacturing:mfg-me2013-s2-q35-p22",
+        "manufacturing:mfg-me2013-s3-q46-p38",
+        "manufacturing:mfg-me2013-s4-q27-p49",
+        "manufacturing:mfg-gate-book-9-73"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s2-q23-p29",
+      "ids": [
+        "manufacturing:mfg-me2014-s2-q23-p29",
+        "manufacturing:mfg-gate-book-9-74"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2014-s4-q22-p68",
+      "ids": [
+        "manufacturing:mfg-me2014-s4-q22-p68",
+        "manufacturing:mfg-gate-book-9-76"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2015-s2-q63-p45",
+      "ids": [
+        "manufacturing:mfg-me2015-s2-q63-p45",
+        "manufacturing:mfg-gate-book-9-78"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s3-q22-p43",
+      "ids": [
+        "manufacturing:mfg-me2016-s3-q22-p43",
+        "manufacturing:mfg-gate-book-9-79"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s2-q25-p23",
+      "ids": [
+        "manufacturing:mfg-me2016-s2-q25-p23",
+        "manufacturing:mfg-gate-book-9-80"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s2-q52-p31",
+      "ids": [
+        "manufacturing:mfg-me2016-s2-q52-p31",
+        "manufacturing:mfg-gate-book-9-81"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2016-s1-q23-p6",
+      "ids": [
+        "manufacturing:mfg-me2016-s1-q23-p6",
+        "manufacturing:mfg-gate-book-9-82"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-recovered-me1-2017-s1-q22-p7",
+      "ids": [
+        "manufacturing:mfg-recovered-me1-2017-s1-q22-p7",
+        "manufacturing:mfg-gate-book-9-83"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2017-s2-q20-p6",
+      "ids": [
+        "manufacturing:mfg-me2-2017-s2-q20-p6",
+        "manufacturing:mfg-gate-book-9-84"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me1-2018-s1-q55-p17",
+      "ids": [
+        "manufacturing:mfg-me1-2018-s1-q55-p17",
+        "manufacturing:mfg-gate-book-9-85"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2018-s2-q16-p7",
+      "ids": [
+        "manufacturing:mfg-me2-2018-s2-q16-p7",
+        "manufacturing:mfg-gate-book-9-86"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2018-s2-q52-p18",
+      "ids": [
+        "manufacturing:mfg-me2-2018-s2-q52-p18",
+        "manufacturing:mfg-gate-book-9-87"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2019-s2-q25-p10",
+      "ids": [
+        "manufacturing:mfg-me2-2019-s2-q25-p10",
+        "manufacturing:mfg-gate-book-9-88"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2-2020-s2-q9-p5",
+      "ids": [
+        "manufacturing:mfg-me2-2020-s2-q9-p5",
+        "manufacturing:mfg-gate-book-9-89"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2017-148",
+      "ids": [
+        "manufacturing:mfg-esep-2017-148",
+        "manufacturing:mfg-ese-book-1-71"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2017-149",
+      "ids": [
+        "manufacturing:mfg-esep-2017-149",
+        "manufacturing:mfg-ese-book-1-72"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-ese-book-2-97",
+      "ids": [
+        "manufacturing:mfg-ese-book-2-97",
+        "manufacturing:mfg-ese-book-4-169"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2018-107",
+      "ids": [
+        "manufacturing:mfg-esep-2018-107",
+        "manufacturing:mfg-ese-book-2-103"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2019-122",
+      "ids": [
+        "manufacturing:mfg-esep-2019-122",
+        "manufacturing:mfg-ese-book-2-104"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2020-76",
+      "ids": [
+        "manufacturing:mfg-esep-2020-76",
+        "manufacturing:mfg-ese-book-2-105"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2018-106",
+      "ids": [
+        "manufacturing:mfg-esep-2018-106",
+        "manufacturing:mfg-ese-book-3-74"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2019-121",
+      "ids": [
+        "manufacturing:mfg-esep-2019-121",
+        "manufacturing:mfg-ese-book-3-75"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2017-98",
+      "ids": [
+        "manufacturing:mfg-esep-2017-98",
+        "manufacturing:mfg-ese-book-4-262"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2018-105",
+      "ids": [
+        "manufacturing:mfg-esep-2018-105",
+        "manufacturing:mfg-ese-book-4-263"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2018-114",
+      "ids": [
+        "manufacturing:mfg-esep-2018-114",
+        "manufacturing:mfg-ese-book-4-264"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2018-103",
+      "ids": [
+        "manufacturing:mfg-esep-2018-103",
+        "manufacturing:mfg-ese-book-4-265"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2020-121",
+      "ids": [
+        "manufacturing:mfg-esep-2020-121",
+        "manufacturing:mfg-ese-book-4-267"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2020-122",
+      "ids": [
+        "manufacturing:mfg-esep-2020-122",
+        "manufacturing:mfg-ese-book-4-268"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2020-123",
+      "ids": [
+        "manufacturing:mfg-esep-2020-123",
+        "manufacturing:mfg-ese-book-4-269"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2017-99",
+      "ids": [
+        "manufacturing:mfg-esep-2017-99",
+        "manufacturing:mfg-ese-book-5-23"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2019-123",
+      "ids": [
+        "manufacturing:mfg-esep-2019-123",
+        "manufacturing:mfg-ese-book-5-24"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2017-100",
+      "ids": [
+        "manufacturing:mfg-esep-2017-100",
+        "manufacturing:mfg-ese-book-6-34"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2017-101",
+      "ids": [
+        "manufacturing:mfg-esep-2017-101",
+        "manufacturing:mfg-ese-book-6-35"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2019-125",
+      "ids": [
+        "manufacturing:mfg-esep-2019-125",
+        "manufacturing:mfg-ese-book-6-36"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2020-125",
+      "ids": [
+        "manufacturing:mfg-esep-2020-125",
+        "manufacturing:mfg-ese-book-6-37"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-esep-2020-126",
+      "ids": [
+        "manufacturing:mfg-esep-2020-126",
+        "manufacturing:mfg-ese-book-6-38"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2013-s1-q34-p8",
+      "ids": [
+        "manufacturing:mfg-me2013-s1-q34-p8",
+        "manufacturing:mfg-me2013-s2-q39-p23",
+        "manufacturing:mfg-me2013-s3-q28-p35",
+        "manufacturing:mfg-me2013-s4-q45-p52"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2013-s1-q52-p12",
+      "ids": [
+        "manufacturing:mfg-me2013-s1-q52-p12",
+        "manufacturing:mfg-me2013-s2-q54-p26",
+        "manufacturing:mfg-me2013-s3-q52-p40",
+        "manufacturing:mfg-me2013-s4-q54-p54"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2013-s4-q47-p52",
+      "ids": [
+        "manufacturing:mfg-me2013-s4-q47-p52",
+        "manufacturing:mfg-me2013-s1-q35-p8",
+        "manufacturing:mfg-me2013-s2-q38-p22",
+        "manufacturing:mfg-me2013-s3-q27-p35"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-me2013-s1-q53-p12",
+      "ids": [
+        "manufacturing:mfg-me2013-s1-q53-p12",
+        "manufacturing:mfg-me2013-s2-q55-p26",
+        "manufacturing:mfg-me2013-s3-q53-p40",
+        "manufacturing:mfg-me2013-s4-q55-p54"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "manufacturing:mfg-csem-2020-5b",
+      "ids": [
+        "manufacturing:mfg-csem-2020-5b",
+        "manufacturing:mfg-csem-2019-8c"
+      ],
+      "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
     }
   ],
   "acceptedPairs": [

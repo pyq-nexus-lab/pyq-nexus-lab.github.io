@@ -2,14 +2,14 @@
   "version": 2,
   "auditedOn": "2026-10-16",
   "coverage": {
-    "total": 8927,
-    "official": 1669,
-    "book": 4586,
-    "solved": 1614,
-    "written": 996,
-    "issues": 62,
+    "total": 10683,
+    "official": 1882,
+    "book": 5803,
+    "solved": 1720,
+    "written": 1211,
+    "issues": 67,
     "pending": 0,
-    "keyed": 7869
+    "keyed": 9405
   },
   "method": "Official GATE key matching by year, session, section and question number; printed solved-book tables; independently derived references where no usable key exists. All references identify their provenance in the question UI.",
   "limits": [

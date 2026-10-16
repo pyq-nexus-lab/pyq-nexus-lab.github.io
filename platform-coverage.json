@@ -1,23 +1,24 @@
 {
   "generatedOn": "2026-10-16",
-  "total": 8927,
-  "official": 1669,
-  "book": 4586,
-  "solved": 1614,
-  "written": 996,
-  "issues": 62,
+  "total": 10683,
+  "official": 1882,
+  "book": 5803,
+  "solved": 1720,
+  "written": 1211,
+  "issues": 67,
   "pending": 0,
-  "keyed": 7869,
-  "sourceEntries": 9939,
-  "duplicateCopiesMerged": 1012,
-  "readySubjects": 10,
+  "keyed": 9405,
+  "sourceEntries": 11959,
+  "duplicateCopiesMerged": 1276,
+  "readySubjects": 11,
   "registeredSubjects": 18,
   "countsByExam": {
-    "gate-me": 1827,
+    "gate-me": 2380,
     "gate-xe": 1413,
-    "ese-prelims": 4695,
-    "ese-mains": 581,
-    "cse-mains": 411
+    "ese-prelims": 5380,
+    "ese-mains": 633,
+    "cse-mains": 484,
+    "gate-pi": 393
   },
   "subjects": {
     "som": {
@@ -786,6 +787,59 @@
           "id": "machine-design:md-esep-2023-82",
           "issue": "The intended textbook combination appears to be 1 and 3 (option C), with Vitallium correctly rejected because it is cobalt-based rather than vanadium-based. However statement 1 calls both Discalloy and Incoloy nickel-based while describing iron–nickel alloys. Incoloy is a family with varying Fe/Ni proportions (for example alloy 800 has Fe at least 39.5% and Ni 30–35%); a blanket base-metal classification is imprecise. No unqualified automatic grade is imposed on this inconsistent wording. Reference: Special Metals INCOLOY alloy 800 technical bulletin, https://www.specialmetals.com/documents/technical-bulletins/incoloy/incoloy-alloy-800.pdf .",
           "referenceAnswer": "The intended textbook combination appears to be 1 and 3 (option C), with Vitallium correctly rejected because it is cobalt-based rather than vanadium-based. However statement 1 calls both Discalloy and Incoloy nickel-based while describing iron–nickel alloys. Incoloy is a family with varying Fe/Ni proportions (for example alloy 800 has Fe at least 39.5% and Ni 30–35%); a blanket base-metal classification is imprecise. No unqualified automatic grade is imposed on this inconsistent wording. Reference: Special Metals INCOLOY alloy 800 technical bulletin, https://www.specialmetals.com/documents/technical-bulletins/incoloy/incoloy-alloy-800.pdf ."
+        }
+      ]
+    },
+    "manufacturing": {
+      "generatedOn": "2026-10-16",
+      "subject": "manufacturing",
+      "entries": 1756,
+      "uniqueQuestions": 1756,
+      "sourceEntries": 2020,
+      "duplicateCopiesMerged": 264,
+      "countsByExam": {
+        "gate-me": 553,
+        "gate-pi": 393,
+        "ese-prelims": 685,
+        "ese-mains": 52,
+        "cse-mains": 73
+      },
+      "countsByFormat": {
+        "MCQ": 1402,
+        "MSQ": 9,
+        "NAT": 130,
+        "WRITTEN": 215
+      },
+      "gradable": 1536,
+      "officialKeys": 213,
+      "bookKeys": 1217,
+      "independentlyDerivedKeys": 106,
+      "writtenSelfAssessment": 215,
+      "sourceIssues": [
+        {
+          "id": "manufacturing:mfg-gate-book-5-67",
+          "issue": "The identical printed assertion–reason item has conflicting book keys (C in Welding and B in Non-traditional Machining). Conventional electron-beam welding uses vacuum primarily to prevent electron scattering; the vacuum also protects the weld from atmospheric contamination. B is the defensible interpretation, but the inconsistent source key is excluded from automatic scoring.",
+          "referenceAnswer": "The identical printed assertion–reason item has conflicting book keys (C in Welding and B in Non-traditional Machining). Conventional electron-beam welding uses vacuum primarily to prevent electron scattering; the vacuum also protects the weld from atmospheric contamination. B is the defensible interpretation, but the inconsistent source key is excluded from automatic scoring."
+        },
+        {
+          "id": "manufacturing:mfg-esep-2022-59",
+          "issue": "Only statement 2 correctly describes a variable-pulley stepless drive. Stepless drives allow continuously variable speed and can maintain appropriate cutting speed; statements 1 and 3 describe disadvantages of stepped drives. The printed options omit “2 only”, so this question is excluded from automatic scoring. Reference: NPTEL Manufacturing Processes II, Module 1, Lesson 2, https://archive.nptel.ac.in/content/storage2/courses/112105127/pdf/LM-02.pdf.",
+          "referenceAnswer": "Only statement 2 correctly describes a variable-pulley stepless drive. Stepless drives allow continuously variable speed and can maintain appropriate cutting speed; statements 1 and 3 describe disadvantages of stepped drives. The printed options omit “2 only”, so this question is excluded from automatic scoring. Reference: NPTEL Manufacturing Processes II, Module 1, Lesson 2, https://archive.nptel.ac.in/content/storage2/courses/112105127/pdf/LM-02.pdf."
+        },
+        {
+          "id": "manufacturing:mfg-ese-book-5-8",
+          "issue": "Only statement 1 is correct: 50 is the basic hole size; H indicates a hole-basis system, and 8 is the IT tolerance grade, not the fundamental deviation. No option gives “1 only”; the book prints an asterisk. This item is excluded from automatic scoring.",
+          "referenceAnswer": "Only statement 1 is correct: 50 is the basic hole size; H indicates a hole-basis system, and 8 is the IT tolerance grade, not the fundamental deviation. No option gives “1 only”; the book prints an asterisk. This item is excluded from automatic scoring."
+        },
+        {
+          "id": "manufacturing:mfg-gate-book-7-42",
+          "issue": "The supplied book explicitly marks “None”. Work-hole limits are 20.010–20.050 mm and gauge tolerance is 0.004 mm. GO and NO-GO gauges require tolerance zones/limits, not just two nominal values; the printed alternatives do not state a consistent complete ISO gauge specification. Treat this as a source-key issue, rather than force a single listed answer.",
+          "referenceAnswer": "The supplied book explicitly marks “None”. Work-hole limits are 20.010–20.050 mm and gauge tolerance is 0.004 mm. GO and NO-GO gauges require tolerance zones/limits, not just two nominal values; the printed alternatives do not state a consistent complete ISO gauge specification. Treat this as a source-key issue, rather than force a single listed answer."
+        },
+        {
+          "id": "manufacturing:mfg-esep-2022-150",
+          "issue": "Mechanization substitutes machine power for manual effort, while human control may remain; automation additionally replaces parts of the control function. The wording “by machinery as well as by hand” does not unambiguously distinguish these. Statement II also blends mechanization and automation. Without a verified official key, this assertion–reason item is retained with this explanation and excluded from automatic scoring.",
+          "referenceAnswer": "Mechanization substitutes machine power for manual effort, while human control may remain; automation additionally replaces parts of the control function. The wording “by machinery as well as by hand” does not unambiguously distinguish these. Statement II also blends mechanization and automation. Without a verified official key, this assertion–reason item is retained with this explanation and excluded from automatic scoring."
         }
       ]
     }
