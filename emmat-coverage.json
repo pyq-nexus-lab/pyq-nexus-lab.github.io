@@ -1,0 +1,464 @@
+{
+  "date": "2026-10-17",
+  "raw": 1574,
+  "unique": 1426,
+  "duplicateCopies": 148,
+  "packs": 24,
+  "subjects": {
+    "engineering-mechanics": {
+      "raw": 495,
+      "unique": 411,
+      "chapters": 9,
+      "topics": 30,
+      "answerCoverage": {
+        "total": 411,
+        "official": 184,
+        "book": 66,
+        "solved": 105,
+        "written": 51,
+        "issues": 5,
+        "pending": 0,
+        "keyed": 355
+      },
+      "byExam": {
+        "gate-xe": {
+          "total": 160,
+          "official": 99,
+          "book": 8,
+          "solved": 52,
+          "written": 0,
+          "issues": 1,
+          "pending": 0,
+          "keyed": 159
+        },
+        "ese-prelims": {
+          "total": 51,
+          "official": 0,
+          "book": 13,
+          "solved": 34,
+          "written": 0,
+          "issues": 4,
+          "pending": 0,
+          "keyed": 47
+        },
+        "cse-mains": {
+          "total": 26,
+          "official": 0,
+          "book": 0,
+          "solved": 0,
+          "written": 26,
+          "issues": 0,
+          "pending": 0,
+          "keyed": 0
+        },
+        "ese-mains": {
+          "total": 25,
+          "official": 0,
+          "book": 0,
+          "solved": 0,
+          "written": 25,
+          "issues": 0,
+          "pending": 0,
+          "keyed": 0
+        },
+        "gate-me": {
+          "total": 149,
+          "official": 85,
+          "book": 45,
+          "solved": 19,
+          "written": 0,
+          "issues": 0,
+          "pending": 0,
+          "keyed": 149
+        }
+      },
+      "yearCoverage": {
+        "gate-me": {
+          "1990": 1,
+          "1992": 1,
+          "1993": 1,
+          "1994": 1,
+          "1995": 1,
+          "1996": 5,
+          "1997": 1,
+          "1998": 1,
+          "1999": 1,
+          "2000": 2,
+          "2001": 1,
+          "2003": 5,
+          "2004": 3,
+          "2005": 6,
+          "2006": 2,
+          "2007": 4,
+          "2008": 6,
+          "2009": 4,
+          "2010": 1,
+          "2011": 5,
+          "2012": 7,
+          "2013": 10,
+          "2014": 29,
+          "2015": 25,
+          "2016": 27,
+          "2017": 9,
+          "2018": 11,
+          "2019": 13,
+          "2020": 10,
+          "2021": 3,
+          "2022": 11,
+          "2023": 4,
+          "2024": 3,
+          "2025": 2,
+          "2026": 4
+        },
+        "ese-prelims": {
+          "2017": 11,
+          "2018": 8,
+          "2019": 5,
+          "2020": 5,
+          "2021": 7,
+          "2022": 8,
+          "2023": 6,
+          "2024": 2,
+          "2025": 5,
+          "2026": 6,
+          "null": 1
+        },
+        "gate-xe": {
+          "2007": 10,
+          "2008": 14,
+          "2009": 11,
+          "2010": 9,
+          "2011": 8,
+          "2012": 6,
+          "2013": 6,
+          "2014": 6,
+          "2015": 9,
+          "2016": 7,
+          "2017": 6,
+          "2018": 5,
+          "2019": 6,
+          "2020": 6,
+          "2021": 8,
+          "2022": 10,
+          "2023": 7,
+          "2024": 10,
+          "2025": 8,
+          "2026": 8
+        },
+        "ese-mains": {
+          "2017": 1,
+          "2018": 4,
+          "2019": 2,
+          "2020": 4,
+          "2021": 4,
+          "2022": 2,
+          "2023": 2,
+          "2024": 2,
+          "2025": 2,
+          "2026": 2
+        },
+        "cse-mains": {
+          "2017": 2,
+          "2018": 3,
+          "2019": 2,
+          "2020": 3,
+          "2021": 3,
+          "2022": 2,
+          "2023": 3,
+          "2024": 2,
+          "2025": 3,
+          "2026": 3
+        }
+      }
+    },
+    "materials": {
+      "raw": 1079,
+      "unique": 1015,
+      "chapters": 14,
+      "topics": 48,
+      "answerCoverage": {
+        "total": 1015,
+        "official": 343,
+        "book": 326,
+        "solved": 273,
+        "written": 61,
+        "issues": 12,
+        "pending": 0,
+        "keyed": 942
+      },
+      "byExam": {
+        "gate-xe": {
+          "total": 460,
+          "official": 304,
+          "book": 19,
+          "solved": 133,
+          "written": 0,
+          "issues": 4,
+          "pending": 0,
+          "keyed": 456
+        },
+        "ese-prelims": {
+          "total": 429,
+          "official": 0,
+          "book": 290,
+          "solved": 131,
+          "written": 0,
+          "issues": 8,
+          "pending": 0,
+          "keyed": 421
+        },
+        "gate-me": {
+          "total": 63,
+          "official": 39,
+          "book": 15,
+          "solved": 9,
+          "written": 0,
+          "issues": 0,
+          "pending": 0,
+          "keyed": 63
+        },
+        "cse-mains": {
+          "total": 30,
+          "official": 0,
+          "book": 0,
+          "solved": 0,
+          "written": 30,
+          "issues": 0,
+          "pending": 0,
+          "keyed": 0
+        },
+        "ese-mains": {
+          "total": 31,
+          "official": 0,
+          "book": 0,
+          "solved": 0,
+          "written": 31,
+          "issues": 0,
+          "pending": 0,
+          "keyed": 0
+        },
+        "gate-pi": {
+          "total": 2,
+          "official": 0,
+          "book": 2,
+          "solved": 0,
+          "written": 0,
+          "issues": 0,
+          "pending": 0,
+          "keyed": 2
+        }
+      },
+      "yearCoverage": {
+        "gate-me": {
+          "1990": 1,
+          "1996": 1,
+          "2003": 3,
+          "2004": 2,
+          "2005": 1,
+          "2006": 3,
+          "2007": 2,
+          "2008": 1,
+          "2009": 2,
+          "2010": 2,
+          "2011": 2,
+          "2012": 2,
+          "2013": 5,
+          "2014": 6,
+          "2015": 5,
+          "2016": 7,
+          "2017": 5,
+          "2018": 8,
+          "2019": 7,
+          "2020": 6,
+          "2021": 2,
+          "2022": 5,
+          "2023": 3,
+          "2024": 1,
+          "2025": 2,
+          "2026": 1
+        },
+        "gate-pi": {
+          "1992": 2
+        },
+        "ese-prelims": {
+          "1995": 9,
+          "1996": 10,
+          "1997": 10,
+          "1998": 9,
+          "1999": 10,
+          "2000": 8,
+          "2001": 9,
+          "2002": 12,
+          "2003": 15,
+          "2004": 5,
+          "2005": 12,
+          "2006": 12,
+          "2007": 16,
+          "2008": 14,
+          "2009": 15,
+          "2010": 20,
+          "2011": 28,
+          "2012": 14,
+          "2013": 19,
+          "2014": 10,
+          "2015": 22,
+          "2016": 12,
+          "2017": 17,
+          "2018": 22,
+          "2019": 26,
+          "2020": 23,
+          "2021": 14,
+          "2022": 14,
+          "2023": 14,
+          "2024": 15,
+          "2025": 17,
+          "2026": 17,
+          "null": 1
+        },
+        "gate-xe": {
+          "2007": 28,
+          "2008": 34,
+          "2009": 24,
+          "2010": 22,
+          "2011": 22,
+          "2012": 22,
+          "2013": 22,
+          "2014": 22,
+          "2015": 22,
+          "2016": 22,
+          "2017": 22,
+          "2018": 22,
+          "2019": 22,
+          "2020": 22,
+          "2021": 22,
+          "2022": 22,
+          "2023": 22,
+          "2024": 22,
+          "2025": 22,
+          "2026": 22
+        },
+        "ese-mains": {
+          "2017": 4,
+          "2018": 3,
+          "2019": 4,
+          "2020": 4,
+          "2021": 3,
+          "2022": 2,
+          "2023": 4,
+          "2024": 2,
+          "2025": 3,
+          "2026": 2
+        },
+        "cse-mains": {
+          "2017": 2,
+          "2018": 3,
+          "2019": 3,
+          "2020": 3,
+          "2021": 3,
+          "2022": 3,
+          "2023": 4,
+          "2024": 3,
+          "2025": 3,
+          "2026": 3
+        }
+      }
+    }
+  },
+  "answerCoverage": {
+    "total": 1426,
+    "official": 527,
+    "book": 392,
+    "solved": 378,
+    "written": 112,
+    "issues": 17,
+    "pending": 0,
+    "keyed": 1297
+  },
+  "sourceIssues": [
+    {
+      "id": "engineering-mechanics:emmat-esep-2021-76",
+      "title": "ESE Prelims 2021 · Q76",
+      "issue": "Six pulleys in EACH block ordinarily give 12 supporting rope segments, so ideal rope tension is 3000/12=250 N and the downward ground thrust of a man pulling down is 650−250=400 N, absent from the choices. A total of six supporting segments would give 150 N (C). The printed wording and choices disagree."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2026-1",
+      "title": "ESE Prelims 2026 · Q1",
+      "issue": "For a quarter-circle area, x̄=ȳ=4R/(3π), corresponding to D for either Cartesian coordinate. The distance along its symmetry line from the corner is √(x̄²+ȳ²)=4√2R/(3π), which is not listed. The question explicitly asks for the distance on the symmetry line; automatic grading is withheld."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2018-70",
+      "title": "ESE Prelims 2018 · Q70",
+      "issue": "With the stated applied force of 100 N, actual static friction is 100 N (C). The limiting friction at impending motion is μN=0.5×1000=500 N (D), but a 100 N pull cannot cause that impending state. The wording conflates actual and limiting friction; automatic grading is withheld."
+    },
+    {
+      "id": "engineering-mechanics:emmat-xe2009-d-s1-q12-p17",
+      "title": "GATE XE-D 2009 · Q12",
+      "issue": "The printed geometry is inconsistent: a tangent at 30° with centre-to-hinge distance 5 m requires radius 5sin30°=2.5 m, whereas the figure labels radius 1 m. Using the stated angle and distance gives ω=10tan30°/5=1.155 rad/s (B). Using radius 1 m and distance 5 m instead gives θ=asin(1/5) and ω≈0.408 rad/s. The conflict is explained rather than automatically graded."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2024-71",
+      "title": "ESE Prelims 2024 · Q71",
+      "issue": "The printed mass is given in kN, a force unit. Taking 3 kN as weight: m=3000/9.81 kg, I=mk²=782.875 kg·m². Energy increase = ½I[(340π/30)²−(315π/30)²]≈70.29 kJ; final stored energy≈496.23 kJ. Neither appears in the options. Treating 3 as tonnes also fails to match the printed choices."
+    },
+    {
+      "id": "materials:emmat-ese-materials-1-7",
+      "title": "ESE Prelims 1999 | Archive Book Q1.7",
+      "issue": "The printed key lists alternative letters A, C for a single-choice question. This is not a multi-select format. Review the source alternatives; automatic grading is withheld."
+    },
+    {
+      "id": "materials:emmat-esep-2024-25",
+      "title": "ESE Prelims 2024 · Q25",
+      "issue": "The exact property described is elasticity: recovery of original shape when load is removed. Resilience (B) is related but specifically concerns elastic energy absorption and release. Elasticity is absent from the options, so B should not be presented as an unqualified exact definition."
+    },
+    {
+      "id": "materials:emmat-esep-2020-95",
+      "title": "ESE Prelims 2020 · Q95",
+      "issue": "The supplied book gives D. With Griffith σf=√(2Eγ/πa), interpreting the stated 100 μm as total internal-crack length 2a gives 163.5 MPa, nearest D (160 MPa). Interpreting it as the half-length a gives 115.6 MPa, nearest B (120 MPa). The stem does not specify crack geometry or this convention, so both interpretations are shown and automatic grading is withheld."
+    },
+    {
+      "id": "materials:emmat-ese-materials-6-17",
+      "title": "ESE Prelims 2004 | Archive Book Q6.17",
+      "issue": "Mild steel is used for commercial beams (A→2), and tool steel for blanking dies (B→4), selecting option A. The remaining printed associations are medium-carbon steel→screws and high-carbon steel→crane hooks; the latter is not a good general materials-selection recommendation (hooks normally require tough low/medium-carbon steel). The printed book key D also incorrectly assigns mild steel to hooks and high-carbon steel to beams. Because the source matching list itself is defective, automatic grading is withheld; A is the structurally intended match, not an endorsement of every pairing."
+    },
+    {
+      "id": "materials:emmat-esep-2023-82",
+      "title": "ESE Prelims 2023 · Q82",
+      "issue": "Nickel-based superalloys have excellent creep resistance (3 true). Vitallium is cobalt-based, not vanadium-based (2 false). Discalloy and conventional Incoloy are iron–nickel-based rather than simply nickel-based, so the second clause of statement 1 is inaccurate. The apparent intended choice is C (1 and 3), but strictly only 3 is true and that choice is absent."
+    },
+    {
+      "id": "materials:emmat-ese-materials-5-8",
+      "title": "ESE Prelims 1999 | Archive Book Q5.8",
+      "issue": "The printed key lists alternative letters B, C for a single-choice question. This is not a multi-select format. Review the source alternatives; automatic grading is withheld."
+    },
+    {
+      "id": "materials:emmat-xe2013-c-s1-q21-p18",
+      "title": "GATE XE-C 2013 · Q21",
+      "issue": "Official key: Marks to All"
+    },
+    {
+      "id": "materials:emmat-xe2013-c-s1-q22-p18",
+      "title": "GATE XE-C 2013 · Q22",
+      "issue": "Official key: Marks to All"
+    },
+    {
+      "id": "materials:emmat-ese-materials-5-24",
+      "title": "ESE Prelims 2007 | Archive Book Q5.24",
+      "issue": "The printed book key indicates D (Pyrosil). Alumina and porcelain are ceramics. A whisker is a single-crystal reinforcement morphology and may itself be ceramic (such as SiC or Al₂O₃), metallic or another material; the generic word does not uniquely specify a material class. Pyrosil is a commercial name whose composition is not specified here. Because the terminology is insufficient for an unambiguous independent classification, the printed answer is retained as a reference and automatic grading is withheld."
+    },
+    {
+      "id": "materials:emmat-esep-2019-91",
+      "title": "ESE Prelims 2019 · Q91",
+      "issue": "Griffith fracture for an internal crack of half-length a=2 μm gives σf=√(2Eγ/(πa))=√[2×70×10⁹×1/(π×2×10⁻⁶)]≈149.27 MPa. None of 885, 895, 915 or 935 MPa matches the printed data."
+    },
+    {
+      "id": "materials:emmat-xe2009-c-s1-q23-p13",
+      "title": "GATE XE-C 2009 · Q23",
+      "issue": "Aluminium supplies three valence electrons per atom in the free-electron model. Atomic density=ρNA/M=6.05×10²⁸ m⁻³, so electron density is 1.815×10²⁹ m⁻³, absent from the options. Option A instead assumes one conduction electron per atom. Automatic grading is withheld for this missing-assumption/source error."
+    },
+    {
+      "id": "materials:emmat-xe2009-c-s1-q24-p13",
+      "title": "GATE XE-C 2009 · Q24",
+      "issue": "Drude conductivity σ=ne²τ/me. With the physically standard three electrons per Al atom, n=1.815×10²⁹ m⁻³ gives σ≈1.02×10⁸ S/m, absent from the options. Using the preceding question's apparent one-electron assumption gives 3.40×10⁷ S/m (C). This linked source ambiguity is excluded from automatic grading."
+    }
+  ]
+}

@@ -1,28 +1,28 @@
 {
-  "generatedOn": "2026-10-16",
-  "total": 10683,
-  "official": 1882,
-  "book": 5803,
-  "solved": 1720,
-  "written": 1211,
-  "issues": 67,
+  "generatedOn": "2026-10-17",
+  "total": 12109,
+  "official": 2409,
+  "book": 6195,
+  "solved": 2098,
+  "written": 1323,
+  "issues": 84,
   "pending": 0,
-  "keyed": 9405,
-  "sourceEntries": 11959,
-  "duplicateCopiesMerged": 1276,
-  "readySubjects": 11,
+  "keyed": 10702,
+  "sourceEntries": 13533,
+  "duplicateCopiesMerged": 1424,
+  "readySubjects": 13,
   "registeredSubjects": 18,
   "countsByExam": {
-    "gate-me": 2380,
-    "gate-xe": 1413,
-    "ese-prelims": 5380,
-    "ese-mains": 633,
-    "cse-mains": 484,
-    "gate-pi": 393
+    "gate-me": 2592,
+    "gate-xe": 2033,
+    "ese-prelims": 5860,
+    "ese-mains": 689,
+    "cse-mains": 540,
+    "gate-pi": 395
   },
   "subjects": {
     "som": {
-      "generatedOn": "2026-10-16",
+      "generatedOn": "2026-10-17",
       "subject": "som",
       "entries": 1231,
       "uniqueQuestions": 1231,
@@ -136,7 +136,7 @@
       ]
     },
     "fluid-mechanics": {
-      "generatedOn": "2026-10-16",
+      "generatedOn": "2026-10-17",
       "subject": "fluid-mechanics",
       "entries": 1827,
       "uniqueQuestions": 1827,
@@ -256,7 +256,7 @@
       ]
     },
     "heat-transfer": {
-      "generatedOn": "2026-10-16",
+      "generatedOn": "2026-10-17",
       "subject": "heat-transfer",
       "entries": 708,
       "uniqueQuestions": 708,
@@ -319,7 +319,7 @@
       "mainsSourceAudit": "heat-mains-source-audit.json"
     },
     "power-plant": {
-      "generatedOn": "2026-10-16",
+      "generatedOn": "2026-10-17",
       "subject": "power-plant",
       "sourceEntries": 771,
       "uniqueQuestions": 767,
@@ -417,7 +417,7 @@
       ]
     },
     "thermodynamics": {
-      "generatedOn": "2026-10-16",
+      "generatedOn": "2026-10-17",
       "subject": "thermodynamics",
       "sourceEntries": 1898,
       "uniqueQuestions": 1542,
@@ -537,7 +537,7 @@
       ]
     },
     "refrigeration": {
-      "generatedOn": "2026-10-16",
+      "generatedOn": "2026-10-17",
       "subject": "refrigeration",
       "entries": 656,
       "uniqueQuestions": 656,
@@ -602,7 +602,7 @@
       ]
     },
     "ic-engines": {
-      "generatedOn": "2026-10-16",
+      "generatedOn": "2026-10-17",
       "subject": "ic-engines",
       "entries": 459,
       "uniqueQuestions": 459,
@@ -645,7 +645,7 @@
       ]
     },
     "theory-of-machines": {
-      "generatedOn": "2026-10-16",
+      "generatedOn": "2026-10-17",
       "subject": "theory-of-machines",
       "entries": 746,
       "uniqueQuestions": 746,
@@ -696,7 +696,7 @@
       ]
     },
     "vibrations": {
-      "generatedOn": "2026-10-16",
+      "generatedOn": "2026-10-17",
       "subject": "vibrations",
       "entries": 269,
       "uniqueQuestions": 269,
@@ -729,7 +729,7 @@
       ]
     },
     "machine-design": {
-      "generatedOn": "2026-10-16",
+      "generatedOn": "2026-10-17",
       "subject": "machine-design",
       "entries": 722,
       "uniqueQuestions": 722,
@@ -791,7 +791,7 @@
       ]
     },
     "manufacturing": {
-      "generatedOn": "2026-10-16",
+      "generatedOn": "2026-10-17",
       "subject": "manufacturing",
       "entries": 1756,
       "uniqueQuestions": 1756,
@@ -840,6 +840,148 @@
           "id": "manufacturing:mfg-esep-2022-150",
           "issue": "Mechanization substitutes machine power for manual effort, while human control may remain; automation additionally replaces parts of the control function. The wording “by machinery as well as by hand” does not unambiguously distinguish these. Statement II also blends mechanization and automation. Without a verified official key, this assertion–reason item is retained with this explanation and excluded from automatic scoring.",
           "referenceAnswer": "Mechanization substitutes machine power for manual effort, while human control may remain; automation additionally replaces parts of the control function. The wording “by machinery as well as by hand” does not unambiguously distinguish these. Statement II also blends mechanization and automation. Without a verified official key, this assertion–reason item is retained with this explanation and excluded from automatic scoring."
+        }
+      ]
+    },
+    "engineering-mechanics": {
+      "generatedOn": "2026-10-17",
+      "subject": "engineering-mechanics",
+      "entries": 411,
+      "uniqueQuestions": 411,
+      "sourceEntries": 495,
+      "duplicateCopiesMerged": 84,
+      "countsByExam": {
+        "gate-xe": 160,
+        "ese-prelims": 51,
+        "cse-mains": 26,
+        "ese-mains": 25,
+        "gate-me": 149
+      },
+      "countsByFormat": {
+        "MCQ": 262,
+        "WRITTEN": 51,
+        "NAT": 95,
+        "MSQ": 3
+      },
+      "gradable": 355,
+      "officialKeys": 184,
+      "bookKeys": 66,
+      "independentlyDerivedKeys": 105,
+      "writtenSelfAssessment": 51,
+      "sourceIssues": [
+        {
+          "id": "engineering-mechanics:emmat-esep-2021-76",
+          "issue": "Six pulleys in EACH block ordinarily give 12 supporting rope segments, so ideal rope tension is 3000/12=250 N and the downward ground thrust of a man pulling down is 650−250=400 N, absent from the choices. A total of six supporting segments would give 150 N (C). The printed wording and choices disagree.",
+          "referenceAnswer": "Six pulleys in EACH block ordinarily give 12 supporting rope segments, so ideal rope tension is 3000/12=250 N and the downward ground thrust of a man pulling down is 650−250=400 N, absent from the choices. A total of six supporting segments would give 150 N (C). The printed wording and choices disagree."
+        },
+        {
+          "id": "engineering-mechanics:emmat-esep-2026-1",
+          "issue": "For a quarter-circle area, x̄=ȳ=4R/(3π), corresponding to D for either Cartesian coordinate. The distance along its symmetry line from the corner is √(x̄²+ȳ²)=4√2R/(3π), which is not listed. The question explicitly asks for the distance on the symmetry line; automatic grading is withheld.",
+          "referenceAnswer": "For a quarter-circle area, x̄=ȳ=4R/(3π), corresponding to D for either Cartesian coordinate. The distance along its symmetry line from the corner is √(x̄²+ȳ²)=4√2R/(3π), which is not listed. The question explicitly asks for the distance on the symmetry line; automatic grading is withheld."
+        },
+        {
+          "id": "engineering-mechanics:emmat-esep-2018-70",
+          "issue": "With the stated applied force of 100 N, actual static friction is 100 N (C). The limiting friction at impending motion is μN=0.5×1000=500 N (D), but a 100 N pull cannot cause that impending state. The wording conflates actual and limiting friction; automatic grading is withheld.",
+          "referenceAnswer": "With the stated applied force of 100 N, actual static friction is 100 N (C). The limiting friction at impending motion is μN=0.5×1000=500 N (D), but a 100 N pull cannot cause that impending state. The wording conflates actual and limiting friction; automatic grading is withheld."
+        },
+        {
+          "id": "engineering-mechanics:emmat-xe2009-d-s1-q12-p17",
+          "issue": "The printed geometry is inconsistent: a tangent at 30° with centre-to-hinge distance 5 m requires radius 5sin30°=2.5 m, whereas the figure labels radius 1 m. Using the stated angle and distance gives ω=10tan30°/5=1.155 rad/s (B). Using radius 1 m and distance 5 m instead gives θ=asin(1/5) and ω≈0.408 rad/s. The conflict is explained rather than automatically graded.",
+          "referenceAnswer": "The printed geometry is inconsistent: a tangent at 30° with centre-to-hinge distance 5 m requires radius 5sin30°=2.5 m, whereas the figure labels radius 1 m. Using the stated angle and distance gives ω=10tan30°/5=1.155 rad/s (B). Using radius 1 m and distance 5 m instead gives θ=asin(1/5) and ω≈0.408 rad/s. The conflict is explained rather than automatically graded."
+        },
+        {
+          "id": "engineering-mechanics:emmat-esep-2024-71",
+          "issue": "The printed mass is given in kN, a force unit. Taking 3 kN as weight: m=3000/9.81 kg, I=mk²=782.875 kg·m². Energy increase = ½I[(340π/30)²−(315π/30)²]≈70.29 kJ; final stored energy≈496.23 kJ. Neither appears in the options. Treating 3 as tonnes also fails to match the printed choices.",
+          "referenceAnswer": "The printed mass is given in kN, a force unit. Taking 3 kN as weight: m=3000/9.81 kg, I=mk²=782.875 kg·m². Energy increase = ½I[(340π/30)²−(315π/30)²]≈70.29 kJ; final stored energy≈496.23 kJ. Neither appears in the options. Treating 3 as tonnes also fails to match the printed choices."
+        }
+      ]
+    },
+    "materials": {
+      "generatedOn": "2026-10-17",
+      "subject": "materials",
+      "entries": 1015,
+      "uniqueQuestions": 1015,
+      "sourceEntries": 1079,
+      "duplicateCopiesMerged": 64,
+      "countsByExam": {
+        "gate-xe": 460,
+        "ese-prelims": 429,
+        "gate-me": 63,
+        "cse-mains": 30,
+        "ese-mains": 31,
+        "gate-pi": 2
+      },
+      "countsByFormat": {
+        "MCQ": 783,
+        "NAT": 144,
+        "MSQ": 27,
+        "WRITTEN": 61
+      },
+      "gradable": 942,
+      "officialKeys": 343,
+      "bookKeys": 326,
+      "independentlyDerivedKeys": 273,
+      "writtenSelfAssessment": 61,
+      "sourceIssues": [
+        {
+          "id": "materials:emmat-ese-materials-1-7",
+          "issue": "The printed key lists alternative letters A, C for a single-choice question. This is not a multi-select format. Review the source alternatives; automatic grading is withheld.",
+          "referenceAnswer": "The printed key lists alternative letters A, C for a single-choice question. This is not a multi-select format. Review the source alternatives; automatic grading is withheld."
+        },
+        {
+          "id": "materials:emmat-esep-2024-25",
+          "issue": "The exact property described is elasticity: recovery of original shape when load is removed. Resilience (B) is related but specifically concerns elastic energy absorption and release. Elasticity is absent from the options, so B should not be presented as an unqualified exact definition.",
+          "referenceAnswer": "The exact property described is elasticity: recovery of original shape when load is removed. Resilience (B) is related but specifically concerns elastic energy absorption and release. Elasticity is absent from the options, so B should not be presented as an unqualified exact definition."
+        },
+        {
+          "id": "materials:emmat-esep-2020-95",
+          "issue": "The supplied book gives D. With Griffith σf=√(2Eγ/πa), interpreting the stated 100 μm as total internal-crack length 2a gives 163.5 MPa, nearest D (160 MPa). Interpreting it as the half-length a gives 115.6 MPa, nearest B (120 MPa). The stem does not specify crack geometry or this convention, so both interpretations are shown and automatic grading is withheld.",
+          "referenceAnswer": "The supplied book gives D. With Griffith σf=√(2Eγ/πa), interpreting the stated 100 μm as total internal-crack length 2a gives 163.5 MPa, nearest D (160 MPa). Interpreting it as the half-length a gives 115.6 MPa, nearest B (120 MPa). The stem does not specify crack geometry or this convention, so both interpretations are shown and automatic grading is withheld."
+        },
+        {
+          "id": "materials:emmat-ese-materials-6-17",
+          "issue": "Mild steel is used for commercial beams (A→2), and tool steel for blanking dies (B→4), selecting option A. The remaining printed associations are medium-carbon steel→screws and high-carbon steel→crane hooks; the latter is not a good general materials-selection recommendation (hooks normally require tough low/medium-carbon steel). The printed book key D also incorrectly assigns mild steel to hooks and high-carbon steel to beams. Because the source matching list itself is defective, automatic grading is withheld; A is the structurally intended match, not an endorsement of every pairing.",
+          "referenceAnswer": "Mild steel is used for commercial beams (A→2), and tool steel for blanking dies (B→4), selecting option A. The remaining printed associations are medium-carbon steel→screws and high-carbon steel→crane hooks; the latter is not a good general materials-selection recommendation (hooks normally require tough low/medium-carbon steel). The printed book key D also incorrectly assigns mild steel to hooks and high-carbon steel to beams. Because the source matching list itself is defective, automatic grading is withheld; A is the structurally intended match, not an endorsement of every pairing."
+        },
+        {
+          "id": "materials:emmat-esep-2023-82",
+          "issue": "Nickel-based superalloys have excellent creep resistance (3 true). Vitallium is cobalt-based, not vanadium-based (2 false). Discalloy and conventional Incoloy are iron–nickel-based rather than simply nickel-based, so the second clause of statement 1 is inaccurate. The apparent intended choice is C (1 and 3), but strictly only 3 is true and that choice is absent.",
+          "referenceAnswer": "Nickel-based superalloys have excellent creep resistance (3 true). Vitallium is cobalt-based, not vanadium-based (2 false). Discalloy and conventional Incoloy are iron–nickel-based rather than simply nickel-based, so the second clause of statement 1 is inaccurate. The apparent intended choice is C (1 and 3), but strictly only 3 is true and that choice is absent."
+        },
+        {
+          "id": "materials:emmat-ese-materials-5-8",
+          "issue": "The printed key lists alternative letters B, C for a single-choice question. This is not a multi-select format. Review the source alternatives; automatic grading is withheld.",
+          "referenceAnswer": "The printed key lists alternative letters B, C for a single-choice question. This is not a multi-select format. Review the source alternatives; automatic grading is withheld."
+        },
+        {
+          "id": "materials:emmat-xe2013-c-s1-q21-p18",
+          "issue": "Official key: Marks to All",
+          "referenceAnswer": "The key awards marks to all. Under a single-exponential stress-relaxation model, τ=40/ln2=57.71 days and σ(60)=10exp(−60/τ)=3.536 MPa. These model results are for learning, not a replacement for the published key decision."
+        },
+        {
+          "id": "materials:emmat-xe2013-c-s1-q22-p18",
+          "issue": "Official key: Marks to All",
+          "referenceAnswer": "The key awards marks to all. Under a single-exponential stress-relaxation model, τ=40/ln2=57.71 days and σ(60)=10exp(−60/τ)=3.536 MPa. These model results are for learning, not a replacement for the published key decision."
+        },
+        {
+          "id": "materials:emmat-ese-materials-5-24",
+          "issue": "The printed book key indicates D (Pyrosil). Alumina and porcelain are ceramics. A whisker is a single-crystal reinforcement morphology and may itself be ceramic (such as SiC or Al₂O₃), metallic or another material; the generic word does not uniquely specify a material class. Pyrosil is a commercial name whose composition is not specified here. Because the terminology is insufficient for an unambiguous independent classification, the printed answer is retained as a reference and automatic grading is withheld.",
+          "referenceAnswer": "The printed book key indicates D (Pyrosil). Alumina and porcelain are ceramics. A whisker is a single-crystal reinforcement morphology and may itself be ceramic (such as SiC or Al₂O₃), metallic or another material; the generic word does not uniquely specify a material class. Pyrosil is a commercial name whose composition is not specified here. Because the terminology is insufficient for an unambiguous independent classification, the printed answer is retained as a reference and automatic grading is withheld."
+        },
+        {
+          "id": "materials:emmat-esep-2019-91",
+          "issue": "Griffith fracture for an internal crack of half-length a=2 μm gives σf=√(2Eγ/(πa))=√[2×70×10⁹×1/(π×2×10⁻⁶)]≈149.27 MPa. None of 885, 895, 915 or 935 MPa matches the printed data.",
+          "referenceAnswer": "Griffith fracture for an internal crack of half-length a=2 μm gives σf=√(2Eγ/(πa))=√[2×70×10⁹×1/(π×2×10⁻⁶)]≈149.27 MPa. None of 885, 895, 915 or 935 MPa matches the printed data."
+        },
+        {
+          "id": "materials:emmat-xe2009-c-s1-q23-p13",
+          "issue": "Aluminium supplies three valence electrons per atom in the free-electron model. Atomic density=ρNA/M=6.05×10²⁸ m⁻³, so electron density is 1.815×10²⁹ m⁻³, absent from the options. Option A instead assumes one conduction electron per atom. Automatic grading is withheld for this missing-assumption/source error.",
+          "referenceAnswer": "Aluminium supplies three valence electrons per atom in the free-electron model. Atomic density=ρNA/M=6.05×10²⁸ m⁻³, so electron density is 1.815×10²⁹ m⁻³, absent from the options. Option A instead assumes one conduction electron per atom. Automatic grading is withheld for this missing-assumption/source error."
+        },
+        {
+          "id": "materials:emmat-xe2009-c-s1-q24-p13",
+          "issue": "Drude conductivity σ=ne²τ/me. With the physically standard three electrons per Al atom, n=1.815×10²⁹ m⁻³ gives σ≈1.02×10⁸ S/m, absent from the options. Using the preceding question's apparent one-electron assumption gives 3.40×10⁷ S/m (C). This linked source ambiguity is excluded from automatic grading.",
+          "referenceAnswer": "Drude conductivity σ=ne²τ/me. With the physically standard three electrons per Al atom, n=1.815×10²⁹ m⁻³ gives σ≈1.02×10⁸ S/m, absent from the options. Using the preceding question's apparent one-electron assumption gives 3.40×10⁷ S/m (C). This linked source ambiguity is excluded from automatic grading."
         }
       ]
     }

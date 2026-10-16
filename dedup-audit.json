@@ -1,10 +1,10 @@
 {
   "version": 2,
   "stats": {
-    "rawEntries": 11959,
-    "uniqueQuestions": 10683,
-    "copiesConsolidated": 1276,
-    "groups": 1058,
+    "rawEntries": 13533,
+    "uniqueQuestions": 12109,
+    "copiesConsolidated": 1424,
+    "groups": 1196,
     "subjectRelocations": 167,
     "bySubject": {
       "som": {
@@ -61,37 +61,47 @@
         "rawEntries": 2020,
         "uniqueQuestions": 1756,
         "copiesConsolidated": 264
+      },
+      "engineering-mechanics": {
+        "rawEntries": 495,
+        "uniqueQuestions": 411,
+        "copiesConsolidated": 84
+      },
+      "materials": {
+        "rawEntries": 1079,
+        "uniqueQuestions": 1015,
+        "copiesConsolidated": 64
       }
     },
     "byExam": {
       "gate-me": {
-        "rawEntries": 3155,
-        "uniqueQuestions": 2380,
-        "copiesConsolidated": 775
+        "rawEntries": 3460,
+        "uniqueQuestions": 2592,
+        "copiesConsolidated": 868
       },
       "gate-xe": {
-        "rawEntries": 1465,
-        "uniqueQuestions": 1413,
+        "rawEntries": 2085,
+        "uniqueQuestions": 2033,
         "copiesConsolidated": 52
       },
       "ese-prelims": {
-        "rawEntries": 5765,
-        "uniqueQuestions": 5380,
-        "copiesConsolidated": 385
+        "rawEntries": 6300,
+        "uniqueQuestions": 5860,
+        "copiesConsolidated": 440
       },
       "ese-mains": {
-        "rawEntries": 664,
-        "uniqueQuestions": 633,
+        "rawEntries": 720,
+        "uniqueQuestions": 689,
         "copiesConsolidated": 31
       },
       "cse-mains": {
-        "rawEntries": 515,
-        "uniqueQuestions": 484,
+        "rawEntries": 571,
+        "uniqueQuestions": 540,
         "copiesConsolidated": 31
       },
       "gate-pi": {
-        "rawEntries": 395,
-        "uniqueQuestions": 393,
+        "rawEntries": 397,
+        "uniqueQuestions": 395,
         "copiesConsolidated": 2
       }
     }
@@ -8618,6 +8628,1120 @@
         "manufacturing:mfg-csem-2019-8c"
       ],
       "reason": "Reviewed duplicate appearance within the same exam; distinct linked asks, changed data and different exams remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2008-s1-q34-p7",
+      "ids": [
+        "engineering-mechanics:emmat-me2008-s1-q34-p7",
+        "engineering-mechanics:emmat-gate-mechanics-1-7"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2012-s1-q48-p10",
+      "ids": [
+        "engineering-mechanics:emmat-me2012-s1-q48-p10",
+        "engineering-mechanics:emmat-gate-mechanics-1-8"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2012-s1-q49-p10",
+      "ids": [
+        "engineering-mechanics:emmat-me2012-s1-q49-p10",
+        "engineering-mechanics:emmat-gate-mechanics-1-9"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2013-s1-q33-p8",
+      "ids": [
+        "engineering-mechanics:emmat-me2013-s1-q33-p8",
+        "engineering-mechanics:emmat-me2013-s2-q40-p23",
+        "engineering-mechanics:emmat-me2013-s3-q29-p35",
+        "engineering-mechanics:emmat-me2013-s4-q44-p52",
+        "engineering-mechanics:emmat-gate-mechanics-1-10"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2014-s2-q7-p27",
+      "ids": [
+        "engineering-mechanics:emmat-me2014-s2-q7-p27",
+        "engineering-mechanics:emmat-gate-mechanics-1-11"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2014-s4-q32-p70",
+      "ids": [
+        "engineering-mechanics:emmat-me2014-s4-q32-p70",
+        "engineering-mechanics:emmat-gate-mechanics-1-12"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2014-s4-q40-p72",
+      "ids": [
+        "engineering-mechanics:emmat-me2014-s4-q40-p72",
+        "engineering-mechanics:emmat-gate-mechanics-1-13"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2014-s4-q6-p66",
+      "ids": [
+        "engineering-mechanics:emmat-me2014-s4-q6-p66",
+        "engineering-mechanics:emmat-gate-mechanics-1-14"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2015-s1-q26-p11",
+      "ids": [
+        "engineering-mechanics:emmat-me2015-s1-q26-p11",
+        "engineering-mechanics:emmat-gate-mechanics-1-15"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2015-s1-q49-p19",
+      "ids": [
+        "engineering-mechanics:emmat-me2015-s1-q49-p19",
+        "engineering-mechanics:emmat-gate-mechanics-1-17"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2015-s2-q42-p39",
+      "ids": [
+        "engineering-mechanics:emmat-me2015-s2-q42-p39",
+        "engineering-mechanics:emmat-gate-mechanics-1-18"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2016-s1-q6-p3",
+      "ids": [
+        "engineering-mechanics:emmat-me2016-s1-q6-p3",
+        "engineering-mechanics:emmat-gate-mechanics-1-19"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2016-s1-q30-p7",
+      "ids": [
+        "engineering-mechanics:emmat-me2016-s1-q30-p7",
+        "engineering-mechanics:emmat-gate-mechanics-1-20"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2016-s1-q31-p7",
+      "ids": [
+        "engineering-mechanics:emmat-me2016-s1-q31-p7",
+        "engineering-mechanics:emmat-gate-mechanics-1-21"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2016-s3-q6-p39",
+      "ids": [
+        "engineering-mechanics:emmat-me2016-s3-q6-p39",
+        "engineering-mechanics:emmat-gate-mechanics-1-22"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me1-2018-s1-q5-p3",
+      "ids": [
+        "engineering-mechanics:emmat-me1-2018-s1-q5-p3",
+        "engineering-mechanics:emmat-gate-mechanics-1-24"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me1-2019-s1-q38-p16",
+      "ids": [
+        "engineering-mechanics:emmat-me1-2019-s1-q38-p16",
+        "engineering-mechanics:emmat-gate-mechanics-1-25"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me1-2019-s1-q29-p13",
+      "ids": [
+        "engineering-mechanics:emmat-me1-2019-s1-q29-p13",
+        "engineering-mechanics:emmat-gate-mechanics-1-26"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2-2019-s2-q20-p9",
+      "ids": [
+        "engineering-mechanics:emmat-me2-2019-s2-q20-p9",
+        "engineering-mechanics:emmat-gate-mechanics-1-27"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me1-2020-s1-q5-p4",
+      "ids": [
+        "engineering-mechanics:emmat-me1-2020-s1-q5-p4",
+        "engineering-mechanics:emmat-gate-mechanics-1-28"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2-2020-s2-q5-p4",
+      "ids": [
+        "engineering-mechanics:emmat-me2-2020-s2-q5-p4",
+        "engineering-mechanics:emmat-gate-mechanics-1-29"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2009-s1-q41-p8",
+      "ids": [
+        "engineering-mechanics:emmat-me2009-s1-q41-p8",
+        "engineering-mechanics:emmat-gate-mechanics-2-8"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2014-s2-q33-p31",
+      "ids": [
+        "engineering-mechanics:emmat-me2014-s2-q33-p31",
+        "engineering-mechanics:emmat-gate-mechanics-2-10"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2014-s4-q34-p71",
+      "ids": [
+        "engineering-mechanics:emmat-me2014-s4-q34-p71",
+        "engineering-mechanics:emmat-gate-mechanics-2-11"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2015-s3-q12-p52",
+      "ids": [
+        "engineering-mechanics:emmat-me2015-s3-q12-p52",
+        "engineering-mechanics:emmat-gate-mechanics-2-13"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2015-s2-q40-p38",
+      "ids": [
+        "engineering-mechanics:emmat-me2015-s2-q40-p38",
+        "engineering-mechanics:emmat-gate-mechanics-2-16"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2016-s3-q30-p44",
+      "ids": [
+        "engineering-mechanics:emmat-me2016-s3-q30-p44",
+        "engineering-mechanics:emmat-gate-mechanics-2-18"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2-2017-s2-q38-p11",
+      "ids": [
+        "engineering-mechanics:emmat-me2-2017-s2-q38-p11",
+        "engineering-mechanics:emmat-gate-mechanics-2-19"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2-2019-s2-q5-p5",
+      "ids": [
+        "engineering-mechanics:emmat-me2-2019-s2-q5-p5",
+        "engineering-mechanics:emmat-gate-mechanics-2-20"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2-2020-s2-q6-p5",
+      "ids": [
+        "engineering-mechanics:emmat-me2-2020-s2-q6-p5",
+        "engineering-mechanics:emmat-gate-mechanics-2-21"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2007-s1-q43-p9",
+      "ids": [
+        "engineering-mechanics:emmat-me2007-s1-q43-p9",
+        "engineering-mechanics:emmat-gate-mechanics-3-5"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2009-s1-q10-p3",
+      "ids": [
+        "engineering-mechanics:emmat-me2009-s1-q10-p3",
+        "engineering-mechanics:emmat-gate-mechanics-3-6"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2011-s1-q43-p9",
+      "ids": [
+        "engineering-mechanics:emmat-me2011-s1-q43-p9",
+        "engineering-mechanics:emmat-gate-mechanics-3-7"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2014-s1-q35-p13",
+      "ids": [
+        "engineering-mechanics:emmat-me2014-s1-q35-p13",
+        "engineering-mechanics:emmat-gate-mechanics-3-9"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2014-s2-q36-p32",
+      "ids": [
+        "engineering-mechanics:emmat-me2014-s2-q36-p32",
+        "engineering-mechanics:emmat-gate-mechanics-3-10"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2014-s3-q31-p52",
+      "ids": [
+        "engineering-mechanics:emmat-me2014-s3-q31-p52",
+        "engineering-mechanics:emmat-gate-mechanics-3-11"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2014-s4-q37-p71",
+      "ids": [
+        "engineering-mechanics:emmat-me2014-s4-q37-p71",
+        "engineering-mechanics:emmat-gate-mechanics-3-12"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2-2018-s2-q39-p14",
+      "ids": [
+        "engineering-mechanics:emmat-me2-2018-s2-q39-p14",
+        "engineering-mechanics:emmat-gate-mechanics-3-13"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me1-2019-s1-q19-p10",
+      "ids": [
+        "engineering-mechanics:emmat-me1-2019-s1-q19-p10",
+        "engineering-mechanics:emmat-gate-mechanics-3-14"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2007-s1-q12-p3",
+      "ids": [
+        "engineering-mechanics:emmat-me2007-s1-q12-p3",
+        "engineering-mechanics:emmat-gate-mechanics-4-7"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2011-s1-q22-p5",
+      "ids": [
+        "engineering-mechanics:emmat-me2011-s1-q22-p5",
+        "engineering-mechanics:emmat-gate-mechanics-4-8"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2014-s3-q9-p47",
+      "ids": [
+        "engineering-mechanics:emmat-me2014-s3-q9-p47",
+        "engineering-mechanics:emmat-gate-mechanics-4-11"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2014-s3-q34-p52",
+      "ids": [
+        "engineering-mechanics:emmat-me2014-s3-q34-p52",
+        "engineering-mechanics:emmat-gate-mechanics-4-12"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2015-s2-q16-p31",
+      "ids": [
+        "engineering-mechanics:emmat-me2015-s2-q16-p31",
+        "engineering-mechanics:emmat-gate-mechanics-4-13"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2015-s1-q50-p19",
+      "ids": [
+        "engineering-mechanics:emmat-me2015-s1-q50-p19",
+        "engineering-mechanics:emmat-gate-mechanics-4-14"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2016-s1-q7-p4",
+      "ids": [
+        "engineering-mechanics:emmat-me2016-s1-q7-p4",
+        "engineering-mechanics:emmat-gate-mechanics-4-15"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2016-s2-q30-p24",
+      "ids": [
+        "engineering-mechanics:emmat-me2016-s2-q30-p24",
+        "engineering-mechanics:emmat-gate-mechanics-4-16"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2016-s2-q6-p19",
+      "ids": [
+        "engineering-mechanics:emmat-me2016-s2-q6-p19",
+        "engineering-mechanics:emmat-gate-mechanics-4-17"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2016-s3-q31-p44",
+      "ids": [
+        "engineering-mechanics:emmat-me2016-s3-q31-p44",
+        "engineering-mechanics:emmat-gate-mechanics-4-18"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2016-s2-q31-p24",
+      "ids": [
+        "engineering-mechanics:emmat-me2016-s2-q31-p24",
+        "engineering-mechanics:emmat-gate-mechanics-4-19"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-recovered-me1-2017-s1-q14-p4",
+      "ids": [
+        "engineering-mechanics:emmat-recovered-me1-2017-s1-q14-p4",
+        "engineering-mechanics:emmat-gate-mechanics-4-20"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-recovered-me1-2017-s1-q41-p12",
+      "ids": [
+        "engineering-mechanics:emmat-recovered-me1-2017-s1-q41-p12",
+        "engineering-mechanics:emmat-gate-mechanics-4-21"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2-2019-s2-q29-p12",
+      "ids": [
+        "engineering-mechanics:emmat-me2-2019-s2-q29-p12",
+        "engineering-mechanics:emmat-gate-mechanics-4-23"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me1-2020-s1-q29-p9",
+      "ids": [
+        "engineering-mechanics:emmat-me1-2020-s1-q29-p9",
+        "engineering-mechanics:emmat-gate-mechanics-4-24"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2-2020-s2-q40-p13",
+      "ids": [
+        "engineering-mechanics:emmat-me2-2020-s2-q40-p13",
+        "engineering-mechanics:emmat-gate-mechanics-4-25"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2008-s1-q9-p3",
+      "ids": [
+        "engineering-mechanics:emmat-me2008-s1-q9-p3",
+        "engineering-mechanics:emmat-gate-mechanics-5-9"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2008-s1-q33-p7",
+      "ids": [
+        "engineering-mechanics:emmat-me2008-s1-q33-p7",
+        "engineering-mechanics:emmat-gate-mechanics-5-10"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2012-s1-q9-p3",
+      "ids": [
+        "engineering-mechanics:emmat-me2012-s1-q9-p3",
+        "engineering-mechanics:emmat-gate-mechanics-5-11"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2015-s1-q23-p9",
+      "ids": [
+        "engineering-mechanics:emmat-me2015-s1-q23-p9",
+        "engineering-mechanics:emmat-gate-mechanics-5-13"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2015-s3-q55-p67",
+      "ids": [
+        "engineering-mechanics:emmat-me2015-s3-q55-p67",
+        "engineering-mechanics:emmat-gate-mechanics-5-14"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2016-s3-q32-p45",
+      "ids": [
+        "engineering-mechanics:emmat-me2016-s3-q32-p45",
+        "engineering-mechanics:emmat-gate-mechanics-5-15"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2016-s3-q9-p40",
+      "ids": [
+        "engineering-mechanics:emmat-me2016-s3-q9-p40",
+        "engineering-mechanics:emmat-gate-mechanics-5-16"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-recovered-me1-2017-s1-q17-p5",
+      "ids": [
+        "engineering-mechanics:emmat-recovered-me1-2017-s1-q17-p5",
+        "engineering-mechanics:emmat-gate-mechanics-5-17"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me1-2018-s1-q28-p8",
+      "ids": [
+        "engineering-mechanics:emmat-me1-2018-s1-q28-p8",
+        "engineering-mechanics:emmat-gate-mechanics-5-18"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2-2018-s2-q25-p9",
+      "ids": [
+        "engineering-mechanics:emmat-me2-2018-s2-q25-p9",
+        "engineering-mechanics:emmat-gate-mechanics-5-19"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2007-s1-q15-p4",
+      "ids": [
+        "materials:emmat-me2007-s1-q15-p4",
+        "materials:emmat-gate-materials-1-14"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2009-s1-q15-p4",
+      "ids": [
+        "materials:emmat-me2009-s1-q15-p4",
+        "materials:emmat-gate-materials-1-15"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2010-s1-q18-p3",
+      "ids": [
+        "materials:emmat-me2010-s1-q18-p3",
+        "materials:emmat-gate-materials-1-16"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2011-s1-q25-p5",
+      "ids": [
+        "materials:emmat-me2011-s1-q25-p5",
+        "materials:emmat-gate-materials-1-17"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2012-s1-q4-p2",
+      "ids": [
+        "materials:emmat-me2012-s1-q4-p2",
+        "materials:emmat-gate-materials-1-18"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2013-s1-q17-p5",
+      "ids": [
+        "materials:emmat-me2013-s1-q17-p5",
+        "materials:emmat-me2013-s2-q9-p17",
+        "materials:emmat-me2013-s3-q22-p34",
+        "materials:emmat-me2013-s4-q4-p45",
+        "materials:emmat-gate-materials-1-19"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2014-s1-q24-p11",
+      "ids": [
+        "materials:emmat-me2014-s1-q24-p11",
+        "materials:emmat-gate-materials-1-20"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2015-s2-q30-p35",
+      "ids": [
+        "materials:emmat-me2015-s2-q30-p35",
+        "materials:emmat-gate-materials-1-22"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2016-s1-q20-p6",
+      "ids": [
+        "materials:emmat-me2016-s1-q20-p6",
+        "materials:emmat-gate-materials-1-24"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2016-s2-q21-p22",
+      "ids": [
+        "materials:emmat-me2016-s2-q21-p22",
+        "materials:emmat-gate-materials-1-25"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2-2017-s2-q22-p7",
+      "ids": [
+        "materials:emmat-me2-2017-s2-q22-p7",
+        "materials:emmat-gate-materials-1-26"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2-2017-s2-q21-p6",
+      "ids": [
+        "materials:emmat-me2-2017-s2-q21-p6",
+        "materials:emmat-gate-materials-1-27"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me1-2018-s1-q17-p6",
+      "ids": [
+        "materials:emmat-me1-2018-s1-q17-p6",
+        "materials:emmat-gate-materials-1-28"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2-2018-s2-q12-p6",
+      "ids": [
+        "materials:emmat-me2-2018-s2-q12-p6",
+        "materials:emmat-gate-materials-1-29"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2-2019-s2-q14-p8",
+      "ids": [
+        "materials:emmat-me2-2019-s2-q14-p8",
+        "materials:emmat-gate-materials-1-31"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2-2019-s2-q34-p15",
+      "ids": [
+        "materials:emmat-me2-2019-s2-q34-p15",
+        "materials:emmat-gate-materials-1-32"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me1-2020-s1-q10-p5",
+      "ids": [
+        "materials:emmat-me1-2020-s1-q10-p5",
+        "materials:emmat-gate-materials-1-33"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me1-2020-s1-q11-p5",
+      "ids": [
+        "materials:emmat-me1-2020-s1-q11-p5",
+        "materials:emmat-gate-materials-1-34"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-me2-2020-s2-q11-p6",
+      "ids": [
+        "materials:emmat-me2-2020-s2-q11-p6",
+        "materials:emmat-gate-materials-1-35"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2017-54",
+      "ids": [
+        "engineering-mechanics:emmat-esep-2017-54",
+        "engineering-mechanics:emmat-ese-mechanics-12-2"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2017-55",
+      "ids": [
+        "engineering-mechanics:emmat-esep-2017-55",
+        "engineering-mechanics:emmat-ese-mechanics-12-3"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2017-56",
+      "ids": [
+        "engineering-mechanics:emmat-esep-2017-56",
+        "engineering-mechanics:emmat-ese-mechanics-12-4"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2017-64",
+      "ids": [
+        "engineering-mechanics:emmat-esep-2017-64",
+        "engineering-mechanics:emmat-ese-mechanics-12-5"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2018-67",
+      "ids": [
+        "engineering-mechanics:emmat-esep-2018-67",
+        "engineering-mechanics:emmat-ese-mechanics-12-8"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2018-68",
+      "ids": [
+        "engineering-mechanics:emmat-esep-2018-68",
+        "engineering-mechanics:emmat-ese-mechanics-12-9"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2018-70",
+      "ids": [
+        "engineering-mechanics:emmat-esep-2018-70",
+        "engineering-mechanics:emmat-ese-mechanics-12-10"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2018-85",
+      "ids": [
+        "engineering-mechanics:emmat-esep-2018-85",
+        "engineering-mechanics:emmat-ese-mechanics-12-11"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2019-75",
+      "ids": [
+        "engineering-mechanics:emmat-esep-2019-75",
+        "engineering-mechanics:emmat-ese-mechanics-12-12"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2019-119",
+      "ids": [
+        "engineering-mechanics:emmat-esep-2019-119",
+        "engineering-mechanics:emmat-ese-mechanics-12-14"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2020-73",
+      "ids": [
+        "engineering-mechanics:emmat-esep-2020-73",
+        "engineering-mechanics:emmat-ese-mechanics-12-15"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2020-74",
+      "ids": [
+        "engineering-mechanics:emmat-esep-2020-74",
+        "engineering-mechanics:emmat-ese-mechanics-12-16"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2019-85",
+      "ids": [
+        "materials:emmat-esep-2019-85",
+        "materials:emmat-ese-materials-1-58"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2019-87",
+      "ids": [
+        "materials:emmat-esep-2019-87",
+        "materials:emmat-ese-materials-1-59"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2019-88",
+      "ids": [
+        "materials:emmat-esep-2019-88",
+        "materials:emmat-ese-materials-1-60"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2020-85",
+      "ids": [
+        "materials:emmat-esep-2020-85",
+        "materials:emmat-ese-materials-1-61"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2018-77",
+      "ids": [
+        "materials:emmat-esep-2018-77",
+        "materials:emmat-ese-materials-6-49",
+        "materials:emmat-ese-materials-2-5"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2017-67",
+      "ids": [
+        "materials:emmat-esep-2017-67",
+        "materials:emmat-ese-materials-2-56"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2018-69",
+      "ids": [
+        "materials:emmat-esep-2018-69",
+        "materials:emmat-ese-materials-2-57"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2018-80",
+      "ids": [
+        "materials:emmat-esep-2018-80",
+        "materials:emmat-ese-materials-2-58"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2018-81",
+      "ids": [
+        "materials:emmat-esep-2018-81",
+        "materials:emmat-ese-materials-2-59"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2019-89",
+      "ids": [
+        "materials:emmat-esep-2019-89",
+        "materials:emmat-ese-materials-2-61"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2019-92",
+      "ids": [
+        "materials:emmat-esep-2019-92",
+        "materials:emmat-ese-materials-2-62"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2020-86",
+      "ids": [
+        "materials:emmat-esep-2020-86",
+        "materials:emmat-ese-materials-2-63"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2020-87",
+      "ids": [
+        "materials:emmat-esep-2020-87",
+        "materials:emmat-ese-materials-2-64"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-ese-materials-3-33",
+      "ids": [
+        "materials:emmat-ese-materials-3-33",
+        "materials:emmat-ese-materials-4-31"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2017-140",
+      "ids": [
+        "materials:emmat-esep-2017-140",
+        "materials:emmat-ese-materials-3-41"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2017-66",
+      "ids": [
+        "materials:emmat-esep-2017-66",
+        "materials:emmat-ese-materials-3-42"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2018-75",
+      "ids": [
+        "materials:emmat-esep-2018-75",
+        "materials:emmat-ese-materials-3-43"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2018-78",
+      "ids": [
+        "materials:emmat-esep-2018-78",
+        "materials:emmat-ese-materials-3-44"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2018-79",
+      "ids": [
+        "materials:emmat-esep-2018-79",
+        "materials:emmat-ese-materials-3-45"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-ese-materials-4-22",
+      "ids": [
+        "materials:emmat-ese-materials-4-22",
+        "materials:emmat-ese-materials-4-14"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2017-138",
+      "ids": [
+        "materials:emmat-esep-2017-138",
+        "materials:emmat-ese-materials-4-37"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2017-68",
+      "ids": [
+        "materials:emmat-esep-2017-68",
+        "materials:emmat-ese-materials-4-39"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2017-70",
+      "ids": [
+        "materials:emmat-esep-2017-70",
+        "materials:emmat-ese-materials-4-40"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2018-84",
+      "ids": [
+        "materials:emmat-esep-2018-84",
+        "materials:emmat-ese-materials-4-41"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2019-86",
+      "ids": [
+        "materials:emmat-esep-2019-86",
+        "materials:emmat-ese-materials-4-42"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2019-93",
+      "ids": [
+        "materials:emmat-esep-2019-93",
+        "materials:emmat-ese-materials-4-43"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2019-96",
+      "ids": [
+        "materials:emmat-esep-2019-96",
+        "materials:emmat-ese-materials-4-44"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2019-112",
+      "ids": [
+        "materials:emmat-esep-2019-112",
+        "materials:emmat-ese-materials-4-45"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2020-89",
+      "ids": [
+        "materials:emmat-esep-2020-89",
+        "materials:emmat-ese-materials-4-46"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2019-91",
+      "ids": [
+        "materials:emmat-esep-2019-91",
+        "materials:emmat-ese-materials-5-56"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2020-88",
+      "ids": [
+        "materials:emmat-esep-2020-88",
+        "materials:emmat-ese-materials-5-57"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2020-90",
+      "ids": [
+        "materials:emmat-esep-2020-90",
+        "materials:emmat-ese-materials-5-58"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2020-91",
+      "ids": [
+        "materials:emmat-esep-2020-91",
+        "materials:emmat-ese-materials-5-59"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2017-71",
+      "ids": [
+        "materials:emmat-esep-2017-71",
+        "materials:emmat-ese-materials-6-48"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2018-83",
+      "ids": [
+        "materials:emmat-esep-2018-83",
+        "materials:emmat-ese-materials-6-50"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2019-90",
+      "ids": [
+        "materials:emmat-esep-2019-90",
+        "materials:emmat-ese-materials-6-51"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2019-132",
+      "ids": [
+        "materials:emmat-esep-2019-132",
+        "materials:emmat-ese-materials-6-52"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2020-109",
+      "ids": [
+        "materials:emmat-esep-2020-109",
+        "materials:emmat-ese-materials-6-53"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2020-95",
+      "ids": [
+        "materials:emmat-esep-2020-95",
+        "materials:emmat-ese-materials-6-54"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-me2013-s1-q6-p4",
+      "ids": [
+        "engineering-mechanics:emmat-me2013-s1-q6-p4",
+        "engineering-mechanics:emmat-me2013-s2-q20-p19",
+        "engineering-mechanics:emmat-me2013-s3-q8-p32",
+        "engineering-mechanics:emmat-me2013-s4-q18-p47"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "engineering-mechanics:emmat-esep-2022-9",
+      "ids": [
+        "engineering-mechanics:emmat-esep-2022-9",
+        "engineering-mechanics:emmat-esep-2021-73"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
+    },
+    {
+      "id": "materials:emmat-esep-2026-21",
+      "ids": [
+        "materials:emmat-esep-2026-21",
+        "materials:emmat-esep-2020-92",
+        "materials:emmat-esep-2019-95"
+      ],
+      "reason": "Reviewed identical question appearances within the same exam; linked questions with different asks and changed data remain separate."
     }
   ],
   "acceptedPairs": [
@@ -11981,5 +13105,5 @@
       "reason": "Plant-specific question already represented in Power Plant Engineering; retain core energy, entropy, exergy and property questions in Thermodynamics."
     }
   ],
-  "auditedOn": "2026-10-16"
+  "auditedOn": "2026-10-17"
 }

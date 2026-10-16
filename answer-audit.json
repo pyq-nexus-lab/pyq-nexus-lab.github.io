@@ -1,21 +1,21 @@
 {
   "version": 2,
-  "auditedOn": "2026-10-16",
+  "auditedOn": "2026-10-17",
   "coverage": {
-    "total": 10683,
-    "official": 1882,
-    "book": 5803,
-    "solved": 1720,
-    "written": 1211,
-    "issues": 67,
+    "total": 12109,
+    "official": 2409,
+    "book": 6195,
+    "solved": 2098,
+    "written": 1323,
+    "issues": 84,
     "pending": 0,
-    "keyed": 9405
+    "keyed": 10702
   },
   "method": "Official GATE key matching by year, session, section and question number; printed solved-book tables; independently derived references where no usable key exists. All references identify their provenance in the question UI.",
   "limits": [
     "Derived references are not official marking schemes.",
     "Mains scores require student or teacher assessment of the working; no automatic proof checking.",
-    "67 source issues have explained references and are excluded from automatic objective marks.",
+    "84 source issues have explained references and are excluded from automatic objective marks.",
     "Conditional answers state missing data, sign conventions or approximations explicitly.",
     "26 source statements Q7.16–7.41 are missing from ESE Volume 1 PDF page 554. They are excluded from question and grading totals; source-completeness.json records the required replacement."
   ],

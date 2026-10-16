@@ -1,6 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),crypto=require('crypto');
 const C=require('./catalog.js'),A=require('./answers.js'),D=require('./dedup.js'),U=require('./curriculum.js'),X=require('./crops.js'),Core=require('./core.js'),P=require('./ordered-practice.js'),ctx={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','mfg-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','mfg-bank.js','emmat-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
 const d=ctx.window,raw=X.apply(A.apply(C.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),added=bank.filter(q=>q.subject==='manufacturing'),source=raw.filter(q=>q.subject==='manufacturing');
 test('Manufacturing contains every numbered source section and all requested Mains years',()=>{
  assert.equal(source.length,2020);assert.equal(added.length,1756);
@@ -25,7 +25,7 @@ test('Manufacturing crop bytes, page-break repairs and shared statements remain 
 });
 test('Manufacturing ordered path is complete and prior questions retain their identities',()=>{
  assert.equal(U.outline(added).length,12);assert.equal(new Set(added.map(q=>q.topicId)).size,52);const path=P.open(null,U.sessionIds(added.map(q=>q.id).reverse(),bank));assert.equal(path.ids.length,1756);assert.deepEqual(path.ids,added.map(q=>q.id));assert.equal(path.deadline,null);
- assert.equal(bank.filter(q=>q.subject!=='manufacturing').length,8927);const prior=JSON.parse(fs.readFileSync('manufacturing-compatibility.json','utf8'));assert.equal(prior.preserved,8927);assert.equal(prior.storage,'som-lab-v1');
+ assert.equal(bank.filter(q=>!['manufacturing','engineering-mechanics','materials'].includes(q.subject)).length,8927);const prior=JSON.parse(fs.readFileSync('manufacturing-compatibility.json','utf8'));assert.equal(prior.preserved,8927);assert.equal(prior.storage,'som-lab-v1');
  for(const[id,topic]of Object.entries({'mfg-esep-2024-116':'manufacturing-10-04','mfg-esep-2026-54':'manufacturing-01-02','mfg-me2024-s1-q29-p18':'manufacturing-03-03'}))assert.equal(added.find(q=>q.assetId===id).topicId,topic);
 });
 

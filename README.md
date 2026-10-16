@@ -4,9 +4,15 @@ A shared GATE ME, GATE XE and ESE practice website, with a separately labelled C
 
 **Open the lab: https://pyq-nexus-lab.github.io/**
 
+## Engineering Mechanics and Engineering Materials (v5.7)
+
+Two separate subject spaces add **411 Mechanics** and **1,015 Materials** unique questions in 9 and 14 chapters. The addition includes historical supplied GATE/ESE book sections, recent original GATE ME/XE and ESE Prelims, and ESE/CSE Mechanical Mains 2017–2026. Of 1,426 questions, 1,297 have objective keys, 112 have written self-review references, and 17 have explained source issues excluded from automatic marks. All have a reference; no answer is silently guessed to fill a gap.
+
+Question screenshots retain diagrams, choices and linked statements. Duplicate source appearances are consolidated within each new subject/exam. The final Materials chapter clearly groups supporting mathematics and thermodynamics from GATE XE-C. Continuous chapter/topic practice, independent saved paths, answer-type controls and quick-reference tools use the existing lab interface. All 10,683 prior canonical identities, keys, images and topic assignments are preserved. See `emmat-source-audit.json`, `emmat-coverage.json` and `emmat-compatibility.json` for the source-bounded coverage, references and exceptions.
+
 ## Workspace redesign (v5.0)
 
-Home opens with all eleven live subjects, real scores, question coverage, a resume button, daily activity and revision priorities. Start the full subject path from a card, choose a chapter or topic, or continue from a saved position. Untimed practice includes every matching question in teaching order. Existing sessions, answers and notes use the same browser storage and question identities.
+Home opens with all thirteen live subjects, real scores, question coverage, a resume button, daily activity and revision priorities. Start the full subject path from a card, choose a chapter or topic, or continue from a saved position. Untimed practice includes every matching question in teaching order. Existing sessions, answers and notes use the same browser storage and question identities.
 
 The question library keeps search, chapter and topic selection visible. Extra type/year/source/progress filters expand on demand. Results are grouped in learning order with a desktop chapter index, previews and continuous ordered practice. Previewing a question also offers direct practice.
 
@@ -113,7 +119,7 @@ Confidence, spaced revision, a mistake journal, attempt history, notes, bookmark
 
 Home combines subject scores, answer coverage, revision priorities, targets, daily activity and study plans. Performance provides exam-track, date-period and latest-attempt/all-attempt filters, chapter focus areas and an exportable report. Coverage uses all-time answered unique questions; skips do not count. Written self-scores remain separate from objective grades.
 
-Advanced settings control exam preferences, adaptive selection, revision, targets, text size, density, focus layout and reduced motion. The subject hub shows the eleven available banks first: SOM, Theory of Machines, Mechanical Vibrations, Thermodynamics, Heat Transfer, Fluid Mechanics, Power Plant Engineering, Refrigeration & Air Conditioning, IC Engines, Machine Design and Manufacturing Engineering. Remaining subject spaces are collapsed until needed and show honest empty states.
+Advanced settings control exam preferences, adaptive selection, revision, targets, text size, density, focus layout and reduced motion. The subject hub shows the thirteen available banks first: SOM, Theory of Machines, Mechanical Vibrations, Thermodynamics, Heat Transfer, Fluid Mechanics, Power Plant Engineering, Refrigeration & Air Conditioning, IC Engines, Machine Design, Manufacturing Engineering, Engineering Mechanics and Engineering Materials. Remaining subject spaces are collapsed until needed and show honest empty states.
 
 ## Saved progress and updated keys
 
