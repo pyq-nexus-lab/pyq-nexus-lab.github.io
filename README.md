@@ -243,10 +243,10 @@ Active practice uses the full viewport with a compact header, white question pap
 
 Reading width is now the default, replacing the previous fit-height default and its persisted preference. The scan fills a readable column, with scrolling confined to the paper and pinned answer/actions. A compact question map stays beside the question on desktop, with Notes, Solution, Tools and Details tabs. The panel collapses on request and becomes a modal drawer on smaller screens. Zoom steps from 80 to 160 percent are saved on the device; full-page fit remains an optional overview. No question content or scoring is changed.
 
-## Fixed answer choices (5.13.0)
+## Fixed answer choices (5.13.1)
 
 The pinned A–D buttons now show source-transcribed values or statements. A locally bundled KaTeX 0.16.28 renderer typesets explicit mathematical notation and visually checked formulas; its MIT licence is in `math-typesetter-LICENSE.txt`. Long choices wrap into two columns; phone layouts retain the text. The question scroll and Next controls remain independent.
 
-`choice-coverage.json` records coverage and exceptions: 6,813 of 10,237 canonical MCQ/MSQ questions have typed choices, including ten manually checked formula sets. Automatic text extraction is not a manual accuracy certification. The remaining 3,424 diagram or ambiguous-text questions retain an original-print viewer with A–D selection; they are not represented as fully transcribed. Source text fingerprints prevent stale overrides being applied after source edits. No answer keys, grading, identities, chapter order or cloud progress are changed.
+`choice-coverage.json` records coverage and exceptions: 6,814 of 10,237 canonical MCQ/MSQ questions have typed choices, including eleven manually checked formula sets. Automatic text extraction is not a manual accuracy certification. The remaining 3,423 diagram or ambiguous-text questions retain an original-print viewer with A–D selection; they are not represented as fully transcribed. Source text fingerprints prevent stale overrides being applied after source edits. No answer keys, grading, identities, chapter order or cloud progress are changed.
 
 Math and fonts are served locally, with no CDN dependency. Rendering escapes plain text, disables trusted TeX commands, bounds expansion and falls back to text on parse errors.

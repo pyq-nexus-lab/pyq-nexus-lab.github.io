@@ -1,8 +1,8 @@
 {
   "total": 10237,
-  "transcribed": 6813,
-  "visuallyCheckedFormulaSets": 10,
-  "sourceViewRequired": 3424,
+  "transcribed": 6814,
+  "visuallyCheckedFormulaSets": 11,
+  "sourceViewRequired": 3423,
   "subjects": {
     "som": 560,
     "fluid-mechanics": 785,
@@ -15,7 +15,7 @@
     "vibrations": 102,
     "machine-design": 382,
     "manufacturing": 1067,
-    "engineering-mechanics": 119,
+    "engineering-mechanics": 120,
     "materials": 506,
     "industrial": 466,
     "turbomachinery": 645
@@ -2624,7 +2624,6 @@
     "engineering-mechanics:emmat-xe2012-d-s1-q7-p16",
     "engineering-mechanics:emmat-xe2015-d-s1-q2-p22",
     "engineering-mechanics:emmat-xe2020-d-s1-q6-p20",
-    "engineering-mechanics:emmat-xe2021-d-s1-q1-p39",
     "engineering-mechanics:emmat-me2016-s3-q6-p39",
     "engineering-mechanics:emmat-xe2009-d-s1-q1-p14",
     "engineering-mechanics:emmat-xe2011-d-s1-q9-p17",
@@ -3446,5 +3445,5 @@
     "turbomachinery:it-esep-2026-124",
     "turbomachinery:it-ref-power-plant:pp-esep-4-9"
   ],
-  "method": "Explicit A-D labels parsed from the current canonical question text. Reading-order and damaged-math checks reject ambiguous groups. Ten formula sets visually transcribed from current source screenshots. Automated transcriptions are not a claim of manual verification; original source remains available. No answer keys or question order modified."
+  "method": "Explicit A-D labels parsed from the current canonical question text. Reading-order and damaged-math checks reject ambiguous groups. Eleven formula sets visually transcribed from current source screenshots. Automated transcriptions are not a claim of manual verification; original source remains available. No answer keys or question order modified."
 }

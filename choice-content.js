@@ -52,6 +52,7 @@
  }
  function renderChoice(choice,katex=root.katex){
   if(!choice||typeof choice.text!=='string')return '';
+  if(Array.isArray(choice.parts)&&choice.parts.length<=16)return choice.parts.map(part=>renderChoice({text:String(part.text||part.tex||''),tex:part.tex},katex)).join('');
   const tex=choice.tex||simpleMath(choice.text);
   if(tex&&katex){try{return katex.renderToString('\\displaystyle '+tex,{throwOnError:true,trust:false,strict:'error',maxSize:8,maxExpand:200,output:'htmlAndMathml',macros:{}});}catch{}}
   return escape(choice.text);
