@@ -2,7 +2,7 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 for(const [file,name] of [['app.js','loadQuestionImage'],['learning-ui.js','viewSource'],['crops-ui.js','questionScreenshot']])test(name+' uses compressed screenshots and permits retry after failure',async()=>{
  const q={id:'q',assetId:'q',pack:'pack'},img={isConnected:true,complete:true,naturalWidth:100},loading={textContent:''};let fail=true,calls=0;
  const c={window:{PYQ_ASSET_INDEX:{pack:{}}},imagePacks:{},currentQ:()=>q,LIBRARY:{original:new Map([['q',q]])},showModal:()=>{},esc:x=>x,$:s=>s.includes('loading')?loading:img,document:{addEventListener:()=>{},createElement:()=>{throw Error('Legacy script used for a compressed bundle')}}};
- c.PYQAssetStore={load:async()=>{calls++;if(fail)throw Error('Temporary failure');c.window.PYQ_IMAGES={q:'data:image/webp;base64,verified'}}};
+ c.state={session:null};c.PYQAssetStore={source:async()=>{calls++;if(fail)throw Error('Temporary failure');return 'data:image/webp;base64,verified';}};
  const source=fs.readFileSync(file,'utf8');vm.runInNewContext(name==='questionScreenshot'?source:source.split('\n').find(line=>line.startsWith('async function '+name+'(')),c);
  if(name==='questionScreenshot')await assert.rejects(c[name](q));else await c[name]('q');
  assert.equal(c.imagePacks.pack,undefined);fail=false;

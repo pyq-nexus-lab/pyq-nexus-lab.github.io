@@ -4,3 +4,4 @@ public/
 *.log
 .env*
 !example.env
+_site*/

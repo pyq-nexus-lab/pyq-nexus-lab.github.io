@@ -20,6 +20,12 @@
     if(runtime)return runtime;
     runtime=(async()=>{
       const scripts=[...document.querySelectorAll('script[data-runtime]')];
+      // Fetch in parallel after authentication; execute in the established order below.
+      for(const node of scripts.slice(loaded)){
+        if(node.dataset.preloaded)continue;
+        const hint=document.createElement('link');hint.rel='preload';hint.as='script';hint.href=node.dataset.runtime;
+        document.head.append(hint);node.dataset.preloaded='true';
+      }
       while(loaded<scripts.length){
         const source=scripts[loaded].dataset.runtime;
         await new Promise((resolve,reject)=>{

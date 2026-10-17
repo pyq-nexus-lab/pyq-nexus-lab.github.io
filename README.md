@@ -4,6 +4,12 @@ A shared GATE ME, GATE XE and ESE practice website, with a separately labelled C
 
 **Open the lab: https://pyq-nexus-lab.github.io/**
 
+## Image delivery performance (v5.14.1)
+
+The interface, CSS, question content, image quality and progress model are unchanged. The Pages workflow runs `node build-site.cjs _site` to extract screenshots as individual content-addressed image files. It applies the existing answer repairs and crop patches before checking every question reference. Original screenshot bytes are copied exactly; identical images share one URL. Browsers fetch one screenshot instead of downloading and parsing an entire multi-megabyte bundle.
+
+Practice prepares at most two following screenshots at low priority after the current image is visible; data saver and slow connections disable this. An image-only service worker caches up to 160 immutable screenshots for subsequent visits, with ordinary network loading if storage is unavailable. It never caches account requests, progress, HTML or API responses. Authenticated startup preloads scripts together while retaining their original execution order. Source checkouts still support the legacy bundle loader. GitHub Pages must use **GitHub Actions** as its publishing source; the workflow builds the optimized website without committing generated image files.
+
 ## Current library: all 18 subjects (v5.14)
 
 The canonical library now contains **15,135 questions**, arranged in **204 chapters and 699 populated topics**. Engineering Mathematics adds **593** questions (2003–2026 source coverage), General Aptitude adds **470** (2010–2026), and ESE General Studies & Aptitude adds **1,000** (100 per year, 2017–2026). These are source-backed practice collections, not a claim that every historical paper is represented. `foundations-coverage.json` records the new sources and counts.
