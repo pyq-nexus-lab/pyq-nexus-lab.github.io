@@ -61,3 +61,7 @@ exclude:
   - "tom-vibrations.test.cjs"
   - "validate.cjs"
   - "public"
+
+
+  - "*.pack"
+  - "fd-assets-*.js"
