@@ -11,7 +11,7 @@
   async function verifySession(session,revision,event){
     if(revision!==authRevision)return false;
     if(!session?.user){signedOut();return false;}
-    if(!user||user.id!==session.user.id){user=null;root.PYQAccess.lock('Verifying your account…',true);paint();}
+    if(!user||user.id!==session.user.id){user=null;root.PYQSync?.disconnect();root.PYQAccess.lock('Verifying your account…',true);paint();}
     try{
       // The server validates the user; a cached local session alone never unlocks practice.
       const result=await client.auth.getUser();
@@ -20,8 +20,10 @@
       if(!root.PYQAccess.allowed())root.PYQAccess.lock('Opening your private workspace…',true);
       await root.PYQAccess.loadRuntime();
       if(revision!==authRevision)return false;
-      user=result.data.user;ready=true;if(!root.PYQAccess.allowed())root.PYQAccess.unlock();paint();
+      user=result.data.user;ready=true;
+      // Select this account's workspace before exposing any saved content.
       root.PYQSync?.connect(client,user);
+      if(!root.PYQAccess.allowed())root.PYQAccess.unlock();paint();
       if(event==='PASSWORD_RECOVERY'||recoveryRequested){recoveryRequested=false;open('update');}
       return true;
     }catch(error){

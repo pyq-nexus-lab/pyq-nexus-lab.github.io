@@ -16,7 +16,7 @@ test('signed-out visits do not load question banks or unlock the workspace',asyn
 });
 test('cached sessions require successful server verification before runtime loading',async()=>{
  let resolve;const h=harness({session,getUser:()=>new Promise(r=>resolve=r)});await flush();assert.equal(h.gate.allowed(),false);assert.equal(h.calls.some(x=>x[0]==='load'),false);
- resolve({data:{user}});await flush();assert.equal(h.gate.allowed(),true);assert.equal(h.context.PYQAccount.isSignedIn(),true);assert.deepEqual(h.calls.filter(x=>['load','unlock','sync'].includes(x[0])).map(x=>x[0]),['load','unlock','sync']);
+ resolve({data:{user}});await flush();assert.equal(h.gate.allowed(),true);assert.equal(h.context.PYQAccount.isSignedIn(),true);assert.deepEqual(h.calls.filter(x=>['load','unlock','sync'].includes(x[0])).map(x=>x[0]),['load','sync','unlock']);
 });
 test('rejected, expired and mismatched cached accounts remain locked',async()=>{
  for(const result of [{data:{user:null},error:Error('Expired')},{data:{user:{id:'different-owner'}}}]){
