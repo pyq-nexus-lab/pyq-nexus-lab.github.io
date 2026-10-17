@@ -1,7 +1,8 @@
 'use strict';
 /* A compact presentation layer. Question identities, answers, grading and cloud saves stay shared. */
-const paperUI={panel:null,fit:true,dark:false,scroll:new Map(),opener:null};
-try{paperUI.fit=localStorage.getItem('pyq-paper-fit')!=='read';paperUI.dark=localStorage.getItem('pyq-paper-theme')==='dark';}catch{}
+const paperWide=matchMedia('(min-width:1050px)');
+const paperUI={panel:null,initialized:false,fit:false,scale:100,dark:false,scroll:new Map(),opener:null};
+try{paperUI.fit=localStorage.getItem('pyq-paper-view-v2')==='fit';paperUI.scale=Math.min(160,Math.max(80,Number(localStorage.getItem('pyq-paper-scale'))||100));paperUI.dark=localStorage.getItem('pyq-paper-theme')==='dark';}catch{}
 const paperActive=()=>view==='practice'&&!!state.session&&!state.session.finished;
 const paperOldAfterRender=nexusAfterRender,paperOldRender=render,paperOldSyncMenu=nxSyncMenu,paperOldZoom=actions.zoom;
 const paperPanels={map:'Question map',notes:'Working notes',solution:'Answer & solution',tools:'Tools & confidence',details:'Source & learning history'};
@@ -15,21 +16,30 @@ function paperSetTheme(){
 }
 function paperSetFit(fit){
   paperUI.fit=fit;
-  try{localStorage.setItem('pyq-paper-fit',fit?'fit':'read');}catch{}
+  try{localStorage.setItem('pyq-paper-view-v2',fit?'fit':'read');}catch{}
   const sheet=$('#question-sheet');if(sheet){sheet.classList.toggle('paper-read-size',!fit);if(fit)sheet.scrollTop=0;}
   $$('[data-paper-fit]').forEach(b=>{const selected=(b.dataset.paperFit==='fit')===fit;b.setAttribute('aria-pressed',String(selected));b.classList.toggle('selected',selected);});
+  paperApplyScale();
+}
+function paperApplyScale(){
+  $('#question-sheet')?.style.setProperty('--paper-image-scale',String(paperUI.scale/100));
+  const label=$('#paper-scale');if(label)label.textContent=paperUI.scale+'%';
+  $$('[data-paper-scale]').forEach(b=>b.disabled=b.dataset.paperScale==='down'?paperUI.scale<=80:paperUI.scale>=160);
 }
 function paperPanel(name,opener=null,focus=true){
   if(!paperActive())return;
   if(name==='solution'&&state.session.mode==='exam')return;
   paperUI.panel=name;if(opener)paperUI.opener=opener;
   const drawer=$('#paper-drawer'),backdrop=$('#paper-backdrop');if(!drawer)return;
-  drawer.hidden=!name;backdrop.hidden=!name;
+  const docked=paperWide.matches;
+  drawer.hidden=!name;backdrop.hidden=!name||docked;
+  drawer.setAttribute('role',docked?'complementary':'dialog');
+  if(docked)drawer.removeAttribute('aria-modal');else drawer.setAttribute('aria-modal','true');
   $('#paper-panel-title').textContent=paperPanels[name]||'Practice tools';
   $$('[data-paper-slot]').forEach(el=>el.hidden=el.dataset.paperSlot!==name);
   $$('[data-paper-panel]').forEach(b=>{b.setAttribute('aria-expanded',String(b.dataset.paperPanel===name));b.classList.toggle('selected',b.dataset.paperPanel===name);});
-  // Only the open drawer is keyboard-active; the question does not move underneath it.
-  ['.paper-card','.topbar','.nx-practice-heading'].forEach(selector=>{const node=$(selector);if(node)node.inert=!!name;});
+  // On desktop the dock and paper are both usable; small screens use a modal panel.
+  ['.paper-card','.topbar','.nx-practice-heading'].forEach(selector=>{const node=$(selector);if(node)node.inert=!!name&&!docked;});
   if(name&&focus)$('#paper-close').focus();
   if(!name&&focus){const target=paperUI.opener;if(target?.isConnected)target.focus();else $('[data-paper-panel="tools"]')?.focus();paperUI.opener=null;}
 }
@@ -41,7 +51,8 @@ nxSyncMenu=function(){
 };
 function paperEnhance(){
   const active=paperActive();document.body.classList.toggle('paper-practice',active);paperSetTheme();
-  if(!active){paperUI.panel=null;const header=$('.topbar');if(header)header.inert=false;return;}
+  if(!active){paperUI.panel=null;paperUI.initialized=false;const header=$('.topbar');if(header)header.inert=false;return;}
+  if(!paperUI.initialized){paperUI.panel=paperWide.matches?'map':null;paperUI.initialized=true;}
   const s=state.session,q=currentQ(),card=$('.question-card'),content=$('#studio-question-content'),sheet=$('#question-sheet'),response=$('.answer-area'),heading=$('.nx-practice-heading');
   if(!card||!content||!sheet||!response)return;
   card.classList.add('paper-card');card.dataset.question=q.id;
@@ -56,12 +67,13 @@ function paperEnhance(){
   // Calculator already has a permanent one-click control in the small top bar.
   tools.querySelector('[data-action="calculator"]')?.remove();
   const fit=document.createElement('div');fit.className='paper-fit';fit.setAttribute('role','group');fit.setAttribute('aria-label','Question image size');
-  fit.innerHTML='<button data-paper-fit="fit" title="Show the complete question and printed options" aria-pressed="true">Fit page</button><button data-paper-fit="read" title="Larger text with scrolling inside the question only" aria-pressed="false">Read size</button>';
+  fit.innerHTML='<button data-paper-fit="read" title="Readable width; scroll only the question" aria-pressed="true">Reading</button><button data-paper-fit="fit" title="Overview of the complete scan" aria-pressed="false">Fit page</button>';
   tools.prepend(fit);
+  fit.insertAdjacentHTML('afterend','<div class="paper-size" role="group" aria-label="Question zoom"><button data-paper-scale="down" aria-label="Decrease question size" title="Smaller question">−</button><output id="paper-scale" aria-live="polite">100%</output><button data-paper-scale="up" aria-label="Increase question size" title="Larger question">+</button></div>');
   tools.insertAdjacentHTML('beforeend',paperButton('map','Map','subjects')+paperButton('notes','Notes','test')+paperButton('tools','Tools','settings'));
   const drawer=document.createElement('aside');drawer.id='paper-drawer';drawer.className='paper-drawer';drawer.hidden=true;drawer.setAttribute('role','dialog');drawer.setAttribute('aria-modal','true');drawer.setAttribute('aria-labelledby','paper-panel-title');
   drawer.innerHTML=`<div class="paper-drawer-head"><h2 id="paper-panel-title">Practice tools</h2><button id="paper-close" data-paper-close aria-label="Close practice panel">×</button></div><nav class="paper-panel-tabs" aria-label="Practice panels">${Object.entries(paperPanels).filter(([name])=>name!=='solution'||s.mode!=='exam').map(([name,title])=>`<button data-paper-panel="${name}" aria-label="Open ${title.toLowerCase()}" aria-expanded="false">${({map:'Map',notes:'Notes',solution:'Solution',tools:'Tools',details:'Details'})[name]}</button>`).join('')}</nav><div class="paper-drawer-body">${Object.keys(paperPanels).map(name=>`<section data-paper-slot="${name}" hidden></section>`).join('')}</div>`;
-  $('#main').append(drawer);
+  $('.studio-practice-grid').append(drawer);
   const backdrop=document.createElement('button');backdrop.id='paper-backdrop';backdrop.className='paper-backdrop';backdrop.hidden=true;backdrop.tabIndex=-1;backdrop.setAttribute('aria-label','Close practice panel');backdrop.setAttribute('data-paper-close','');$('#main').append(backdrop);
   function move(selector,name){const node=$(selector);if(node)drawer.querySelector(`[data-paper-slot="${name}"]`).append(node);return node;}
   move('.nx-navigator','map');move('.nx-session-tools','tools');move('.nx-shortcuts','tools');
@@ -104,11 +116,12 @@ actions.zoom=()=>{
 };
 document.addEventListener('click',e=>{
   const b=e.target.closest('button');if(!b||!paperActive())return;
-  if(b.dataset.paperPanel){const name=b.dataset.paperPanel;paperPanel(paperUI.panel===name?null:name,b);}
+  if(b.dataset.paperPanel){const name=b.dataset.paperPanel;paperPanel(b.closest('.paper-panel-tabs')?name:paperUI.panel===name?null:name,b);}
   if(b.hasAttribute('data-paper-close'))paperPanel(null);
   if(b.dataset.paperFit)paperSetFit(b.dataset.paperFit==='fit');
+  if(b.dataset.paperScale){paperUI.scale=Math.min(160,Math.max(80,paperUI.scale+(b.dataset.paperScale==='up'?10:-10)));try{localStorage.setItem('pyq-paper-scale',String(paperUI.scale));}catch{}paperSetFit(false);}
   if(b.hasAttribute('data-paper-keypad')){const keypad=$('#paper-keypad');keypad.hidden=!keypad.hidden;b.setAttribute('aria-expanded',String(!keypad.hidden));}
-  if(paperUI.panel==='map'&&(b.hasAttribute('data-jump')||b.hasAttribute('data-studio-go')||b.hasAttribute('data-studio-next')))paperPanel(null);
+  if(!paperWide.matches&&paperUI.panel==='map'&&(b.hasAttribute('data-jump')||b.hasAttribute('data-studio-go')||b.hasAttribute('data-studio-next')))paperPanel(null);
 });
 document.addEventListener('click',e=>{
   if(!paperActive()||!e.target.closest('#theme-toggle'))return;
@@ -118,9 +131,9 @@ document.addEventListener('click',e=>{
 },true);
 document.addEventListener('keydown',e=>{
   if(!paperActive()||modal.open)return;
-  if(paperUI.panel){
+  if(paperUI.panel&&(!paperWide.matches||$('#paper-drawer')?.contains(e.target))){
     if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();paperPanel(null);return;}
-    if(e.key==='Tab'){
+    if(e.key==='Tab'&&!paperWide.matches){
       const els=[...$('#paper-drawer').querySelectorAll('button:not(:disabled),input:not(:disabled),select:not(:disabled),textarea:not(:disabled),summary,a[href]')].filter(x=>x.getClientRects().length);
       const first=els[0],last=els.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus();}
     }
@@ -132,4 +145,5 @@ document.addEventListener('keydown',e=>{
   if(e.key.toLowerCase()==='f'){e.preventDefault();paperSetFit(!paperUI.fit);}
   if(e.key.toLowerCase()==='m'){e.preventDefault();paperPanel('map',$('[data-paper-panel="map"]'));}
 },true);
+paperWide.addEventListener('change',()=>{if(paperActive())paperPanel(paperWide.matches?(paperUI.panel||'map'):null,null,false);});
 render();

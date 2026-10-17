@@ -40,3 +40,51 @@ body.paper-practice.paper-dark{--bg:#111a26;--sidebar:#172231;--card:#172231;--c
 html[data-access="locked"] body.paper-practice{height:auto;overflow:auto;}
 .paper-practice .studio-practice-grid{align-items:stretch;}.paper-practice .studio-practice-grid>div{height:100%;overflow:hidden;}
 .paper-practice .answer-label .badge{background:var(--card2);color:var(--muted);border-color:var(--line);}.paper-practice .q-tools button,.paper-practice .paper-actions button{font-size:12px;}.paper-practice .paper-fit button{font-size:10px;}@media(max-width:650px){.paper-practice .paper-actions button{font-size:10px;}}
+/* Readable paper with a compact, persistent desktop study panel. */
+.paper-practice .question-sheet.paper-read-size{padding:18px 20px!important;}
+.paper-practice .question-sheet.paper-read-size img{width:calc(100% * var(--paper-image-scale,1));max-width:calc(1100px * var(--paper-image-scale,1));height:auto;max-height:none;margin:0 auto;}
+.paper-size{display:flex;align-items:center;gap:0;border:1px solid var(--line);border-radius:6px;margin-right:4px;}
+.paper-practice .paper-size button{font-size:17px;min-width:25px;padding:2px 5px;}
+.paper-size output{font-size:10px;min-width:33px;text-align:center;color:var(--muted);font-variant-numeric:tabular-nums;}
+.paper-drawer[hidden]{display:none!important;}
+@media(min-width:1050px){
+ .paper-practice .studio-practice-grid{gap:12px;}
+ .paper-practice .paper-drawer{position:relative;inset:auto;flex:0 0 clamp(275px,24vw,330px);width:clamp(275px,24vw,330px);min-width:0;height:100%;max-height:100%;border:1px solid var(--line);border-radius:10px;box-shadow:0 2px 5px #10264006;z-index:1;overflow:hidden;}
+ .paper-practice .paper-backdrop{display:none!important;}
+ .paper-practice .paper-drawer-head{height:42px;padding:8px 12px;}
+ .paper-practice .paper-drawer-head h2{font-size:14px;}
+ .paper-practice .paper-panel-tabs{gap:2px;padding:6px;justify-content:space-between;}
+ .paper-practice .paper-panel-tabs button{font-size:11px;min-height:30px;padding:5px 7px;}
+ .paper-practice .paper-drawer-body{padding:12px;}
+ .paper-practice .paper-drawer .nx-section-head{display:none;}
+ .paper-practice .paper-drawer .studio-map-stats{padding:0 0 10px;margin:0 0 10px;gap:5px;}
+ .paper-practice .paper-drawer .studio-map-stats strong{font-size:19px;line-height:1.2;}
+ .paper-practice .paper-drawer .studio-map-stats small{font-size:10px;margin-top:4px;}
+ .paper-practice .paper-drawer .nx-path-label{font-size:10px;gap:5px;}
+ .paper-practice .paper-drawer select{font-size:11px;min-height:33px;height:33px;padding:6px 24px 6px 8px;margin-top:5px;}
+ .paper-practice .paper-drawer .studio-jump{gap:6px;margin:10px 0;}
+ .paper-practice .paper-drawer .studio-jump label{font-size:11px;}
+ .paper-practice .paper-drawer .studio-jump input{width:55px;height:31px;min-height:31px;font-size:12px;padding:4px 7px;}
+ .paper-practice .paper-drawer .studio-jump button{height:31px;min-height:31px;min-width:31px;padding:5px;}
+ .paper-practice .paper-drawer .nx-map-paging{margin:6px 0 10px;gap:4px;}
+ .paper-practice .paper-drawer .nx-map-paging button{min-width:28px;min-height:28px;height:28px;padding:4px;}
+ .paper-practice .paper-drawer .nx-map-paging span{font-size:10px;}
+ .paper-practice .paper-drawer .palette{gap:7px;grid-template-columns:repeat(6,minmax(0,1fr));}
+ .paper-practice .paper-drawer .palette button{height:34px;min-height:34px;font-size:12px;padding:4px;}
+ .paper-practice .paper-drawer .studio-legend{gap:8px 5px;margin-top:14px;font-size:10px;}
+ .paper-practice .paper-drawer .studio-legend i{height:9px;width:9px;}
+ .paper-practice .paper-drawer .studio-next-links{margin-top:12px;gap:0;}
+ .paper-practice .paper-drawer .studio-next-links button{padding:7px 0;min-height:32px;font-size:11px;}
+ .paper-practice .paper-drawer .nx-submit-set{min-height:32px;font-size:11px;margin-top:10px;}
+ .paper-practice .paper-drawer .nx-path-help{font-size:10px;line-height:1.6;}
+ .paper-practice .paper-actions>div,.paper-practice .paper-actions>div:last-child{gap:5px;}
+ .paper-practice .q-tools button[data-paper-panel]>span{display:none;}
+}
+@media(max-width:650px){
+ .paper-practice .question-sheet.paper-read-size{padding:10px!important;}
+ .paper-practice .paper-size button{min-width:23px;font-size:16px;}
+ .paper-size output{font-size:9px;min-width:29px;}
+ .paper-practice .paper-fit{margin-right:3px;}
+ .paper-practice .paper-size{margin-right:auto;}
+}
+@media(max-width:650px){.paper-practice .question-sheet.paper-read-size img{min-width:calc(640px * var(--paper-image-scale,1));}}

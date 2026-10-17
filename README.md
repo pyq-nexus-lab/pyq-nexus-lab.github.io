@@ -238,3 +238,7 @@ access-preview.html is an unlinked, noindex test page with isolated in-memory st
 ### Paper practice workspace (5.12)
 
 Active practice uses the full viewport with a compact header, white question paper, blue answer controls and an optional dark surround. The workspace menu and question map stay collapsed. Notes, confidence, formulas, source appearances and learning history open in a focused side drawer without changing the question position. The complete screenshot fits the available paper area by default, including printed options. Read size provides larger text with scrolling confined to the paper; image zoom shows the original scan. Answer controls and previous/check/next actions remain visible independently of question scrolling. Explanations open on demand, and timed exams retain answer hiding and calculator rules. Local answers, cloud sync, mandatory authentication and question identities are unchanged.
+
+### Readable practice layout (5.12.1)
+
+Reading width is now the default, replacing the previous fit-height default and its persisted preference. The scan fills a readable column, with scrolling confined to the paper and pinned answer/actions. A compact question map stays beside the question on desktop, with Notes, Solution, Tools and Details tabs. The panel collapses on request and becomes a modal drawer on smaller screens. Zoom steps from 80 to 160 percent are saved on the device; full-page fit remains an optional overview. No question content or scoring is changed.
