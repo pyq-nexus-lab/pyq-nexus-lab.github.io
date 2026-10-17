@@ -146,7 +146,7 @@ Advanced settings control exam preferences, adaptive selection, revision, target
 
 ## Saved progress and updated keys
 
-Progress stays in this browser on this device, without server accounts or cloud sync. Export a complete backup before changing browsers or website addresses. PYQ Nexus and legacy SOM Lab backups restore after preview and confirmation.
+Progress saves on this device and synchronizes automatically to the signed-in account. A fresh device restores the cloud workspace after login. Exported PYQ Nexus and legacy SOM Lab backups can also be restored after preview and confirmation.
 
 **Data & settings → Recheck saved answers** previews old objective results with current keys. Original grades stay in the backup's `gradingHistory`; responses, dates, notes and written self-scores are retained. An incompatible old response format requires a fresh attempt and is excluded from scores. Rechecking never advances revision schedules.
 
@@ -154,7 +154,7 @@ Duplicate migration preserves old IDs, translates reordered option responses, me
 
 ## Run locally
 
-Download with **Code → Download ZIP**, extract and open `index.html`. Keep all screenshot packs and answer layers beside it. No build step is needed; optional web fonts fall back to local fonts offline.
+Download with **Code → Download ZIP** and extract the files. Keep all screenshot packs and answer layers beside the entry page. No build step is needed. Serve over HTTP using the command below; the mandatory login check requires an internet connection when opening the workspace.
 
 For a stable local address, use Node.js 18 or later:
 
@@ -205,22 +205,31 @@ GitHub Pages uses `_config.yml` to exclude superseded image bundles and developm
 
 `studio.css` and `studio.js` upgrade the existing application without changing question banks, identifiers, grading rules, continuous learning paths or `som-lab-v1` device progress. Native options have explicit contrast in both themes. The question map distinguishes graded answers, unanswered questions and review marks; in exam mode it never calls the grader. The TCS calculator button opens the original provider page in a compact separate window. TCS restricts third-party iframes through its Content Security Policy, so the app does not proxy or copy that page. Pop-up blocking has a direct-link fallback in the toolkit. ESE Prelims timed tests keep the calculator disabled.
 
-Accounts are optional and require a real Supabase project. An empty `account-config.js` deliberately shows a setup notice; it does not simulate successful login. Add only the project HTTPS URL and its `sb_publishable_...` key. Never publish a secret/service-role key. The pinned Supabase 2.118.0 browser SDK is loaded only when configured; its license is in `SUPABASE-LICENSE.txt`.
+Accounts are mandatory and use the connected Supabase project. An empty `account-config.js` keeps access locked; it does not simulate successful login. Add only the project HTTPS URL and its `sb_publishable_...` key. Never publish a secret/service-role key. The pinned Supabase 2.118.0 browser SDK is loaded only when configured; its license is in `SUPABASE-LICENSE.txt`.
 
 The personal lab is connected to Supabase. Email/password signup and confirmation are enabled, the production redirect is configured, and the private backup table has verified row security and no anonymous read access. Public email delivery still requires custom SMTP; the built-in service is limited to authorized project-team recipients. The deployed configuration contains only the browser-safe publishable key.
 
 Enable email/password authentication and email confirmation in the Supabase dashboard. Set the Site URL to `https://pyq-nexus-lab.github.io/` and add that exact URL to allowed auth redirects. Registration, email confirmation, login, password recovery and logout use Supabase Auth. Configure a production SMTP provider before opening public registration; the default email service has delivery and recipient restrictions. Do not disable confirmation merely to work around email setup.
 
-Device progress remains available in guest mode. Signed-in work is automatically synchronized as described below. The lab stays public; accounts do not make question assets private or implement a paywall.
+The login screen protects access to device progress after logout. Signed-in work is automatically synchronized as described below. The repository remains public; accounts do not make question assets private or implement a paywall.
 
 `studio-preview.html` uses in-memory storage for browser QA and cannot read or write real device progress. It is not linked from the application. Test MCQ/MSQ/NAT/written states there before changing the production entry point.
 
 ## Automatic cloud progress (5.10)
 
-`cloud-sync.js` observes the existing local save path. Answers and question navigation queue an immediate save; note/draft edits are briefly debounced. Timer ticks alone do not produce uploads. A visible status distinguishes pending, offline and confirmed cloud saves. A durable account-specific cache retains pending changes for reconnect/reload. Login first reads cloud progress, then restores the session and learning path automatically; the original local workspace is retained as a recovery copy before the first replacement. Guest practice still works. Different accounts never automatically upload the previous account workspace.
+`cloud-sync.js` observes the existing local save path. Answers and question navigation queue an immediate save; note/draft edits are briefly debounced. Timer ticks alone do not produce uploads. A visible status distinguishes pending, offline and confirmed cloud saves. A durable account-specific cache retains pending changes for reconnect/reload. Login first reads cloud progress, then restores the session and learning path automatically; the original local workspace is retained as a recovery copy before the first replacement. Login is required before practice starts. Different accounts never automatically upload the previous account workspace.
 
 `sync-core.js` merges independent changes against the last synchronized base, deduplicates attempt history, and preserves competing changes while a request is in flight. Server-managed backup revisions and conditional updates prevent stale whole-state overwrites. A new session/test is treated as one coherent object. For simultaneous edits to the same field, the currently saving device wins; using one active practice device at a time remains clearest. The original grading rules and server-side ownership policies remain unchanged.
 
 The server revision migration is required before this release. It adds a revision column and a trigger to `nexus_backups` without replacing payloads. RLS remains enabled with owner-only policies. No secret key is shipped. Refresh old tabs after upgrading.
 
 Connectivity is required for a cloud confirmation. Pending work survives on the originating device and retries on reconnect; a browser closed while offline must be reopened there before another device can receive that work. On sign-in, synchronized progress is authoritative on a fresh device. Legacy manual backups merge with existing device work during the first upgrade. A read-only, in-memory `sync-device-preview.html` verifies cloud restoration without changing real device progress or allowing cloud writes.
+
+
+### Mandatory sign-in
+
+The workspace starts locked and requires a Supabase-verified account. Guest access is removed. Question banks and practice runtime scripts load only after server verification; closing the login dialog, refreshing, deep links, sign-out and expired/rejected sessions cannot reveal the practice interface. Failed account checks remain locked with a retry action. Existing answers and cloud progress are preserved.
+
+This is an application access gate on GitHub Pages. The repository and static files are still public; it is not server-side protection or a paywall for the question files. Private content delivery would require moving those files behind an authenticated server or private storage. Supabase progress remains protected by its existing owner-only row policies.
+
+access-preview.html is an unlinked, noindex test page with isolated in-memory storage. It checks the real signed-out flow without logging out the owner's normal browser.

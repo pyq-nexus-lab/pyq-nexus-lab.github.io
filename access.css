@@ -1,0 +1,26 @@
+html[data-access="locked"] body{margin:0;background:#09131b;color:#edf6fb;}
+html[data-access="locked"] .shell,html[data-access="locked"] .sidebar,html[data-access="locked"] .nx-mobile-nav,html[data-access="locked"] #nx-menu-overlay,html[data-access="locked"] .skip{display:none!important;}
+.access-gate[hidden]{display:none!important;}
+.access-gate{min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:clamp(22px,5vw,64px);background:radial-gradient(ellipse at 78% 20%,#163f47 0,transparent 46%),radial-gradient(ellipse at 10% 90%,#112c3b 0,transparent 50%),#09131b;}
+.access-brand{display:flex;align-items:center;gap:13px;font-size:17px;font-weight:750;letter-spacing:.1em;}
+.access-brand>span{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#70dfcb;color:#08222b;font-size:27px;letter-spacing:0;}
+.access-content{width:min(1040px,100%);margin:auto;display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(28px,6vw,80px);align-items:center;padding:60px 0;}
+.access-eyebrow{color:#81dfd0;font-size:12px;font-weight:750;letter-spacing:.18em;margin-bottom:20px;}
+.access-intro h1{font-size:clamp(38px,5vw,66px);line-height:1.08;letter-spacing:-.045em;margin:0 0 24px;color:#f3f9fc;}
+.access-intro>p{font-size:17px;line-height:1.75;color:#9cb5c3;max-width:440px;}
+.access-features{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;}
+.access-features span{border:1px solid #284653;border-radius:99px;padding:8px 13px;color:#bad3df;font-size:12px;}
+.access-card{padding:clamp(24px,3vw,40px);border:1px solid #35505d;border-radius:24px;background:#12232ee8;box-shadow:0 24px 80px #0005;}
+.access-card h2{font-size:26px;letter-spacing:-.025em;margin:18px 0 12px;color:#eff8fc;}
+.access-lock{display:grid;place-items:center;width:50px;height:50px;border-radius:15px;background:#1c4547;color:#80e1d0;}
+.access-lock svg{width:26px;height:26px;}
+.access-card p{color:#a4bfce;line-height:1.7;}
+.access-buttons{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0 20px;}
+.access-buttons button{min-height:50px;border-radius:12px;font-size:14px;font-weight:700;}
+.access-buttons button:disabled{opacity:.5;cursor:wait;}
+.access-status{font-size:13px;min-height:24px;line-height:1.6;color:#9fb9c8;}
+.access-status[data-phase="error"]{color:#ffc1b2;}
+.access-card small{display:block;border-top:1px solid #2a4350;padding-top:20px;margin-top:22px;color:#83a4b6;line-height:1.7;font-size:12px;}
+.access-footer{display:flex;justify-content:space-between;gap:12px;color:#7796a8;font-size:12px;letter-spacing:.03em;}
+@media(max-width:760px){.access-content{grid-template-columns:1fr;padding:40px 0;gap:30px;max-width:480px;}.access-intro h1{max-width:400px;}.access-intro>p{font-size:15px;}.access-footer{flex-wrap:wrap;}.access-features{margin-top:18px;}}
+@media(prefers-reduced-motion:reduce){.access-gate *{animation:none!important;transition:none!important;}}
