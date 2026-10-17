@@ -18,7 +18,7 @@
     ['refrigeration','Refrigeration & Air Conditioning','RAC','Thermal & fluids','Refrigeration cycles, psychrometry and conditioning.','❄','#8fc8ed'],
     ['engineering-mathematics','Engineering Mathematics','MATH','Foundations','Calculus, linear algebra, probability and numerical methods.','∫','#b3b8f4'],
     ['general-aptitude','General Aptitude','GA','Foundations','Quantitative, verbal, analytical and spatial aptitude.','◎','#b3b8f4'],
-    ['ese-general-studies','ESE General Studies & Aptitude','GS','Foundations','A dedicated home for Stage I general studies and aptitude.','▧','#b3b8f4']
+    ['ese-general-studies','ESE General Studies & Aptitude','GS','Foundations','ESE Paper I: aptitude, mathematics, ICT, ethics, projects, materials, quality and environment.','▧','#b3b8f4']
   ].map(([id,name,short,group,description,icon,color])=>({id,name,short,group,description,icon,color}));
   function prepare(banks){
     const ids=new Set();

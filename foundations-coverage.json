@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "date": "2026-10-17",
+  "added": 2063,
+  "subjects": {
+    "engineering-mathematics": {
+      "questions": 593,
+      "chapters": 9,
+      "topics": 25,
+      "keyed": 591,
+      "sourceIssues": 2,
+      "years": [
+        2003,
+        2026
+      ]
+    },
+    "general-aptitude": {
+      "questions": 470,
+      "chapters": 8,
+      "topics": 17,
+      "keyed": 469,
+      "sourceIssues": 1,
+      "years": [
+        2010,
+        2026
+      ]
+    },
+    "ese-general-studies": {
+      "questions": 1000,
+      "chapters": 10,
+      "topics": 28,
+      "keyed": 996,
+      "sourceIssues": 4,
+      "years": [
+        2017,
+        2026
+      ]
+    }
+  },
+  "answerCoverage": {
+    "keyed": 2056,
+    "issues": 7,
+    "pending": 0
+  },
+  "eseYears": {
+    "2017": 100,
+    "2018": 100,
+    "2019": 100,
+    "2020": 100,
+    "2021": 100,
+    "2022": 100,
+    "2023": 100,
+    "2024": 100,
+    "2025": 100,
+    "2026": 100
+  },
+  "transcribedChoiceSets": 1331,
+  "reviewedChoiceSets": 1915,
+  "limits": [
+    "Engineering Mathematics and General Aptitude cover the supplied solved GATE book plus ME papers for 2021–2026 and XE papers for 2007–2026 (aptitude starts in 2010).",
+    "ESE General Studies covers all 100 questions in each Paper I, 2017–2026. No earlier General Studies papers are claimed.",
+    "Official, publisher and independently solved answers are labelled separately. Seven source issues are retained without automatic scoring.",
+    "Scanned formulas and diagrams with uncertain OCR keep original printed choices instead of guessed text.",
+    "The two high-similarity duplicate candidates ask different questions; both were retained."
+  ]
+}

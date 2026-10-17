@@ -41,7 +41,7 @@ test('all entry pages start locked and defer bank and app scripts until login',(
  for(const file of ['index.html','studio-preview.html','sync-device-preview.html','access-preview.html']){
   const html=read(file);assert.match(html,/<html[^>]+data-access="locked"/);assert.match(html,/id="access-gate"/);
   const scripts=[...html.matchAll(/<script src="([^"]+)"/g)].map(x=>x[1].split('?')[0]);assert.deepEqual(scripts,['access.js','account-config.js','account.js'],file);
-  assert.match(html,/data-runtime="bank\.js/);assert.match(html,/data-runtime="app\.js\?v=66/);assert.match(html,/data-runtime="cloud-sync\.js/);
+  assert.match(html,/data-runtime="bank\.js/);assert.match(html,/data-runtime="app\.js\?v=72/);assert.match(html,/data-runtime="cloud-sync\.js/);
  }
  assert.doesNotMatch(accountSource,/Continue as guest|continue practising as a guest/);
 });
