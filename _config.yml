@@ -1,6 +1,8 @@
 # Keep runtime assets byte-for-byte static; exclude development files and superseded image packs.
 markdown: kramdown
 exclude:
+  - "studio.test.cjs"
+  - "account.test.cjs"
   - "assets-14.js"
   - "assets-15.js"
   - "assets-16.js"

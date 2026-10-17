@@ -1,0 +1,5 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const source=fs.readFileSync(__dirname+'/account.js','utf8');
+function account(config={}){const elements={},ctx={PYQ_ACCOUNT_CONFIG:config,document:{querySelector:id=>elements[id]||null,addEventListener:()=>{}},setTimeout:()=>{}};ctx.window=ctx;vm.runInNewContext(source,ctx);return ctx.PYQAccount;}
+test('account configuration accepts browser publishable keys only and refuses secret keys',()=>{const a=account(),url='https://example-project.supabase.co';assert.equal(a.validConfig({url,publishableKey:'sb_publishable_public123'}),true);assert.equal(a.validConfig({url,publishableKey:'sb_secret_do_not_ship'}),false);assert.equal(a.validConfig({url:'http://example-project.supabase.co',publishableKey:'sb_publishable_public123'}),false);assert.equal(a.validConfig({url:'https://supabase.co.attacker.example',publishableKey:'sb_publishable_public123'}),false);assert.equal(a.validConfig({}),false);});
+test('unconfigured auth starts without contacting a provider or modifying device progress',()=>{assert.doesNotThrow(()=>account());});

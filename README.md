@@ -200,3 +200,15 @@ Normal practice opens every matching question in chapter and topic teaching orde
 ## Publishing footprint
 
 GitHub Pages uses `_config.yml` to exclude superseded image bundles and development/audit files from the hosted artifact. They remain in the repository. All referenced runtime assets and question appearances are retained. There is no `.nojekyll` override. The published root is approximately 998 MB; future subject imports must recheck this budget.
+
+## Nexus Studio and accounts (5.9)
+
+`studio.css` and `studio.js` upgrade the existing application without changing question banks, identifiers, grading rules, continuous learning paths or `som-lab-v1` device progress. Native options have explicit contrast in both themes. The question map distinguishes graded answers, unanswered questions and review marks; in exam mode it never calls the grader. The TCS calculator button opens the original provider page in a compact separate window. TCS restricts third-party iframes through its Content Security Policy, so the app does not proxy or copy that page. Pop-up blocking has a direct-link fallback in the toolkit. ESE Prelims timed tests keep the calculator disabled.
+
+Accounts are optional and require a real Supabase project. An empty `account-config.js` deliberately shows a setup notice; it does not simulate successful login. Add only the project HTTPS URL and its `sb_publishable_...` key. Never publish a secret/service-role key. The pinned Supabase 2.118.0 browser SDK is loaded only when configured; its license is in `SUPABASE-LICENSE.txt`.
+
+Enable email/password authentication and email confirmation in the Supabase dashboard. Set the Site URL to `https://pyq-nexus-lab.github.io/` and add that exact URL to allowed auth redirects. Registration, email confirmation, login, password recovery and logout use Supabase Auth. Configure a production SMTP provider before opening public registration; the default email service has delivery and recipient restrictions. Do not disable confirmation merely to work around email setup.
+
+Device progress remains available in guest mode and is not automatically uploaded or cleared at sign-out. Optional private cloud backups require an owner-only `nexus_backups` table with RLS, SELECT/INSERT/UPDATE policies requiring `auth.uid() = user_id`, and no anonymous access. Set `cloudBackups: true` only after provisioning and verifying those policies. Saving a backup is explicit; restoring uses the existing validated import and confirmation flow. Active timed tests prevent cloud restoration. The lab stays public; accounts do not make the question assets private or implement a paywall.
+
+`studio-preview.html` uses in-memory storage for browser QA and cannot read or write real device progress. It is not linked from the application. Test MCQ/MSQ/NAT/written states there before changing the production entry point.
