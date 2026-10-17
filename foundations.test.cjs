@@ -2,6 +2,15 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 const Catalog=require('./catalog.js'),Core=require('./core.js'),U=require('./curriculum.js'),P=require('./ordered-practice.js'),ctx={window:{}};
 for(const f of ['foundations-bank.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
 const raw=Catalog.prepare(JSON.parse(JSON.stringify(ctx.window.PYQ_BANKS))),ids=new Set(raw.map(q=>q.id)),data=ctx.window.PYQ_CURRICULUM_DATA;data.assignments=Object.fromEntries(Object.entries(data.assignments).filter(([id])=>ids.has(id)));const bank=U.apply(require('./dedup.js').build(raw,{groups:[]}).bank,data);
+test('General Studies follows reviewed question meaning rather than incidental option words',()=>{
+ const review=JSON.parse(fs.readFileSync('foundations-topic-review.json','utf8'));
+ assert.equal(Object.keys(review).length,10);
+ for(const[year,rows]of Object.entries(review))for(const[num,code]of Object.entries(rows)){
+  const id='ese-general-studies:fd-esegs-'+year+'-'+num;
+  assert.equal(data.assignments[id],'ese-general-studies-'+String(Number(code[0])+1).padStart(2,'0')+'-'+String(Number(code[1])+1).padStart(2,'0'),id);
+ }
+ assert.equal(bank.find(q=>q.id==='ese-general-studies:fd-esegs-2018-3').chapter,'Current Issues and Development');
+});
 test('all three remaining subject banks have complete chapter paths and unrestricted continuous practice',()=>{
  for(const[id,topic]of [['fd-gate-math-1-1','engineering-mathematics-01-03'],['fd-xe2025-xe-a-17','engineering-mathematics-01-03'],['fd-gate-math-1-42','engineering-mathematics-01-02'],['fd-me2-2022-me-46','engineering-mathematics-01-02'],['fd-gate-math-1-10','engineering-mathematics-01-01']])assert.equal(data.assignments['engineering-mathematics:'+id],topic);
  assert.equal(bank.length,2063);assert.equal(new Set(bank.map(q=>q.id)).size,2063);
