@@ -4,6 +4,16 @@ A shared GATE ME, GATE XE and ESE practice website, with a separately labelled C
 
 **Open the lab: https://pyq-nexus-lab.github.io/**
 
+## Current library: all 18 subjects (v5.14)
+
+The canonical library now contains **15,135 questions**, arranged in **204 chapters and 699 populated topics**. Engineering Mathematics adds **593** questions (2003–2026 source coverage), General Aptitude adds **470** (2010–2026), and ESE General Studies & Aptitude adds **1,000** (100 per year, 2017–2026). These are source-backed practice collections, not a claim that every historical paper is represented. `foundations-coverage.json` records the new sources and counts.
+
+Of the **2,063 additions**, **2,056 have grading keys** and **7 have explicit source issues**. Questions with ambiguous or dropped keys remain available for study without automatic marks. New paths follow chapter/topic order, and original source screenshots and answer provenance remain accessible. Existing question identities, answers, grading and saved progress are preserved.
+
+Screenshot storage is losslessly compressed in `.pack` bundles. `asset-index.js` and `asset-store.js` verify byte counts and SHA-256 hashes before decompression; practice, library preview and original-source views share this loading route. The existing image bytes are unchanged. Original JavaScript image bundles remain in the repository but selected redundant packs are excluded from GitHub Pages through `_config.yml`. Keep the `.pack` files when downloading the project. Current hosted content is approximately **970 MB**; recheck this budget before further imports.
+
+Validation: the full 186-check suite passed, then 29 affected checks passed after the preview/retry fix, including three new loader regression checks. Full image, key and curriculum validation passed. The earlier release notes below describe historical milestones and their then-current counts; this section is the current library summary.
+
 ## Industrial Engineering and Turbomachinery (v5.8)
 
 Separate subject spaces provide **781 Industrial Engineering** questions in 13 chapters and **1,040 Turbomachinery** questions in 11 chapters, with uninterrupted chapter/topic practice. The source audit covers historical supplied GATE/ESE books and original recent papers, including ESE/CSE Mains 2017–2026. Objective answers retain their official, book or independently derived labels; Mains uses model references and self-assessment. Known source errors cannot produce automatic marks.

@@ -6,8 +6,8 @@ function screenshotSourceLabel(source){
 }
 async function questionScreenshot(q){
  if(q.pack&&!(window.PYQ_IMAGES?.[q.assetId]||window.SOM_IMAGES?.[q.assetId])){
-  if(!imagePacks[q.pack])imagePacks[q.pack]=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=q.pack;script.onload=resolve;script.onerror=()=>{delete imagePacks[q.pack];reject(Error('Screenshot bundle could not be loaded'))};document.head.append(script)});
-  await imagePacks[q.pack];
+  if(!imagePacks[q.pack])imagePacks[q.pack]=window.PYQ_ASSET_INDEX?.[q.pack]?PYQAssetStore.load(q.pack):new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=q.pack;script.onload=resolve;script.onerror=()=>{delete imagePacks[q.pack];reject(Error('Screenshot bundle could not be loaded'))};document.head.append(script)});
+  try{await imagePacks[q.pack]}catch(error){delete imagePacks[q.pack];throw error}
  }
  return window.PYQ_IMAGES?.[q.assetId]||window.SOM_IMAGES?.[q.assetId]||q.imageUrl||'public/'+q.image;
 }
