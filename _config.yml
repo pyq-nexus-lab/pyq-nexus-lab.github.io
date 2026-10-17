@@ -1,6 +1,8 @@
 # Keep runtime assets byte-for-byte static; exclude development files and superseded image packs.
 markdown: kramdown
 exclude:
+  - "sync.test.cjs"
+  - "sync-adapter.test.cjs"
   - "studio.test.cjs"
   - "account.test.cjs"
   - "assets-14.js"
