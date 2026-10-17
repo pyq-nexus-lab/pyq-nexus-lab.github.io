@@ -26,6 +26,14 @@
       "sha": "5f9e688b4efa5b8de70921372a1d4af6ac6441e2",
       "size": 880
     },
+    "crops-ui.js": {
+      "sha": "7ec8bc96f6bf9c2c6964498381d327f031f9b24a",
+      "size": 3282
+    },
+    "crops.css": {
+      "sha": "0b38bbf0671d6028aa5dfedf4aa9e9564b1edf9c",
+      "size": 981
+    },
     "crops.test.cjs": {
       "sha": "7fb3ca70b77f84457da3b3d302e171df91f985b0",
       "size": 5437
@@ -67,8 +75,8 @@
       "size": 5498
     },
     "index.html": {
-      "sha": "a7c6e93093f2a5771d40adb206dafb85c4a1bc44",
-      "size": 6573
+      "sha": "1e5b0d7a7f57f9bf834444bd43d54c3ba6370222",
+      "size": 6574
     },
     "industrial-turbo-bank.js": {
       "sha": "e494a52c762b31d7bc5ebbaf8c158d6d52fb3b93",
