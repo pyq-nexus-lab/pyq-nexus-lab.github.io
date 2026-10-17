@@ -4,13 +4,19 @@ A shared GATE ME, GATE XE and ESE practice website, with a separately labelled C
 
 **Open the lab: https://pyq-nexus-lab.github.io/**
 
+## Image delivery performance (v5.14.1)
+
+The interface, CSS, question content, image quality and progress model are unchanged. The Pages workflow runs `node build-site.cjs _site` to extract screenshots as individual content-addressed image files. It applies the existing answer repairs and crop patches before checking every question reference. Original screenshot bytes are copied exactly; identical images share one URL. Browsers fetch one screenshot instead of downloading and parsing an entire multi-megabyte bundle.
+
+Practice prepares at most two following screenshots at low priority after the current image is visible; data saver and slow connections disable this. An image-only service worker caches up to 160 immutable screenshots for subsequent visits, with ordinary network loading if storage is unavailable. It never caches account requests, progress, HTML or API responses. Authenticated startup preloads scripts together while retaining their original execution order. Source checkouts still support the legacy bundle loader. GitHub Pages must use **GitHub Actions** as its publishing source; the workflow builds the optimized website without committing generated image files.
+
 ## Current library: all 18 subjects (v5.14)
 
 The canonical library now contains **15,135 questions**, arranged in **204 chapters and 699 populated topics**. Engineering Mathematics adds **593** questions (2003–2026 source coverage), General Aptitude adds **470** (2010–2026), and ESE General Studies & Aptitude adds **1,000** (100 per year, 2017–2026). These are source-backed practice collections, not a claim that every historical paper is represented. `foundations-coverage.json` records the new sources and counts.
 
 Of the **2,063 additions**, **2,056 have grading keys** and **7 have explicit source issues**. Questions with ambiguous or dropped keys remain available for study without automatic marks. New paths follow chapter/topic order, and original source screenshots and answer provenance remain accessible. Existing question identities, answers, grading and saved progress are preserved.
 
-Screenshot storage is losslessly compressed in `.pack` bundles. `asset-index.js` and `asset-store.js` verify byte counts and SHA-256 hashes before decompression; practice, library preview and original-source views share this loading route. The existing image bytes are unchanged. Original JavaScript image bundles remain in the repository but selected redundant packs are excluded from GitHub Pages through `_config.yml`. Keep the `.pack` files when downloading the project. Current hosted content is approximately **970 MB**; recheck this budget before further imports.
+Source screenshot bundles remain in Git for audit and local compatibility. Production now serves individually cached original images through the build workflow above. The optimized hosted artifact is approximately 770 MB; recheck this budget before future imports.
 
 Validation: the full 186-check suite passed, then 29 affected checks passed after the preview/retry fix, including three new loader regression checks. Full image, key and curriculum validation passed. The earlier release notes below describe historical milestones and their then-current counts; this section is the current library summary.
 
