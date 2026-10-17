@@ -233,3 +233,8 @@ The workspace starts locked and requires a Supabase-verified account. Guest acce
 This is an application access gate on GitHub Pages. The repository and static files are still public; it is not server-side protection or a paywall for the question files. Private content delivery would require moving those files behind an authenticated server or private storage. Supabase progress remains protected by its existing owner-only row policies.
 
 access-preview.html is an unlinked, noindex test page with isolated in-memory storage. It checks the real signed-out flow without logging out the owner's normal browser.
+
+
+### Paper practice workspace (5.12)
+
+Active practice uses the full viewport with a compact header, white question paper, blue answer controls and an optional dark surround. The workspace menu and question map stay collapsed. Notes, confidence, formulas, source appearances and learning history open in a focused side drawer without changing the question position. The complete screenshot fits the available paper area by default, including printed options. Read size provides larger text with scrolling confined to the paper; image zoom shows the original scan. Answer controls and previous/check/next actions remain visible independently of question scrolling. Explanations open on demand, and timed exams retain answer hiding and calculator rules. Local answers, cloud sync, mandatory authentication and question identities are unchanged.
