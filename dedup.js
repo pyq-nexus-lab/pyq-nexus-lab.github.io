@@ -26,9 +26,12 @@
   const translate=(id,answer)=>{const m=maps.get(id);return !m?answer:Array.isArray(answer)?answer.map(v=>m[v]||v):m[answer]||answer};
   const translateKey=(id,key)=>{if(!key)return null;const out=clone(key);if(out.options)out.options=translate(id,out.options);if(out.optionSets)out.optionSets=out.optionSets.map(s=>translate(id,s));return out};
   const signature=key=>key?.kind==='all'?'all':key?.acceptedText?JSON.stringify(key.acceptedText.slice().sort()):key?.options?JSON.stringify((key.optionSets||[key.options]).map(s=>s.slice().sort()).sort()):JSON.stringify(key?.ranges||[[key?.min,key?.max]]);
+  const relocatedSources=new Map;for(const [id,target]of aliases)if(id!==target&&original.get(id)?.subject!==original.get(target)?.subject){if(!relocatedSources.has(target))relocatedSources.set(target,[]);relocatedSources.get(target).push(id)}
   const bank=raw.filter(q=>resolve(q.id)===q.id).map(q=>{
    const ids=groups.get(q.id)||[q.id],sources=ids.map(id=>original.get(id));
-   const occurrences=sources.map(s=>({id:s.id,title:s.title,source:s.source,year:s.year,number:s.number,sourcePage:s.sourcePage,chapter:s.chapter,archive:!!s.archive,pack:s.pack,assetId:s.assetId,optionMap:maps.get(s.id)||null}));
+   const history=q.preserveRelocatedSources?(relocatedSources.get(q.id)||[]).map(id=>original.get(id)):[];
+   const appearances=history.length?[...sources.filter(s=>!s.relocatedFrom),...history]:sources;
+   const occurrences=appearances.map(s=>({id:s.id,title:s.title,source:s.source,year:s.year,number:s.number,sourcePage:s.sourcePage,chapter:s.chapter,archive:!!s.archive,pack:s.pack,assetId:s.assetId,optionMap:maps.get(s.id)||null}));
    const keys=sources.filter(s=>s.key).map(s=>({id:s.id,key:translateKey(s.id,s.key),keyStatus:s.keyStatus,keySource:s.keySource||s.source,marks:s.marks,answerReference:s.answerReference,explanation:s.explanation,referenceAnswer:s.referenceAnswer,answerIssue:s.answerIssue}));
    const priority=k=>k.keyStatus==='official'?3:k.keyStatus==='solved'?2:1,rank=Math.max(0,...keys.map(priority)),candidates=keys.filter(k=>priority(k)===rank);
    const conflict=new Set(candidates.map(k=>signature(k.key))).size>1;

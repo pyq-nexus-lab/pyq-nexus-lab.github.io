@@ -1,7 +1,7 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),crypto=require('crypto');
 const C=require('./catalog.js'),A=require('./answers.js'),D=require('./dedup.js'),U=require('./curriculum.js'),X=require('./crops.js'),Core=require('./core.js'),P=require('./ordered-practice.js'),ctx={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','mfg-bank.js','emmat-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
-const d=ctx.window,raw=X.apply(A.apply(C.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),bank=U.apply(D.build(raw,d.PYQ_DEDUP_DATA).bank,d.PYQ_CURRICULUM_DATA),subjects=['engineering-mechanics','materials'],added=bank.filter(q=>subjects.includes(q.subject)),source=raw.filter(q=>subjects.includes(q.subject)),q=id=>source.find(q=>q.assetId===id);
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','mfg-bank.js','emmat-bank.js','industrial-turbo-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
+const d=ctx.window,raw=X.apply(A.apply(C.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),subjects=['engineering-mechanics','materials'],added=bank.filter(q=>subjects.includes(q.subject)),source=raw.filter(q=>subjects.includes(q.subject)),q=id=>source.find(q=>q.assetId===id);
 test('Separate Mechanics and Materials banks cover numbered archive sections and requested recent years',()=>{
  assert.equal(source.length,1574);assert.equal(added.length,1426);assert.deepEqual(subjects.map(s=>added.filter(q=>q.subject===s).length),[411,1015]);
  const audit=JSON.parse(fs.readFileSync('emmat-source-audit.json','utf8'));
@@ -25,6 +25,6 @@ test('All images decode from the exact reviewed crop bytes; complete linked ques
 });
 test('Each full subject follows its teaching path without a session-size cap and preserves prior IDs',()=>{
  for(const[s,chapters,total]of [['engineering-mechanics',9,411],['materials',14,1015]]){const qs=bank.filter(q=>q.subject===s);assert.equal(U.outline(qs).length,chapters);const path=P.open(null,U.sessionIds(qs.map(q=>q.id).reverse(),bank));assert.equal(path.ids.length,total);assert.deepEqual(path.ids,qs.map(q=>q.id));assert.equal(path.deadline,null);}
- assert.equal(bank.length,12109);assert.equal(bank.filter(q=>!subjects.includes(q.subject)).length,10683);const prior=JSON.parse(fs.readFileSync('emmat-compatibility.json','utf8'));assert.equal(prior.preserved,10683);assert.equal(prior.storage,'som-lab-v1');
+ require('./compatibility.cjs').verifyPrior(bank,lib);
  for(const[id,topic]of Object.entries({'emmat-esep-2023-79':'materials-12-01','emmat-me2015-s3-q12-p52':'engineering-mechanics-03-03','emmat-xe2020-d-s1-q18-p24':'engineering-mechanics-02-02'}))assert.equal(added.find(q=>q.assetId===id).topicId,topic);
 });

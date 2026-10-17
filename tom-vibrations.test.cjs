@@ -1,6 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),crypto=require('crypto');
 const C=require('./catalog.js'),A=require('./answers.js'),D=require('./dedup.js'),U=require('./curriculum.js'),X=require('./crops.js'),Core=require('./core.js'),P=require('./ordered-practice.js'),ctx={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','mfg-bank.js','emmat-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','mfg-bank.js','emmat-bank.js','industrial-turbo-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
 const d=ctx.window,raw=X.apply(A.apply(C.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),subjects=['theory-of-machines','vibrations'],added=bank.filter(q=>subjects.includes(q.subject)),source=raw.filter(q=>subjects.includes(q.subject));
 test('TOM and Vibrations remain separate and cover supplied sequences and Mains years',()=>{
  assert.equal(source.length,1027);assert.equal(added.length,1015);assert.equal(added.filter(q=>q.subject==='theory-of-machines').length,746);assert.equal(added.filter(q=>q.subject==='vibrations').length,269);
@@ -23,6 +23,6 @@ test('Every new screenshot matches its reviewed bytes and shared context is pres
 });
 test('Teaching paths are continuous, ordered and preserve all earlier identities',()=>{
  for(const [subject,n,chapters]of [['theory-of-machines',746,12],['vibrations',269,8]]){const qs=added.filter(q=>q.subject===subject);assert.equal(U.outline(qs).length,chapters);const path=P.open(null,U.sessionIds(qs.map(q=>q.id).reverse(),bank));assert.equal(path.ids.length,n);assert.deepEqual(path.ids,qs.map(q=>q.id));assert.equal(path.deadline,null);}
- assert.equal(bank.filter(q=>!subjects.includes(q.subject)&&!['machine-design','manufacturing','engineering-mechanics','materials'].includes(q.subject)).length,7190);const prior=JSON.parse(fs.readFileSync('tom-vibrations-compatibility.json','utf8'));assert.equal(prior.preserved,7190);assert.equal(prior.storage,'som-lab-v1');
+ require('./compatibility.cjs').verifyPrior(bank,lib);
  const expected={'tv-ese-p2023_095':'theory-of-machines-11-02','tv-gate-book-7-18':'vibrations-03-02','tv-ese-b02_026':'theory-of-machines-03-02','tv-ese-p2019_101':'vibrations-07-01'};for(const[id,topic]of Object.entries(expected))assert.equal(added.find(q=>q.assetId===id)?.topicId,topic,id);
 });

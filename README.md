@@ -4,6 +4,14 @@ A shared GATE ME, GATE XE and ESE practice website, with a separately labelled C
 
 **Open the lab: https://pyq-nexus-lab.github.io/**
 
+## Industrial Engineering and Turbomachinery (v5.8)
+
+Separate subject spaces provide **781 Industrial Engineering** questions in 13 chapters and **1,040 Turbomachinery** questions in 11 chapters, with uninterrupted chapter/topic practice. The source audit covers historical supplied GATE/ESE books and original recent papers, including ESE/CSE Mains 2017–2026. Objective answers retain their official, book or independently derived labels; Mains uses model references and self-assessment. Known source errors cannot produce automatic marks.
+
+Hydraulic machines, compressors, nozzles and turbines have been consolidated into their teaching paths. Existing saved IDs, notes and answers migrate through explicit aliases and reviewed option translations. General steam-cycle questions remain in Power Plant Engineering and supporting cycle questions in Thermodynamics. All new images were reviewed in contact sheets; shared statements, diagrams and required Mains tables are retained.
+
+**Known source gap:** 26 older propulsion questions (book Q7.16–7.41) are unavailable in the damaged/incomplete supplied PDF. They are not counted as uploaded. See `industrial-turbo-source-audit.json`, `industrial-turbo-coverage.json` and `industrial-turbo-compatibility.json`.
+
 ## Engineering Mechanics and Engineering Materials (v5.7)
 
 Two separate subject spaces add **411 Mechanics** and **1,015 Materials** unique questions in 9 and 14 chapters. The addition includes historical supplied GATE/ESE book sections, recent original GATE ME/XE and ESE Prelims, and ESE/CSE Mechanical Mains 2017–2026. Of 1,426 questions, 1,297 have objective keys, 112 have written self-review references, and 17 have explained source issues excluded from automatic marks. All have a reference; no answer is silently guessed to fill a gap.
@@ -12,7 +20,7 @@ Question screenshots retain diagrams, choices and linked statements. Duplicate s
 
 ## Workspace redesign (v5.0)
 
-Home opens with all thirteen live subjects, real scores, question coverage, a resume button, daily activity and revision priorities. Start the full subject path from a card, choose a chapter or topic, or continue from a saved position. Untimed practice includes every matching question in teaching order. Existing sessions, answers and notes use the same browser storage and question identities.
+Home opens with all fifteen live subjects, real scores, question coverage, a resume button, daily activity and revision priorities. Start the full subject path from a card, choose a chapter or topic, or continue from a saved position. Untimed practice includes every matching question in teaching order. Existing sessions, answers and notes use the same browser storage and question identities.
 
 The question library keeps search, chapter and topic selection visible. Extra type/year/source/progress filters expand on demand. Results are grouped in learning order with a desktop chapter index, previews and continuous ordered practice. Previewing a question also offers direct practice.
 
@@ -60,12 +68,27 @@ The release preserves all 6,731 earlier questions, keys, images, teaching assign
 
 ## Question and answer library
 
-- **10,683 unique questions:** 1,231 SOM, 1,827 Fluid Mechanics, 708 Heat Transfer, 767 Power Plant Engineering, 1,542 Thermodynamics, 656 RAC, 459 IC Engines, 746 Theory of Machines, 269 Mechanical Vibrations, 722 Machine Design and 1,756 Manufacturing Engineering.
-- **11,959 source entries** preserved; 1,276 repeated or relocated copies consolidated.
-- **9,405 automatically gradable questions:** 1,882 official-key matches, 5,803 printed-book keys and 1,720 independently derived keys.
-- **1,211 written references** for self-review, including historical written-response exercises.
-- **67 explained source inconsistencies**, excluded from automatic marks.
-- Questions follow teaching chapter and topic sequence without arbitrary practice set-size limits.
+Current v5.8 totals: **13,072 unique questions**, with **11,559 objective keys**, **1,420 written references** and **93 explained source inconsistencies** excluded from automatic scores. All 15,712 source appearances remain represented or redirected.
+
+| Subject | Questions |
+|---|---:|
+| Strength of Materials | 1231 |
+| Fluid Mechanics | 1465 |
+| Heat Transfer | 708 |
+| Power Plant Engineering | 479 |
+| Thermodynamics | 1338 |
+| Refrigeration & Air Conditioning | 655 |
+| IC Engines | 459 |
+| Theory of Machines | 746 |
+| Mechanical Vibrations | 269 |
+| Machine Design | 722 |
+| Manufacturing Engineering | 1753 |
+| Engineering Mechanics | 411 |
+| Engineering Materials | 1015 |
+| Industrial Engineering | 781 |
+| Turbomachinery | 1040 |
+
+The versioned sections below describe historical releases; current counts are in `platform-coverage.json`. Subject moves preserve earlier saved IDs and source appearances.
 
 The raw Fluid Mechanics solved-book sequence includes 223 GATE entries from 1987–2020, with 181 entries before 2017, plus 634 ESE Prelims archive entries. These are source-sequence counts before duplicate consolidation. Imported compilations and supplied book chapters define this bank's scope; other subjects await source files.
 
@@ -119,7 +142,7 @@ Confidence, spaced revision, a mistake journal, attempt history, notes, bookmark
 
 Home combines subject scores, answer coverage, revision priorities, targets, daily activity and study plans. Performance provides exam-track, date-period and latest-attempt/all-attempt filters, chapter focus areas and an exportable report. Coverage uses all-time answered unique questions; skips do not count. Written self-scores remain separate from objective grades.
 
-Advanced settings control exam preferences, adaptive selection, revision, targets, text size, density, focus layout and reduced motion. The subject hub shows the thirteen available banks first: SOM, Theory of Machines, Mechanical Vibrations, Thermodynamics, Heat Transfer, Fluid Mechanics, Power Plant Engineering, Refrigeration & Air Conditioning, IC Engines, Machine Design, Manufacturing Engineering, Engineering Mechanics and Engineering Materials. Remaining subject spaces are collapsed until needed and show honest empty states.
+Advanced settings control exam preferences, adaptive selection, revision, targets, text size, density, focus layout and reduced motion. The subject hub shows the fifteen available banks first: SOM, Theory of Machines, Mechanical Vibrations, Thermodynamics, Heat Transfer, Fluid Mechanics, Power Plant Engineering, Refrigeration & Air Conditioning, IC Engines, Machine Design, Manufacturing Engineering, Engineering Mechanics and Engineering Materials. Remaining subject spaces are collapsed until needed and show honest empty states.
 
 ## Saved progress and updated keys
 
@@ -173,3 +196,7 @@ Quick practice now defaults to the earliest unanswered questions in teaching ord
 ### Continuous practice (5.1)
 
 Normal practice opens every matching question in chapter and topic teaching order, with no 10/20/200-question cap. Paths remember their position independently and share saved responses. Existing untimed sets expand to their subject/track path while retaining the current question and drafts. Timed tests retain configurable size, timer and submission. The question navigator shows 48 numbers at a time for performance; every question remains accessible through navigation and chapter jump. This display window does not limit practice. Progress, notes and keys retain the original browser storage key and are included in backups.
+
+## Publishing footprint
+
+GitHub Pages uses `_config.yml` to exclude superseded image bundles and development/audit files from the hosted artifact. They remain in the repository. All referenced runtime assets and question appearances are retained. There is no `.nojekyll` override. The published root is approximately 998 MB; future subject imports must recheck this budget.

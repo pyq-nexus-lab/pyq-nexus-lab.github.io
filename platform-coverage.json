@@ -1,23 +1,23 @@
 {
   "generatedOn": "2026-10-17",
-  "total": 12109,
-  "official": 2409,
-  "book": 6195,
-  "solved": 2098,
-  "written": 1323,
-  "issues": 84,
+  "total": 13072,
+  "official": 2477,
+  "book": 6910,
+  "solved": 2172,
+  "written": 1420,
+  "issues": 93,
   "pending": 0,
-  "keyed": 10702,
-  "sourceEntries": 13533,
-  "duplicateCopiesMerged": 1424,
-  "readySubjects": 13,
+  "keyed": 11559,
+  "sourceEntries": 15712,
+  "duplicateCopiesMerged": 2640,
+  "readySubjects": 15,
   "registeredSubjects": 18,
   "countsByExam": {
-    "gate-me": 2592,
-    "gate-xe": 2033,
-    "ese-prelims": 5860,
-    "ese-mains": 689,
-    "cse-mains": 540,
+    "gate-me": 2758,
+    "gate-xe": 2015,
+    "ese-prelims": 6580,
+    "ese-mains": 721,
+    "cse-mains": 603,
     "gate-pi": 395
   },
   "subjects": {
@@ -138,31 +138,31 @@
     "fluid-mechanics": {
       "generatedOn": "2026-10-17",
       "subject": "fluid-mechanics",
-      "entries": 1827,
-      "uniqueQuestions": 1827,
+      "entries": 1465,
+      "uniqueQuestions": 1465,
       "sourceEntries": 1976,
-      "duplicateCopiesMerged": 149,
+      "duplicateCopiesMerged": 511,
       "originalScreenshotEntries": 820,
       "expandedLinkedQuestions": 4,
       "supplementaryBookEntries": 1152,
       "countsByExam": {
-        "gate-me": 277,
+        "gate-me": 226,
         "gate-xe": 460,
-        "ese-prelims": 1011,
-        "ese-mains": 79
+        "ese-prelims": 725,
+        "ese-mains": 54
       },
       "countsByFormat": {
-        "MCQ": 1517,
-        "MSQ": 15,
-        "NAT": 203,
-        "WRITTEN": 79,
-        "TEXT": 13
+        "MCQ": 1198,
+        "MSQ": 13,
+        "NAT": 188,
+        "WRITTEN": 54,
+        "TEXT": 12
       },
-      "gradable": 1743,
-      "officialKeys": 419,
-      "bookKeys": 1051,
-      "independentlyDerivedKeys": 273,
-      "writtenSelfAssessment": 79,
+      "gradable": 1407,
+      "officialKeys": 403,
+      "bookKeys": 739,
+      "independentlyDerivedKeys": 265,
+      "writtenSelfAssessment": 54,
       "sourceIssues": [
         {
           "id": "fluid-mechanics:fluid-ese-book-4-6",
@@ -183,11 +183,6 @@
           "id": "fluid-mechanics:fm-ese-prelims-096",
           "issue": "The provided source does not support a unique listed answer. This question is excluded from objective scores.",
           "referenceAnswer": "Mean velocity ≈2.828 m/s; flow rate ≈0.1999 m³/s"
-        },
-        {
-          "id": "fluid-mechanics:fluid-ese-hydraulic-book-1-9",
-          "issue": "No correct printed option; excluded from automatic objective marks.",
-          "referenceAnswer": "2707.56 kW (using g=9.81 m/s²)"
         }
       ],
       "pendingObjectiveKeys": [],
@@ -321,22 +316,22 @@
     "power-plant": {
       "generatedOn": "2026-10-17",
       "subject": "power-plant",
-      "sourceEntries": 771,
-      "uniqueQuestions": 767,
-      "entries": 767,
+      "sourceEntries": 795,
+      "uniqueQuestions": 479,
+      "entries": 479,
       "countsByExam": {
-        "gate-xe": 78,
-        "ese-prelims": 397,
-        "gate-me": 111,
-        "cse-mains": 83,
-        "ese-mains": 98
+        "gate-xe": 53,
+        "ese-prelims": 262,
+        "gate-me": 55,
+        "cse-mains": 38,
+        "ese-mains": 71
       },
       "countsByFormat": {
-        "MCQ": 509,
-        "NAT": 61,
-        "WRITTEN": 181,
-        "TEXT": 9,
-        "MSQ": 7
+        "MCQ": 328,
+        "NAT": 34,
+        "WRITTEN": 109,
+        "TEXT": 3,
+        "MSQ": 5
       },
       "chapters": 12,
       "populatedTopics": 44,
@@ -357,12 +352,12 @@
         "Ten contradictory or disputed source items have explanations and are excluded from automatic scoring.",
         "The bank covers the supplied Power Plant chapter and related nozzle, compressor, nuclear and renewable-energy questions. It is not a claim that every thermodynamics question is a Power Plant question."
       ],
-      "duplicateCopiesMerged": 4,
-      "gradable": 576,
-      "officialKeys": 71,
-      "bookKeys": 282,
-      "independentlyDerivedKeys": 223,
-      "writtenSelfAssessment": 181,
+      "duplicateCopiesMerged": 316,
+      "gradable": 363,
+      "officialKeys": 43,
+      "bookKeys": 190,
+      "independentlyDerivedKeys": 130,
+      "writtenSelfAssessment": 109,
       "sourceIssues": [
         {
           "id": "power-plant:pp-xe2008-29",
@@ -380,16 +375,6 @@
           "referenceAnswer": "Pulverized firing gives high efficiency, rapid response to load changes and large steam capacity: statements 1, 2 and 4. Statement 3 is false; no offered combination is 1, 2 and 4."
         },
         {
-          "id": "power-plant:pp-esep-1-110",
-          "issue": "The printed optimum velocity does not agree with the stated 6% relative-velocity loss.",
-          "referenceAnswer": "U/C1=cos18°/2=0.47553. With k=0.94, 120000=(1+k)C1²cos²18°/4 gives C1≈523.0 m/s. No option has that velocity; D gives the correct speed ratio but assumes no blade loss."
-        },
-        {
-          "id": "power-plant:pp-esep-1-171",
-          "issue": "The supplied question has no uniquely supported listed answer.",
-          "referenceAnswer": "The speed ratio gives nozzle exit speed 144/0.48=300 m/s, so its actual enthalpy drop from rest is 300²/2000=45 kJ/kg. An isentropic heat drop additionally requires nozzle efficiency, which is not supplied. Blade velocity coefficient cannot substitute for nozzle efficiency."
-        },
-        {
           "id": "power-plant:pp-xe2008-16",
           "issue": "The supplied thermodynamic data give h≈1994.2kJ/kg with x≈0.766, but no option gives both values consistently.",
           "referenceAnswer": "Isentropic exhaustx=(6.5422−0.4763)/(8.3960−0.4763)=0.76593; h≈1994.42 kJ/kgusing the supplied data; the closest combined choice isD (0.77, 2004.12)."
@@ -405,11 +390,6 @@
           "referenceAnswer": "Cooling capability improves as entering-air wet-bulb temperature falls. Recirculation brings warm humid exhaust air back to the inlet and usually degrades performance. The comparative mechanical-versus-natural-draft wording requires operating conditions not given here."
         },
         {
-          "id": "power-plant:pp-xe2008-26",
-          "issue": "The formula choices contain a printed exponent error; a reliable unique automatic choice is not assigned.",
-          "referenceAnswer": "Ideal Brayton maximum-work pressure ratio is (Tmax/Tmin)^[γ/(2(γ−1))]. The supplied scan instead prints γ/(2γ−1) in optionB, so no printed option exactly matches."
-        },
-        {
           "id": "power-plant:pp-esep-4-61",
           "issue": "The generally correct combination is not among the supplied alternatives.",
           "referenceAnswer": "Carnot requires reversible processes, so statement 2 is false. Statement 1 explains a practical limitation. A perfect gas with constant specific heat is not a necessary Carnot-cycle condition, so statement 3 is not generally true. The only generally correct statement is 1, absent from the options."
@@ -419,22 +399,22 @@
     "thermodynamics": {
       "generatedOn": "2026-10-17",
       "subject": "thermodynamics",
-      "sourceEntries": 1898,
-      "uniqueQuestions": 1542,
-      "entries": 1542,
+      "sourceEntries": 1901,
+      "uniqueQuestions": 1338,
+      "entries": 1338,
       "countsByExam": {
-        "gate-xe": 457,
-        "ese-prelims": 654,
-        "ese-mains": 41,
-        "gate-me": 345,
-        "cse-mains": 45
+        "gate-xe": 428,
+        "ese-prelims": 554,
+        "ese-mains": 37,
+        "gate-me": 293,
+        "cse-mains": 26
       },
       "countsByFormat": {
-        "MCQ": 1172,
-        "WRITTEN": 86,
-        "MSQ": 16,
-        "NAT": 260,
-        "TEXT": 8
+        "MCQ": 1026,
+        "WRITTEN": 63,
+        "MSQ": 13,
+        "NAT": 231,
+        "TEXT": 5
       },
       "chapters": 14,
       "populatedTopics": 61,
@@ -457,12 +437,12 @@
       ],
       "subjectCorrections": 167,
       "scopeOrderAudit": "scope-order-audit.json",
-      "duplicateCopiesMerged": 356,
-      "gradable": 1442,
-      "officialKeys": 406,
-      "bookKeys": 666,
-      "independentlyDerivedKeys": 370,
-      "writtenSelfAssessment": 86,
+      "duplicateCopiesMerged": 563,
+      "gradable": 1263,
+      "officialKeys": 365,
+      "bookKeys": 598,
+      "independentlyDerivedKeys": 300,
+      "writtenSelfAssessment": 63,
       "sourceIssues": [
         {
           "id": "thermodynamics:td-esep-2021-54",
@@ -523,44 +503,34 @@
           "id": "thermodynamics:td-xe2008-s1-q16-p46",
           "issue": "The supplied thermodynamic data give h≈1994.2kJ/kg with x≈0.766, but no option gives both values consistently.",
           "referenceAnswer": "Isentropic exhaustx=(6.5422−0.4763)/(8.3960−0.4763)=0.76593; h≈1994.42 kJ/kgusing the supplied data; the closest combined choice isD (0.77, 2004.12)."
-        },
-        {
-          "id": "thermodynamics:td-xe2008-s1-q26-p48",
-          "issue": "The formula choices contain a printed exponent error; a reliable unique automatic choice is not assigned.",
-          "referenceAnswer": "Ideal Brayton maximum-work pressure ratio is (Tmax/Tmin)^[γ/(2(γ−1))]. The supplied scan instead prints γ/(2γ−1) in optionB, so no printed option exactly matches."
-        },
-        {
-          "id": "thermodynamics:td-esep-2025-55",
-          "issue": "The wording claims that every complete cycle necessarily has nonzero net work. The first law requires Qnet=Wnet, which may both be zero. Statements 1 and 2 hold, but statement 3 needs a qualification; no unique unambiguous key is assigned.",
-          "referenceAnswer": "The wording claims that every complete cycle necessarily has nonzero net work. The first law requires Qnet=Wnet, which may both be zero. Statements 1 and 2 hold, but statement 3 needs a qualification; no unique unambiguous key is assigned."
         }
       ]
     },
     "refrigeration": {
       "generatedOn": "2026-10-17",
       "subject": "refrigeration",
-      "entries": 656,
-      "uniqueQuestions": 656,
+      "entries": 655,
+      "uniqueQuestions": 655,
       "sourceEntries": 732,
-      "duplicateCopiesMerged": 76,
+      "duplicateCopiesMerged": 77,
       "countsByExam": {
-        "ese-prelims": 413,
+        "ese-prelims": 412,
         "gate-me": 76,
         "ese-mains": 51,
         "gate-xe": 60,
         "cse-mains": 56
       },
       "countsByFormat": {
-        "MCQ": 491,
+        "MCQ": 490,
         "TEXT": 3,
         "WRITTEN": 107,
         "NAT": 52,
         "UNCLASSIFIED": 1,
         "MSQ": 2
       },
-      "gradable": 542,
+      "gradable": 541,
       "officialKeys": 63,
-      "bookKeys": 386,
+      "bookKeys": 385,
       "independentlyDerivedKeys": 93,
       "writtenSelfAssessment": 107,
       "sourceIssues": [
@@ -793,28 +763,28 @@
     "manufacturing": {
       "generatedOn": "2026-10-17",
       "subject": "manufacturing",
-      "entries": 1756,
-      "uniqueQuestions": 1756,
+      "entries": 1753,
+      "uniqueQuestions": 1753,
       "sourceEntries": 2020,
-      "duplicateCopiesMerged": 264,
+      "duplicateCopiesMerged": 267,
       "countsByExam": {
         "gate-me": 553,
         "gate-pi": 393,
-        "ese-prelims": 685,
+        "ese-prelims": 683,
         "ese-mains": 52,
-        "cse-mains": 73
+        "cse-mains": 72
       },
       "countsByFormat": {
-        "MCQ": 1402,
+        "MCQ": 1400,
         "MSQ": 9,
         "NAT": 130,
-        "WRITTEN": 215
+        "WRITTEN": 214
       },
-      "gradable": 1536,
+      "gradable": 1534,
       "officialKeys": 213,
       "bookKeys": 1217,
-      "independentlyDerivedKeys": 106,
-      "writtenSelfAssessment": 215,
+      "independentlyDerivedKeys": 104,
+      "writtenSelfAssessment": 214,
       "sourceIssues": [
         {
           "id": "manufacturing:mfg-gate-book-5-67",
@@ -982,6 +952,136 @@
           "id": "materials:emmat-xe2009-c-s1-q24-p13",
           "issue": "Drude conductivity σ=ne²τ/me. With the physically standard three electrons per Al atom, n=1.815×10²⁹ m⁻³ gives σ≈1.02×10⁸ S/m, absent from the options. Using the preceding question's apparent one-electron assumption gives 3.40×10⁷ S/m (C). This linked source ambiguity is excluded from automatic grading.",
           "referenceAnswer": "Drude conductivity σ=ne²τ/me. With the physically standard three electrons per Al atom, n=1.815×10²⁹ m⁻³ gives σ≈1.02×10⁸ S/m, absent from the options. Using the preceding question's apparent one-electron assumption gives 3.40×10⁷ S/m (C). This linked source ambiguity is excluded from automatic grading."
+        }
+      ]
+    },
+    "industrial": {
+      "generatedOn": "2026-10-17",
+      "subject": "industrial",
+      "entries": 781,
+      "uniqueQuestions": 781,
+      "sourceEntries": 897,
+      "duplicateCopiesMerged": 116,
+      "countsByExam": {
+        "gate-me": 210,
+        "ese-prelims": 463,
+        "cse-mains": 72,
+        "ese-mains": 36
+      },
+      "countsByFormat": {
+        "MCQ": 617,
+        "WRITTEN": 110,
+        "NAT": 54
+      },
+      "gradable": 668,
+      "officialKeys": 92,
+      "bookKeys": 495,
+      "independentlyDerivedKeys": 81,
+      "writtenSelfAssessment": 110,
+      "sourceIssues": [
+        {
+          "id": "industrial:it-gate-industrial-3-3",
+          "issue": "The displayed LP permits x1=0,x2=10 under nonnegativity, giving profit 50, which is absent from the choices. Since 2x1+5x2≤5(x1+x2)≤50, this is the maximum for the displayed ≤10 constraint. If both variables must be strictly positive, 50 is a supremum rather than an attained maximum. The printed choices/constraint are inconsistent; do not grade by guessing a letter.",
+          "referenceAnswer": "The displayed LP permits x1=0,x2=10 under nonnegativity, giving profit 50, which is absent from the choices. Since 2x1+5x2≤5(x1+x2)≤50, this is the maximum for the displayed ≤10 constraint. If both variables must be strictly positive, 50 is a supremum rather than an attained maximum. The printed choices/constraint are inconsistent; do not grade by guessing a letter."
+        },
+        {
+          "id": "industrial:it-ese-industrial-2-64",
+          "issue": "Degree of operating leverage=(profit+fixed cost)/profit=(5+4)/5=1.8 at the stated operating point. No listed option equals 1.8; the printed key cannot be used for valid grading.",
+          "referenceAnswer": "Degree of operating leverage=(profit+fixed cost)/profit=(5+4)/5=1.8 at the stated operating point. No listed option equals 1.8; the printed key cannot be used for valid grading."
+        },
+        {
+          "id": "industrial:it-ese-industrial-2-11",
+          "issue": "Let p be revenue per shoe. The stated break-even ratio gives [100/(p−25)]/[75/(p−50)]=1/2. Thus 200(p−50)=75(p−25), giving p=₹65. None of ₹75, ₹87, ₹57 or ₹55 matches; the printed options are inconsistent.",
+          "referenceAnswer": "Let p be revenue per shoe. The stated break-even ratio gives [100/(p−25)]/[75/(p−50)]=1/2. Thus 200(p−50)=75(p−25), giving p=₹65. None of ₹75, ₹87, ₹57 or ₹55 matches; the printed options are inconsistent."
+        }
+      ]
+    },
+    "turbomachinery": {
+      "generatedOn": "2026-10-17",
+      "subject": "turbomachinery",
+      "entries": 1040,
+      "uniqueQuestions": 1040,
+      "sourceEntries": 1255,
+      "duplicateCopiesMerged": 215,
+      "countsByExam": {
+        "gate-me": 115,
+        "ese-prelims": 781,
+        "gate-xe": 36,
+        "cse-mains": 56,
+        "ese-mains": 52
+      },
+      "countsByFormat": {
+        "MCQ": 868,
+        "NAT": 55,
+        "WRITTEN": 108,
+        "TEXT": 7,
+        "MSQ": 2
+      },
+      "gradable": 920,
+      "officialKeys": 61,
+      "bookKeys": 693,
+      "independentlyDerivedKeys": 166,
+      "writtenSelfAssessment": 108,
+      "sourceIssues": [
+        {
+          "id": "turbomachinery:it-esep-2021-31",
+          "issue": "Similarity gives N2=N1√(H2/H1)=1000√(18/30)=774.60 rpm. None of the printed options matches. Option D, 77.46 rpm, would require an initial speed of 100 rpm, not the printed 1000 rpm. Preserve the source and do not grade this misprint by a guessed letter.",
+          "referenceAnswer": "Similarity gives N2=N1√(H2/H1)=1000√(18/30)=774.60 rpm. None of the printed options matches. Option D, 77.46 rpm, would require an initial speed of 100 rpm, not the printed 1000 rpm. Preserve the source and do not grade this misprint by a guessed letter."
+        },
+        {
+          "id": "turbomachinery:it-ref-fluid-mechanics:fluid-ese-hydraulic-book-1-9",
+          "issue": "Power=ρgQHη=1000×9.81×30×10×.92=2707.56 kW. Every printed option is roughly one tenth of this and none equals the result. The supplied discharge/options are inconsistent; no answer letter is assigned.",
+          "referenceAnswer": "Power=ρgQHη=1000×9.81×30×10×.92=2707.56 kW. Every printed option is roughly one tenth of this and none equals the result. The supplied discharge/options are inconsistent; no answer letter is assigned."
+        },
+        {
+          "id": "turbomachinery:it-esep-2022-115",
+          "issue": "Annulus area=(π/4)(6.5)²(1−.43²)=27.047 m², so Vf=250/27.047=9.243 m/s. Tip speed=π×6.5×100/60=34.034 m/s; the requested tip-speed-based ratio is Vf/Utip=.2716, absent from the options. The conventional head-based flow ratio Vf/√(2gH)=.7378 corresponds to D (.73). The wording and choices use different definitions; automatic grading is disabled.",
+          "referenceAnswer": "Annulus area=(π/4)(6.5)²(1−.43²)=27.047 m², so Vf=250/27.047=9.243 m/s. Tip speed=π×6.5×100/60=34.034 m/s; the requested tip-speed-based ratio is Vf/Utip=.2716, absent from the options. The conventional head-based flow ratio Vf/√(2gH)=.7378 corresponds to D (.73). The wording and choices use different definitions; automatic grading is disabled."
+        },
+        {
+          "id": "turbomachinery:it-esep-2022-120",
+          "issue": "Theoretical discharge Qth=(π/4)(.2)²(.35)(45/60)=.008247 m³/s=8.247 L/s. Applying 12% slip gives actual discharge .88Qth=7.257 L/s, matching A (7.260 L/s). Because the printed question explicitly asks theoretical discharge, no listed option answers it as written.",
+          "referenceAnswer": "Theoretical discharge Qth=(π/4)(.2)²(.35)(45/60)=.008247 m³/s=8.247 L/s. Applying 12% slip gives actual discharge .88Qth=7.257 L/s, matching A (7.260 L/s). Because the printed question explicitly asks theoretical discharge, no listed option answers it as written."
+        },
+        {
+          "id": "turbomachinery:it-ref-thermodynamics:td-esep-2025-55",
+          "issue": "The wording claims that every complete cycle necessarily has nonzero net work. The first law requires Qnet=Wnet, which may both be zero. Statements 1 and 2 hold, but statement 3 needs a qualification; no unique unambiguous key is assigned.",
+          "referenceAnswer": "The wording claims that every complete cycle necessarily has nonzero net work. The first law requires Qnet=Wnet, which may both be zero. Statements 1 and 2 hold, but statement 3 needs a qualification; no unique unambiguous key is assigned."
+        },
+        {
+          "id": "turbomachinery:it-ese-turbo-4-129",
+          "issue": "For equal piston stroke/speed, equal stage pressure ratios and perfect intercooling: A_L/A_H=p_intermediate/p_in=√(p_out/p_in). Hence D_L/D_H=(p_out/p_in)^(1/4). None of the displayed exponents 2, 1, 1/2 or 1/3 is correct. Additional design assumptions are also needed if stroke or speed differ.",
+          "referenceAnswer": "For equal piston stroke/speed, equal stage pressure ratios and perfect intercooling: A_L/A_H=p_intermediate/p_in=√(p_out/p_in). Hence D_L/D_H=(p_out/p_in)^(1/4). None of the displayed exponents 2, 1, 1/2 or 1/3 is correct. Additional design assumptions are also needed if stroke or speed differ."
+        },
+        {
+          "id": "turbomachinery:it-ref-power-plant:pp-esep-1-110",
+          "issue": "The printed optimum velocity does not agree with the stated 6% relative-velocity loss.",
+          "referenceAnswer": "U/C1=cos18°/2=0.47553. With k=0.94, 120000=(1+k)C1²cos²18°/4 gives C1≈523.0 m/s. No option has that velocity; D gives the correct speed ratio but assumes no blade loss."
+        },
+        {
+          "id": "turbomachinery:it-ref-power-plant:pp-esep-1-171",
+          "issue": "The supplied question has no uniquely supported listed answer.",
+          "referenceAnswer": "The speed ratio gives nozzle exit speed 144/0.48=300 m/s, so its actual enthalpy drop from rest is 300²/2000=45 kJ/kg. An isentropic heat drop additionally requires nozzle efficiency, which is not supplied. Blade velocity coefficient cannot substitute for nozzle efficiency."
+        },
+        {
+          "id": "turbomachinery:it-ese-turbo-6-50",
+          "issue": "Maximum ideal Brayton net work at fixed temperature limits is cp(√Tmax−√Tmin)². With 900 K, 289 K and cp≈1.005 kJ/(kg·K), wmax≈169.85 kJ/kg. None of 11, 13, 17 or 21 kJ/kg matches; the printed options contain a scale/data error.",
+          "referenceAnswer": "Maximum ideal Brayton net work at fixed temperature limits is cp(√Tmax−√Tmin)². With 900 K, 289 K and cp≈1.005 kJ/(kg·K), wmax≈169.85 kJ/kg. None of 11, 13, 17 or 21 kJ/kg matches; the printed options contain a scale/data error."
+        },
+        {
+          "id": "turbomachinery:it-ref-power-plant:pp-xe2008-26",
+          "issue": "The formula choices contain a printed exponent error; a reliable unique automatic choice is not assigned.",
+          "referenceAnswer": "Ideal Brayton maximum-work pressure ratio is (Tmax/Tmin)^[γ/(2(γ−1))]. The supplied scan instead prints γ/(2γ−1) in optionB, so no printed option exactly matches."
+        },
+        {
+          "id": "turbomachinery:it-esep-2025-34",
+          "issue": "Statements 1 and 3 describe a conventional ramjet: no rotating compressor/turbine and subsonic combustion (B). Statement 2 calls it ideal for hypersonic flight, where a supersonic-combustion ramjet/scramjet is normally required. If “ramjet” includes scramjets, statement 3 no longer applies generally. The terminology changes the intended answer between B and D; retain this ambiguity rather than claim an official key. Reference: NASA Glenn, Ramjet Propulsion, https://www.grc.nasa.gov/WWW/BGH/ramjet.html .",
+          "referenceAnswer": "Statements 1 and 3 describe a conventional ramjet: no rotating compressor/turbine and subsonic combustion (B). Statement 2 calls it ideal for hypersonic flight, where a supersonic-combustion ramjet/scramjet is normally required. If “ramjet” includes scramjets, statement 3 no longer applies generally. The terminology changes the intended answer between B and D; retain this ambiguity rather than claim an official key. Reference: NASA Glenn, Ramjet Propulsion, https://www.grc.nasa.gov/WWW/BGH/ramjet.html ."
+        },
+        {
+          "id": "turbomachinery:it-esep-2026-123",
+          "issue": "Statement 1 is false: ram compression arises from deceleration of incoming air, not a pulse effect. Statement 2 is plausible because no turbine limits combustor temperature. Statement 3 uses “ramjet” broadly for hypersonic propulsion; strictly, conventional ramjets have subsonic combustion and scramjets are suited to higher hypersonic speeds. C is the intended broad-terminology answer, but under the strict distinction only statement 2 holds and that option is absent. Automatic grading is disabled. Reference: NASA Glenn, https://www.grc.nasa.gov/WWW/BGH/ramjet.html .",
+          "referenceAnswer": "Statement 1 is false: ram compression arises from deceleration of incoming air, not a pulse effect. Statement 2 is plausible because no turbine limits combustor temperature. Statement 3 uses “ramjet” broadly for hypersonic propulsion; strictly, conventional ramjets have subsonic combustion and scramjets are suited to higher hypersonic speeds. C is the intended broad-terminology answer, but under the strict distinction only statement 2 holds and that option is absent. Automatic grading is disabled. Reference: NASA Glenn, https://www.grc.nasa.gov/WWW/BGH/ramjet.html ."
         }
       ]
     }

@@ -1,0 +1,323 @@
+{
+  "version": "5.8.0",
+  "generatedOn": "2026-10-17",
+  "baseline": "a6e0256f41cbc372fae216ca0c4e46fc3850bf7d",
+  "deleteFiles": [
+    ".nojekyll"
+  ],
+  "files": {
+    "answer-audit.json": {
+      "sha": "a35da7910f0a55c342fd46281b579a8a6fe9a059",
+      "size": 75734
+    },
+    "answers.test.cjs": {
+      "sha": "a87bee2231050df411820b788816cee31119c670",
+      "size": 3704
+    },
+    "app.js": {
+      "sha": "f31e10922b26338251ce69d89f77cde5578f8994",
+      "size": 77376
+    },
+    "catalog.js": {
+      "sha": "6a923967775805084f7f17aa861299e8d61c280c",
+      "size": 4559
+    },
+    "compatibility.cjs": {
+      "sha": "5f9e688b4efa5b8de70921372a1d4af6ac6441e2",
+      "size": 880
+    },
+    "crops.test.cjs": {
+      "sha": "7fb3ca70b77f84457da3b3d302e171df91f985b0",
+      "size": 5437
+    },
+    "curriculum-audit.json": {
+      "sha": "9bfa1270a889d83679ea2af4b1997619f2b75e37",
+      "size": 4166229
+    },
+    "curriculum-data.js": {
+      "sha": "d1f82c15a0aa62ede97e653c8990ab15ce4cf2f4",
+      "size": 808458
+    },
+    "curriculum.test.cjs": {
+      "sha": "04d62575440b2b5e13e0a149ca5d1b30626b5fb1",
+      "size": 5569
+    },
+    "dedup-audit.json": {
+      "sha": "525919c9b29b8b595ce3313324aa53dc9f17e909",
+      "size": 699968
+    },
+    "dedup-data.js": {
+      "sha": "7ceec674319449f72e8ed7a49941fcc13e741a95",
+      "size": 497752
+    },
+    "dedup.js": {
+      "sha": "46a0e8a5ef92fe3ea8a9d78a1a3b23b57286fd12",
+      "size": 8621
+    },
+    "heat-mains.test.cjs": {
+      "sha": "1e02b274ae1fd89a74b46ecad15b6947402f351f",
+      "size": 3663
+    },
+    "heat.test.cjs": {
+      "sha": "27b3b94bfacebc1961af0aa2d4633558dded2372",
+      "size": 6201
+    },
+    "ic.test.cjs": {
+      "sha": "73b6689389489ba187f6898d2ef48d51d35ff251",
+      "size": 5498
+    },
+    "index.html": {
+      "sha": "a7c6e93093f2a5771d40adb206dafb85c4a1bc44",
+      "size": 6573
+    },
+    "industrial-turbo-bank.js": {
+      "sha": "e494a52c762b31d7bc5ebbaf8c158d6d52fb3b93",
+      "size": 3754522
+    },
+    "industrial-turbo-compatibility.json": {
+      "sha": "56fe774a961ce2093d775366621364aede36ed2f",
+      "size": 157
+    },
+    "industrial-turbo-coverage.json": {
+      "sha": "d25e7fe8add39e06b831812dbbf50bcccafc77ae",
+      "size": 3100
+    },
+    "industrial-turbo-prior-ids.json": {
+      "sha": "36be7ec0760a306c9a6a29801b718d7e604986f8",
+      "size": 1233625
+    },
+    "industrial-turbo-source-audit.json": {
+      "sha": "ea7003d70759b91db519bcb29ec8d56c5ae70fee",
+      "size": 2106073
+    },
+    "industrial-turbo.test.cjs": {
+      "sha": "bccfb500ab1dc666daa3f5232cc52aa0a8cac73e",
+      "size": 5302
+    },
+    "it-assets-000.js": {
+      "sha": "8790f577f5ea5ab7a84e30892883e26c6643c0aa",
+      "size": 3791541
+    },
+    "it-assets-001.js": {
+      "sha": "e113503a82ad182ecfa9905ef04018ef7e7c0773",
+      "size": 3802032
+    },
+    "it-assets-002.js": {
+      "sha": "6c86f886452ae21587faef47b21b0d83cd9a7501",
+      "size": 3763744
+    },
+    "it-assets-003.js": {
+      "sha": "20ab23c22968ad509c74900b80637ae95a091ad2",
+      "size": 3783461
+    },
+    "it-assets-004.js": {
+      "sha": "554963f4d670b22a7d4681f63ca87c6fbb63fabb",
+      "size": 3783732
+    },
+    "it-assets-005.js": {
+      "sha": "258348006a5ebea23ee0491a4f8a5fb40f8f0b3f",
+      "size": 3749787
+    },
+    "it-assets-006.js": {
+      "sha": "cb75338ae7385182687aba2632d5bc5f854d77dc",
+      "size": 3771482
+    },
+    "it-assets-007.js": {
+      "sha": "8ab0b5f164db6c46b029cdffe11376821c9420e0",
+      "size": 3797382
+    },
+    "it-assets-008.js": {
+      "sha": "1fd0f3b2f98efa12e68eadd590665685a5e6b218",
+      "size": 3795933
+    },
+    "it-assets-009.js": {
+      "sha": "aa1f363126d29058d91803823adc24d172c33d53",
+      "size": 3784999
+    },
+    "it-assets-010.js": {
+      "sha": "ef68d58d8d0343a9bb440fe86ee0299f2ff8ce71",
+      "size": 3712597
+    },
+    "it-assets-011.js": {
+      "sha": "78f70ddb00a3dd1ea65d2c18f622ed848b1e52a8",
+      "size": 3758826
+    },
+    "it-assets-012.js": {
+      "sha": "becc42755aa80e2b734bb7ff3d6a8226cb1ffff0",
+      "size": 3780833
+    },
+    "it-assets-013.js": {
+      "sha": "dea338f3258ffcff74f3b96f8dcef015db867ba8",
+      "size": 3725089
+    },
+    "it-assets-014.js": {
+      "sha": "12ab7abc4bb79504097a53505306ae47932ad725",
+      "size": 3779689
+    },
+    "it-assets-015.js": {
+      "sha": "648e6f5ea5e545812d5d1ff31be83ee6858324e6",
+      "size": 3602315
+    },
+    "it-assets-016.js": {
+      "sha": "23d0def01530c3cf062bfc7d986b63885356e069",
+      "size": 3664620
+    },
+    "it-assets-017.js": {
+      "sha": "a042f922c543180b99369226da64bbb8285a0f6e",
+      "size": 3562881
+    },
+    "it-assets-018.js": {
+      "sha": "46727fb4807b1e5b89208dadacb3ac943481ad92",
+      "size": 3653170
+    },
+    "it-assets-019.js": {
+      "sha": "2e8855d1ec45e72f6e5fa3e05126207a87c15243",
+      "size": 1695662
+    },
+    "learning.test.cjs": {
+      "sha": "68e9a08c0a4bcc19bfe01ddb55757d6c7558fc69",
+      "size": 7614
+    },
+    "machine-design.test.cjs": {
+      "sha": "f446b93d7044c12ecf06bdb6c356dbe7f0cc2fc7",
+      "size": 4450
+    },
+    "manufacturing.test.cjs": {
+      "sha": "fe7c4297dedbf28c4cbfcfd0454518b317b7b843",
+      "size": 5075
+    },
+    "mechanics-materials.test.cjs": {
+      "sha": "aaf809dca3b95fcee653cd8db74d47fc962058fa",
+      "size": 4531
+    },
+    "package.json": {
+      "sha": "a1942e07bc1f4d59f37897fde52c288c27b9265a",
+      "size": 760
+    },
+    "platform-coverage.json": {
+      "sha": "e4eac9c4eb951e1e4d60141ab5d6dcfa8affea6a",
+      "size": 75647
+    },
+    "power.test.cjs": {
+      "sha": "0781c8b320a30c58021b0e4f8250450edf8c1b48",
+      "size": 6574
+    },
+    "rac.test.cjs": {
+      "sha": "c6e9a59ba82645ea59c890181107a93d818af092",
+      "size": 5982
+    },
+    "README.md": {
+      "sha": "f265b7ede76f3df7e03cf81a9880a007c1347033",
+      "size": 26845
+    },
+    "scope-order.test.cjs": {
+      "sha": "1ead124be5242daf8805d6265114faaa369685f3",
+      "size": 5438
+    },
+    "source-completeness.test.cjs": {
+      "sha": "b27ebc1e887d45038620f8132ed226106a93b2c1",
+      "size": 5103
+    },
+    "thermo.test.cjs": {
+      "sha": "f89707b20a30508d0f4e7509123c342a8ed6e321",
+      "size": 4960
+    },
+    "tom-vibrations.test.cjs": {
+      "sha": "00e147b50dacdbf58ef093f16429d51c00983de2",
+      "size": 4701
+    },
+    "validate.cjs": {
+      "sha": "b7b92aa900e8316895d6fc4e54c33eb920b80683",
+      "size": 5573
+    },
+    "_config.yml": {
+      "sha": "7d1cec5e2b65ed5c43a2481f303271c99bc08d5d",
+      "size": 1597
+    }
+  },
+  "validation": {
+    "tests": 129,
+    "passedAfterReviewedScopeUpdates": 129,
+    "validatedEntries": 15711,
+    "canonical": 13072,
+    "newSubjects": {
+      "industrial": 781,
+      "turbomachinery": 1040
+    },
+    "priorIdsPreservedOrRedirected": 12109
+  },
+  "hosting": {
+    "rootBytes": 1055329135,
+    "excludedBytes": 57784285,
+    "publishedRootBytes": 997544850,
+    "unusedPacks": [
+      "assets-14.js",
+      "assets-15.js",
+      "assets-16.js",
+      "assets-17.js",
+      "assets-18.js",
+      "fluid-assets-12.js",
+      "fluid-assets-13.js",
+      "fluid-assets-14.js",
+      "fluid-assets-15.js",
+      "fluid-assets-16.js",
+      "fluid-assets-19.js"
+    ],
+    "excluded": [
+      "assets-14.js",
+      "assets-15.js",
+      "assets-16.js",
+      "assets-17.js",
+      "assets-18.js",
+      "fluid-assets-12.js",
+      "fluid-assets-13.js",
+      "fluid-assets-14.js",
+      "fluid-assets-15.js",
+      "fluid-assets-16.js",
+      "fluid-assets-19.js",
+      "answers.test.cjs",
+      "compatibility.cjs",
+      "crop-source-audit.json",
+      "crops.test.cjs",
+      "curriculum-audit.json",
+      "curriculum.test.cjs",
+      "emmat-source-audit.json",
+      "experience.test.cjs",
+      "fluid-source-audit.json",
+      "fluid.test.cjs",
+      "heat-mains-source-audit.json",
+      "heat-mains.test.cjs",
+      "heat-source-audit.json",
+      "heat.test.cjs",
+      "ic-source-audit.json",
+      "ic.test.cjs",
+      "industrial-turbo-prior-ids.json",
+      "industrial-turbo-source-audit.json",
+      "industrial-turbo.test.cjs",
+      "insights.test.cjs",
+      "learning.test.cjs",
+      "machine-design.test.cjs",
+      "manufacturing-source-audit.json",
+      "manufacturing.test.cjs",
+      "md-source-audit.json",
+      "mechanics-materials.test.cjs",
+      "ordered-practice.test.cjs",
+      "package.json",
+      "power-source-audit.json",
+      "power.test.cjs",
+      "rac-source-audit.json",
+      "rac.test.cjs",
+      "README.md",
+      "recheck.test.cjs",
+      "scope-order.test.cjs",
+      "server.cjs",
+      "source-completeness.test.cjs",
+      "tests.cjs",
+      "thermo-source-audit.json",
+      "thermo.test.cjs",
+      "tom-vibrations-source-audit.json",
+      "tom-vibrations.test.cjs",
+      "validate.cjs"
+    ]
+  }
+}

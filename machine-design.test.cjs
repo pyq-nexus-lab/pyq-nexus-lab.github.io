@@ -1,6 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),crypto=require('crypto');
 const C=require('./catalog.js'),A=require('./answers.js'),D=require('./dedup.js'),U=require('./curriculum.js'),X=require('./crops.js'),Core=require('./core.js'),P=require('./ordered-practice.js'),ctx={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','mfg-bank.js','emmat-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','mfg-bank.js','emmat-bank.js','industrial-turbo-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
 const d=ctx.window,raw=X.apply(A.apply(C.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),added=bank.filter(q=>q.subject==='machine-design'),source=raw.filter(q=>q.subject==='machine-design');
 test('Machine Design represents every supplied book number and both Mains year ranges',()=>{
  assert.equal(source.length,834);assert.equal(added.length,722);
@@ -22,6 +22,6 @@ test('All Machine Design images match reviewed bytes and shared data remains ava
 });
 test('Full ordered path has no set-size cap and all prior subject identities are preserved',()=>{
  assert.equal(U.outline(added).length,12);assert.equal(new Set(added.map(q=>q.topicId)).size,35);const path=P.open(null,U.sessionIds(added.map(q=>q.id).reverse(),bank));assert.equal(path.ids.length,722);assert.deepEqual(path.ids,added.map(q=>q.id));assert.equal(path.deadline,null);
- assert.equal(bank.filter(q=>!['machine-design','manufacturing','engineering-mechanics','materials'].includes(q.subject)).length,8205);const prior=JSON.parse(fs.readFileSync('md-compatibility.json','utf8'));assert.equal(prior.preserved,8205);assert.equal(prior.storage,'som-lab-v1');
+ require('./compatibility.cjs').verifyPrior(bank,lib);
  assert.equal(added.find(q=>q.assetId==='md-me2008-s1-q79-p19').topicId,'machine-design-03-03');assert.equal(added.find(q=>q.assetId==='md-extra-me1-2020-q9').topicId,'machine-design-05-02');assert.equal(added.find(q=>q.assetId==='md-esem-2024-5c').topicId,'machine-design-12-03');
 });

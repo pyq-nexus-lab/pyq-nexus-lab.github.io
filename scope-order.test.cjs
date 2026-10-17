@@ -1,21 +1,21 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm');
 const C=require('./catalog.js'),A=require('./answers.js'),D=require('./dedup.js'),U=require('./curriculum.js'),Core=require('./core.js'),c={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','mfg-bank.js','emmat-bank.js','answers-data.js','dedup-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),c);
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','mfg-bank.js','emmat-bank.js','industrial-turbo-bank.js','answers-data.js','dedup-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),c);
 const d=c.window,raw=A.apply(C.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),by=new Map(bank.map(q=>[q.id,q]));
 test('the reported boiler rating and all 167 plant-specific copies are absent from Thermodynamics and safely redirect',()=>{
- assert.equal(d.PYQ_DEDUP_DATA.relocations.length,167);
+ const previousMoves=d.PYQ_DEDUP_DATA.relocations.filter(m=>m.reason?.startsWith('Plant-specific question'));assert.equal(previousMoves.length,167);
  const boiler='thermodynamics:td-reuse-gate-book-6-10',target=lib.resolve(boiler);assert.equal(by.get(target).subject,'power-plant');assert(!bank.some(q=>q.id===boiler));
- assert.equal(by.get(lib.resolve('thermodynamics:td-reuse-gate-book-6-39')).subject,'power-plant');
+ assert.equal(by.get(lib.resolve('thermodynamics:td-reuse-gate-book-6-39')).subject,'turbomachinery');
  const old=D.build(raw,{...d.PYQ_DEDUP_DATA,relocations:[]});
- for(const m of d.PYQ_DEDUP_DATA.relocations){assert(!by.has(m.id));const q=by.get(lib.resolve(m.id));assert.equal(q.subject,'power-plant');const source=lib.original.get(m.id),originalPower='power-plant:'+source.priorSubjectId;assert.equal(source.cropSha256,lib.original.get(originalPower).cropSha256);for(const option of 'ABCD')assert.equal(lib.translate(m.id,option),old.translate(originalPower,option),m.id);}
+ for(const m of previousMoves){assert(!by.has(m.id));const q=by.get(lib.resolve(m.id));assert(['power-plant','turbomachinery'].includes(q.subject));const source=lib.original.get(m.id),originalPower='power-plant:'+source.priorSubjectId;assert.equal(source.cropSha256,lib.original.get(originalPower).cropSha256);for(const option of 'ABCD')assert.equal(lib.translate(m.id,option),lib.translate(originalPower,option),m.id);}
 });
 test('all 595 printed book items stay in their PDF chapter sequence and all 456 XE section questions remain represented',()=>{
  const chapters=U.outline(bank.filter(q=>q.subject==='thermodynamics'));assert.deepEqual(chapters.slice(0,6).map(ch=>ch.name),['Thermodynamic Systems, Processes and Zeroth Law','First Law, Heat, Work and Energy','Second Law, Carnot Cycle and Entropy','Irreversibility and Availability','Thermodynamic Relations','Pure Substances']);
- for(const q of raw.filter(q=>q.subject==='thermodynamics'&&/^td-(ese|gate)-book-[1-6]-/.test(q.assetId))){const m=q.assetId.match(/^td-(ese|gate)-book-(\d+)-/),n=Number(m[2]);if(m[1]==='gate'&&n===6)continue;const expected=m[1]==='gate'&&n===5?6:n;assert.equal(by.get(lib.resolve(q.id)).chapterOrder,expected,q.id);}
+ for(const q of raw.filter(q=>q.subject==='thermodynamics'&&/^td-(ese|gate)-book-[1-6]-/.test(q.assetId))){const m=q.assetId.match(/^td-(ese|gate)-book-(\d+)-/),n=Number(m[2]);if(m[1]==='gate'&&n===6)continue;const expected=m[1]==='gate'&&n===5?6:n;const target=by.get(lib.resolve(q.id));if(target.subject==='thermodynamics')assert.equal(target.chapterOrder,expected,q.id);else assert.equal(target.subject,'turbomachinery',q.id);}
  const gas=by.get(lib.resolve('thermodynamics:td-xe2017-s1-q88-p54'));assert.equal(gas.chapterOrder,2);assert.equal(gas.topic,'Polytropic processes');
  const saturated=by.get(lib.resolve('thermodynamics:td-xe2007-s1-q2-p46'));assert.equal(saturated.chapterOrder,6);
- assert.equal(by.get(lib.resolve('thermodynamics:td-reuse-esep-2-20')).chapterOrder,14);
- assert.equal(by.get(lib.resolve('thermodynamics:td-reuse-gate-book-6-62')).chapterOrder,9);
+ assert.equal(by.get(lib.resolve('thermodynamics:td-reuse-esep-2-20')).topicId,'turbomachinery-06-02');
+ assert.equal(by.get(lib.resolve('thermodynamics:td-reuse-gate-book-6-62')).topicId,'turbomachinery-10-01');
  assert.equal(by.get(lib.resolve('thermodynamics:td-reuse-esep-4-15')).chapterOrder,7);
  const pool=bank.filter(q=>q.subject==='thermodynamics'&&q.exam==='gate-me'),ids=U.sessionIds(pool.slice().reverse().map(q=>q.id),bank);for(let i=1;i<ids.length;i++)assert(U.compare(by.get(ids[i-1]),by.get(ids[i]))<=0);
 });
@@ -28,3 +28,5 @@ test('an existing Thermodynamics set loses the misfiled boiler, reorders chapter
  const onlyPlant={session:{ids:[boiler],index:0,mode:'practice',subjectScope:'thermodynamics',answers:{[boiler]:'D'},submitted:{}}},recovered=U.migrateSession(D.migrate(onlyPlant,lib),bank,{revision:2,scope:'thermodynamics'});
  assert.equal(recovered.session.subjectScope,'power-plant');assert.deepEqual(recovered.session.ids,[lib.resolve(boiler)]);assert.equal(recovered.session.answers[lib.resolve(boiler)],lib.translate(boiler,'D'));assert(recovered.migrationRecovery.sessions.some(s=>s.ids.includes(boiler)));assert.strictEqual(U.migrateSession(recovered,bank,{revision:2}),recovered);
 });
+
+

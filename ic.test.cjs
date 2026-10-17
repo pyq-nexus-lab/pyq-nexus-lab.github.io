@@ -1,6 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),crypto=require('crypto');
 const C=require('./catalog.js'),A=require('./answers.js'),D=require('./dedup.js'),U=require('./curriculum.js'),X=require('./crops.js'),Core=require('./core.js'),P=require('./ordered-practice.js'),ctx={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','mfg-bank.js','emmat-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','mfg-bank.js','emmat-bank.js','industrial-turbo-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
 const d=ctx.window,raw=X.apply(A.apply(C.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),ic=bank.filter(q=>q.subject==='ic-engines'),source=raw.filter(q=>q.subject==='ic-engines');
 test('IC Engines includes complete supplied numbered sequences and all five exam tracks',()=>{
  assert.equal(source.length,504);assert.equal(ic.length,459);
@@ -24,7 +24,7 @@ test('IC screenshots have checked image bytes, source bounds and required shared
 test('IC practice runs in complete teaching order and preserves previous progress',()=>{
  const outline=U.outline(ic);assert.equal(outline.length,10);assert.equal(new Set(ic.map(q=>q.topicId)).size,33);assert.equal(outline[0].name,'Engine Fundamentals and Operating Principles');assert.equal(outline.at(-1).name,'Engine Testing and Performance');
  const ids=U.sessionIds(ic.map(q=>q.id).reverse(),bank),path=P.open(null,ids);assert.equal(path.ids.length,459);assert.deepEqual(path.ids,ic.map(q=>q.id));assert.equal(path.deadline,null);
- assert.equal(bank.filter(q=>!['ic-engines','theory-of-machines','vibrations','machine-design','manufacturing','engineering-mechanics','materials'].includes(q.subject)).length,6731);const prior=JSON.parse(fs.readFileSync('ic-compatibility.json','utf8'));assert.equal(prior.preserved,6731);assert.equal(prior.storage,'som-lab-v1');
+ require('./compatibility.cjs').verifyPrior(bank,lib);
  const expected={'ic-esem-2017-3a':'ic-engines-05-02','ic-esep-2017-24':'ic-engines-06-01','ic-esem-2025-4cii':'ic-engines-08-01','ic-csem-2023-6a':'ic-engines-10-03','ic-ese-book-2-3':'ic-engines-06-01','ic-xe26-s1-q107-p71':'ic-engines-02-03'};for(const[id,topic]of Object.entries(expected))assert.equal(ic.find(q=>q.assetId===id)?.topicId,topic,id);
  const session={ids:['gate-me-002','gate-me-001'],index:1,mode:'practice',answers:{'gate-me-001':'B'},times:{}};assert.deepEqual(D.migrate({session,attempts:[]},lib).session,session);
 });

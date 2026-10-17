@@ -1,17 +1,17 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),crypto=require('crypto');
 const P=require('./catalog.js'),A=require('./answers.js'),D=require('./dedup.js'),U=require('./curriculum.js'),X=require('./crops.js'),Core=require('./core.js'),ctx={window:{}};
-for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','mfg-bank.js','emmat-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
-const d=ctx.window,raw=X.apply(A.apply(P.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),td=bank.filter(q=>q.subject==='thermodynamics'),source=raw.filter(q=>q.subject==='thermodynamics'),audit=JSON.parse(fs.readFileSync('thermo-source-audit.json','utf8'));
+for(const f of ['bank.js','fluid-bank.js','heat-bank.js','heat-mains-bank.js','power-bank.js','thermo-bank.js','rac-bank.js','ic-bank.js','tom-bank.js','vibrations-bank.js','md-bank.js','mfg-bank.js','emmat-bank.js','industrial-turbo-bank.js','answers-data.js','dedup-data.js','crops-data.js','curriculum-data.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),ctx);
+const d=ctx.window,raw=X.apply(A.apply(P.prepare([{subject:'som',questions:d.SOM_BANK},...d.PYQ_BANKS]),d.PYQ_ANSWER_DATA),d.PYQ_CROP_DATA),lib=D.build(raw,d.PYQ_DEDUP_DATA),bank=U.apply(lib.bank,d.PYQ_CURRICULUM_DATA),td=bank.filter(q=>q.subject==='thermodynamics'),source=raw.filter(q=>q.subject==='thermodynamics'&&q.assetId.startsWith('td-')),audit=JSON.parse(fs.readFileSync('thermo-source-audit.json','utf8'));
 test('Thermodynamics includes complete numbered old books, every XE section question and all five exam sections',()=>{
- assert.equal(source.length,1898);assert.equal(td.length,1542);
- for(const [exam,count]of Object.entries({"gate-xe":457,"ese-prelims":654,"ese-mains":41,"gate-me":345,"cse-mains":45}))assert.equal(td.filter(q=>q.exam===exam).length,count);
+ assert.equal(source.length,1898);assert.equal(td.length,1338);
+ for(const [exam,count]of Object.entries({"gate-xe":428,"ese-prelims":554,"ese-mains":37,"gate-me":293,"cse-mains":26}))assert.equal(td.filter(q=>q.exam===exam).length,count);
  for(const [prefix,counts]of [['td-ese-book-',[46,109,119,20,40,42]],['td-gate-book-',[7,45,54,8,23]],['td-ese-cycle-book-',[36]]])for(const [i,n]of counts.entries())assert.deepEqual(source.filter(q=>q.assetId.startsWith(prefix+(i+1)+'-')).map(q=>Number(q.number.split('.')[1])).sort((a,b)=>a-b),Array.from({length:n},(_,j)=>j+1));
  assert.equal(source.filter(q=>q.assetId.startsWith('td-gate-book-7-')).length,40);assert.equal(source.filter(q=>q.assetId.startsWith('td-gate-book-8-')).length,6);
  for(let year=2007;year<=2026;year++){const n=year===2007?28:year===2008?30:year===2009?24:22,qs=source.filter(q=>q.year===year&&q.assetId.startsWith('td-xe'));assert.equal(qs.length,n,year);assert.deepEqual(qs.map(q=>Number(q.number)).sort((a,b)=>a-b),Array.from({length:n},(_,i)=>i+1),year);}
- for(const exam of ['ese-mains','cse-mains'])for(let year=2017;year<=2026;year++)assert(td.some(q=>q.exam===exam&&q.year===year),exam+' '+year);
+ for(const exam of ['ese-mains','cse-mains'])for(let year=2017;year<=2026;year++)assert(source.some(q=>q.exam===exam&&q.year===year&&bank.some(v=>v.id===lib.resolve(q.id))),exam+' '+year);
 });
 test('every objective answer grades and contradictory sources or written references cannot produce automatic marks',()=>{
- assert.deepEqual(A.coverage(td),{"total":1542,"official":406,"book":666,"solved":370,"written":86,"issues":14,"pending":0,"keyed":1442});assert.equal(td.filter(q=>q.keyConflict).length,0);
+ assert.deepEqual(A.coverage(td),{"total":1338,"official":365,"book":598,"solved":300,"written":63,"issues":12,"pending":0,"keyed":1263});assert.equal(td.filter(q=>q.keyConflict).length,0);
  for(const q of td){assert(q.marks>0&&q.keySource,q.id);if(q.key){const answer=q.type==='NAT'?String(q.key.ranges?.[0][0]??q.key.min):q.type==='TEXT'?q.key.acceptedText[0]:q.key.options;assert.equal(Core.grade(q,answer).score,q.marks,q.id);}else{assert(q.referenceAnswer&&q.explanation,q.id);assert.equal(Core.grade(q,'A').score,null,q.id);if(q.type==='WRITTEN')assert(q.reviewChecklist&&q.sourceUrl?.includes('upsc.gov.in'),q.id);}}
  assert.equal(Core.totals(td.filter(q=>q.answerIssue),{}).max,0);
 });
@@ -21,7 +21,7 @@ test('every screenshot matches its digest and fits the recorded source geometry,
  for(const id of ['td-me2008-s1-q71-p17','td-me2008-s1-q72-p17','td-me2011-s1-q54-p12','td-me2012-s1-q50-p10','td-xe2013-s1-q22-p31']){const q=source.find(q=>q.assetId===id);assert(q?.sharedContext&&q.cropPanels.length>=2,id);}
 });
 test('the subject follows teaching order and preserves all existing question identities and progress',()=>{
- const outline=U.outline(td);assert.equal(outline.length,14);assert.equal(new Set(td.map(q=>q.topicId)).size,61);assert.equal(outline[0].name,'Thermodynamic Systems, Processes and Zeroth Law');assert.equal(outline.at(-1).name,'Compressible Flow Applications');
- const prior=JSON.parse(fs.readFileSync('thermo-compatibility.json','utf8')),rows=bank.filter(q=>!['thermodynamics','refrigeration','ic-engines','theory-of-machines','vibrations','machine-design','manufacturing','engineering-mechanics','materials'].includes(q.subject)).map(q=>Object.fromEntries(prior.checkedFields.map(k=>[k,q[k]??null]))).sort((a,b)=>a.id.localeCompare(b.id));assert.equal(rows.length,4533);assert.equal(crypto.createHash('sha256').update(JSON.stringify(rows)).digest('hex'),prior.sha256);
+ const outline=U.outline(td);assert.equal(outline.length,12);assert.equal(new Set(td.map(q=>q.topicId)).size,52);assert.equal(outline[0].name,'Thermodynamic Systems, Processes and Zeroth Law');assert.equal(outline.at(-1).name,'Combustion and Energy Conversion');
+ require('./compatibility.cjs').verifyPrior(bank,lib);
  const session={ids:['gate-me-002','gate-me-001'],index:1,mode:'practice',answers:{'gate-me-001':'B'},times:{}};assert.deepEqual(D.migrate({session,attempts:[]},lib).session,session);
 });
