@@ -88,7 +88,7 @@ function paperEnhance(){
   const summary=studioSummary(q);if(summary){const holder=document.createElement('div');holder.innerHTML=summary;const banner=holder.firstElementChild;banner.classList.add('paper-result');banner.querySelector('small')?.remove();const label=banner.querySelector('strong');if(label&&banner.classList.contains('wrong'))label.textContent='Incorrect answer';banner.insertAdjacentHTML('beforeend','<button data-paper-panel="solution" aria-label="Open answer and solution">Review solution →</button>');card.insertBefore(banner,content);}
   response.classList.add('paper-response');
   if(q.type==='WRITTEN')response.classList.add('paper-written');
-  response.querySelectorAll('.option').forEach(b=>{b.setAttribute('aria-label','Option '+b.dataset.option);});
+  paperChoiceContent(q,response);
   const keypad=response.querySelector('.keypad');if(keypad){keypad.hidden=true;keypad.id='paper-keypad';response.querySelector('.answer-label').insertAdjacentHTML('beforeend','<button data-paper-keypad aria-expanded="false" aria-controls="paper-keypad">Keypad</button>');}
   const actionsBar=$('.q-actions');actionsBar.classList.add('paper-actions');
   const clear=actionsBar.querySelector('[data-action="clear-answer"]');if(clear){clear.textContent='Clear';clear.setAttribute('aria-label','Clear response');}
