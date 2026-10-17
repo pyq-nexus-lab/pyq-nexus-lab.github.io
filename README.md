@@ -16,7 +16,7 @@ The canonical library now contains **15,135 questions**, arranged in **204 chapt
 
 Of the **2,063 additions**, **2,056 have grading keys** and **7 have explicit source issues**. Questions with ambiguous or dropped keys remain available for study without automatic marks. New paths follow chapter/topic order, and original source screenshots and answer provenance remain accessible. Existing question identities, answers, grading and saved progress are preserved.
 
-Screenshot storage is losslessly compressed in `.pack` bundles. `asset-index.js` and `asset-store.js` verify byte counts and SHA-256 hashes before decompression; practice, library preview and original-source views share this loading route. The existing image bytes are unchanged. Original JavaScript image bundles remain in the repository but selected redundant packs are excluded from GitHub Pages through `_config.yml`. Keep the `.pack` files when downloading the project. Current hosted content is approximately **970 MB**; recheck this budget before further imports.
+Source screenshot bundles remain in Git for audit and local compatibility. Production now serves individually cached original images through the build workflow above. The optimized hosted artifact is approximately 770 MB; recheck this budget before future imports.
 
 Validation: the full 186-check suite passed, then 29 affected checks passed after the preview/retry fix, including three new loader regression checks. Full image, key and curriculum validation passed. The earlier release notes below describe historical milestones and their then-current counts; this section is the current library summary.
 
