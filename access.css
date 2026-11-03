@@ -18,6 +18,9 @@ html[data-access="locked"] .shell,html[data-access="locked"] .sidebar,html[data-
 .access-buttons{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0 20px;}
 .access-buttons button{min-height:50px;border-radius:12px;font-size:14px;font-weight:700;}
 .access-buttons button:disabled{opacity:.5;cursor:wait;}
+.access-guest{width:100%;min-height:48px;margin:0 0 16px;border:1px solid #70dfcb;border-radius:12px;background:#70dfcb;color:#08222b;font-size:14px;font-weight:750;cursor:pointer;}
+.access-guest:hover{background:#9ae8d9;}
+.access-guest:focus-visible{outline:3px solid #edf6fb;outline-offset:3px;}
 .access-status{font-size:13px;min-height:24px;line-height:1.6;color:#9fb9c8;}
 .access-status[data-phase="error"]{color:#ffc1b2;}
 .access-card small{display:block;border-top:1px solid #2a4350;padding-top:20px;margin-top:22px;color:#83a4b6;line-height:1.7;font-size:12px;}

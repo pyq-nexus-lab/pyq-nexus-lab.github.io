@@ -4,11 +4,17 @@ A shared GATE ME, GATE XE and ESE practice website, with a separately labelled C
 
 **Open the lab: https://pyq-nexus-lab.github.io/**
 
+## Optional sign-in and guest access (v5.14.2)
+
+Choose **Continue as guest** on the welcome or login screen to practise immediately without registering. Guest answers, notes, bookmarks and question position save in this browser under a separate storage key. Refreshing the same guest tab resumes the workspace. Guest progress does not sync across devices and can be lost if browser data is cleared; device backup export remains available.
+
+Login and registration remain available for automatic private cloud backup. Signing in restores that account's workspace; it does not automatically merge guest answers. Logging out closes private content, and choosing guest restores only guest progress. Account caches and pending cloud changes remain separate and retained. Background auth refreshes cannot take over an active guest workspace. Question content, practice layout and screenshot delivery are unchanged.
+
 ## Image delivery performance (v5.14.1)
 
 The interface, CSS, question content, image quality and progress model are unchanged. The Pages workflow runs `node build-site.cjs _site` to extract screenshots as individual content-addressed image files. It applies the existing answer repairs and crop patches before checking every question reference. Original screenshot bytes are copied exactly; identical images share one URL. Browsers fetch one screenshot instead of downloading and parsing an entire multi-megabyte bundle.
 
-Practice prepares at most two following screenshots at low priority after the current image is visible; data saver and slow connections disable this. An image-only service worker caches up to 160 immutable screenshots for subsequent visits, with ordinary network loading if storage is unavailable. It never caches account requests, progress, HTML or API responses. Authenticated startup preloads scripts together while retaining their original execution order. Source checkouts still support the legacy bundle loader. GitHub Pages must use **GitHub Actions** as its publishing source; the workflow builds the optimized website without committing generated image files.
+Practice prepares at most two following screenshots at low priority after the current image is visible; data saver and slow connections disable this. An image-only service worker caches up to 160 immutable screenshots for subsequent visits, with ordinary network loading if storage is unavailable. It never caches account requests, progress, HTML or API responses. After guest selection or account verification, startup preloads scripts together while retaining their original execution order. Source checkouts still support the legacy bundle loader. GitHub Pages must use **GitHub Actions** as its publishing source; the workflow builds the optimized website without committing generated image files.
 
 ## Current library: all 18 subjects (v5.14)
 
@@ -170,7 +176,7 @@ Duplicate migration preserves old IDs, translates reordered option responses, me
 
 ## Run locally
 
-Download with **Code → Download ZIP** and extract the files. Keep all screenshot packs and answer layers beside the entry page. No build step is needed. Serve over HTTP using the command below; the mandatory login check requires an internet connection when opening the workspace.
+Download with **Code → Download ZIP** and extract the files. Keep all screenshot packs and answer layers beside the entry page. No build step is needed. Serve over HTTP using the command below; guest access works without an account; account sign-in and cloud sync require an internet connection.
 
 For a stable local address, use Node.js 18 or later:
 
@@ -221,19 +227,19 @@ GitHub Pages uses `_config.yml` to exclude superseded image bundles and developm
 
 `studio.css` and `studio.js` upgrade the existing application without changing question banks, identifiers, grading rules, continuous learning paths or `som-lab-v1` device progress. Native options have explicit contrast in both themes. The question map distinguishes graded answers, unanswered questions and review marks; in exam mode it never calls the grader. The TCS calculator button opens the original provider page in a compact separate window. TCS restricts third-party iframes through its Content Security Policy, so the app does not proxy or copy that page. Pop-up blocking has a direct-link fallback in the toolkit. ESE Prelims timed tests keep the calculator disabled.
 
-Accounts are mandatory and use the connected Supabase project. An empty `account-config.js` keeps access locked; it does not simulate successful login. Add only the project HTTPS URL and its `sb_publishable_...` key. Never publish a secret/service-role key. The pinned Supabase 2.118.0 browser SDK is loaded only when configured; its license is in `SUPABASE-LICENSE.txt`.
+Accounts are optional and use the connected Supabase project. An empty `account-config.js` leaves guest practice available while disabling account sign-in; it does not simulate successful login. Add only the project HTTPS URL and its `sb_publishable_...` key. Never publish a secret/service-role key. The pinned Supabase 2.118.0 browser SDK is loaded only when configured; its license is in `SUPABASE-LICENSE.txt`.
 
 The personal lab is connected to Supabase. Email/password signup and confirmation are enabled, the production redirect is configured, and the private backup table has verified row security and no anonymous read access. Public email delivery still requires custom SMTP; the built-in service is limited to authorized project-team recipients. The deployed configuration contains only the browser-safe publishable key.
 
 Enable email/password authentication and email confirmation in the Supabase dashboard. Set the Site URL to `https://pyq-nexus-lab.github.io/` and add that exact URL to allowed auth redirects. Registration, email confirmation, login, password recovery and logout use Supabase Auth. Configure a production SMTP provider before opening public registration; the default email service has delivery and recipient restrictions. Do not disable confirmation merely to work around email setup.
 
-The login screen protects access to device progress after logout. Signed-in work is automatically synchronized as described below. The repository remains public; accounts do not make question assets private or implement a paywall.
+After logout, the welcome screen hides the private workspace. Guest access opens a separate local workspace. Signed-in work is automatically synchronized as described below. The repository remains public; accounts do not make question assets private or implement a paywall.
 
 `studio-preview.html` uses in-memory storage for browser QA and cannot read or write real device progress. It is not linked from the application. Test MCQ/MSQ/NAT/written states there before changing the production entry point.
 
 ## Automatic cloud progress (5.10)
 
-`cloud-sync.js` observes the existing local save path. Answers and question navigation queue an immediate save; note/draft edits are briefly debounced. Timer ticks alone do not produce uploads. A visible status distinguishes pending, offline and confirmed cloud saves. A durable account-specific cache retains pending changes for reconnect/reload. Login first reads cloud progress, then restores the session and learning path automatically; the original local workspace is retained as a recovery copy before the first replacement. Login is required before practice starts. Different accounts never automatically upload the previous account workspace.
+`cloud-sync.js` observes the existing local save path. Answers and question navigation queue an immediate save; note/draft edits are briefly debounced. Timer ticks alone do not produce uploads. A visible status distinguishes pending, offline and confirmed cloud saves. A durable account-specific cache retains pending changes for reconnect/reload. Login first reads cloud progress, then restores the session and learning path automatically; the original local workspace is retained as a recovery copy before the first replacement. Login is required only for account progress and cloud sync; guest practice stays local. Different accounts never automatically upload the previous account workspace.
 
 `sync-core.js` merges independent changes against the last synchronized base, deduplicates attempt history, and preserves competing changes while a request is in flight. Server-managed backup revisions and conditional updates prevent stale whole-state overwrites. A new session/test is treated as one coherent object. For simultaneous edits to the same field, the currently saving device wins; using one active practice device at a time remains clearest. The original grading rules and server-side ownership policies remain unchanged.
 
@@ -242,9 +248,9 @@ The server revision migration is required before this release. It adds a revisio
 Connectivity is required for a cloud confirmation. Pending work survives on the originating device and retries on reconnect; a browser closed while offline must be reopened there before another device can receive that work. On sign-in, synchronized progress is authoritative on a fresh device. Legacy manual backups merge with existing device work during the first upgrade. A read-only, in-memory `sync-device-preview.html` verifies cloud restoration without changing real device progress or allowing cloud writes.
 
 
-### Mandatory sign-in
+### Guest choice and private account access
 
-The workspace starts locked and requires a Supabase-verified account. Guest access is removed. Question banks and practice runtime scripts load only after server verification; closing the login dialog, refreshing, deep links, sign-out and expired/rejected sessions cannot reveal the practice interface. Failed account checks remain locked with a retry action. Existing answers and cloud progress are preserved.
+The workspace starts with a choice of guest access or a Supabase-verified account. Question banks and practice runtime scripts load after an explicit guest choice or successful server verification. Closing the login dialog, signing out and expired/rejected sessions cannot expose private account progress. Failed account checks offer retry and guest access. Guest and account storage stay separate; existing answers and cloud progress are preserved.
 
 This is an application access gate on GitHub Pages. The repository and static files are still public; it is not server-side protection or a paywall for the question files. Private content delivery would require moving those files behind an authenticated server or private storage. Supabase progress remains protected by its existing owner-only row policies.
 
@@ -253,7 +259,7 @@ access-preview.html is an unlinked, noindex test page with isolated in-memory st
 
 ### Paper practice workspace (5.12)
 
-Active practice uses the full viewport with a compact header, white question paper, blue answer controls and an optional dark surround. The workspace menu and question map stay collapsed. Notes, confidence, formulas, source appearances and learning history open in a focused side drawer without changing the question position. The complete screenshot fits the available paper area by default, including printed options. Read size provides larger text with scrolling confined to the paper; image zoom shows the original scan. Answer controls and previous/check/next actions remain visible independently of question scrolling. Explanations open on demand, and timed exams retain answer hiding and calculator rules. Local answers, cloud sync, mandatory authentication and question identities are unchanged.
+Active practice uses the full viewport with a compact header, white question paper, blue answer controls and an optional dark surround. The workspace menu and question map stay collapsed. Notes, confidence, formulas, source appearances and learning history open in a focused side drawer without changing the question position. The complete screenshot fits the available paper area by default, including printed options. Read size provides larger text with scrolling confined to the paper; image zoom shows the original scan. Answer controls and previous/check/next actions remain visible independently of question scrolling. Explanations open on demand, and timed exams retain answer hiding and calculator rules. Local answers, cloud sync, account verification and question identities are unchanged.
 
 ### Readable practice layout (5.12.1)
 
