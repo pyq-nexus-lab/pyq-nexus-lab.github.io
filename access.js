@@ -3,13 +3,13 @@
   let permitted=false,phase='checking',message='Checking your sign-in…',runtime=null,loaded=0;
   const $=selector=>document.querySelector(selector);
   function paint(){
-    document.documentElement.dataset.access=permitted?'signed-in':'locked';
+    document.documentElement.dataset.access=permitted?(root.PYQAccount?.isGuest()?'guest':'signed-in'):'locked';
     const gate=$('#access-gate');if(gate)gate.hidden=permitted;
     const status=$('#access-status');if(status){status.textContent=message;status.dataset.phase=phase;}
     const retry=$('#access-retry');if(retry)retry.hidden=phase!=='error';
     document.querySelectorAll('#access-gate [data-account-mode]').forEach(b=>b.disabled=phase==='checking');
   }
-  function lock(text='Log in or create an account to open your workspace.',checking=false){
+  function lock(text='Continue as a guest, or sign in for cloud backup.',checking=false){
     permitted=false;phase=checking?'checking':'signed-out';message=text;
     const main=$('#main');if(main)main.replaceChildren();
     const dialog=$('#modal');if(dialog?.open&&!dialog.querySelector('.studio-auth'))dialog.close();
@@ -20,7 +20,7 @@
     if(runtime)return runtime;
     runtime=(async()=>{
       const scripts=[...document.querySelectorAll('script[data-runtime]')];
-      // Fetch in parallel after authentication; execute in the established order below.
+      // Fetch in parallel after a guest choice or account verification; execute in order.
       for(const node of scripts.slice(loaded)){
         if(node.dataset.preloaded)continue;
         const hint=document.createElement('link');hint.rel='preload';hint.as='script';hint.href=node.dataset.runtime;
@@ -38,7 +38,7 @@
     })().catch(error=>{runtime=null;throw error;});
     return runtime;
   }
-  function unlock(){permitted=true;phase='signed-in';message='Signed in';paint();if(typeof root.render==='function')root.render();}
+  function unlock(){permitted=true;phase=root.PYQAccount?.isGuest()?'guest':'signed-in';message=phase==='guest'?'Guest workspace · saved on this device':'Signed in';paint();if(typeof root.render==='function')root.render();}
   function showModal(title,body){
     $('#modal-body').innerHTML=`<div class="modal-head"><h2 id="nx-modal-title">${title}</h2><button data-close aria-label="Close dialog">×</button></div>${body}`;
     const dialog=$('#modal');if(!dialog.open)dialog.showModal();

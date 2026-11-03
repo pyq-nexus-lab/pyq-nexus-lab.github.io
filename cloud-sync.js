@@ -1,6 +1,6 @@
 (function(root){
   'use strict';
-  const core=root.NexusSyncCore,OWNER='pyq-nexus-workspace-owner',PREFIX='pyq-nexus-sync:';
+  const core=root.NexusSyncCore,OWNER='pyq-nexus-workspace-owner',PREFIX='pyq-nexus-sync:',GUEST_STORAGE='pyq-nexus-guest-v1',ACCOUNT_STORAGE='som-lab-v1';
   let engine=null,owner=null,timer=null,retry=1000,applying=false,starting=false,status={kind:'guest',message:'Saved on this device'},firstApply=false;
   const originalSave=save;
   const read=key=>{try{return JSON.parse(localStorage.getItem(key)||'null');}catch{return null;}};
@@ -10,8 +10,8 @@
     let badge=document.querySelector('#nexus-cloud-status');
     if(!badge){const host=document.querySelector('.studio-account-actions');if(host){badge=document.createElement('button');badge.id='nexus-cloud-status';badge.type='button';badge.onclick=()=>root.PYQAccount?.open();host.prepend(badge);}}
     const offline=typeof navigator!=='undefined'&&!navigator.onLine;
-    const label=status.kind==='error'?(offline?'Offline · saved locally':'Sync pending'):status.kind==='saved'?'Cloud saved':status.kind==='guest'?'Device only':status.kind==='pending'?'Saving…':'Syncing…';
-    if(badge){badge.hidden=!owner;badge.textContent=label;badge.dataset.status=status.kind;badge.title=status.message;badge.setAttribute('aria-label',label+'. '+status.message);}
+    const label=status.kind==='error'?(offline?'Offline · saved locally':'Sync pending'):status.kind==='saved'?'Cloud saved':status.kind==='guest'?'Guest · device only':status.kind==='pending'?'Saving…':'Syncing…';
+    if(badge){badge.hidden=!owner&&!root.PYQAccount?.isGuest();badge.textContent=label;badge.dataset.status=status.kind;badge.title=status.message;badge.setAttribute('aria-label',label+'. '+status.message);}
     const detail=document.querySelector('#nexus-sync-detail');if(detail){detail.textContent=status.message+(status.lastSynced?' · Last cloud save: '+new Date(status.lastSynced).toLocaleString(): '');detail.dataset.status=status.kind;}
   }
   function report(next){status=next;paint();if(next.kind==='saved')retry=1000;}
@@ -46,14 +46,30 @@
     clearTimeout(timer);timer=null;engine?.stop();engine=null;owner=null;starting=false;
     report({kind:'guest',message:'Saved on this device. Sign in for automatic cloud sync.'});
   }
+  function savedWorkspace(key){
+    const value=read(key);if(!value)return blank();
+    try{return core.validate({format:'pyq-lab-backup',version:1,state:value},id=>LIBRARY.original.has(id));}catch{return blank();}
+  }
+  function useGuest(){
+    disconnect();firstApply=false;
+    if(STORAGE!==GUEST_STORAGE){originalSave();STORAGE=GUEST_STORAGE;apply(savedWorkspace(GUEST_STORAGE));}
+    report({kind:'guest',message:'Guest progress stays in this browser. Sign in for your separate cloud workspace.'});
+  }
   function connect(client,user){
     if(!user||!root.PYQ_ACCOUNT_CONFIG?.cloudBackups){disconnect();return Promise.resolve(false);}
     if(owner===user.id&&engine){paint();return Promise.resolve(true);}
     disconnect();owner=user.id;starting=true;firstApply=true;
     const id=owner,previousOwner=read(OWNER),cache=read(PREFIX+id);
     let local=core.clone(state);
-    if(previousOwner&&previousOwner!==id)local=cache?.local||blank();
-    if(previousOwner!==id&&previousOwner)apply(local);
+    if(STORAGE===GUEST_STORAGE){
+      // Never merge guest answers into a private account or replace the guest copy.
+      originalSave();STORAGE=ACCOUNT_STORAGE;
+      local=cache?.local||(previousOwner===id?savedWorkspace(ACCOUNT_STORAGE):blank());
+      firstApply=false;apply(local);firstApply=true;
+    }else{
+      if(previousOwner&&previousOwner!==id)local=cache?.local||blank();
+      if(previousOwner!==id&&previousOwner)apply(local);
+    }
     write(OWNER,id);
     function allowed(){if(owner!==id)throw Error('Account changed. This save was cancelled.');}
     const table=()=>client.from('nexus_backups');
@@ -92,5 +108,5 @@
   });
   // Resume from another device on return; no cloud writes for timer ticks alone.
   setInterval(()=>{if(engine&&!starting&&document.visibilityState==='visible'&&!['INPUT','TEXTAREA'].includes(document.activeElement?.tagName))schedule(true);},30000);
-  root.PYQSync={connect,disconnect,syncNow:run,paint,status:()=>({...status}),isDirty:()=>!!engine?.dirty()};
+  root.PYQSync={connect,disconnect,useGuest,syncNow:run,paint,status:()=>({...status}),isDirty:()=>!!engine?.dirty()};
 })(window);

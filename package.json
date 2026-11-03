@@ -1,6 +1,6 @@
 {
   "name": "pyq-nexus",
-  "version": "5.14.1",
+  "version": "5.14.2",
   "private": true,
   "description": "A unified multi-subject PYQ workspace for GATE, ESE and CSE Mechanical optional",
   "scripts": {
